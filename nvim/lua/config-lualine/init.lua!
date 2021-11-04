@@ -1,0 +1,13 @@
+-- ==> Misc
+require('plugins')
+require('keymappings')
+require('settings')
+require('themes')
+require('highlighted-yank')
+
+-- ==> Config
+require('config-coq')
+require('config-lightspeed')
+require('config-lualine')
+require('config-nvim-colorizer')  -- #FFBB00
+require('config-whichkey')
