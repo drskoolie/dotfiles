@@ -1,1 +1,0 @@
-/home/pyro/.dotfiles/zsh/.zshrc
