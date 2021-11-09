@@ -7,3 +7,11 @@
 {"description":"laundry","entry":"20211109T130155Z","modified":"20211109T133032Z","project":"Home","status":"pending","uuid":"043ea1af-26b4-4d06-bb4c-e418793d1268"}
 {"description":"install taskwarrior","entry":"20211109T133712Z","modified":"20211109T133712Z","status":"pending","uuid":"a9f211c4-cc65-497e-a7a4-e7add39edb1e"}
 {"description":"install taskwarrior","end":"20211109T133722Z","entry":"20211109T133712Z","modified":"20211109T133722Z","status":"completed","uuid":"a9f211c4-cc65-497e-a7a4-e7add39edb1e"}
+{"description":"Lecture 8: Insulation (Shesha)","entry":"20211109T132327Z","modified":"20211109T134345Z","project":"UW.ece760","status":"pending","uuid":"c9f4619d-87b4-402e-8e03-d53198e72a11"}
+{"description":"Lecture 8: (Insulation (Shesha))","entry":"20211109T132327Z","modified":"20211109T134424Z","project":"UW.ece760","status":"pending","uuid":"c9f4619d-87b4-402e-8e03-d53198e72a11"}
+{"description":"send Ghaith a chess message","entry":"20211109T135638Z","modified":"20211109T135638Z","project":"Contact.Whatsapp","status":"pending","uuid":"e8808d39-2696-4c58-868b-40a368a65e0a"}
+{"description":"send guy who asked a question","entry":"20211109T135649Z","modified":"20211109T135649Z","project":"Contact.Whatsapp","status":"pending","uuid":"f1d22d0b-33e5-494e-9507-7430504be07d"}
+{"description":"shower","due":"20211109T050000Z","entry":"20211109T130150Z","modified":"20211109T135714Z","project":"Home","status":"pending","uuid":"db69f0e1-5aea-4342-8c44-2f80e3b1471f"}
+{"description":"laundry","due":"20211109T050000Z","entry":"20211109T130155Z","modified":"20211109T135742Z","project":"Home","status":"pending","uuid":"043ea1af-26b4-4d06-bb4c-e418793d1268"}
+{"description":"shower","due":"20211110T045959Z","entry":"20211109T130150Z","modified":"20211109T140150Z","project":"Home","status":"pending","uuid":"db69f0e1-5aea-4342-8c44-2f80e3b1471f"}
+{"description":"laundry","due":"20211110T045959Z","entry":"20211109T130155Z","modified":"20211109T140150Z","project":"Home","status":"pending","uuid":"043ea1af-26b4-4d06-bb4c-e418793d1268"}

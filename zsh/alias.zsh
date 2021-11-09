@@ -38,6 +38,14 @@ alias nvimzp='nvim ~/.dotfiles/zsh/packages.zsh'
 alias sog='source ~/.config/venv_global/bin/activate'
 alias sod='deactivate'
 alias soz='source ~/.dotfiles/zsh/.zshrc'
+alias soza='source ~/.dotfiles/zsh/alias.zsh'
+
+# +------+
+# | task |
+# +------+
+alias ta='task'
+alias taa='task add'
+alias tac='task calc'
 
 # +-------+
 # | trash |

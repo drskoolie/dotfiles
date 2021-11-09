@@ -28,3 +28,33 @@ time 1636465042
 old [description:"install taskwarrior" entry:"1636465032" modified:"1636465032" status:"pending" uuid:"a9f211c4-cc65-497e-a7a4-e7add39edb1e"]
 new [description:"install taskwarrior" end:"1636465042" entry:"1636465032" modified:"1636465042" status:"completed" uuid:"a9f211c4-cc65-497e-a7a4-e7add39edb1e"]
 ---
+time 1636465425
+old [description:"L8 Insulation (Shesha)" entry:"1636464207" modified:"1636464207" project:"UW.ece760" status:"pending" uuid:"c9f4619d-87b4-402e-8e03-d53198e72a11"]
+new [description:"Lecture 8: Insulation (Shesha)" entry:"1636464207" modified:"1636465425" project:"UW.ece760" status:"pending" uuid:"c9f4619d-87b4-402e-8e03-d53198e72a11"]
+---
+time 1636465464
+old [description:"Lecture 8: Insulation (Shesha)" entry:"1636464207" modified:"1636465425" project:"UW.ece760" status:"pending" uuid:"c9f4619d-87b4-402e-8e03-d53198e72a11"]
+new [description:"Lecture 8: (Insulation (Shesha))" entry:"1636464207" modified:"1636465464" project:"UW.ece760" status:"pending" uuid:"c9f4619d-87b4-402e-8e03-d53198e72a11"]
+---
+time 1636466198
+new [description:"send Ghaith a chess message" entry:"1636466198" modified:"1636466198" project:"Contact.Whatsapp" status:"pending" uuid:"e8808d39-2696-4c58-868b-40a368a65e0a"]
+---
+time 1636466209
+new [description:"send guy who asked a question" entry:"1636466209" modified:"1636466209" project:"Contact.Whatsapp" status:"pending" uuid:"f1d22d0b-33e5-494e-9507-7430504be07d"]
+---
+time 1636466234
+old [description:"shower" entry:"1636462910" modified:"1636464586" project:"Home" status:"pending" uuid:"db69f0e1-5aea-4342-8c44-2f80e3b1471f"]
+new [description:"shower" due:"1636434000" entry:"1636462910" modified:"1636466234" project:"Home" status:"pending" uuid:"db69f0e1-5aea-4342-8c44-2f80e3b1471f"]
+---
+time 1636466262
+old [description:"laundry" entry:"1636462915" modified:"1636464632" project:"Home" status:"pending" uuid:"043ea1af-26b4-4d06-bb4c-e418793d1268"]
+new [description:"laundry" due:"1636434000" entry:"1636462915" modified:"1636466262" project:"Home" status:"pending" uuid:"043ea1af-26b4-4d06-bb4c-e418793d1268"]
+---
+time 1636466510
+old [description:"shower" due:"1636434000" entry:"1636462910" modified:"1636466234" project:"Home" status:"pending" uuid:"db69f0e1-5aea-4342-8c44-2f80e3b1471f"]
+new [description:"shower" due:"1636520399" entry:"1636462910" modified:"1636466510" project:"Home" status:"pending" uuid:"db69f0e1-5aea-4342-8c44-2f80e3b1471f"]
+---
+time 1636466510
+old [description:"laundry" due:"1636434000" entry:"1636462915" modified:"1636466262" project:"Home" status:"pending" uuid:"043ea1af-26b4-4d06-bb4c-e418793d1268"]
+new [description:"laundry" due:"1636520399" entry:"1636462915" modified:"1636466510" project:"Home" status:"pending" uuid:"043ea1af-26b4-4d06-bb4c-e418793d1268"]
+---
