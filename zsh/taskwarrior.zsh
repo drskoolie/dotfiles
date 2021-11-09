@@ -8,10 +8,22 @@ alias tass='task sync' # www.inthe.am
 alias ta_p='task _projects'
 alias ta_t="task _tags | grep -v -e '[^[:lower:]]' -e 'next' -e 'nocal' -e 'nocolor' -e 'nonag'"
 
+# +---------+
+# | listing |
+# +---------+
+alias tal='task list'
+alias tal3='task list limit:30'
+alias tald='task list due:today'
+alias taldn='task list due.not:today'
+
+
+function tall () {
+	task list limit:$1
+}
+
 # +------------+
 # | monitoring |
 # +------------+
-alias taml='task list'
 alias tama='task active'
 alias tamb='task burndown'
 alias tambd='task burndown.daily'
@@ -34,10 +46,6 @@ function tafe () {
 
 function tafd () {
 	task $1 done
-}
-
-function tafl () {
-	task list limit:$1
 }
 
 function tafm () {
