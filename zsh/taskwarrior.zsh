@@ -23,6 +23,7 @@ alias tams='task summary'
 # +-----------+
 # | functions |
 # +-----------+
+
 function tafa () {
 	task $1 annotate $2
 }
@@ -32,6 +33,18 @@ function tafe () {
 }
 
 function tafd () {
+	task $1 done
+}
+
+function tafl () {
+	task list limit:$1
+}
+
+function tafm () {
+	task $1 modify $2
+}
+
+function tafr () {
 	task $1 delete
 }
 
@@ -64,6 +77,7 @@ alias tapati='task project:App.TimeWarrior'
 alias tapan='task project:App.Neovim'
 alias tapaz='task project:App.Zathura'
 
+alias tapl='task project:Linux'
 alias tapld='task project:Linux.Dotfiles'
 alias tapli='task project:Linux.i3'
 alias taplg='task project:Linux.General'
