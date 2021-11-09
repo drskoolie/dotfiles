@@ -31,6 +31,7 @@ alias nvimi='nvim ~/.dotfiles/i3/config'
 alias nvimz='nvim ~/.dotfiles/zsh/.zshrc'
 alias nvimza='nvim ~/.dotfiles/zsh/alias.zsh'
 alias nvimzp='nvim ~/.dotfiles/zsh/packages.zsh'
+alias nvimzt='nvim ~/.dotfiles/zsh/taskwarrior.zsh'
 
 # +--------+
 # | source |
@@ -39,27 +40,7 @@ alias sog='source ~/.config/venv_global/bin/activate'
 alias sod='deactivate'
 alias soz='source ~/.dotfiles/zsh/.zshrc'
 alias soza='source ~/.dotfiles/zsh/alias.zsh'
-
-# +------+
-# | task |
-# +------+
-alias ta='task'
-alias taa='task add'
-alias tac='task calc'
-alias tal='task list'
-
-alias tap='task project:'
-alias tapc='task project:Contact'
-alias tapcw='task project:Contact.Whatsapp'
-alias taph='task project:Home'
-alias taphl='task project:Home.Laundry'
-alias tapt='task project:Terminal'
-alias taptn='task project:Terminal.New'
-alias tapu='task project:UW'
-alias tapub='task project:UW.Background'
-alias tapu6='task project:UW.ece650'
-alias tapu7='task project:UW.ece760'
-alias tapum='task project:UW.me269'
+alias sozt='source ~/.dotfiles/zsh/taskwarrior.zsh'
 
 # +-------+
 # | trash |

@@ -9,3 +9,4 @@ source ~/.dotfiles/zsh/misc.zsh
 source ~/.dotfiles/zsh/packages.zsh
 source ~/.dotfiles/zsh/path.zsh
 source ~/.dotfiles/zsh/p10k_end.zsh
+source ~/.dotfiles/zsh/taskwarrior.zsh
