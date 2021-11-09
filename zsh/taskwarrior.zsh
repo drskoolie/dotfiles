@@ -47,6 +47,8 @@ function taff() {
 # +----------+
 alias tap='task project:'
 
+alias tapb='task project:Book'
+
 alias tapc='task project:Contact'
 alias tapcg='task project:Contact.Gmail'
 alias tapcw='task project:Contact.Whatsapp'
@@ -58,8 +60,15 @@ alias tapn='task project:New'
 alias tapa='task project:App'
 alias tapat='task project:App.TaskWarrior'
 alias tapati='task project:App.TimeWarrior'
+alias tapan='task project:App.Neovim'
+alias tapaz='task project:App.Zathura'
+
+alias tapld='task project:Linux.Dotfiles'
+alias tapli='task project:Linux.i3'
+alias taplg='task project:Linux.General'
 
 alias tapp='task project:Pressing'
+
 
 alias tapu='task project:UW'
 alias tapub='task project:UW.Background'
