@@ -4,43 +4,62 @@
 alias ta='task'
 alias tac='task calc'
 
-# +---------+
-# | showing |
-# +---------+
-alias tal='task list'
-alias tas='task summary'
+alias ta_p='task _projects'
+alias ta_t="task _tags | grep -v -e '[^[:lower:]]' -e 'next' -e 'nocal' -e 'nocolor' -e 'nonag'"
 
+# +------------+
+# | monitoring |
+# +------------+
+alias taml='task list'
+alias tama='task active'
+alias tamb='task burndown'
+alias tambd='task burndown.daily'
+alias tambm='task burndown.monthly'
+alias tambw='task burndown.weekly'
+alias tamc='task completed'
+alias tams='task summary'
 
 # +-----------+
 # | functions |
 # +-----------+
-
-function taa () {
+function tafa () {
 	task $1 annotate $2
 }
 
-function tad () {
+function tafe () {
+	task $1 edit
+}
+
+function tafd () {
 	task $1 delete
+}
+
+function tafs() {
+	task $1 start
+}
+
+function taff() {
+	task $1 stop
 }
 
 # +----------+
 # | project: |
 # +----------+
-
-alias ta_p='task _projects'
 alias tap='task project:'
 
 alias tapc='task project:Contact'
+alias tapcg='task project:Contact.Gmail'
 alias tapcw='task project:Contact.Whatsapp'
 
 alias taph='task project:Home'
 alias taphl='task project:Home.Laundry'
 
-alias tapt='task project:Terminal'
-alias taptn='task project:Terminal.New'
-alias tapta='task project:Terminal.Applications'
-alias taptat='task project:Terminal.Applications.TaskWarrior'
-alias taptati='task project:Terminal.Applications.TimeWarrior'
+alias tapn='task project:New'
+alias tapa='task project:App'
+alias tapat='task project:App.TaskWarrior'
+alias tapati='task project:App.TimeWarrior'
+
+alias tapp='task project:Pressing'
 
 alias tapu='task project:UW'
 alias tapub='task project:UW.Background'
@@ -48,4 +67,4 @@ alias tapu6='task project:UW.ece650'
 alias tapu7='task project:UW.ece760'
 alias tapu7l='task project:UW.ece760.LR'
 alias tapum='task project:UW.me269'
-
+alias tapur='task project:UW.Research'

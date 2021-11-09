@@ -8,13 +8,14 @@ alias cat='batcat --paging=never'
 # +------------------+
 # | change directory |
 # +------------------+
-alias cda='cd ~/Documents/university/ece650/gitlab/a2elhag/'
-alias cdh='cd ~/.help'
+alias cdh='cd ~/.help; ls'
 alias cdu='cd ~/Documents/university/ece650/'
+alias cdua='cd ~/Documents/university/ece650/gitlab/a2elhag/'
 
-alias cdd='cd ~/.dotfiles'
-alias cddn='cd ~/.dotfiles/nvim/'
-alias cddz='cd ~/.dotfiles/zsh'
+alias cdd='cd ~/.dotfiles/; ls'
+alias cddn='cd ~/.dotfiles/nvim/; ls'
+alias cddt='cd ~/.dotfiles/taskwarrior; ls -a'
+alias cddz='cd ~/.dotfiles/zsh; ls'
 
 # +-----+
 # | fzf |
@@ -27,6 +28,8 @@ alias fzfp="fzf --preview 'batcat --style=numbers --color=always --style=numbers
 # | neovim |
 # +--------+
 alias nvimi='nvim ~/.dotfiles/i3/config'
+
+alias nvimt='nvim ~/.dotfiles/taskwarrior/.taskrc'
 
 alias nvimz='nvim ~/.dotfiles/zsh/.zshrc'
 alias nvimza='nvim ~/.dotfiles/zsh/alias.zsh'
