@@ -46,6 +46,20 @@ alias soza='source ~/.dotfiles/zsh/alias.zsh'
 alias ta='task'
 alias taa='task add'
 alias tac='task calc'
+alias tal='task list'
+
+alias tap='task project:'
+alias tapc='task project:Contact'
+alias tapcw='task project:Contact.Whatsapp'
+alias taph='task project:Home'
+alias taphl='task project:Home.Laundry'
+alias tapt='task project:Terminal'
+alias taptn='task project:Terminal.New'
+alias tapu='task project:UW'
+alias tapub='task project:UW.Background'
+alias tapu6='task project:UW.ece650'
+alias tapu7='task project:UW.ece760'
+alias tapum='task project:UW.me269'
 
 # +-------+
 # | trash |
