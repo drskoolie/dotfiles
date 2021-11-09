@@ -2,7 +2,7 @@
 # | applications |
 # +--------------+
 alias bat='batcat'
-alias batza='batcat ~/.config/zsh/alias.zsh'
+alias batza='batcat ~/.dotfiles/zsh/alias.zsh'
 alias cat='batcat --paging=never'
 
 # +------------------+
@@ -37,7 +37,7 @@ alias nvimzp='nvim ~/.dotfiles/zsh/packages.zsh'
 # +--------+
 alias sog='source ~/.config/venv_global/bin/activate'
 alias sod='deactivate'
-alias soz='source ~/.zshrc'
+alias soz='source ~/dotfiles/zsh/.zshrc'
 
 # +-------+
 # | trash |

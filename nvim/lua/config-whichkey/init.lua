@@ -222,7 +222,8 @@ local mappings = {
 	l = {
 		name = "+language",
         c = {':w<CR>:FloatermSend g++ -Wall %:p:t -o %:p:t:r<CR>', 'compile'},
-        i = {':FloatermSend ./%:p:t:r <infile.txt <CR>', 'in'},
+        t = {':FloatermSend ./%:p:t:r <mytest.txt <CR>', 'test'},
+        T = {':FloatermSend ./%:p:t:r <mytest2.txt <CR>', 'test'},
         r = {':FloatermSend ./%:p:t:r<CR>', 'run'},
 	},
 	i = {
