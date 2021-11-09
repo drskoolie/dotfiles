@@ -1,2 +1,9 @@
 {"description":"shower","entry":"20211109T130150Z","modified":"20211109T130150Z","status":"pending","uuid":"db69f0e1-5aea-4342-8c44-2f80e3b1471f"}
 {"description":"laundry","entry":"20211109T130155Z","modified":"20211109T130155Z","status":"pending","uuid":"043ea1af-26b4-4d06-bb4c-e418793d1268"}
+{"description":"L8 Insulation (Shesha)","entry":"20211109T132327Z","modified":"20211109T132327Z","project":"UW.ece760","status":"pending","uuid":"c9f4619d-87b4-402e-8e03-d53198e72a11"}
+{"description":"Lecture Nov09","entry":"20211109T132508Z","modified":"20211109T132508Z","project":"UW.ece650","status":"pending","uuid":"8f725fbd-2d6f-482a-a319-a627939a8662"}
+{"description":"Lecture Nov11","entry":"20211109T132514Z","modified":"20211109T132514Z","project":"UW.ece650","status":"pending","uuid":"e1169a8b-a143-4a33-ab53-e16577d24f81"}
+{"description":"shower","entry":"20211109T130150Z","modified":"20211109T132946Z","project":"Home","status":"pending","uuid":"db69f0e1-5aea-4342-8c44-2f80e3b1471f"}
+{"description":"laundry","entry":"20211109T130155Z","modified":"20211109T133032Z","project":"Home","status":"pending","uuid":"043ea1af-26b4-4d06-bb4c-e418793d1268"}
+{"description":"install taskwarrior","entry":"20211109T133712Z","modified":"20211109T133712Z","status":"pending","uuid":"a9f211c4-cc65-497e-a7a4-e7add39edb1e"}
+{"description":"install taskwarrior","end":"20211109T133722Z","entry":"20211109T133712Z","modified":"20211109T133722Z","status":"completed","uuid":"a9f211c4-cc65-497e-a7a4-e7add39edb1e"}

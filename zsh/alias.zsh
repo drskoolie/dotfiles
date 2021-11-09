@@ -28,7 +28,7 @@ alias fzfp="fzf --preview 'batcat --style=numbers --color=always --style=numbers
 # +--------+
 alias nvimi='nvim ~/.dotfiles/i3/config'
 
-alias nvimz='nvim ~/.dotfiles/.zshrc'
+alias nvimz='nvim ~/.dotfiles/zsh/.zshrc'
 alias nvimza='nvim ~/.dotfiles/zsh/alias.zsh'
 alias nvimzp='nvim ~/.dotfiles/zsh/packages.zsh'
 
@@ -37,7 +37,7 @@ alias nvimzp='nvim ~/.dotfiles/zsh/packages.zsh'
 # +--------+
 alias sog='source ~/.config/venv_global/bin/activate'
 alias sod='deactivate'
-alias soz='source ~/dotfiles/zsh/.zshrc'
+alias soz='source ~/.dotfiles/zsh/.zshrc'
 
 # +-------+
 # | trash |

@@ -1,2 +1,5 @@
-[description:"shower" entry:"1636462910" modified:"1636462910" status:"pending" uuid:"db69f0e1-5aea-4342-8c44-2f80e3b1471f"]
-[description:"laundry" entry:"1636462915" modified:"1636462915" status:"pending" uuid:"043ea1af-26b4-4d06-bb4c-e418793d1268"]
+[description:"shower" entry:"1636462910" modified:"1636464586" project:"Home" status:"pending" uuid:"db69f0e1-5aea-4342-8c44-2f80e3b1471f"]
+[description:"laundry" entry:"1636462915" modified:"1636464632" project:"Home" status:"pending" uuid:"043ea1af-26b4-4d06-bb4c-e418793d1268"]
+[description:"L8 Insulation (Shesha)" entry:"1636464207" modified:"1636464207" project:"UW.ece760" status:"pending" uuid:"c9f4619d-87b4-402e-8e03-d53198e72a11"]
+[description:"Lecture Nov09" entry:"1636464308" modified:"1636464308" project:"UW.ece650" status:"pending" uuid:"8f725fbd-2d6f-482a-a319-a627939a8662"]
+[description:"Lecture Nov11" entry:"1636464314" modified:"1636464314" project:"UW.ece650" status:"pending" uuid:"e1169a8b-a143-4a33-ab53-e16577d24f81"]
