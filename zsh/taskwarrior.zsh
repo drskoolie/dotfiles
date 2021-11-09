@@ -3,6 +3,7 @@
 # +------+
 alias ta='task'
 alias tac='task calc'
+alias tass='task sync' # www.inthe.am 
 
 alias ta_p='task _projects'
 alias ta_t="task _tags | grep -v -e '[^[:lower:]]' -e 'next' -e 'nocal' -e 'nocolor' -e 'nonag'"

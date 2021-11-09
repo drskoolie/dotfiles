@@ -35,3 +35,11 @@ include /usr/share/taskwarrior/dark-256.theme
 #include /usr/share/taskwarrior/solarized-dark-256.theme
 #include /usr/share/taskwarrior/solarized-light-256.theme
 #include /usr/share/taskwarrior/no-color.theme
+
+# Inthe.AM
+taskd.certificate=~/.dotfiles/taskwarrior/inthe_am/private.certificate.pem
+taskd.key=~/.dotfiles/taskwarrior/inthe_am/private.key.pem
+taskd.ca=~/.dotfiles/taskwarrior/inthe_am/ca.crt
+taskd.server=inthe.am:53589
+taskd.credentials=inthe_am/a.elhag01/5b2ed6c5-0d74-4a9a-ac93-324ce5a6d8ab
+taskd.trust=strict
