@@ -345,6 +345,7 @@ set $ws106 "106: piazza"
 set $ws107 "107: todo"    
 set $ws108 "108: vpn"     
 set $ws109 "109: whatsapp"
+set $ws110 "110:✈ virtualbox"
 
 # resize window (you can also use the mouse for that)
 mode "ws0" {
@@ -359,6 +360,7 @@ mode "ws0" {
  	bindsym t workspace number $ws107; mode "default"
 	bindsym v workspace number $ws108; mode "default"
 	bindsym w workspace number $ws109; mode "default"
+	bindsym b workspace number $ws110; mode "default"
 
 	bindsym Escape mode "default"
 
@@ -376,6 +378,7 @@ mode "cws0" {
  	bindsym t move container to workspace number $ws107; mode "default"
 	bindsym v move container to workspace number $ws108; mode "default"
 	bindsym w move container to workspace number $ws109; mode "default"
+	bindsym b move container to workspace number $ws110; mode "default"
 
 	bindsym Escape mode "default"
 }
