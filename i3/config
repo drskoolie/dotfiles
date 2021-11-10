@@ -446,7 +446,6 @@ mode "playerctl" {
 	bindsym l exec --no-startup-id playerctl position 5+
 
 	bindsym a exec --no-startup-id playerctl position 0; mode "default"
-	
 
 	bindsym Escape mode "default"
 
