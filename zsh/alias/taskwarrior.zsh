@@ -50,7 +50,7 @@ function taff() { task $1 stop }
 # +----------+
 alias tap='task project:'
 
-alias tapb='task project:Book'
+alias tapb='task project:Buy'
 
 alias tapc='task project:Contact'
 alias tapcg='task project:Contact.Gmail'
@@ -70,11 +70,13 @@ alias tapaz='task project:App.Zathura'
 alias tapl='task project:Linux'
 alias tapld='task project:Linux.Dotfiles'
 alias tapli='task project:Linux.i3'
-alias taplg='task project:Linux.General'
+alias taplg='task project:Linux.Git'
+alias taplm='task project:Linux.Misc'
 alias taplt='task project:Linux.Termux'
 
 alias tapp='task project:Pressing'
 
+alias taps='task project:Study'
 
 alias tapu='task project:UW'
 alias tapub='task project:UW.Background'

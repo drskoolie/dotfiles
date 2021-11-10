@@ -44,8 +44,8 @@ alias nvimzat='nvim ~/.dotfiles/zsh/alias/taskwarrior.zsh'
 alias sog='source ~/.config/venv_global/bin/activate'
 alias sod='deactivate'
 alias soz='source ~/.dotfiles/zsh/.zshrc'
-alias soza='source ~/.dotfiles/zsh/alias/init.zsh'
-alias sozt='source ~/.dotfiles/zsh/taskwarrior.zsh'
+alias sozai='source ~/.dotfiles/zsh/alias/init.zsh'
+alias sozat='source ~/.dotfiles/zsh/alias/taskwarrior.zsh'
 
 # +-------+
 # | trash |
