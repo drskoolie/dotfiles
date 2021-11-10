@@ -21,3 +21,10 @@ else
 	echo "Installing zsh-syntax-highlighting"
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting "$HOME/.dotfiles/zsh/packages/zsh-syntax-highlighting"
 fi
+
+ln -s $HOME/.dotfiles/zsh/.zshenv ~/.zshenv
+ln -s $HOME/.dotfiles/i3 ~/.config/i3
+ln -s $HOME/.dotfiles/i3status ~/.config/i3status
+ln -s $HOME/.dotfiles/nvim ~/.config/nvim
+ln -s $HOME/.dotfiles/taskwarrior/.task ~/.task
+ln -s $HOME/.dotfiles/taskwarrior/.taskrc ~/.taskrc
