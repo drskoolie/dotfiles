@@ -16,6 +16,7 @@ alias cdd='cd ~/.dotfiles/; ls'
 alias cddn='cd ~/.dotfiles/nvim/; ls'
 alias cddt='cd ~/.dotfiles/taskwarrior; ls -a'
 alias cddz='cd ~/.dotfiles/zsh; ls'
+alias cddza='cd ~/.dotfiles/zsh/alias; ls'
 
 # +-----+
 # | fzf |
@@ -32,9 +33,10 @@ alias nvimi='nvim ~/.dotfiles/i3/config'
 alias nvimt='nvim ~/.dotfiles/taskwarrior/.taskrc'
 
 alias nvimz='nvim ~/.dotfiles/zsh/.zshrc'
-alias nvimza='nvim ~/.dotfiles/zsh/alias.zsh'
 alias nvimzp='nvim ~/.dotfiles/zsh/packages.zsh'
-alias nvimzt='nvim ~/.dotfiles/zsh/taskwarrior.zsh'
+alias nvimzai='nvim ~/.dotfiles/zsh/alias/init.zsh'
+alias nvimzag='nvim ~/.dotfiles/zsh/alias/general.zsh'
+alias nvimzat='nvim ~/.dotfiles/zsh/alias/taskwarrior.zsh'
 
 # +--------+
 # | source |
@@ -42,7 +44,7 @@ alias nvimzt='nvim ~/.dotfiles/zsh/taskwarrior.zsh'
 alias sog='source ~/.config/venv_global/bin/activate'
 alias sod='deactivate'
 alias soz='source ~/.dotfiles/zsh/.zshrc'
-alias soza='source ~/.dotfiles/zsh/alias.zsh'
+alias soza='source ~/.dotfiles/zsh/alias/init.zsh'
 alias sozt='source ~/.dotfiles/zsh/taskwarrior.zsh'
 
 # +-------+

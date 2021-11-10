@@ -71,6 +71,7 @@ alias tapl='task project:Linux'
 alias tapld='task project:Linux.Dotfiles'
 alias tapli='task project:Linux.i3'
 alias taplg='task project:Linux.General'
+alias taplt='task project:Linux.Termux'
 
 alias tapp='task project:Pressing'
 
