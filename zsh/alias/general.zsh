@@ -8,15 +8,18 @@ alias cat='batcat --paging=never'
 # +------------------+
 # | change directory |
 # +------------------+
-alias cdh='cd ~/.help; ls'
-alias cdu='cd ~/Documents/university/ece650/'
-alias cdua='cd ~/Documents/university/ece650/gitlab/a2elhag/'
-
 alias cdd='cd ~/.dotfiles/; ls'
 alias cddn='cd ~/.dotfiles/nvim/; ls'
 alias cddt='cd ~/.dotfiles/taskwarrior; ls -a'
 alias cddz='cd ~/.dotfiles/zsh; ls'
 alias cddza='cd ~/.dotfiles/zsh/alias; ls'
+
+alias cdu='cd ~/Documents/university/ece650/'
+alias cdua='cd ~/Documents/university/ece650/gitlab/a2elhag/'
+
+alias cdh='cd ~/.help; ls'
+
+alias cds='cd ~/.dotfiles/setup; ls'
 
 # +-----+
 # | fzf |
