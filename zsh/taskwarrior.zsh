@@ -1,3 +1,4 @@
+# $ task +book modify -book rc.confirmation:no rc.bulk:0
 # +------+
 # | task |
 # +------+
@@ -6,7 +7,7 @@ alias tac='task calc'
 alias tass='task sync' # www.inthe.am 
 
 alias ta_p='task _projects'
-alias ta_t="task _tags | grep -v -e '[^[:lower:]]' -e 'next' -e 'nocal' -e 'nocolor' -e 'nonag'"
+alias ta_t="task rc.list.all.tags=1 tags"
 
 # +---------+
 # | listing |
@@ -80,6 +81,7 @@ alias taphl='task project:Home.Laundry'
 
 alias tapn='task project:New'
 alias tapa='task project:App'
+alias tapar='task project:App.Remind'
 alias tapat='task project:App.TaskWarrior'
 alias tapati='task project:App.TimeWarrior'
 alias tapan='task project:App.Neovim'
