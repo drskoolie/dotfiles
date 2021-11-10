@@ -4,7 +4,7 @@
 # +------+
 alias ta='task'
 alias tac='task calc'
-alias tass='task sync' # www.inthe.am 
+alias tass='task sync' # www.inthe.am
 
 # +-----------+
 # | reporting |
@@ -15,34 +15,20 @@ alias tarb='task burndown'
 alias tarbd='task burndown.daily'
 alias tarbm='task burndown.monthly'
 alias tarbw='task burndown.weekly'
-function tarc () {
-	task completed $1 | bat -p
-}
+function tarc () { task completed $1 | bat -p }
 alias targa='task ghistory.annual'
 alias targm='task ghistory.monthly'
 alias tarha='task history.annual'
 alias tarhm='task history.monthly'
-function tarl () {
-	task list $1 | bat -p
-}
-function tarll () {
-	task list limit:$1
-}
+function tarl () { task list $1 | bat -p }
+function tarll () { task list limit:$1 }
 alias tarl3='task list limit:30'
 alias tarld='task list due:today'
 alias tarldn='task list due.not:today'
-function tarm () {
-	task minimal $1 | bat -p
-}
-function tarn () {
-	task newest $1 | bat -p
-}
-function taro () {
-	task oldest $1 | bat -p
-}
-function tarv () {
-	task overdue $1 | bat -p
-}
+function tarm () { task minimal $1 | bat -p }
+function tarn () { task newest $1 | bat -p }
+function taro () { task oldest $1 | bat -p }
+function tarv () { task overdue $1 | bat -p }
 alias tarp='task projects'
 alias tarr='task recurring'
 alias tars='task summary'
@@ -51,33 +37,13 @@ alias tart='task tags'
 # +-----------+
 # | functions |
 # +-----------+
-function tafa () {
-	task $1 annotate $2
-}
-
-function tafe () {
-	task $1 edit
-}
-
-function tafd () {
-	task $1 done
-}
-
-function tafm () {
-	task $1 modify $2
-}
-
-function tafr () {
-	task $1 delete
-}
-
-function tafs() {
-	task $1 start
-}
-
-function taff() {
-	task $1 stop
-}
+function tafa () { task $1 annotate $2 }
+function tafe () { task $1 edit }
+function tafd () { task $1 done }
+function tafm () { task $1 modify $2 }
+function tafr () { task $1 delete }
+function tafs() { task $1 start }
+function taff() { task $1 stop }
 
 # +----------+
 # | project: |
