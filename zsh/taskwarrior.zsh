@@ -6,32 +6,37 @@ alias ta='task'
 alias tac='task calc'
 alias tass='task sync' # www.inthe.am 
 
-alias ta_p='task _projects'
-alias ta_t="task rc.list.all.tags=1 tags"
+# +-----------+
+# | reporting |
+# +-----------+
+alias tar='task reports'
+alias tara='task active'
+alias tarb='task burndown'
+alias tarbd='task burndown.daily'
+alias tarbm='task burndown.monthly'
+alias tarbw='task burndown.weekly'
+alias tarc='task completed'
+alias targa='task ghistory.annual'
+alias targm='task ghistory.monthly'
+alias tarha='task history.annual'
+alias tarhm='task history.monthly'
+alias tarl='task list'
+alias tarl3='task list limit:30'
+alias tarld='task list due:today'
+alias tarldn='task list due.not:today'
+alias tarm='task minimal'
+alias tarn='task newest'
+alias taro='task oldest'
+alias tarv='task overdue'
+alias tarp='task projects'
+alias tarr='task recurring'
+alias tars='task summary'
+alias tart='task tags'
 
-# +---------+
-# | listing |
-# +---------+
-alias tal='task list'
-alias tal3='task list limit:30'
-alias tald='task list due:today'
-alias taldn='task list due.not:today'
 
-
-function tall () {
+function tarll () {
 	task list limit:$1
 }
-
-# +------------+
-# | monitoring |
-# +------------+
-alias tama='task active'
-alias tamb='task burndown'
-alias tambd='task burndown.daily'
-alias tambm='task burndown.monthly'
-alias tambw='task burndown.weekly'
-alias tamc='task completed'
-alias tams='task summary'
 
 # +-----------+
 # | functions |
