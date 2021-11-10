@@ -15,33 +15,42 @@ alias tarb='task burndown'
 alias tarbd='task burndown.daily'
 alias tarbm='task burndown.monthly'
 alias tarbw='task burndown.weekly'
-alias tarc='task completed'
+function tarc () {
+	task completed $1 | bat -p
+}
 alias targa='task ghistory.annual'
 alias targm='task ghistory.monthly'
 alias tarha='task history.annual'
 alias tarhm='task history.monthly'
-alias tarl='task list'
+function tarl () {
+	task list $1 | bat -p
+}
+function tarll () {
+	task list limit:$1
+}
 alias tarl3='task list limit:30'
 alias tarld='task list due:today'
 alias tarldn='task list due.not:today'
-alias tarm='task minimal'
-alias tarn='task newest'
-alias taro='task oldest'
-alias tarv='task overdue'
+function tarm () {
+	task minimal $1 | bat -p
+}
+function tarn () {
+	task newest $1 | bat -p
+}
+function taro () {
+	task oldest $1 | bat -p
+}
+function tarv () {
+	task overdue $1 | bat -p
+}
 alias tarp='task projects'
 alias tarr='task recurring'
 alias tars='task summary'
 alias tart='task tags'
 
-
-function tarll () {
-	task list limit:$1
-}
-
 # +-----------+
 # | functions |
 # +-----------+
-
 function tafa () {
 	task $1 annotate $2
 }
