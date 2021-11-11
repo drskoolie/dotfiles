@@ -11,6 +11,7 @@ alias cat='batcat --paging=never'
 alias cdd='cd ~/.dotfiles/; ls'
 alias cddn='cd ~/.dotfiles/nvim/; ls'
 alias cddt='cd ~/.dotfiles/taskwarrior; ls -a'
+alias cdds='cd ~/.dotfiles/setup; ls'
 alias cddz='cd ~/.dotfiles/zsh; ls'
 alias cddza='cd ~/.dotfiles/zsh/alias; ls'
 
@@ -19,7 +20,6 @@ alias cdua='cd ~/Documents/university/ece650/gitlab/a2elhag/'
 
 alias cdh='cd ~/.help; ls'
 
-alias cds='cd ~/.dotfiles/setup; ls'
 
 # +-----+
 # | fzf |
