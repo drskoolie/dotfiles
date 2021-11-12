@@ -223,9 +223,12 @@ local mappings = {
 		name = "+language",
         c = {':w<CR>:FloatermSend g++ -Wall %:p:t -o %:p:t:r<CR>', 'compile'},
         t = {':FloatermSend ./%:p:t:r <mytest.txt <CR>', 'test'},
+		l = {':w<CR>:silent !pdflatex %:p:.<CR>', 'LaTeX'},
+		L = {':w<CR>:!pdflatex %:p:. <CR>', 'LaTeX no hide'},
         T = {':FloatermSend ./%:p:t:r <mytest2.txt <CR>', 'test'},
         r = {':FloatermSend ./%:p:t:r<CR>', 'run'},
 	},
+
 	i = {
 		name = "+ipython",
         D = {':FloatermSend pwd<CR>',      'pwd'},
