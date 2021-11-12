@@ -61,6 +61,7 @@ alias taphl='task project:Home.Laundry'
 
 alias tapn='task project:New'
 alias tapa='task project:App'
+alias tapal='task project:App.Latex'
 alias tapar='task project:App.Remind'
 alias tapat='task project:App.TaskWarrior'
 alias tapati='task project:App.TimeWarrior'
