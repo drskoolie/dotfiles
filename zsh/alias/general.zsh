@@ -2,7 +2,7 @@
 # | applications |
 # +--------------+
 alias bat='batcat'
-alias batza='batcat ~/.dotfiles/zsh/alias.zsh'
+alias batza='batcat ~/.dotfiles/zsh/alias/general.zsh'
 alias cat='batcat --paging=never'
 
 # +------------------+
@@ -15,11 +15,13 @@ alias cdds='cd ~/.dotfiles/setup; ls'
 alias cddz='cd ~/.dotfiles/zsh; ls'
 alias cddza='cd ~/.dotfiles/zsh/alias; ls'
 
-alias cdu='cd ~/Documents/university/ece650/'
-alias cdua='cd ~/Documents/university/ece650/gitlab/a2elhag/'
+alias cdu='cd ~/Documents/university/'
+alias cdu6='cd ~/Documents/university/ece650/'
+alias cdu63='cd ~/Documents/university/ece650/gitlab/a2elhag/a3/'
+alias cdu6a='cd ~/Documents/university/ece650/gitlab/a2elhag/'
+alias cdu7='cd ~/Documents/university/ece760/'
 
 alias cdh='cd ~/.help; ls'
-
 
 # +-----+
 # | fzf |

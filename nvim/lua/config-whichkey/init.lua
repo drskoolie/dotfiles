@@ -221,11 +221,12 @@ local mappings = {
 
 	l = {
 		name = "+language",
-        c = {':w<CR>:FloatermSend g++ -Wall %:p:t -o %:p:t:r<CR>', 'compile'},
-        t = {':FloatermSend ./%:p:t:r <mytest.txt <CR>', 'test'},
+        c = {':w<CR>:FloatermSend g++ -pthread -Wall %:p:t -o %:p:t:r<CR>', 'compile'},
 		l = {':w<CR>:silent !pdflatex %:p:.<CR>', 'LaTeX'},
 		L = {':w<CR>:!pdflatex %:p:. <CR>', 'LaTeX no hide'},
-        T = {':FloatermSend ./%:p:t:r <mytest2.txt <CR>', 'test'},
+        t = {':FloatermSend ./%:p:t:r < mytest.txt <CR>', 'test'},
+        T = {':FloatermSend ./rgen <mytest.txt | python3 ece650-a1.py <CR>', 'test'},
+        k = {':FloatermSend ./rgen <mytest.txt | python3 ece650-a1.py | ./ece650-a2 <CR>', 'test'},
         r = {':FloatermSend ./%:p:t:r<CR>', 'run'},
 	},
 
