@@ -6,7 +6,7 @@ require('themes')
 require('highlighted-yank')
 
 -- ==> Config
-require('config-lightspeed')
+require('config-easymotion')
 require('config-lualine')
 require('config-nvim-colorizer')  -- #FFBB00
 require('config-nvim-tree')

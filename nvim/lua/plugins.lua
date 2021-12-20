@@ -52,7 +52,7 @@ return require('packer').startup(function()
   }
 
   -- ==> Useful
-  use 'ggandor/lightspeed.nvim'
+  use 'easymotion/vim-easymotion'
   use 'psliwka/vim-smoothie'
 
   -- ==> WhichKey

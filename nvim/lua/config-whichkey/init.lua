@@ -101,7 +101,7 @@ wk.setup {
   key_labels = {
     -- override the label used to display some keys. It doesn't effect WK in any other way.
     -- For example:
-    -- ["<space>"] = "SPC",
+    ["<space>"] = "SPC",
     -- ["<cr>"] = "RET",
     -- ["<tab>"] = "TAB",
   },
@@ -148,12 +148,29 @@ local opts = {prefix = '<leader>'}
 local mappings = {
 
 	a = {':noh<CR>', 'noh'},
-	w = {':w<CR>', 'write'},
-	q = {':q<CR>', 'quit'},
 
-	-- LightSpeed
-	j = {'<Plug>Lightspeed_s', ''},
-	k = {'<Plug>Lightspeed_S', ''},
+	[" "] = {
+		name = "+easymotion",
+
+		
+		-- https://github.com/easymotion/vim-easymotion/blob/master/doc/easymotion.txt
+        b  = {'<Plug>(easymotion-b)',  'b'},
+        B  = {'<Plug>(easymotion-B)',  'B'},
+        e  = {'<Plug>(easymotion-e)',  'e'},
+        E  = {'<Plug>(easymotion-E)',  'E'},
+        f  = {'<Plug>(easymotion-f)',  'f'},
+        F  = {'<Plug>(easymotion-F)',  'F'},
+        j  = {'<Plug>(easymotion-j)',  'j'},
+        k  = {'<Plug>(easymotion-k)',  'k'},
+        n  = {'<Plug>(easymotion-n)',  'n'},
+        N  = {'<Plug>(easymotion-N)',  'N'},
+        s  = {'<Plug>(easymotion-s)',  's'},
+        t  = {'<Plug>(easymotion-t)',  't'},
+        T  = {'<Plug>(easymotion-T)',  'T'},
+        w  = {'<Plug>(easymotion-w)',  'w'},
+        W  = {'<Plug>(easymotion-W)',  'W'},
+
+	},
 
 	b = {
 		name = "+buffers",
@@ -222,7 +239,8 @@ local mappings = {
 	l = {
 		name = "+language",
         c = {':w<CR>:FloatermSend g++ -pthread -Wall %:p:t -o %:p:t:r<CR>', 'compile'},
-		l = {':w<CR>:silent !pdflatex %:p:.<CR>', 'LaTeX'},
+		b = {':w<CR>:silent !bibtex Report.aux<CR>', 'bibtex'},
+		l = {':w<CR>:silent !pdflatex %:p:. <CR>', 'LaTeX'},
 		L = {':w<CR>:!pdflatex %:p:. <CR>', 'LaTeX no hide'},
         t = {':FloatermSend ./%:p:t:r < mytest.txt <CR>', 'test'},
         T = {':FloatermSend ./rgen <mytest.txt | python3 ece650-a1.py <CR>', 'test'},
