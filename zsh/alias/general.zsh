@@ -43,6 +43,20 @@ alias nvimzai='nvim ~/.dotfiles/zsh/alias/init.zsh'
 alias nvimzag='nvim ~/.dotfiles/zsh/alias/general.zsh'
 alias nvimzat='nvim ~/.dotfiles/zsh/alias/taskwarrior.zsh'
 
+# +-------+
+# | nohup |
+# +-------+
+
+function no ()
+{
+	nohup $1 >/dev/null 2>&1 &
+}
+
+function noz ()
+{
+	nohup zathura $1 >/dev/null 2>&1 &
+}
+
 # +--------+
 # | source |
 # +--------+
@@ -51,6 +65,15 @@ alias sod='deactivate'
 alias soz='source ~/.dotfiles/zsh/.zshrc'
 alias sozai='source ~/.dotfiles/zsh/alias/init.zsh'
 alias sozat='source ~/.dotfiles/zsh/alias/taskwarrior.zsh'
+
+# +---------+
+# | pdfgrep |
+# +---------+
+
+function grepp () 
+{ 
+	pdfgrep -i -n  $1 ~/Documents/university/ece650/lecture/pdf/*.pdf
+}
 
 # +-------+
 # | trash |
