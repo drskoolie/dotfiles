@@ -277,7 +277,7 @@ local mappings = {
 		name = "+open",
         i  = {':new<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
         p  = {':new<CR>:e ~/.config/nvim/lua/plugins.lua<CR>',  'plugins'},
-        w  = {':new<CR>:e ~/.config/nvim/lua/config-whichkey/init.lua<CR>',  'whichkey'},
+        w  = {':new<CR>:e ~/.config/nvim/lua/config/whichkey/init.lua<CR>',  'whichkey'},
 	},
 
 	r = {
@@ -291,6 +291,9 @@ local mappings = {
 
         i  = {':PackerInstall<CR>',  'install'},
         I  = {':PackerClean<CR>',  'clean'},
+
+		u = {':UltiSnipsEdit<CR>', 'ultisnips'},
+		U = {':tabedit ~/.dotfiles/nvim/UltiSnips/all.snippets<CR>', 'snips-all'},
 
         l  = {':w<CR>:luafile %<CR>',  'source'},
 

@@ -1,5 +1,5 @@
 vim.cmd([[
-let g:UltiSnipsEditSplit="horizontal"
+let g:UltiSnipsEditSplit="vertical"
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
