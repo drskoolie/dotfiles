@@ -4,15 +4,17 @@ require('keymappings')
 require('settings')
 require('themes')
 require('highlighted-yank')
+require('python')
 
 -- ==> Config
-require('config-easymotion')
-require('config-lualine')
-require('config-nvim-colorizer')  -- #FFBB00
-require('config-nvim-tree')
-require('config-whichkey')
+require('config/easymotion')
+require('config/lualine')
+require('config/nvim-colorizer')  -- #FFBB00
+require('config/nvim-tree')
+require('config/ultisnips')
+require('config/whichkey')
 
 -- ==> LSP
-require('config-coq')
-require('config-lsp-pyright')
-require('config-lsp-ccls')
+require('config/coq')
+require('config/lsp-pyright')
+require('config/lsp-ccls')

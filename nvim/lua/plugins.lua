@@ -11,7 +11,10 @@ end
 return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-
+	
+  -- ==> Snippets
+  use 'SirVer/ultisnips'
+  use 'honza/vim-snippets'
 
   -- ==> Colors #FF0000
   use 'norcalli/nvim-colorizer.lua'
