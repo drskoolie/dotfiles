@@ -196,7 +196,7 @@ local mappings = {
 	},
 
 
-	d = {
+	c = {
 		name = "+cmd",
 
 		b = {
@@ -238,6 +238,33 @@ local mappings = {
 		},
 	},
 
+	d = {
+		name = "+debug",
+		a = {':FloatermSend a<CR>', 'args'},
+		b = {':FloatermSend b<CR>', 'break'},
+		c = {':FloatermSend c<CR>', 'continue'},
+		C = {':FloatermSend clear ', 'clear'},
+		d = {':FloatermSend d<CR>', 'down'},
+		h = {':FloatermSend h ', 'help'},
+		i = {':FloatermSend interact<CR>', 'interact'},
+		j = {':FloatermSend j ', 'jump'},
+		l = {':FloatermSend ll<CR>', 'longlist'},
+		L = {':FloatermSend l<CR>', 'list'},
+		n = {':FloatermSend n<CR>', 'next'},
+		p = {':FloatermSend pp ', 'pretty print'},
+		P = {':FloatermSend p<CR>', 'print'},
+		q = {':FloatermSend q<CR>', 'quit'},
+		r = {':FloatermSend return<CR>', 'return'},
+		R = {':FloatermSend retval<CR>', 'retval'},
+		s = {':FloatermSend s<CR>', 'step'},
+		S = {':FloatermSend sticky<CR>', 'sticky'},
+		t = {':FloatermSend tbreak ', 'tbreak'},
+		u = {':FloatermSend u<CR>', 'up'},
+		U = {':FloatermSend unt ', 'until'},
+		w = {':FloatermSend w<CR>', 'where'},
+		W = {':FloatermSend whatis<CR>', 'whatis'},
+	},
+
 
 	h = {
 		name = "+hw",
@@ -264,6 +291,7 @@ local mappings = {
 		name = "+ipython",
         D = {':FloatermSend pwd<CR>',      'pwd'},
         d = {':FloatermSend cd %:p:h<CR>', 'cd'},
+		e = {':FloatermSend exit<CR>', 'exit'},
 		f = {":w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'run file'},
         l = {':FloatermSend<CR>',          'send line'},
         m = {':MatlabCopy<CR>',           'yank matlab'},
@@ -275,10 +303,10 @@ local mappings = {
 
 	p = {
 		name = "+python",
-		o = {':call FloatermOpen()<CR>', 'open'},
 		f = {":w<CR>:execute ':FloatermSend python3 ' expand('%:p')<CR>", 'run file'},
 		F = {":w<CR>:FloatermSend python3 %:p ", 'run file'},
-
+		i = {":w<CR>:FloatermSend ipython -i --no-autoindent %:p<CR>", 'ipython'},
+		o = {':call FloatermOpen()<CR>', 'open'},
 	},
 
 	m = {

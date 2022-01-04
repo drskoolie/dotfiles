@@ -50,8 +50,23 @@ endsnippet
 
 snippet fori "for loop iterable" b
 for _ in range(${1:number}):
-	${2:pass}
+	${2:${VISUAL:pass}}
 ${3}
+endsnippet
+
+# +-----------+
+# | Importing |
+# +-----------+
+snippet iml "import log" bA
+import logging
+endsnippet
+
+snippet dbgi "import ipdb; ipdb.set_trace()" bA
+import ipdb; ipdb.set_trace()
+endsnippet
+
+snippet dbgp "import pdb; pdb.set_trace()" bA
+import pdb; pdb.set_trace()
 endsnippet
 
 # +---------+
@@ -62,9 +77,24 @@ logging.basicConfig(level=logging.${1|DEBUG,INFO,WARNING,ERROR,CRITICAL|})
 ${2}
 endsnippet
 
-snippet logg "logging" bA
+snippet logfg "logging" bA
 logging.${1|debug,info,warning,error,critical,exception|}(f"${2:info to log}")
 ${3}
+endsnippet
+
+snippet logfd "logging" bA
+logging.debug(f"${1:info to log}")
+${2}
+endsnippet
+
+snippet logg "logging" bA
+logging.${1|debug,info,warning,error,critical,exception|}(${2:info to log})
+${3}
+endsnippet
+
+snippet logd "logging" bA
+logging.debug(${1:info to log})
+${2}
 endsnippet
 
 ##########
