@@ -15,6 +15,6 @@ require('config/ultisnips')
 require('config/whichkey')
 
 -- ==> LSP
--- require('config/coq')
--- require('config/lsp-pyright')
--- require('config/lsp-ccls')
+require('config/coq')
+require('config/lsp-pyright')
+require('config/lsp-ccls')

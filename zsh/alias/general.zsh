@@ -2,7 +2,7 @@
 # | applications |
 # +--------------+
 alias bat='batcat'
-alias batza='batcat ~/.dotfiles/zsh/alias/general.zsh'
+alias batzag='batcat ~/.dotfiles/zsh/alias/general.zsh'
 alias cat='batcat --paging=never'
 
 # +------------------+

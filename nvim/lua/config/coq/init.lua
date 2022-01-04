@@ -6,7 +6,7 @@ vim.g.coq_settings = {
   ['keymap.jump_to_mark'] = '',
   ['keymap.manual_complete'] = '<c-space>',
   ['keymap.pre_select'] = false,
-  ['keymap.recommended'] = true,
+  ['keymap.recommended'] = false,
   ['keymap.repeat'] = '',
   ['limits.completion_auto_timeout'] = 0.088,
   ['limits.completion_manual_timeout'] = 0.66,
@@ -29,14 +29,14 @@ vim.g.coq_settings = {
 }
 
 
---[[
 vim.cmd([[
+
 ino <silent><expr> <Esc>   pumvisible() ? "\<C-e><Esc>" : "\<Esc>"
 ino <silent><expr> <C-c>   pumvisible() ? "\<C-e><C-c>" : "\<C-c>"
 ino <silent><expr> <BS>    pumvisible() ? "\<C-e><BS>"  : "\<BS>"
 ino <silent><expr> <CR>    pumvisible() ? (complete_info().selected == -1 ? "\<C-e><CR>" : "\<C-y>") : "\<CR>"
 ino <silent><expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 ino <silent><expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<BS>"
---]]
+]])
 
 

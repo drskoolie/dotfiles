@@ -44,6 +44,17 @@ function! IPythonOpen()
 endfunction
 ]])
 
+
+vim.cmd([[ 
+function! FloatermOpen()
+	FloatermNew --wintype=vsplit --position=right --width=0.5
+	normal h
+	normal 
+	FloatermSend (cd %:p:h ; clear)
+	call feedkeys("\<Esc>")
+endfunction
+]])
+
 vim.cmd([[ 
 function! TerminalRight()
 	FloatermNew --wintype=vsplit --position=right --width=0.5
@@ -253,12 +264,21 @@ local mappings = {
 		name = "+ipython",
         D = {':FloatermSend pwd<CR>',      'pwd'},
         d = {':FloatermSend cd %:p:h<CR>', 'cd'},
+		f = {":w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'run file'},
         l = {':FloatermSend<CR>',          'send line'},
         m = {':MatlabCopy<CR>',           'yank matlab'},
         o  = {':call IPythonOpen()<CR>',  'open'},
         p = {':FloatermSend paste<CR>',    'paste'},
         r = {':FloatermSend reset -f<CR>', 'reset'},
         w = {':FloatermSend whos<CR>',     'whos'},
+	},
+
+	p = {
+		name = "+python",
+		o = {':call FloatermOpen()<CR>', 'open'},
+		f = {":w<CR>:execute ':FloatermSend python3 ' expand('%:p')<CR>", 'run file'},
+		F = {":w<CR>:FloatermSend python3 %:p ", 'run file'},
+
 	},
 
 	m = {
