@@ -92,13 +92,15 @@ endsnippet
 
 snippet enum "Enumerate" b
 \begin{enumerate}
-	\item $0
+	\item
+		$0
 \end{enumerate}
 endsnippet
 
 snippet item "Itemize" b
 \begin{itemize}
-	\item $0
+	\item 
+		$0
 \end{itemize}
 endsnippet
 
@@ -126,11 +128,14 @@ snippet cha "Chapter" b
 $0
 endsnippet
 
-snippet sec "Section"
-\section{${1:${VISUAL:section name}}}%
-\label{sec:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+# snippet sec "Section"
+# \section{${1:${VISUAL:section name}}}%
+# \label{sec:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+# $0
+# endsnippet
 
-$0
+snippet sec "\section" b
+\section{${1:${VISUAL:section name}}}
 endsnippet
 
 snippet sec* "Section"
@@ -140,12 +145,9 @@ snippet sec* "Section"
 ${0}
 endsnippet
 
-
+#\label{sub:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
 snippet sub "Subsection"
-\subsection{${1:${VISUAL:subsection name}}}%
-\label{sub:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
-
-$0
+\subsection{${1:${VISUAL:subsection name}}}
 endsnippet
 
 snippet sub* "Subsection"
@@ -242,7 +244,7 @@ endsnippet
 
 # Bold text
 snippet bf "Bold"
-\textbf{$1} $0
+\textbf{$1${VISUAL}} $0
 endsnippet
 
 # Italic text
@@ -255,4 +257,36 @@ snippet und "Underline"
 \underline{$1} $0
 endsnippet
 
+# blfootline
+snippet blfoot "footnote without reference" bA
+\blfootnote{Citations: \textbf{$1}  \hfill Journal: \textbf{$2} \hfill Date: \textbf{$3}}
+$4
+endsnippet
+
+# New Slide
+snippet frame "frame" b
+\begin{frame}[t]
+	\frametitle{(Paper \arabic{subsection}) \subsecname}
+
+	\myheading{$2}
+	$3
+
+\end{frame}
+$4
+endsnippet
+
+# Beginning
+snippet beg "begin{}..end{}" b
+\begin{$1}
+	$2
+\end{$1}
+$3
+endsnippet
+
+snippet block "\begin{block}..." b
+\begin{block}{${1:block name}}
+	$2
+\end{block}
+$3
+endsnippet
 # vim:ft=snippets:
