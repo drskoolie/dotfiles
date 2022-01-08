@@ -12,7 +12,11 @@ require('config/lualine')
 require('config/nvim-colorizer')  -- #FFBB00
 require('config/nvim-tree')
 require('config/ultisnips')
-require('config/whichkey')
+
+-- ==> WhichKey
+vim.cmd('source ~/.dotfiles/nvim/lua/config/whichkey/function.vim') 
+require('config/whichkey/config')
+require('config/whichkey/keys')
 
 -- ==> LSP
 require('config/coq')
