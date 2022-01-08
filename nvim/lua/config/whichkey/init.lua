@@ -21,19 +21,6 @@ vim.opt.timeoutlen = 0
 -- Loading WhichKey
 local wk = require("which-key")
 
-
---[[
-To do:
-Add yank, delete, and visual select functions
-toggle nowrapscan (find a better solution)
-Create a readme + github
-replicate it in a projects folder
-make a Reddit account and spread the gospel
-==> Learn how to map it to y, d, and v
-Use the <s> key for everything
---]]
-
-
 vim.cmd([[ 
 function! IPythonOpen()
 	FloatermNew --wintype=vsplit --position=right --width=0.5
@@ -364,8 +351,4 @@ local mappings = {
 
 }
 
-
 wk.register(mappings, opts)
--- print(vim.inspect(mappings))
-
--- How to source lua file
