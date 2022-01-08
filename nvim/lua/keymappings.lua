@@ -1,5 +1,5 @@
 -- General Mappings
-vim.api.nvim_set_keymap('n', '<C-z>', '<NOP>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', '<C-z>', '<NOP>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'ZZ', '<NOP>', { noremap = true, silent = true })
 
 -- Terminal

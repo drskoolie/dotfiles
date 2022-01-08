@@ -162,9 +162,9 @@ wk_mappings = {
 
 	o = {
 		name = "+open",
-        i  = {':new<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
-        p  = {':new<CR>:e ~/.config/nvim/lua/plugins.lua<CR>',  'plugins'},
-        w  = {':new<CR>:e ~/.config/nvim/lua/config/whichkey/init.lua<CR>',  'whichkey'},
+        i  = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
+        p  = {':tabnew<CR>:e ~/.config/nvim/lua/plugins.lua<CR>',  'plugins'},
+        w  = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
 	},
 
 	r = {
