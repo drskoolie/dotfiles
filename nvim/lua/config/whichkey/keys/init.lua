@@ -115,6 +115,7 @@ wk_mappings = {
 
 	l = {
 		name = "+language",
+		a = {':w<CR>:FloatermSend lua %:p<CR>', 'lua'},
         c = {':w<CR>:FloatermSend g++ -pthread -Wall %:p:t -o %:p:t:r<CR>', 'compile'},
 		b = {':w<CR>:silent !bibtex Report.aux<CR>', 'bibtex'},
 		B = {':w<CR>:silent !pdflatex %:p:. <CR>:silent !bibtex Report.aux<CR>:silent !pdflatex %:p:. <CR>:silent !pdflatex %:p:. <CR>', 'bibtex full'},
