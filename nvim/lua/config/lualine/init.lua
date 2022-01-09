@@ -13,8 +13,8 @@ require'lualine'.setup {
                   {'diagnostics', sources={'nvim_lsp', 'coc'}}},
     lualine_c = {'filename'},
     lualine_x = {'encoding', 'fileformat', 'filetype'},
-    lualine_y = {'progress'},
-    lualine_z = {'location'}
+    lualine_y = {'%L'},
+    lualine_z = {'location', 'progress'}
   },
   inactive_sections = {
     lualine_a = {},
@@ -27,3 +27,4 @@ require'lualine'.setup {
   tabline = {},
   extensions = {}
 }
+
