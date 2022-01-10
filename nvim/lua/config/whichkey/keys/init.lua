@@ -132,12 +132,17 @@ wk_mappings = {
         D = {':FloatermSend pwd<CR>',      'pwd'},
         d = {':FloatermSend cd %:p:h<CR>', 'cd'},
 		e = {':FloatermSend exit<CR>', 'exit'},
-		f = {":w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'run file'},
+		f = {":w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'file'},
+		F = {":w<CR>:FloatermSend ipython -i --no-autoindent %:p<CR>", 'File'},
+		h = {"Ihelp(<ESC>A)<ESC>:FloatermSend<CR>$x05x", 'help'},
         l = {':FloatermSend<CR>',          'send line'},
         m = {':MatlabCopy<CR>',           'yank matlab'},
         o  = {':call IPythonOpen()<CR>',  'open'},
         p = {':FloatermSend paste<CR>',    'paste'},
         r = {':FloatermSend reset -f<CR>', 'reset'},
+        R = {":FloatermSend clear<CR>:FloatermSend reset -f<CR>:w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'Reset'},
+		v = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>ddk0', 'variable'},
+		V = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>dd0', 'variable'},
         w = {':FloatermSend whos<CR>',     'whos'},
 	},
 
@@ -145,14 +150,11 @@ wk_mappings = {
 		name = "+python",
 		f = {":w<CR>:execute ':FloatermSend python3 ' expand('%:p')<CR>", 'run file'},
 		F = {":w<CR>:FloatermSend python3 %:p ", 'run file'},
-		i = {":w<CR>:FloatermSend ipython -i --no-autoindent %:p<CR>", 'ipython'},
 		o = {':call FloatermOpen()<CR>', 'open'},
 	},
 
 	m = {
 		name = "+misc", -- #00BB00
-
-
         c  = {':NvimTreeClose<CR>',  'close'},
         f  = {':NvimTreeFindFile<CR>',  'find file'},
         o  = {':NvimTreeOpen<CR>',  'open'},
