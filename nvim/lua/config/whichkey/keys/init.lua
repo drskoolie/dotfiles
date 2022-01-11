@@ -140,7 +140,7 @@ wk_mappings = {
         o  = {':call IPythonOpen()<CR>',  'open'},
         p = {':FloatermSend paste<CR>',    'paste'},
         r = {':FloatermSend reset -f<CR>', 'reset'},
-        R = {":FloatermSend clear<CR>:FloatermSend reset -f<CR>:w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'Reset'},
+        R = {":FloatermSend reset -f<CR>:FloatermSend clear<CR>:w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'Reset'},
 		v = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>ddk0', 'variable'},
 		V = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>dd0', 'variable'},
         w = {':FloatermSend whos<CR>',     'whos'},
@@ -183,7 +183,7 @@ wk_mappings = {
         I  = {':PackerClean<CR>',  'clean'},
 
 		u = {':UltiSnipsEdit<CR>', 'ultisnips'},
-		U = {':tabedit ~/.dotfiles/nvim/UltiSnips/all.snippets<CR>', 'snips-all'},
+		U = {':tabedit ~/.dotfiles/nvim/lua/config/ultisnips/snips/all.snippets<CR>', 'snips-all'},
 
         l  = {':w<CR>:luafile %<CR>',  'source'},
 

@@ -110,4 +110,15 @@ snippet uuid "Random UUID" w
 `!p if not snip.c: import uuid; snip.rv = str(uuid.uuid4())`
 endsnippet
 
-# vim:ft=snippets:
+
+snippet b( "brackets ()" 
+${1:print}(${2:${VISUAL}})${3}
+endsnippet
+
+snippet b[ "brackets []" 
+${1}[${2:${VISUAL}}]${3}
+endsnippet
+
+snippet b{ "brackets {}" 
+${1}{${2:${VISUAL}}}${3}
+endsnippet

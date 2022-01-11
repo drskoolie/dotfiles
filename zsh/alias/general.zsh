@@ -25,6 +25,11 @@ alias cdu7='cd ~/Documents/university/ece760/'
 
 alias cdh='cd ~/.help; ls'
 
+alias cdm='cd /media/pyro/ST31000340NS/'
+alias cdmm='cd /media/pyro/ST31000340NS/Media/'
+alias cdmmm='cd /media/pyro/ST31000340NS/Media/music'
+alias cdmma='cd /media/pyro/ST31000340NS/Media/Audiobooks/'
+
 # +-----+
 # | fzf |
 # +-----+

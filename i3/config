@@ -107,19 +107,16 @@ focus_follows_mouse no
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
 
 # switch to workspace
 bindsym $mod+6 workspace number $ws6
 bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
 
 # move focused container to workspace
 bindsym $mod+Shift+6 move container to workspace number $ws6
 bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9
 
 bindsym $mod+t mode "ws_move"
 
@@ -343,7 +340,44 @@ mode "cws4" {
 	bindsym Escape mode "default"
 }
 
-# ---------------------- Part 7: Workspaces Extra 0 ----------------------
+
+# ---------------------- Part 7: Workspaces Media 9 ----------------------
+bindsym $mod+9 mode "ws9"
+bindsym $mod+Shift+9 mode "cws9"
+
+set $ws9 "9:audiobook"
+set $ws91 "91:music"
+set $ws92 "92:tv"
+set $ws93 "93:youtube"
+set $ws94 "94"
+set $ws95 "95"
+set $ws96 "96"
+set $ws97 "97"
+set $ws98 "98"
+set $ws99 "99"
+
+mode "ws9" {
+
+	bindsym a workspace number $ws9; mode "default"
+	bindsym m workspace number $ws91; mode "default"
+	bindsym t workspace number $ws92; mode "default"
+	bindsym y workspace number $ws93; mode "default"
+
+	bindsym Escape mode "default"
+}
+
+
+mode "cws9" {
+
+	bindsym a move container to workspace number $ws9; mode "default"
+	bindsym m move container to workspace number $ws91; mode "default"
+	bindsym t move container to workspace number $ws92; mode "default"
+	bindsym y move container to workspace number $ws93; mode "default"
+
+	bindsym Escape mode "default"
+}
+
+# ---------------------- Part 8: Workspaces Extra 0 ----------------------
 bindsym $mod+0 mode "ws0"
 bindsym $mod+Shift+0 mode "cws0"
 
@@ -351,8 +385,8 @@ set $ws101 "101: connect"
 set $ws102 "102: gmail"   
 set $ws103 "103: junk"    
 set $ws104 "104: learn"   
-set $ws105 "105: media"   
-set $ws106 "106: piazza"  
+set $ws105 "105: misc"   
+set $ws106 "106: media 2"  
 set $ws107 "107: torrent"    
 set $ws108 "108: vpn"     
 set $ws109 "109: whatsapp"
@@ -367,7 +401,7 @@ mode "ws0" {
  	bindsym j workspace number $ws103; mode "default"
 	bindsym l workspace number $ws104; mode "default"
  	bindsym m workspace number $ws105; mode "default"
-	bindsym p workspace number $ws106; mode "default"
+	bindsym Shift+m workspace number $ws106; mode "default"
  	bindsym t workspace number $ws107; mode "default"
 	bindsym v workspace number $ws108; mode "default"
 	bindsym w workspace number $ws109; mode "default"
@@ -385,7 +419,7 @@ mode "cws0" {
  	bindsym j move container to workspace number $ws103; mode "default"
 	bindsym l move container to workspace number $ws104; mode "default"
  	bindsym m move container to workspace number $ws105; mode "default"
-	bindsym p move container to workspace number $ws106; mode "default"
+	bindsym Shift+m move container to workspace number $ws106; mode "default"
  	bindsym t move container to workspace number $ws107; mode "default"
 	bindsym v move container to workspace number $ws108; mode "default"
 	bindsym w move container to workspace number $ws109; mode "default"
