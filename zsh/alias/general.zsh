@@ -40,6 +40,8 @@ alias fzfp="fzf --preview 'batcat --style=numbers --color=always --style=numbers
 # +--------+
 # | neovim |
 # +--------+
+alias nvimg='nvim .gitignore'
+
 alias nvimi='nvim ~/.dotfiles/i3/config'
 
 alias nvimt='nvim ~/.dotfiles/taskwarrior/.taskrc'
