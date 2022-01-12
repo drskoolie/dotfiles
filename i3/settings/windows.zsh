@@ -47,3 +47,18 @@ bindsym $mod+Shift+a focus child
 # settings
 focus_follows_mouse no
 
+# move
+bindsym $mod+t mode "ws_move"
+
+mode "ws_move" {
+
+	# move entire workspace
+	bindsym h move workspace to left
+	bindsym l move workspace to right
+
+	bindsym k workspace next_on_output
+	bindsym j workspace prev_on_output
+
+	bindsym Escape mode "default"
+}
+
