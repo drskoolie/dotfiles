@@ -1,4 +1,10 @@
-# ---------------------- Part 0: Notes ---------------------- 
+#  __^__       __^__
+# ( ___ )-----( ___ )
+#  | / |       | \ |
+#  | / | Notes | \ |
+#  |___|       |___|
+# (_____)-----(_____)
+# 
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 
@@ -8,22 +14,13 @@
 # bindsym $mod+Up focus up
 # bindsym $mod+Right focus right
 
-# ---------------------- Part 1: Initial ---------------------- 
-set $mod Mod4
+#  __^__         __^__
+# ( ___ )-------( ___ )
+#  | / |         | \ |
+#  | / | Startup | \ |
+#  |___|         |___|
+# (_____)-------(_____)
 
-# Font for window titles. Will also be used by the bar unless a different font
-font pango:DejaVu Sans Mono 9
-# font pango:monospace 8
-# font xft:URWGothic-Book 10
-
-# reload the configuration file
-bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
-# ---------------------- Part 2: Startup ---------------------- 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -32,7 +29,14 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# ---------------------- Part 3: Borders ---------------------- 
+#  __^__         __^__
+# ( ___ )-------( ___ )
+#  | / |         | \ |
+#  | / | borders | \ |
+#  |___|         |___|
+# (_____)-------(_____)
+
+
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 2
 default_floating_border normal
@@ -47,8 +51,12 @@ bindsym $mod+Shift+n border normal
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod 
 
+# +---------+
+# |         |
+# | Windows |
+# |         |
+# +---------+
 
-# ---------------------- Part 4: Windows ---------------------- 
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -61,13 +69,10 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# ---------------------- Part 4: Kill Windows ---------------------- 
 # kill focused window
 bindsym $mod+q kill
 
-# ---------------------- Part 5: Layout/Toggle ---------------------- 
 # change container layout (stacked, tabbed, toggle split)
-# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -83,7 +88,6 @@ bindsym $mod+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# ---------------------- Part 5: Focus ---------------------- 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
@@ -96,42 +100,11 @@ bindsym $mod+Shift+a focus child
 # settings
 focus_follows_mouse no
 
-#     __^__            __^__
-#    ( ___ )----------( ___ )
-#     | / |            | \ |
-#     | / | workspaces | \ |
-#     |___|            |___|
-#    (_____)----------(_____)
-
-# ---------------------- Part 6: Workspaces ---------------------- 
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-
-# switch to workspace
-bindsym $mod+6 workspace number $ws6
-bindsym $mod+7 workspace number $ws7
-bindsym $mod+8 workspace number $ws8
-
-# move focused container to workspace
-bindsym $mod+Shift+6 move container to workspace number $ws6
-bindsym $mod+Shift+7 move container to workspace number $ws7
-bindsym $mod+Shift+8 move container to workspace number $ws8
-
-bindsym $mod+t mode "ws_move"
-
-mode "ws_move" {
-
-	# move entire workspace
-	bindsym h move workspace to left
-	bindsym l move workspace to right
-
-	bindsym k workspace next_on_output
-	bindsym j workspace prev_on_output
-
-	bindsym Escape mode "default"
-}
-
+# +------------+
+# |            |
+# | Workspaces |
+# |            |
+# +------------+
 
 # ---------------------- Part 7: Workspaces Extra 1 ----------------------
 bindsym $mod+1 mode "ws1"; workspace number $ws1
@@ -183,7 +156,11 @@ mode "cws1" {
 
 	bindsym Escape mode "default"
 }
-
+# +------------+
+# |            |
+# | Workspaces |
+# |            |
+# +------------+
 
 # ---------------------- Part 8: Workspaces Extra 2 ----------------------
 bindsym $mod+2 mode "ws2"; workspace number $ws2
@@ -236,7 +213,11 @@ mode "cws2" {
 	bindsym Escape mode "default"
 }
 
-
+# +------------+
+# |            |
+# | Workspaces |
+# |            |
+# +------------+
 
 # ---------------------- Part 8: Workspaces Extra 3 ----------------------
 bindsym $mod+3 mode "ws3"; workspace number $ws3
@@ -288,6 +269,12 @@ mode "cws3" {
 
 	bindsym Escape mode "default"
 }
+
+# +------------+
+# |            |
+# | Workspaces |
+# |            |
+# +------------+
 
 # ---------------------- Part 8: Workspaces Extra 4 ----------------------
 bindsym $mod+4 mode "ws4"; workspace number $ws4
@@ -341,7 +328,7 @@ mode "cws4" {
 }
 
 
-# ---------------------- Part 7: Workspaces Media 9 ----------------------
+# ---------------------- Workspaces Media 9 ----------------------
 bindsym $mod+9 mode "ws9"
 bindsym $mod+Shift+9 mode "cws9"
 
@@ -377,7 +364,7 @@ mode "cws9" {
 	bindsym Escape mode "default"
 }
 
-# ---------------------- Part 8: Workspaces Extra 0 ----------------------
+# ----------------------  Workspaces Extra 0 ----------------------
 bindsym $mod+0 mode "ws0"
 bindsym $mod+Shift+0 mode "cws0"
 
@@ -428,12 +415,75 @@ mode "cws0" {
 	bindsym Escape mode "default"
 }
  
+# ---------------------- Workspaces Extra ---------------------- 
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+
+# switch to workspace
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+
+# move focused container to workspace
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+
+# ---------------------- Part 1: Initial ---------------------- 
+set $mod Mod4
+
+# Font for window titles. Will also be used by the bar unless a different font
+font pango:DejaVu Sans Mono 9
+# font pango:monospace 8
+# font xft:URWGothic-Book 10
+
+bindsym $mod+Shift+c mode "configuration"
+
+mode "configuration" {
+
+	bindsym c exec cat \
+		~/.dotfiles/i3/settings/notes.zsh \
+		~/.dotfiles/i3/settings/startup.zsh \
+		~/.dotfiles/i3/settings/borders.zsh \
+		~/.dotfiles/i3/settings/windows.zsh \
+		~/.dotfiles/i3/settings/workspace_1.zsh \
+		~/.dotfiles/i3/settings/workspace_2.zsh \
+		~/.dotfiles/i3/settings/workspace_3.zsh \
+		~/.dotfiles/i3/settings/workspace_4.zsh \
+		~/.dotfiles/i3/settings/workspace_9.zsh \
+		~/.dotfiles/i3/settings/workspace_10.zsh \
+		~/.dotfiles/i3/settings/workspace_unused.zsh \
+		~/.dotfiles/i3/settings/full.zsh \
+		> ~/.dotfiles/i3/config \
+		, reload
+	
+	bindsym d reload
+	bindsym r restart
+	bindsym e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+	bindsym Escape mode "default"
+}
 #  __^__       __^__
 # ( ___ )-----( ___ )
 #  | / |       | \ |
 #  | / | Audio | \ |
 #  |___|       |___|
 # (_____)-----(_____)
+
+bindsym $mod+t mode "ws_move"
+
+mode "ws_move" {
+
+	# move entire workspace
+	bindsym h move workspace to left
+	bindsym l move workspace to right
+
+	bindsym k workspace next_on_output
+	bindsym j workspace prev_on_output
+
+	bindsym Escape mode "default"
+}
 
 
 # ---------------------- Part 7: PulseAudio ----------------------

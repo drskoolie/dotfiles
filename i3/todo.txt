@@ -1,2 +1,0 @@
-Write a python code that gets rid of all the boiler plate code
-and organzes this mess

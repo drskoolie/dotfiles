@@ -21,10 +21,10 @@ keymap('i', '<C-l>', '<Esc><C-w>l', opts)
 keymap('n', '<Enter>', 'o<Esc>', opts)
 
 -- Resize
-keymap('n', "<S-k>", ":resize +2<CR>", opts)
-keymap('n', "<S-j>", ":resize -2<CR>", opts)
-keymap('n', "<S-l>", ":vertical resize +2<CR>", opts)
-keymap('n', "<S-h>", ":vertical resize -2<CR>", opts)
+-- keymap('n', "<S-k>", ":resize +2<CR>", opts)
+-- keymap('n', "<S-j>", ":resize -2<CR>", opts)
+-- keymap('n', "<S-l>", ":vertical resize +2<CR>", opts)
+-- keymap('n', "<S-h>", ":vertical resize -2<CR>", opts)
 
 -- Visual --
 -- Move Text
