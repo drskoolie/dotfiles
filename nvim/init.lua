@@ -1,5 +1,4 @@
--- ==> Misc
-require('plugins')
+-- ==> Misc require('plugins')
 require('keymappings')
 require('settings')
 require('themes')

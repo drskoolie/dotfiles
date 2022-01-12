@@ -470,16 +470,21 @@ bindsym $mod+c mode "playerctl"
 
 mode "playerctl" {
 
-	bindsym t exec --no-startup-id playerctl play-pause
-	bindsym s exec --no-startup-id playerctl stop
+	bindsym t exec --no-startup-id playerctl -p audacious play-pause
+	bindsym s exec --no-startup-id playerctl -p audacious stop
 
-	bindsym p exec --no-startup-id playerctl previous
-	bindsym n exec --no-startup-id playerctl next
+	bindsym p exec --no-startup-id playerctl -p audacious previous
+	bindsym n exec --no-startup-id playerctl -p audacious next
 
-	bindsym h exec --no-startup-id playerctl position 5-
-	bindsym l exec --no-startup-id playerctl position 5+
+	bindsym h exec --no-startup-id playerctl -p audacious position 5-
+	bindsym l exec --no-startup-id playerctl -p audacious position 5+
 
-	bindsym a exec --no-startup-id playerctl position 0; mode "default"
+	bindsym 0 exec --no-startup-id playerctl -p audacious position 0
+	bindsym 9 exec --no-startup-id playerctl -p audacious position 100+
+	bindsym Shift+H exec --no-startup-id playerctl -p audacious position 20-
+	bindsym Shift+L exec --no-startup-id playerctl -p audacious position 20+
+
+	bindsym a exec --no-startup-id playerctl -p audacious position 0; mode "default"
 
 	bindsym Escape mode "default"
 
@@ -516,8 +521,6 @@ mode "open" {
         bindsym q exec qutebrowser; mode "default"
         bindsym v exec vivaldi-stable; mode "default"
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
         bindsym Escape mode "default"
 }
 
