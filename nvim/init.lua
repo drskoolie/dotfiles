@@ -1,9 +1,9 @@
 -- ==> Misc require('plugins')
-require('keymappings')
-require('settings')
-require('themes')
-require('highlighted-yank')
-require('python')
+require('core/keymappings')
+require('core/settings')
+require('core/themes')
+require('core/highlighted-yank')
+require('core/python')
 
 -- ==> Config
 require('config/easymotion')
