@@ -105,32 +105,19 @@ wk_mappings = {
 	},
 
 
-	h = {
-		name = "+hw",
-		c = {':FloatermSend c++ ece650-a2.cpp -std=c++11 -o ece650-a2<CR>', 'compile'},
-		t = {':FloatermSend clang-tidy ece650-a2.cpp -- -std=c++11<CR>', 'tidy'},
-		r = {':FloatermSend ./ece650-a2<CR>', 'run'},
-		R = {':FloatermSend ./ece650-a2 ', 'run_'},
-	},
-
 	l = {
 		name = "+language",
 		a = {':w<CR>:FloatermSend lua %:p<CR>', 'lua'},
-        c = {':w<CR>:FloatermSend g++ -pthread -Wall %:p:t -o %:p:t:r<CR>', 'compile'},
 		b = {':w<CR>:silent !bibtex Report.aux<CR>', 'bibtex'},
 		B = {':w<CR>:silent !pdflatex %:p:. <CR>:silent !bibtex Report.aux<CR>:silent !pdflatex %:p:. <CR>:silent !pdflatex %:p:. <CR>', 'bibtex full'},
 		l = {':w<CR>:silent !pdflatex %:p:. <CR>', 'LaTeX'},
 		L = {':w<CR>:!pdflatex %:p:. <CR>', 'LaTeX no hide'},
-        t = {':FloatermSend ./%:p:t:r < mytest.txt <CR>', 'test'},
-        T = {':FloatermSend ./rgen <mytest.txt | python3 ece650-a1.py <CR>', 'test'},
-        k = {':FloatermSend ./rgen <mytest.txt | python3 ece650-a1.py | ./ece650-a2 <CR>', 'test'},
-        r = {':FloatermSend ./%:p:t:r<CR>', 'run'},
 	},
 
 	i = {
 		name = "+ipython",
-        D = {':FloatermSend pwd<CR>',      'pwd'},
         d = {':FloatermSend cd %:p:h<CR>', 'cd'},
+        D = {':FloatermSend pwd<CR>',      'pwd'},
 		e = {':FloatermSend exit<CR>', 'exit'},
 		f = {":w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'file'},
 		F = {":w<CR>:FloatermSend ipython -i --no-autoindent %:p<CR>", 'File'},
@@ -150,7 +137,6 @@ wk_mappings = {
 		name = "+python",
 		f = {":w<CR>:execute ':FloatermSend python3 ' expand('%:p')<CR>", 'run file'},
 		F = {":w<CR>:FloatermSend python3 %:p ", 'run file'},
-		o = {':call FloatermOpen()<CR>', 'open'},
 	},
 
 	m = {
@@ -166,7 +152,7 @@ wk_mappings = {
 	o = {
 		name = "+open",
         i  = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
-        p  = {':tabnew<CR>:e ~/.config/nvim/lua/plugins.lua<CR>',  'plugins'},
+        p  = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
         w  = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
 	},
 
@@ -197,6 +183,7 @@ wk_mappings = {
         c  = {':FloatermSend clear<CR>',  'clear'},
         l  = {':call TerminalRight()<CR>',  'right'},
         s  = {':FloatermSend ',  'send'},
+		o  = {':call FloatermOpen()<CR>', 'open'},
         p  = {':FloatermPrev<CR>',  'prev'},
         n  = {':FloatermNext<CR>',  'next'},
         k  = {':FloatermKill<CR>',  'kill'},
