@@ -14,3 +14,14 @@
 # bindsym $mod+Up focus up
 # bindsym $mod+Right focus right
 
+# ---------------------- Part 7: PulseAudio ----------------------
+
+# bindsym 0 exec --no-startup-id ~/bin/sound_change.sh 0
+# bindsym 1 exec --no-startup-id ~/bin/sound_change.sh 1
+# bindsym 2 exec --no-startup-id ~/bin/sound_change.sh 2
+
+# bindsym shift+0 exec --no-startup-id pacmd set-default-source 0
+# bindsym shift+1 exec --no-startup-id pacmd set-default-source 1
+
+# pactl list short sinks
+

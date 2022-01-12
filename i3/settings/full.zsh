@@ -1,19 +1,22 @@
 # ---------------------- Part 1: Initial ---------------------- 
 set $mod Mod4
 
+set $refresh_i3status killall -SIGUSR1 i3status
+
 # Font for window titles. Will also be used by the bar unless a different font
 font pango:DejaVu Sans Mono 9
 # font pango:monospace 8
 # font xft:URWGothic-Book 10
 
-bindsym $mod+Shift+c mode "configuration"
+bindsym $mod+c mode "configuration"
 
 mode "configuration" {
 
 	bindsym c exec cat \
-		~/.dotfiles/i3/settings/notes.zsh \
 		~/.dotfiles/i3/settings/startup.zsh \
+		~/.dotfiles/i3/settings/applications.zsh \
 		~/.dotfiles/i3/settings/borders.zsh \
+		~/.dotfiles/i3/settings/media.zsh \
 		~/.dotfiles/i3/settings/windows.zsh \
 		~/.dotfiles/i3/settings/workspace_1.zsh \
 		~/.dotfiles/i3/settings/workspace_2.zsh \
@@ -23,6 +26,7 @@ mode "configuration" {
 		~/.dotfiles/i3/settings/workspace_10.zsh \
 		~/.dotfiles/i3/settings/workspace_unused.zsh \
 		~/.dotfiles/i3/settings/full.zsh \
+		~/.dotfiles/i3/settings/notes.zsh \
 		> ~/.dotfiles/i3/config \
 		, reload
 	
@@ -32,12 +36,6 @@ mode "configuration" {
 
 	bindsym Escape mode "default"
 }
-#  __^__       __^__
-# ( ___ )-----( ___ )
-#  | / |       | \ |
-#  | / | Audio | \ |
-#  |___|       |___|
-# (_____)-----(_____)
 
 bindsym $mod+t mode "ws_move"
 
@@ -53,61 +51,6 @@ mode "ws_move" {
 	bindsym Escape mode "default"
 }
 
-
-# ---------------------- Part 7: PulseAudio ----------------------
-set $refresh_i3status killall -SIGUSR1 i3status
-
-bindsym $mod+m mode "media"
-
-mode "media" {
-	bindsym Shift+k exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-	bindsym Shift+j exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-	bindsym k exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +3% && $refresh_i3status
-	bindsym j exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -3% && $refresh_i3status
-	bindsym m exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i2status
-	bindsym r exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-
-	bindsym 0 exec --no-startup-id ~/bin/sound_change.sh 0
-	bindsym 1 exec --no-startup-id ~/bin/sound_change.sh 1
-	bindsym 2 exec --no-startup-id ~/bin/sound_change.sh 2
-
-	bindsym shift+0 exec --no-startup-id pacmd set-default-source 0
-	bindsym shift+1 exec --no-startup-id pacmd set-default-source 1
-
-	bindsym p exec pavucontrol; mode "default"
-
-	bindsym Escape mode "default"
-
-}
-	
-# pactl list short sinks
-
-
-# ---------------------- Part 8: Playerctl ----------------------
-bindsym $mod+c mode "playerctl"
-
-mode "playerctl" {
-
-	bindsym t exec --no-startup-id playerctl -p audacious play-pause
-	bindsym s exec --no-startup-id playerctl -p audacious stop
-
-	bindsym p exec --no-startup-id playerctl -p audacious previous
-	bindsym n exec --no-startup-id playerctl -p audacious next
-
-	bindsym h exec --no-startup-id playerctl -p audacious position 5-
-	bindsym l exec --no-startup-id playerctl -p audacious position 5+
-
-	bindsym 0 exec --no-startup-id playerctl -p audacious position 0
-	bindsym 9 exec --no-startup-id playerctl -p audacious position 100+
-	bindsym Shift+H exec --no-startup-id playerctl -p audacious position 20-
-	bindsym Shift+L exec --no-startup-id playerctl -p audacious position 20+
-
-	bindsym a exec --no-startup-id playerctl -p audacious position 0; mode "default"
-
-	bindsym Escape mode "default"
-
-}
-
 # ---------------------- Part 6: ScratchPad ---------------------- 
 # move the currently focused window to the scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -115,32 +58,6 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the next scratchpad window or hide the focused scratchpad window.
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+minus scratchpad show
-
-# ---------------------- Part 7: Applications ---------------------- 
-# start dmenu (a program launcher)
-# bindsym $mod+d exec --no-startup-id dmenu_run
-# start j4-dmenu-desktop (a program launcher)
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
-
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
-
-# workspace back and forth (with/without active container)
-workspace_auto_back_and_forth no
-
-# ---------------------- Part 8: Open Applications ----------------------  
-# > cd /usr/share/applications; ls
-bindsym $mod+o mode "open"
-mode "open" {
-		bindsym b exec virtualbox; mode "default"
-        bindsym d exec dolphin; mode "default"
-        bindsym s exec spectacle; mode "default"
-		bindsym t exec qBittorent; mode "default"
-        bindsym q exec qutebrowser; mode "default"
-        bindsym v exec vivaldi-stable; mode "default"
-
-        bindsym Escape mode "default"
-}
 
 
 # ---------------------- Part 8: Resize ---------------------- 
