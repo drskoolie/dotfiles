@@ -25,3 +25,7 @@
 
 # pactl list short sinks
 
+# ------------ Fonts ----------
+# Font for window titles. Will also be used by the bar unless a different font
+# font pango:monospace 8
+# font xft:URWGothic-Book 10
