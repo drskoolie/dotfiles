@@ -1,3 +1,3 @@
 vim.cmd([[
-let g:python3_host_prog = '~/Documents/venv/global/bin/python3'
+let g:python3_host_prog = '~/Documents/venv_global/bin/python3.10'
 ]])

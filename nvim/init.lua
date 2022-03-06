@@ -1,4 +1,5 @@
--- ==> Misc require('plugins')
+-- ==> Core 
+require('core/plugins')
 require('core/keymappings')
 require('core/settings')
 require('core/themes')
@@ -16,8 +17,3 @@ require('config/ultisnips')
 vim.cmd('source ~/.dotfiles/nvim/lua/config/whichkey/function.vim') 
 require('config/whichkey/config')
 require('config/whichkey/keys')
-
--- ==> LSP
-require('config/coq')
-require('config/lsp-pyright')
-require('config/lsp-ccls')

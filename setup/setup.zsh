@@ -4,3 +4,5 @@ ln -s ~/.dotfiles/i3status ~/.config/i3status
 ln -s ~/.dotfiles/nvim ~/.config/nvim
 ln -s ~/.dotfiles/taskwarrior/.task/ ~/.task
 ln -s ~/.dotfiles/taskwarrior/.taskrc ~/.taskrc
+
+sudo apt install bat
