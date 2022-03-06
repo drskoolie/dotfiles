@@ -8,10 +8,7 @@
 set $mod Mod4
 set $refresh_i3status killall -SIGUSR1 i3status
 
-# Font for window titles. Will also be used by the bar unless a different font
 font pango:DejaVu Sans Mono 9
-# font pango:monospace 8
-# font xft:URWGothic-Book 10
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -52,7 +49,7 @@ mode "open" {
 bar 
 {
         # status_command i3status
-		status_command exec ~/.config/i3status/shell/mybar.sh
+		status_command exec ~/.dotfiles/i3status/shell/mybar.sh
 		strip_workspace_numbers yes
 }
 
@@ -558,7 +555,7 @@ mode "cws4" {
 # |            |
 # +------------+
 
-# ---------------------- Part 8: Workspaces Extra 4 ----------------------
+# ---------------------- Part 8: Workspaces Extra 8 ----------------------
 bindsym $mod+8 mode "ws8"
 bindsym $mod+Shift+8 mode "cws8"
 
@@ -698,16 +695,16 @@ mode "cws0" {
 }
  
 # ---------------------- Workspaces Extra ---------------------- 
-set $ws6 "6"
-set $ws7 "7"
+# set $ws6 "6"
+# set $ws7 "7"
 
 # switch to workspace
-bindsym $mod+6 workspace number $ws6
-bindsym $mod+7 workspace number $ws7
+# bindsym $mod+6 workspace number $ws6
+# bindsym $mod+7 workspace number $ws7
 
 # move focused container to workspace
-bindsym $mod+Shift+6 move container to workspace number $ws6
-bindsym $mod+Shift+7 move container to workspace number $ws7
+# bindsym $mod+Shift+6 move container to workspace number $ws6
+# bindsym $mod+Shift+7 move container to workspace number $ws7
 
 #  __^__       __^__
 # ( ___ )-----( ___ )

@@ -4,7 +4,7 @@
 bar 
 {
         # status_command i3status
-		status_command exec ~/.config/i3status/shell/mybar.sh
+		status_command exec ~/.dotfiles/i3status/shell/mybar.sh
 		strip_workspace_numbers yes
 }
 
