@@ -10,6 +10,9 @@ alias batzag='batcat ~/.dotfiles/zsh/alias/general.zsh'
 # +------------------+
 # | change directory |
 # +------------------+
+alias cdc='cd ~/Documents'
+alias cdcj='cd ~/Documents/junk'
+
 alias cdd='cd ~/.dotfiles/; ls'
 alias cddn='cd ~/.dotfiles/nvim/; ls'
 alias cddt='cd ~/.dotfiles/taskwarrior; ls -a'
@@ -29,6 +32,9 @@ alias cdm='cd /media/pyro/ST31000340NS/'
 alias cdmm='cd /media/pyro/ST31000340NS/Media/'
 alias cdmmm='cd /media/pyro/ST31000340NS/Media/music'
 alias cdmma='cd /media/pyro/ST31000340NS/Media/Audiobooks/'
+
+alias cdt='cd ~/Documents/thesis'
+alias cdtt='cd ~/Documents/thesis/transformers'
 
 # +-----+
 # | fzf |
@@ -69,11 +75,15 @@ function noz ()
 # +--------+
 # | source |
 # +--------+
-alias sog='source ~/.config/venv_global/bin/activate'
-alias sod='deactivate'
+alias sog='source ~/Documents/venv_global/bin/activate'
+alias dea='deactivate'
+
 alias soz='source ~/.dotfiles/zsh/.zshrc'
 alias sozai='source ~/.dotfiles/zsh/alias/init.zsh'
 alias sozat='source ~/.dotfiles/zsh/alias/taskwarrior.zsh'
+
+alias sot='source ~/Documents/thesis/transformers/code/venv_transformers3_10/bin/activate'
+
 
 # +---------+
 # | pdfgrep |
