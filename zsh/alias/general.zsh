@@ -35,6 +35,7 @@ alias cdmma='cd /media/pyro/ST31000340NS/Media/Audiobooks/'
 
 alias cdt='cd ~/Documents/thesis'
 alias cdtt='cd ~/Documents/thesis/transformers'
+alias cdttc='cd ~/Documents/thesis/transformers/code'
 
 # +-----+
 # | fzf |
