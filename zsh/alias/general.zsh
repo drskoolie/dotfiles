@@ -7,6 +7,8 @@ alias cat='batcat --paging=never'
 alias bati='batcat ~/.dotfiles/i3/config'
 alias batzag='batcat ~/.dotfiles/zsh/alias/general.zsh'
 
+alias xrandr5='~/.dotfiles/screenlayout/5Mons.sh'
+
 # +------------------+
 # | change directory |
 # +------------------+
@@ -14,6 +16,7 @@ alias cdc='cd ~/Documents'
 alias cdcj='cd ~/Documents/junk'
 
 alias cdd='cd ~/.dotfiles/; ls'
+alias cddi='cd ~/.dotfiles/i3; ls'
 alias cddn='cd ~/.dotfiles/nvim/; ls'
 alias cddt='cd ~/.dotfiles/taskwarrior; ls -a'
 alias cdds='cd ~/.dotfiles/setup; ls'
@@ -33,9 +36,9 @@ alias cdmm='cd /media/pyro/ST31000340NS/Media/'
 alias cdmmm='cd /media/pyro/ST31000340NS/Media/music'
 alias cdmma='cd /media/pyro/ST31000340NS/Media/Audiobooks/'
 
-alias cdt='cd ~/Documents/thesis'
-alias cdtt='cd ~/Documents/thesis/transformers'
-alias cdttc='cd ~/Documents/thesis/transformers/code'
+alias cdct='cd ~/Documents/thesis'
+alias cdctt='cd ~/Documents/thesis/transformers'
+alias cdcttc='cd ~/Documents/thesis/transformers/code'
 
 # +-----+
 # | fzf |
