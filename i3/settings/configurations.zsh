@@ -20,6 +20,7 @@ mode "configuration" {
 		~/.dotfiles/i3/settings/workspace_2.zsh \
 		~/.dotfiles/i3/settings/workspace_3.zsh \
 		~/.dotfiles/i3/settings/workspace_4.zsh \
+		~/.dotfiles/i3/settings/workspace_5.zsh \
 		~/.dotfiles/i3/settings/workspace_8.zsh \
 		~/.dotfiles/i3/settings/workspace_9.zsh \
 		~/.dotfiles/i3/settings/workspace_10.zsh \
