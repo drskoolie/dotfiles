@@ -55,6 +55,16 @@ wk_mappings = {
 			y = {'!boxes -a hcvc -d boy<CR>', 'boy', mode='v'},
 		},
 
+		c = {
+			name = "+beancount",
+
+			b = {':w|!bean-report % balances<CR>', 'balances'},
+			c = {':w|!bean-check %<CR>', 'check'},
+		},
+
+
+
+
 		d = {
 			name = "+diagon",
 
@@ -112,6 +122,9 @@ wk_mappings = {
 		B = {':w<CR>:silent !pdflatex %:p:. <CR>:silent !bibtex Report.aux<CR>:silent !pdflatex %:p:. <CR>:silent !pdflatex %:p:. <CR>', 'bibtex full'},
 		l = {':w<CR>:silent !pdflatex %:p:. <CR>', 'LaTeX'},
 		L = {':w<CR>:!pdflatex %:p:. <CR>', 'LaTeX no hide'},
+		m = {':w<CR>:!make<CR>', 'make'},
+		M = {':w<CR>:FloatermSend make<CR>', 'Make'},
+		r = {':w<CR>:FloatermSend ./%:r<CR>', 'run'},
 	},
 
 	i = {

@@ -133,7 +133,6 @@ smart_gaps on
 smart_borders on
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
-
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -588,9 +587,7 @@ mode "ws5" {
  	bindsym 9 workspace number $ws59; mode "default"
 
 	bindsym Escape mode "default"
-
 }
-
 
 mode "cws5" {
 
@@ -711,7 +708,7 @@ set $ws102 "102: gmail"
 set $ws103 "103: junk"    
 set $ws104 "104: learn"   
 set $ws105 "105: misc"   
-set $ws106 "106: media 2"  
+set $ws106 "106: reddit"  
 set $ws107 "107: torrent"    
 set $ws108 "108: vpn"     
 set $ws109 "109: whatsapp"
@@ -726,7 +723,7 @@ mode "ws0" {
  	bindsym j workspace number $ws103; mode "default"
 	bindsym l workspace number $ws104; mode "default"
  	bindsym m workspace number $ws105; mode "default"
-	bindsym Shift+m workspace number $ws106; mode "default"
+ 	bindsym r workspace number $ws106; mode "default"
  	bindsym t workspace number $ws107; mode "default"
 	bindsym v workspace number $ws108; mode "default"
 	bindsym w workspace number $ws109; mode "default"
@@ -744,7 +741,7 @@ mode "cws0" {
  	bindsym j move container to workspace number $ws103; mode "default"
 	bindsym l move container to workspace number $ws104; mode "default"
  	bindsym m move container to workspace number $ws105; mode "default"
-	bindsym Shift+m move container to workspace number $ws106; mode "default"
+ 	bindsym r move container to workspace number $ws106; mode "default"
  	bindsym t move container to workspace number $ws107; mode "default"
 	bindsym v move container to workspace number $ws108; mode "default"
 	bindsym w move container to workspace number $ws109; mode "default"

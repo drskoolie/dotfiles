@@ -8,6 +8,7 @@ alias bati='batcat ~/.dotfiles/i3/config'
 alias batzag='batcat ~/.dotfiles/zsh/alias/general.zsh'
 
 alias xrandr5='~/.dotfiles/screenlayout/5Mons.sh'
+alias qemu='qemu-system-x86_64'
 
 # +------------------+
 # | change directory |
