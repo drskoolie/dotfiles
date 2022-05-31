@@ -35,8 +35,8 @@ keymap("v", "<a-k>", ":m .-2<CR>gv", opts)
 keymap("v", "p", '"_dP', opts)
 
 -- Stay in indent mode
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
+-- keymap("v", "<", "<gv", opts)
+-- keymap("v", ">", ">gv", opts)
 
 -- Terminal
 keymap('t', '<C-y>', '<C-\\><C-n>', term_opts)
