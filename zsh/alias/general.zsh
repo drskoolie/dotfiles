@@ -1,8 +1,8 @@
 # +--------------+
 # | applications |
 # +--------------+
-alias bat='batcat'
-alias cat='batcat --paging=never'
+# alias bat='batcat'
+# alias cat='batcat --paging=never'
 
 alias bati='batcat ~/.dotfiles/i3/config'
 alias batzag='batcat ~/.dotfiles/zsh/alias/general.zsh'
