@@ -9,6 +9,7 @@ fi
 source ~/.dotfiles/zsh/p10k_beg.zsh
 source ~/.dotfiles/zsh/alias/init.zsh
 source ~/.dotfiles/zsh/export.zsh
+source ~/.dotfiles/zsh/colors.zsh
 source ~/.dotfiles/zsh/compint.zsh
 source ~/.dotfiles/zsh/help.zsh
 source ~/.dotfiles/zsh/functions.zsh
