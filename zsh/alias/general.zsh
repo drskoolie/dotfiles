@@ -14,8 +14,7 @@ alias qemu='qemu-system-x86_64'
 # +------------------+
 # | change directory |
 # +------------------+
-alias cdc='cd ~/Documents'
-alias cdcj='cd ~/Documents/junk'
+alias cdc='cd ~/.chronicles'
 
 alias cdd='cd ~/.dotfiles/; ls'
 alias cddi='cd ~/.dotfiles/i3; ls'
