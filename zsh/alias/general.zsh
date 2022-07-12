@@ -36,7 +36,7 @@ alias cdm='cd /media/pyro/ST31000340NS/'
 alias cdmm='cd /media/pyro/ST31000340NS/Media/'
 alias cdmmm='cd /media/pyro/ST31000340NS/Media/music'
 alias cdmma='cd /media/pyro/ST31000340NS/Media/Audiobooks/'
-\\qqqq\qqqqqqalias cdmma='cd /media/pyro/ST31000340NS/Media/Audiobooks/'
+alias cdmma='cd /media/pyro/ST31000340NS/Media/Audiobooks/'
 
 alias cdct='cd ~/Documents/thesis'
 alias cdctt='cd ~/Documents/thesis/transformers'
