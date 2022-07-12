@@ -1,19 +1,20 @@
 # +--------------+
 # | applications |
 # +--------------+
-#alias bat='batcat'
-alias cat='batcat --paging=never'
+# alias bat='batcat'
+# alias cat='batcat --paging=never'
 
+alias ls='ls -v --color'
 alias bati='batcat ~/.dotfiles/i3/config'
 alias batzag='batcat ~/.dotfiles/zsh/alias/general.zsh'
 
 alias xrandr5='~/.dotfiles/screenlayout/5Mons.sh'
+alias qemu='qemu-system-x86_64'
 
 # +------------------+
 # | change directory |
 # +------------------+
-alias cdc='cd ~/Documents'
-alias cdcj='cd ~/Documents/junk'
+alias cdc='cd ~/.chronicles'
 
 alias cdd='cd ~/.dotfiles/; ls'
 alias cddi='cd ~/.dotfiles/i3; ls'
@@ -35,6 +36,7 @@ alias cdm='cd /media/pyro/ST31000340NS/'
 alias cdmm='cd /media/pyro/ST31000340NS/Media/'
 alias cdmmm='cd /media/pyro/ST31000340NS/Media/music'
 alias cdmma='cd /media/pyro/ST31000340NS/Media/Audiobooks/'
+\\qqqq\qqqqqqalias cdmma='cd /media/pyro/ST31000340NS/Media/Audiobooks/'
 
 alias cdct='cd ~/Documents/thesis'
 alias cdctt='cd ~/Documents/thesis/transformers'

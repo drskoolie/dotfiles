@@ -55,6 +55,16 @@ wk_mappings = {
 			y = {'!boxes -a hcvc -d boy<CR>', 'boy', mode='v'},
 		},
 
+		c = {
+			name = "+beancount",
+
+			b = {':w|!bean-report % balances<CR>', 'balances'},
+			c = {':w|!bean-check %<CR>', 'check'},
+		},
+
+
+
+
 		d = {
 			name = "+diagon",
 
@@ -83,7 +93,8 @@ wk_mappings = {
 		b = {':FloatermSend b<CR>', 'break'},
 		c = {':FloatermSend c<CR>', 'continue'},
 		C = {':FloatermSend clear ', 'clear'},
-		d = {':FloatermSend d<CR>', 'down'},
+		d = {':FloatermSend \\%debug<CR>', '%debug'},
+		D = {'iimport ipdb; ipdb.set_trace()<Esc>', 'ipdb'},
 		h = {':FloatermSend h ', 'help'},
 		i = {':FloatermSend interact<CR>', 'interact'},
 		j = {':FloatermSend j ', 'jump'},
@@ -112,6 +123,9 @@ wk_mappings = {
 		B = {':w<CR>:silent !pdflatex %:p:. <CR>:silent !bibtex Report.aux<CR>:silent !pdflatex %:p:. <CR>:silent !pdflatex %:p:. <CR>', 'bibtex full'},
 		l = {':w<CR>:silent !pdflatex %:p:. <CR>', 'LaTeX'},
 		L = {':w<CR>:!pdflatex %:p:. <CR>', 'LaTeX no hide'},
+		m = {':w<CR>:!make<CR>', 'make'},
+		M = {':w<CR>:FloatermSend make<CR>', 'Make'},
+		r = {':w<CR>:FloatermSend ./%:r<CR>', 'run'},
 	},
 
 	i = {

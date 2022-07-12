@@ -9,6 +9,7 @@ fi
 source ~/.dotfiles/zsh/p10k_beg.zsh
 source ~/.dotfiles/zsh/alias/init.zsh
 source ~/.dotfiles/zsh/export.zsh
+source ~/.dotfiles/zsh/colors.zsh
 source ~/.dotfiles/zsh/compint.zsh
 source ~/.dotfiles/zsh/help.zsh
 source ~/.dotfiles/zsh/functions.zsh
@@ -19,3 +20,8 @@ source ~/.dotfiles/zsh/p10k_end.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.dotfiles/zsh//.p10k.zsh.
+[[ ! -f ~/.dotfiles/zsh//.p10k.zsh ]] || source ~/.dotfiles/zsh//.p10k.zsh

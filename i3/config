@@ -133,7 +133,6 @@ smart_gaps on
 smart_borders on
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
-
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -588,9 +587,7 @@ mode "ws5" {
  	bindsym 9 workspace number $ws59; mode "default"
 
 	bindsym Escape mode "default"
-
 }
-
 
 mode "cws5" {
 
@@ -672,12 +669,12 @@ bindsym $mod+Shift+9 mode "cws9"
 
 set $ws9 "9:audiobook"
 set $ws91 "91:music"
-set $ws92 "92:tv"
-set $ws93 "93:youtube"
-set $ws94 "94"
-set $ws95 "95"
-set $ws96 "96"
-set $ws97 "97"
+set $ws92 "92:reddit"
+set $ws93 "93:torrent"
+set $ws94 "94:youtube"
+set $ws95 "95:calibre"
+set $ws96 "96:stack-overflow"
+set $ws97 "97:facebook"
 set $ws98 "98"
 set $ws99 "99"
 
@@ -685,8 +682,12 @@ mode "ws9" {
 
 	bindsym a workspace number $ws9; mode "default"
 	bindsym m workspace number $ws91; mode "default"
-	bindsym t workspace number $ws92; mode "default"
-	bindsym y workspace number $ws93; mode "default"
+	bindsym r workspace number $ws92; mode "default"
+	bindsym t workspace number $ws93; mode "default"
+	bindsym y workspace number $ws94; mode "default"
+	bindsym c workspace number $ws95; mode "default"
+	bindsym s workspace number $ws96; mode "default"
+	bindsym f workspace number $ws97; mode "default"
 
 	bindsym Escape mode "default"
 }
@@ -696,8 +697,12 @@ mode "cws9" {
 
 	bindsym a move container to workspace number $ws9; mode "default"
 	bindsym m move container to workspace number $ws91; mode "default"
-	bindsym t move container to workspace number $ws92; mode "default"
-	bindsym y move container to workspace number $ws93; mode "default"
+	bindsym r move container to workspace number $ws92; mode "default"
+	bindsym t move container to workspace number $ws93; mode "default"
+	bindsym y move container to workspace number $ws94; mode "default"
+	bindsym c move container to workspace number $ws95; mode "default"
+	bindsym s move container to workspace number $ws96; mode "default"
+	bindsym f move container to workspace number $ws97; mode "default"
 
 	bindsym Escape mode "default"
 }
@@ -710,9 +715,7 @@ set $ws101 "101: connect"
 set $ws102 "102: gmail"   
 set $ws103 "103: junk"    
 set $ws104 "104: learn"   
-set $ws105 "105: misc"   
-set $ws106 "106: media 2"  
-set $ws107 "107: torrent"    
+set $ws105 "105: teams"   
 set $ws108 "108: vpn"     
 set $ws109 "109: whatsapp"
 set $ws110 "110:✈ virtualbox"
@@ -725,9 +728,7 @@ mode "ws0" {
 	bindsym g workspace number $ws102; mode "default"
  	bindsym j workspace number $ws103; mode "default"
 	bindsym l workspace number $ws104; mode "default"
- 	bindsym m workspace number $ws105; mode "default"
-	bindsym Shift+m workspace number $ws106; mode "default"
- 	bindsym t workspace number $ws107; mode "default"
+ 	bindsym t workspace number $ws105; mode "default"
 	bindsym v workspace number $ws108; mode "default"
 	bindsym w workspace number $ws109; mode "default"
 	bindsym b workspace number $ws110; mode "default"
@@ -743,9 +744,7 @@ mode "cws0" {
 	bindsym g move container to workspace number $ws102; mode "default"
  	bindsym j move container to workspace number $ws103; mode "default"
 	bindsym l move container to workspace number $ws104; mode "default"
- 	bindsym m move container to workspace number $ws105; mode "default"
-	bindsym Shift+m move container to workspace number $ws106; mode "default"
- 	bindsym t move container to workspace number $ws107; mode "default"
+ 	bindsym t move container to workspace number $ws105; mode "default"
 	bindsym v move container to workspace number $ws108; mode "default"
 	bindsym w move container to workspace number $ws109; mode "default"
 	bindsym b move container to workspace number $ws110; mode "default"

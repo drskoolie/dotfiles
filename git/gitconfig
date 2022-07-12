@@ -1,0 +1,7 @@
+[user]
+	email = a.elhag01@gmail.com
+	name = Al-Baraa El-Hag
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
