@@ -1,5 +1,4 @@
 wk_mappings = {
-	a = {':noh<CR>', 'noh'},
 
 	[" "] = {
 		name = "+easymotion",
@@ -21,6 +20,8 @@ wk_mappings = {
         w  = {'<Plug>(easymotion-w)',  'w'},
         W  = {'<Plug>(easymotion-W)',  'W'},
 	},
+
+	a = {':noh<CR>', 'noh'},
 
 	b = {
 		name = "+buffers",
@@ -61,30 +62,6 @@ wk_mappings = {
 			b = {':w|!bean-report % balances<CR>', 'balances'},
 			c = {':w|!bean-check %<CR>', 'check'},
 		},
-
-
-
-
-		d = {
-			name = "+diagon",
-
-			d  = {':Diagon ',  'diagon'},
-			D  = {':!diagon ',  'diagon', mode='v'},
-			e  = {':Diagon Frame<CR>',  'frame'},
-			E  = {':!diagon Frame<CR>',  'frame', mode='v'},
-			f  = {':Diagon Flowchart<CR>',  'flowchart'},
-			F  = {':!diagon Flowchart<CR>',  'flowchart', mode='v'},
-			g  = {':Diagon GraphDAG<CR>',  'graph_dag'},
-			G  = {':!diagon GraphDAG<CR>',  'graph_dag', mode='v'},
-			m  = {':Diagon Math<CR>',  'math'},
-			M  = {':!diagon Math<CR>',  'math', mode='v'},
-			r  = {':Diagon Tree<CR>',  'tree'},
-			R  = {':!diagon Tree<CR>',  'tree', mode='v'},
-			s  = {':Diagon Sequence<CR>',  'sequence'},
-			S  = {':!diagon Sequence<CR>',  'sequence', mode='v'},
-			t  = {':Diagon Table<CR>',  'table'},
-			T  = {':!diagon Table<CR>',  'table', mode='v'},
-		},
 	},
 
 	d = {
@@ -115,16 +92,12 @@ wk_mappings = {
 		W = {':FloatermSend whatis<CR>', 'whatis'},
 	},
 
-
-	l = {
-		name = "+language",
-		b = {':w<CR>:silent !bibtex Report.aux<CR>', 'bibtex'},
-		B = {':w<CR>:silent !pdflatex %:p:. <CR>:silent !bibtex Report.aux<CR>:silent !pdflatex %:p:. <CR>:silent !pdflatex %:p:. <CR>', 'bibtex full'},
-		l = {':w<CR>:silent !pdflatex %:p:. <CR>', 'LaTeX'},
-		L = {':w<CR>:!pdflatex %:p:. <CR>', 'LaTeX no hide'},
-		m = {':w<CR>:!make<CR>', 'make'},
-		M = {':w<CR>:FloatermSend make<CR>', 'Make'},
-		r = {':w<CR>:FloatermSend ./%:r<CR>', 'run'},
+	f = {
+		name = "+files",
+        i  = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
+        l  = {':w<CR>:luafile %<CR>',  'lua source'},
+        p  = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
+        w  = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
 	},
 
 	i = {
@@ -146,34 +119,44 @@ wk_mappings = {
         w = {':FloatermSend whos<CR>',     'whos'},
 	},
 
-
-	o = {
-		name = "+open",
-        i  = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
-        p  = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
-        w  = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
+	l = {
+		name = "+latex",
+		b = {':w<CR>:silent !bibtex Report.aux<CR>', 'bibtex'},
+		B = {':w<CR>:silent !pdflatex %:p:. <CR>:silent !bibtex Report.aux<CR>:silent !pdflatex %:p:. <CR>:silent !pdflatex %:p:. <CR>', 'bibtex full'},
+		l = {':w<CR>:silent !pdflatex %:p:. <CR>', 'LaTeX'},
+		L = {':w<CR>:!pdflatex %:p:. <CR>', 'LaTeX no hide'},
 	},
 
-	r = {
-		name = "+routine",
+	p = {
+		name = "+plugins",
 
-        a  = {':ColorizerAttachToBuffer<CR>',  'attach'},
-        d  = {':ColorizerDetachFromBuffer<CR>',  'detach'},
-        r  = {':ColorizerReloadAllBuffers<CR>',  'reload'},
-        t  = {':ColorizerToggle<CR>',  'toggle'},
-        x  = {':XtermColorTable<CR>',  'xterm'},
+		c = {
+			name = "+colorizer",
 
-        i  = {':PackerInstall<CR>',  'install'},
-        I  = {':PackerClean<CR>',  'clean'},
+			a  = {':ColorizerAttachToBuffer<CR>',  'attach'},
+			d  = {':ColorizerDetachFromBuffer<CR>',  'detach'},
+			r  = {':ColorizerReloadAllBuffers<CR>',  'reload'},
+			t  = {':ColorizerToggle<CR>',  'toggle'},
+			x  = {':XtermColorTable<CR>',  'xterm'},
+		},
 
-		u = {':UltiSnipsEdit<CR>', 'ultisnips'},
-		U = {':tabedit ~/.dotfiles/nvim/lua/config/ultisnips/snips/all.snippets<CR>', 'snips-all'},
+		p = {
+			name = "+packer",
 
-        l  = {':w<CR>:luafile %<CR>',  'source'},
+			c = {':PackerClean<CR>', 'clean'},
+			i = {':PackerInstall<CR>', 'install'},
+		},
 
-        p  = {':pwd<CR>',  'pwd'},
-        c  = {':cd %:p:h<CR>',  'cd'},
+		u = {
+			name = "+ultisnips",
+
+			a = {':tabedit ~/.dotfiles/nvim/lua/config/ultisnips/snips/all.snippets<CR>', 'all'},
+			e = {':UltiSnipsEdit<CR>', 'edit'},
+		}
+
+
 	},
+
 
 	t = {
 		name = "+terminal",
