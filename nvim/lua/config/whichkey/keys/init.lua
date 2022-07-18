@@ -90,10 +90,13 @@ wk_mappings = {
 	g = {
 		name = '+git',
 
+		c = {':BCommits<CR>', 'commits'},
+		C = {':Commits<CR>', 'bcommits'},
 		d = {':SignifyDiff<CR>', 'diff'},
 		f = {':SignifyFold<CR>', 'fold'},
 		h = {':SignifyToggleHighlight<CR>', 'highlight'},
 		p = {':SignifyHunkDiff<CR>', 'preview hunk'},
+		s = {':GFiles?<CR>', 'status'},
 		t = {':SignifyToggle<CR>', 'toggle'},
 		u = {':SignifyHunkUndo<CR>', 'undo'},
 	},
