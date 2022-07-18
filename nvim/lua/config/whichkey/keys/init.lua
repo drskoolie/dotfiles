@@ -154,6 +154,29 @@ wk_mappings = {
 			t  = {':ColorizerToggle<CR>',  'toggle'},
 			x  = {':XtermColorTable<CR>',  'xterm'},
 		},
+		 
+		d = {
+			name = "+dates",
+
+			c  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d "', 'custom'},
+			n  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n"<CR>', 'now'},
+			t  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d tomorrow<CR>', 'tomorrow'},
+			v  = {'!xargs -I {} date -d {} "+☢ [\\%j] --> \\%F (\\%A) \\%n"<CR>', 'visual', mode='v'},
+			y  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d yesterday<CR>', 'yesterday'},
+
+			w = {
+				name = "+weeks",
+
+				m  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Monday<CR>', 'mon'},
+				t  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Tuesday<CR>', 'tues'},
+				w  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Wednesday<CR>', 'wedn'},
+				r  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Thursday<CR>', 'thurs'},
+				f  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Friday<CR>', 'fri'},
+				s  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Saturday<CR>', 'sat'},
+				u  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Sunday<CR>', 'sun'},
+			},
+		},
+
 
 		p = {
 			name = "+packer",
@@ -173,6 +196,9 @@ wk_mappings = {
 		u = {
 			name = "+undotree",
 
+			f = {':UndotreeFocus<CR>', 'focus'},
+			h = {':UndotreeHide<CR>', 'hide'},
+			s = {':UndotreeShow<CR>', 'show'},
 			t = {':UndotreeToggle<CR>', 'toggle'},
 		},
 	},
