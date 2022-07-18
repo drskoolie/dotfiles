@@ -7,7 +7,7 @@ set cpoptions&vim
 
 syntax match myCalendarDate /^☢ \[\d\+] --> \d\+-\d\+-\d\+ (.*)/
 syntax match myCalendarUnfinishedTask /^\s*-.*/
-syntax match myCalendarLateTask /^\s*\\.*/
+syntax match myCalendarLateTask /^\s*\/.*/
 syntax match myCalendarFinishedTask /^\s*+.*/
 
 highlight myCalendarDate gui=bold ctermfg=11 
