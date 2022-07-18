@@ -138,6 +138,7 @@ wk_mappings = {
         l  = {':w<CR>:luafile %<CR>',  'lua source'},
         p  = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
         w  = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
+        v  = {':w<CR>:source %<CR>',  'vim source'},
 	},
 
 	p = {
