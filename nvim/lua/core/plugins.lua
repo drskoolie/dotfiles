@@ -14,7 +14,9 @@ return require('packer').startup(function()
   -- ==> Snippets
   use 'SirVer/ultisnips'
 
-  -- ==> Colors #FF0000
+  -- +--------+
+  -- | colors |
+  -- +--------+
   use 'norcalli/nvim-colorizer.lua'
   use 'guns/xterm-color-table.vim' -- :XtermColorTable
 
