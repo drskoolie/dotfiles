@@ -1,5 +1,6 @@
 wk_mappings = {
 
+
 	[" "] = {
 		name = "+easymotion",
 		
@@ -93,14 +94,28 @@ wk_mappings = {
 
 	f = {
 		name = "+files",
+
         i  = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
         l  = {':w<CR>:luafile %<CR>',  'lua source'},
         p  = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
         w  = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
 	},
 
+	g = {
+		name = '+git',
+
+		d = {':SignifyDiff<CR>', 'diff'},
+		f = {':SignifyFold<CR>', 'fold'},
+		h = {':SignifyToggleHighlight<CR>', 'highlight'},
+		t = {':SignifyToggle<CR>', 'toggle'},
+		p = {':SignifyHunkDiff<CR>', 'preview hunk'},
+		u = {':SignifyHunkUndo<CR>', 'undo'},
+	},
+
+
 	i = {
 		name = "+ipython",
+
         d = {':FloatermSend cd %:p:h<CR>', 'cd'},
         D = {':FloatermSend pwd<CR>',      'pwd'},
 		e = {':FloatermSend exit<CR>', 'exit'},
@@ -120,6 +135,7 @@ wk_mappings = {
 
 	l = {
 		name = "+latex",
+
 		b = {':w<CR>:silent !bibtex Report.aux<CR>', 'bibtex'},
 		B = {':w<CR>:silent !pdflatex %:p:. <CR>:silent !bibtex Report.aux<CR>:silent !pdflatex %:p:. <CR>:silent !pdflatex %:p:. <CR>', 'bibtex full'},
 		l = {':w<CR>:silent !pdflatex %:p:. <CR>', 'LaTeX'},
