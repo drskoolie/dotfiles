@@ -21,11 +21,10 @@ return require('packer').startup(function()
   -- +-----+
   -- | git |
   -- +-----+
+  use 'lewis6991/gitsigns.nvim'
   use 'mhinz/vim-signify'     -- Git diff icons on the side of the file lines
-  
-  use {
-    'lewis6991/gitsigns.nvim',
-  }
+  use 'tpope/vim-fugitive'
+  use 'tpope/vim-rhubarb'
 
   -- ==> Async (for Gitsigns)
   use 'nvim-lua/plenary.nvim'
@@ -55,8 +54,6 @@ end)
 --[[
 " ==> Git Plugins
 Plug 'idanarye/vim-merginal' " Git merginal
-Plug 'tpope/vim-fugitive'    " Git command line
-Plug 'tpope/vim-rhubarb'     " Go to github
 
 " ==> Markdown Plugins
 Plug 'godlygeek/tabular' | Plug 'plasticboy/vim-markdown'
