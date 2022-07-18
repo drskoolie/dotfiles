@@ -107,8 +107,8 @@ wk_mappings = {
 		d = {':SignifyDiff<CR>', 'diff'},
 		f = {':SignifyFold<CR>', 'fold'},
 		h = {':SignifyToggleHighlight<CR>', 'highlight'},
-		t = {':SignifyToggle<CR>', 'toggle'},
 		p = {':SignifyHunkDiff<CR>', 'preview hunk'},
+		t = {':SignifyToggle<CR>', 'toggle'},
 		u = {':SignifyHunkUndo<CR>', 'undo'},
 	},
 

@@ -23,8 +23,6 @@ return require('packer').startup(function()
   -- +-----+
   use 'lewis6991/gitsigns.nvim'
   use 'mhinz/vim-signify'     -- Git diff icons on the side of the file lines
-  use 'tpope/vim-fugitive'
-  use 'tpope/vim-rhubarb'
 
   -- ==> Async (for Gitsigns)
   use 'nvim-lua/plenary.nvim'
@@ -55,10 +53,6 @@ end)
 " ==> Git Plugins
 Plug 'idanarye/vim-merginal' " Git merginal
 
-" ==> Markdown Plugins
-Plug 'godlygeek/tabular' | Plug 'plasticboy/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
-
 " ==> Junegunn
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -66,11 +60,9 @@ Plug 'junegunn/gv.vim'       " Git commit browser
 Plug 'junegunn/vim-easy-align'            " Aligning
 
 " ==> Misc
-Plug 'mbbill/undotree'                    " Exposes vims undo tree
 Plug 't9md/vim-choosewin'                 " Choosing windows
 
 " ==> Python
-Plug 'vim-scripts/indentpython.vim' " MultiLine Indent
 Plug 'dense-analysis/ale'           " ALE
 " Plug 'a-elhag/jupyter-vim'        " Jupyter mine
 " Plug 'goerz/jupytext.vim'         " Jupytext
