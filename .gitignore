@@ -1,3 +1,5 @@
+powerlevel10k/
 taskwarrior/task/*
 zsh/packages/zsh-syntax-highlighting/*
-powerlevel10k/
+zsh/.zcompdump
+zsh/packages/zsh-syntax-highlighting
