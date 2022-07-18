@@ -17,6 +17,13 @@ return require('packer').startup(function()
   use 'norcalli/nvim-colorizer.lua'
   use 'guns/xterm-color-table.vim' -- :XtermColorTable
 
+
+  -- +----------+
+  -- | junegunn |
+  -- +----------+
+  use { "junegunn/fzf", run = ":call fzf#install()" }
+  use 'junegunn/fzf.vim'
+
   -- +-----+
   -- | git |
   -- +-----+
@@ -59,11 +66,6 @@ end)
 
 
 --[[
-" ==> Junegunn
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/gv.vim'       " Git commit browser
-Plug 'junegunn/vim-easy-align'            " Aligning
 
 " ==> Misc
 Plug 't9md/vim-choosewin'                 " Choosing windows
