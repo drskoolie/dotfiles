@@ -54,6 +54,8 @@ alias fzfp="fzf --preview 'batcat --style=numbers --color=always --style=numbers
 # +--------+
 # | neovim |
 # +--------+
+alias nvimcs='nvim ~/.chronicles/schedule/2022.txt'
+
 alias nvimg='nvim .gitignore'
 
 alias nvimi='nvim ~/.dotfiles/i3/config'
