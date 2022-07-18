@@ -21,7 +21,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
 -- Persistent Undo
-vim.opt.undodir = "$HOME/.dotfiles/.undodir"
+-- vim.opt.undodir = "~/.dotfiles/nvim/.undodir"
 vim.opt.undofile = true
 
 -- More

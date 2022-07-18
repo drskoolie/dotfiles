@@ -2,7 +2,6 @@ local execute = vim.api.nvim_command
 local fn = vim.fn
 
 local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-
 if fn.empty(fn.glob(install_path)) > 0 then
   fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
   vim.cmd 'packadd packer.nvim'
@@ -19,19 +18,20 @@ return require('packer').startup(function()
   use 'norcalli/nvim-colorizer.lua'
   use 'guns/xterm-color-table.vim' -- :XtermColorTable
 
-  -- ==> Terminal
-  use 'voldikss/vim-floaterm'
-
+  -- +-----+
+  -- | git |
+  -- +-----+
+  use 'mhinz/vim-signify'     -- Git diff icons on the side of the file lines
+  
   use {
     'lewis6991/gitsigns.nvim',
-    requires = {
-      'nvim-lua/plenary.nvim'
-    },
-    -- tag = 'release' -- To use the latest release
   }
 
-  -- ==> Undo
-  use 'mbbill/undotree'
+  -- ==> Async (for Gitsigns)
+  use 'nvim-lua/plenary.nvim'
+
+  -- ==> Terminal
+  use 'voldikss/vim-floaterm'
 
   -- ==> Themes
   use 'NLKNguyen/papercolor-theme'
@@ -43,6 +43,7 @@ return require('packer').startup(function()
 
   -- ==> Useful
   use 'easymotion/vim-easymotion'
+  use 'mbbill/undotree'
   use 'psliwka/vim-smoothie'
 
   -- ==> WhichKey
@@ -54,7 +55,6 @@ end)
 --[[
 " ==> Git Plugins
 Plug 'idanarye/vim-merginal' " Git merginal
-Plug 'mhinz/vim-signify'     " Git diff icons on the side of the file lines
 Plug 'tpope/vim-fugitive'    " Git command line
 Plug 'tpope/vim-rhubarb'     " Go to github
 

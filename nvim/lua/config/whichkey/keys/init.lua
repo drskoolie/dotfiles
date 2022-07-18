@@ -144,6 +144,7 @@ wk_mappings = {
 
 			c = {':PackerClean<CR>', 'clean'},
 			i = {':PackerInstall<CR>', 'install'},
+			u = {':PackerUpdate<CR>', 'update'},
 		},
 
 		s = {
