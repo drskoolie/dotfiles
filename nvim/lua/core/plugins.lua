@@ -17,7 +17,6 @@ return require('packer').startup(function()
   use 'norcalli/nvim-colorizer.lua'
   use 'guns/xterm-color-table.vim' -- :XtermColorTable
 
-
   -- +----------+
   -- | junegunn |
   -- +----------+
@@ -43,11 +42,13 @@ return require('packer').startup(function()
   -- | treesitter |
   -- +------------+
 
+
   -- +--------+
   -- | useful |
   -- +--------+
   use 'mbbill/undotree'
   use 'nvim-lua/plenary.nvim'
+  use "tversteeg/registers.nvim"
 
   -- +-----+
   -- | vim |

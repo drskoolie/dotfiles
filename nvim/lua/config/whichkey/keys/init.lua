@@ -66,12 +66,25 @@ wk_mappings = {
 	},
 
 	f = {
-		name = "+files",
+		name = '+fzf',
 
-        i  = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
-        l  = {':w<CR>:luafile %<CR>',  'lua source'},
-        p  = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
-        w  = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
+		a = {':Ag<CR>', 'ag'},
+		b = {':Buffers<CR>', 'buffers'},
+		c = {':Commands<CR>', 'commands'},
+		f = {':Files ~<CR>', 'files ~'},
+		F = {':Files<CR>', 'files'},
+		g = {':GFiles<CR>', 'gfiles'},
+		h = {':History<CR>', 'history'},
+		H = {':History:<CR>', 'history commands'},
+		l = {':BLines<CR>', 'blines'},
+		L = {':Lines<CR>', 'lines'},
+		m = {':Marks<CR>', 'marks'},
+		r = {':Rg<CR>', 'rg'},
+		s = {':Snippets<CR>', 'snippets'},
+		t = {':BTags<CR>', 'btags'},
+		T = {':Tags<CR>', 'tags'},
+		w = {':Windows<CR>', 'windows'},
+
 	},
 
 	g = {
@@ -113,6 +126,15 @@ wk_mappings = {
 		B = {':w<CR>:silent !pdflatex %:p:. <CR>:silent !bibtex Report.aux<CR>:silent !pdflatex %:p:. <CR>:silent !pdflatex %:p:. <CR>', 'bibtex full'},
 		l = {':w<CR>:silent !pdflatex %:p:. <CR>', 'LaTeX'},
 		L = {':w<CR>:!pdflatex %:p:. <CR>', 'LaTeX no hide'},
+	},
+
+	n = {
+		name = "+neovim",
+
+        i  = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
+        l  = {':w<CR>:luafile %<CR>',  'lua source'},
+        p  = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
+        w  = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
 	},
 
 	p = {
