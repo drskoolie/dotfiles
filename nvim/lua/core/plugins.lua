@@ -19,20 +19,8 @@ return require('packer').startup(function()
   use 'norcalli/nvim-colorizer.lua'
   use 'guns/xterm-color-table.vim' -- :XtermColorTable
 
-  -- ==> LSP
-  use 'neovim/nvim-lspconfig'
-  use 'ms-jpq/coq_nvim'
-  use 'ms-jpq/coq.artifacts'
-
   -- ==> Terminal
   use 'voldikss/vim-floaterm'
-
-
-  use {
-      'kyazdani42/nvim-tree.lua',
-      requires = 'kyazdani42/nvim-web-devicons',
-      config = function() require'nvim-tree'.setup {} end
-  }
 
   -- ==> Math
   use 'willchao612/vim-diagon'

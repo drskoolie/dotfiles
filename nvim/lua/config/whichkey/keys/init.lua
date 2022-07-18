@@ -118,7 +118,6 @@ wk_mappings = {
 
 	l = {
 		name = "+language",
-		a = {':w<CR>:FloatermSend lua %:p<CR>', 'lua'},
 		b = {':w<CR>:silent !bibtex Report.aux<CR>', 'bibtex'},
 		B = {':w<CR>:silent !pdflatex %:p:. <CR>:silent !bibtex Report.aux<CR>:silent !pdflatex %:p:. <CR>:silent !pdflatex %:p:. <CR>', 'bibtex full'},
 		l = {':w<CR>:silent !pdflatex %:p:. <CR>', 'LaTeX'},
@@ -147,21 +146,6 @@ wk_mappings = {
         w = {':FloatermSend whos<CR>',     'whos'},
 	},
 
-	p = {
-		name = "+python",
-		f = {":w<CR>:execute ':FloatermSend python3 ' expand('%:p')<CR>", 'run file'},
-		F = {":w<CR>:FloatermSend python3 %:p ", 'run file'},
-	},
-
-	m = {
-		name = "+misc", -- #00BB00
-        c  = {':NvimTreeClose<CR>',  'close'},
-        f  = {':NvimTreeFindFile<CR>',  'find file'},
-        o  = {':NvimTreeOpen<CR>',  'open'},
-        r  = {':NvimTreeRefresh<CR>',  'refresh'},
-        s  = {':NvimTreeFocus<CR>',  'focus'},
-        t  = {':NvimTreeToggle<CR>',  'toggle'},
-	},
 
 	o = {
 		name = "+open",

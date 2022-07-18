@@ -26,10 +26,15 @@ keymap('n', '<Enter>', 'o<Esc>', opts)
 -- keymap('n', "<S-l>", ":vertical resize +2<CR>", opts)
 -- keymap('n', "<S-h>", ":vertical resize -2<CR>", opts)
 
--- Visual --
+-- +--------+
+-- | Visual |
+-- +--------+
+
 -- Move Text
 keymap("v", "<a-j>", ":m .+2<CR>gv", opts)
 keymap("v", "<a-k>", ":m .-2<CR>gv", opts)
+keymap('v', 'y', 'ygv<Esc>', opts)
+
 
 -- Pasting better
 keymap("v", "p", '"_dP', opts)
