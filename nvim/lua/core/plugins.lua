@@ -11,9 +11,6 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 	
-  -- ==> Snippets
-  use 'SirVer/ultisnips'
-
   -- +--------+
   -- | colors |
   -- +--------+
@@ -26,35 +23,42 @@ return require('packer').startup(function()
   use 'lewis6991/gitsigns.nvim'
   use 'mhinz/vim-signify'     -- Git diff icons on the side of the file lines
 
-  -- ==> Async (for Gitsigns)
-  use 'nvim-lua/plenary.nvim'
-
-  -- ==> Terminal
-  use 'voldikss/vim-floaterm'
-
-  -- ==> Themes
+  -- +--------+
+  -- | themes |
+  -- +--------+
   use 'NLKNguyen/papercolor-theme'
-
   use {
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
 
-  -- ==> Useful
-  use 'easymotion/vim-easymotion'
-  use 'mbbill/undotree'
-  use 'psliwka/vim-smoothie'
+  -- +------------+
+  -- | treesitter |
+  -- +------------+
 
-  -- ==> WhichKey
+  -- +--------+
+  -- | useful |
+  -- +--------+
+  use 'mbbill/undotree'
+  use 'nvim-lua/plenary.nvim'
+
+  -- +-----+
+  -- | vim |
+  -- +-----+
+  use 'easymotion/vim-easymotion'
+  use 'psliwka/vim-smoothie'
+  use 'SirVer/ultisnips'
+  use 'voldikss/vim-floaterm'
+
+  -- +----------+
+  -- | whichkey |
+  -- +----------+
   use 'folke/which-key.nvim'
 
 end)
 
 
 --[[
-" ==> Git Plugins
-Plug 'idanarye/vim-merginal' " Git merginal
-
 " ==> Junegunn
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -71,7 +75,6 @@ Plug 'dense-analysis/ale'           " ALE
 " Plug 'vim-python/python-syntax'   " Syntax
 
 " ==> Will do
-
 " Plug 'dhruvasagar/vim-table-mode'                   " Table Creator
 " Plug 'majutsushi/tagbar'                            " Class/module browser
 winston0410/range-highlight.nvim
