@@ -36,33 +36,6 @@ wk_mappings = {
         t  = {':tabnew<CR>',    'tab new'},
 	},
 
-	c = {
-		name = "+cmd",
-
-		b = {
-			name = "+boxes",
-
-			b = {'!boxes -a hcvc -d ', 'boxes', mode='v'},
-			c = {'!boxes -a hcvc -d columns<CR>', 'columns', mode='v'},
-			d = {'!boxes -a hcvc -d dog<CR>', 'dog', mode='v'},
-			g = {'!boxes -a hcvc -d girl<CR>', 'girl', mode='v'},
-			i = {'!boxes -a hcvc -d ian jones<CR>', 'ian jones', mode='v'},
-			m = {'!boxes -a hcvc -d mouse<CR>', 'mouse', mode='v'},
-			n = {'!boxes -a hcvc -d spring<CR>', 'spring', mode='v'},
-			p = {'!boxes -a hlvt -d parchment<CR>', 'parchment', mode='v'},
-			s = {'!boxes -a hcvc -d stone<CR>', 'stone', mode='v'},
-			u = {'!boxes -a hcvc -d unicornsay<CR>', 'unicornsay', mode='v'},
-			v = {'!boxes -a hcvc -d unicornthink<CR>', 'unicornthink', mode='v'},
-			y = {'!boxes -a hcvc -d boy<CR>', 'boy', mode='v'},
-		},
-
-		c = {
-			name = "+beancount",
-
-			b = {':w|!bean-report % balances<CR>', 'balances'},
-			c = {':w|!bean-check %<CR>', 'check'},
-		},
-	},
 
 	d = {
 		name = "+debug",
@@ -144,6 +117,30 @@ wk_mappings = {
 
 	p = {
 		name = "+plugins",
+
+		a = {
+			name = "+accounting",
+
+			b = {':w|!bean-report % balances<CR>', 'balances'},
+			c = {':w|!bean-check %<CR>', 'check'},
+		},
+
+		b = {
+			name = "+boxes",
+
+			b = {'!boxes -a hcvc -d ', 'boxes', mode='v'},
+			c = {'!boxes -a hcvc -d columns<CR>', 'columns', mode='v'},
+			d = {'!boxes -a hcvc -d dog<CR>', 'dog', mode='v'},
+			g = {'!boxes -a hcvc -d girl<CR>', 'girl', mode='v'},
+			i = {'!boxes -a hcvc -d ian jones<CR>', 'ian jones', mode='v'},
+			m = {'!boxes -a hcvc -d mouse<CR>', 'mouse', mode='v'},
+			n = {'!boxes -a hcvc -d spring<CR>', 'spring', mode='v'},
+			p = {'!boxes -a hlvt -d parchment<CR>', 'parchment', mode='v'},
+			s = {'!boxes -a hcvc -d stone<CR>', 'stone', mode='v'},
+			u = {'!boxes -a hcvc -d unicornsay<CR>', 'unicornsay', mode='v'},
+			v = {'!boxes -a hcvc -d unicornthink<CR>', 'unicornthink', mode='v'},
+			y = {'!boxes -a hcvc -d boy<CR>', 'boy', mode='v'},
+		},
 
 		c = {
 			name = "+colorizer",
