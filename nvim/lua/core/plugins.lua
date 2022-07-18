@@ -22,9 +22,6 @@ return require('packer').startup(function()
   -- ==> Terminal
   use 'voldikss/vim-floaterm'
 
-  -- ==> Math
-  use 'willchao612/vim-diagon'
-
   use {
     'lewis6991/gitsigns.nvim',
     requires = {
@@ -32,6 +29,9 @@ return require('packer').startup(function()
     },
     -- tag = 'release' -- To use the latest release
   }
+
+  -- ==> Undo
+  use 'mbbill/undotree'
 
   -- ==> Themes
   use 'NLKNguyen/papercolor-theme'
@@ -58,10 +58,6 @@ Plug 'mhinz/vim-signify'     " Git diff icons on the side of the file lines
 Plug 'tpope/vim-fugitive'    " Git command line
 Plug 'tpope/vim-rhubarb'     " Go to github
 
--- ==> Airline
-use 'vim-airline/vim-airline'
-use 'vim-airline/vim-airline-themes'
-
 " ==> Markdown Plugins
 Plug 'godlygeek/tabular' | Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
@@ -73,7 +69,6 @@ Plug 'junegunn/gv.vim'       " Git commit browser
 Plug 'junegunn/vim-easy-align'            " Aligning
 
 " ==> Misc
-Plug 'kevinhwang91/rnvimr'                " Ranger
 Plug 'mbbill/undotree'                    " Exposes vims undo tree
 Plug 't9md/vim-choosewin'                 " Choosing windows
 

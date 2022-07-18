@@ -35,7 +35,6 @@ wk_mappings = {
         t  = {':tabnew<CR>',    'tab new'},
 	},
 
-
 	c = {
 		name = "+cmd",
 
@@ -147,14 +146,18 @@ wk_mappings = {
 			i = {':PackerInstall<CR>', 'install'},
 		},
 
-		u = {
+		s = {
 			name = "+ultisnips",
 
 			a = {':tabedit ~/.dotfiles/nvim/lua/config/ultisnips/snips/all.snippets<CR>', 'all'},
 			e = {':UltiSnipsEdit<CR>', 'edit'},
-		}
+		},
 
+		u = {
+			name = "+undotree",
 
+			t = {':UndotreeToggle<CR>', 'toggle'},
+		},
 	},
 
 
