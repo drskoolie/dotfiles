@@ -14,8 +14,9 @@ alias qemu='qemu-system-x86_64'
 # +------------------+
 # | change directory |
 # +------------------+
-alias cdc='cd ~/.chronicles'
-alias cdcs='cd ~/.chronicles/schedule'
+alias cdc='cd ~/.chronicles/'
+alias cdcs='cd ~/.chronicles/schedule/'
+alias cdcr='cd ~/.chronicles/research/'
 
 alias cdd='cd ~/.dotfiles/; ls'
 alias cddi='cd ~/.dotfiles/i3; ls'
@@ -39,10 +40,6 @@ alias cdmm='cd /media/pyro/ST31000340NS/Media/'
 alias cdmmm='cd /media/pyro/ST31000340NS/Media/music'
 alias cdmma='cd /media/pyro/ST31000340NS/Media/Audiobooks/'
 alias cdmma='cd /media/pyro/ST31000340NS/Media/Audiobooks/'
-
-alias cdct='cd ~/Documents/thesis'
-alias cdctt='cd ~/Documents/thesis/transformers'
-alias cdcttc='cd ~/Documents/thesis/transformers/code'
 
 # +-----+
 # | fzf |
