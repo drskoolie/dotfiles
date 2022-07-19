@@ -51,8 +51,9 @@ alias fzfp="fzf ~ --preview 'batcat --style=numbers --color=always --style=numbe
 # +---------+
 # | lazygit |
 # +---------+
-alias lazygitc='lazygit -p ~/.chronicles/'
-alias lazygitd='lazygit -p ~/.dotfiles/'
+alias lg='lazygit'
+alias lgc='lazygit -p ~/.chronicles/'
+alias lgd='lazygit -p ~/.dotfiles/'
 
 # +--------+
 # | neovim |
