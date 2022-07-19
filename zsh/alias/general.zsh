@@ -44,9 +44,15 @@ alias cdmma='cd /media/pyro/ST31000340NS/Media/Audiobooks/'
 # +-----+
 # | fzf |
 # +-----+
-alias fzfp="fzf --preview 'batcat --style=numbers --color=always --style=numbers --line-range :500 {}'\
+alias fzfp="fzf ~ --preview 'batcat --style=numbers --color=always --style=numbers --line-range :500 {}'\
 	--bind shift-up:preview-page-up,shift-down:preview-page-down\
 	|xclip -selection clipboard"
+
+# +---------+
+# | lazygit |
+# +---------+
+alias lazygitc='lazygit -p ~/.chronicles/'
+alias lazygitd='lazygit -p ~/.dotfiles/'
 
 # +--------+
 # | neovim |
