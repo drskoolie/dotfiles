@@ -57,7 +57,7 @@ alias nvimg='nvim .gitignore'
 
 alias nvimi='nvim ~/.dotfiles/i3/config'
 
-alias nvimt='nvim ~/.dotfiles/taskwarrior/.taskrc'
+alias nvimt='nvim *.tex'
 
 alias nvimz='nvim ~/.dotfiles/zsh/.zshrc'
 alias nvimzp='nvim ~/.dotfiles/zsh/packages.zsh'
@@ -83,6 +83,7 @@ function noz ()
 # | source |
 # +--------+
 alias sog='source ~/Documents/venv_global/bin/activate'
+alias sop='source venv*/bin/activate'
 alias dea='deactivate'
 
 alias soz='source ~/.dotfiles/zsh/.zshrc'
