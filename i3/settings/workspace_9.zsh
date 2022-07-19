@@ -11,7 +11,7 @@ set $ws94 "94:youtube"
 set $ws95 "95:calibre"
 set $ws96 "96:stack-overflow"
 set $ws97 "97:facebook"
-set $ws98 "98"
+set $ws98 "98:ieee"
 set $ws99 "99"
 
 mode "ws9" {
@@ -24,6 +24,7 @@ mode "ws9" {
 	bindsym c workspace number $ws95; mode "default"
 	bindsym s workspace number $ws96; mode "default"
 	bindsym f workspace number $ws97; mode "default"
+	bindsym i workspace number $ws98; mode "default"
 
 	bindsym Escape mode "default"
 }
@@ -39,6 +40,7 @@ mode "cws9" {
 	bindsym c move container to workspace number $ws95; mode "default"
 	bindsym s move container to workspace number $ws96; mode "default"
 	bindsym f move container to workspace number $ws97; mode "default"
+	bindsym i move container to workspace number $ws98; mode "default"
 
 	bindsym Escape mode "default"
 }
