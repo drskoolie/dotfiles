@@ -8,16 +8,16 @@
 bindsym $mod+8 mode "ws8"
 bindsym $mod+Shift+8 mode "cws8"
 
-set $ws8 "8: t0"
-set $ws81 "81: t1"
-set $ws82 "82: t2"
-set $ws83 "83: t3"
-set $ws84 "84: t4"
-set $ws85 "85: t5"
-set $ws86 "86: t6"
-set $ws87 "87: t7"
-set $ws88 "88: t8"
-set $ws89 "89: t9"
+set $ws8 "8:t0"
+set $ws81 "81:t1"
+set $ws82 "82:t2"
+set $ws83 "83:t3"
+set $ws84 "84:t4"
+set $ws85 "85:t5"
+set $ws86 "86:t6"
+set $ws87 "87:t7"
+set $ws88 "88:t8"
+set $ws89 "89:t9"
 
 # resize window (you can also use the mouse for that)
 mode "ws8" {
