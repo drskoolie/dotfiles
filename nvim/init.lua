@@ -9,7 +9,8 @@ require('core/python')
 -- ==> Config
 require('config/easymotion')
 require('config/lualine')
-require('config/nvim-colorizer')  -- #FFBB00
+require('config/nvim-colorizer')
+require('config/nvim-treesitter')
 require('config/ultisnips')
 
 -- ==> WhichKey
