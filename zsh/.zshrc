@@ -13,6 +13,7 @@ source ~/.dotfiles/zsh/colors.zsh
 source ~/.dotfiles/zsh/compint.zsh
 source ~/.dotfiles/zsh/help.zsh
 source ~/.dotfiles/zsh/functions.zsh
+source ~/.dotfiles/zsh/manpages.zsh
 source ~/.dotfiles/zsh/misc.zsh
 source ~/.dotfiles/zsh/packages.zsh
 source ~/.dotfiles/zsh/path.zsh
