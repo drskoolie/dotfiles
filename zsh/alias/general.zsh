@@ -73,6 +73,8 @@ alias dea='deactivate'
 alias soz='source ~/.dotfiles/zsh/.zshrc'
 alias sozai='source ~/.dotfiles/zsh/alias/init.zsh'
 
+# Todo
+alias todo='cat ~/.chronicles/schedule/2022.txt | ag "^-"'
 # +-------+
 # | trash |
 # +-------+
