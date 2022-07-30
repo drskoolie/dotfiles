@@ -17,6 +17,12 @@ return require('packer').startup(function()
   use 'norcalli/nvim-colorizer.lua'
   use 'guns/xterm-color-table.vim' -- :XtermColorTable
 
+  -- +--------------+
+  -- | file browser |
+  -- +--------------+
+  use "lambdalisue/fern.vim"
+  use "antoinemadec/fixcursorhold.nvim"
+
   -- +----------+
   -- | junegunn |
   -- +----------+
