@@ -1,6 +1,7 @@
 # +--------------+
 # | applications |
 # +--------------+
+alias g='git'
 alias ls='ls -v --color'
 alias xrandr5='~/.dotfiles/screenlayout/5Mons.sh'
 
