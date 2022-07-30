@@ -5,3 +5,16 @@
 	editor = nvim
 [init]
 	defaultBranch = main
+[alias]
+	ad = add
+
+	co = commit
+	com = commit -m
+
+	di = diff
+	dis = diff --staged
+
+	ed = config --global -e
+
+	st = status
+	sts = status -s
