@@ -30,10 +30,18 @@ return require('packer').startup(function()
   use 'mhinz/vim-signify'     -- Git diff icons on the side of the file lines
   use 'tpope/vim-fugitive'
 
+  -- +-------+
+  -- | pulse |
+  -- +-------+
+  use "danilamihailov/beacon.nvim"
+  use "inside/vim-search-pulse"
+
   -- +--------+
   -- | themes |
   -- +--------+
   use 'NLKNguyen/papercolor-theme'
+  use { "catppuccin/nvim", as = "catppuccin" }
+
   use {
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
@@ -52,9 +60,10 @@ return require('packer').startup(function()
   -- +--------+
   -- | useful |
   -- +--------+
-  use 'mbbill/undotree'
-  use 'nvim-lua/plenary.nvim'
+  use "mbbill/undotree"
+  use "nvim-lua/plenary.nvim"
   use "tversteeg/registers.nvim"
+  use "romainl/vim-cool"
 
   -- +-----+
   -- | vim |
