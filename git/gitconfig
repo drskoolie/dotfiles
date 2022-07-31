@@ -19,3 +19,5 @@
 
 	st = status
 	sts = status -s
+
+	p = push
