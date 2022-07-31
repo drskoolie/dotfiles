@@ -45,7 +45,9 @@ alias nvimg='nvim .gitignore'
 
 alias nvimi='nvim ~/.dotfiles/i3/config'
 
-alias nvimt='nvim *.tex'
+alias nviml='nvim *.tex'
+
+alias nvimt='nvim ~/.dotfiles/tmux/tmux.conf'
 
 alias nvimz='nvim ~/.dotfiles/zsh/.zshrc'
 alias nvimzp='nvim ~/.dotfiles/zsh/packages.zsh'
