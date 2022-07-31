@@ -1,3 +1,6 @@
+-- c = {':silent !tmux send -t 1 \'<C-r>0\' Enter<CR>', 'c'},
+
+local tmux_ipython_open_right = [[:silent !tmux splitw -dh \; send -t 1 \'\'cd \ %:p:h\'\' Enter \; send -t 1 \'ipython \ --no-autoindent\' Enter<CR>]]
 local tmux_open_right = ':silent !tmux splitw -dh<CR>'
 local tmux_open_right_p = ':silent !tmux splitw -h<CR>'
 local tmux_open_left = ':silent !tmux splitw -bdh<CR>'
@@ -118,6 +121,7 @@ wk_mappings = {
 
 		c = {':silent !tmux send -t 1 \'<C-r>0\' Enter<CR>', 'c'},
 		C = {':silent !tmux send -t 1 \'\'%:p\'\' Enter<CR>', 'c'},
+
         d = {':FloatermSend cd %:p:h<CR>', 'cd'},
         D = {':FloatermSend pwd<CR>',      'pwd'},
 		e = {':FloatermSend exit<CR>', 'exit'},
@@ -126,7 +130,8 @@ wk_mappings = {
 		h = {"Ihelp(<ESC>A)<ESC>:FloatermSend<CR>$x05x", 'help'},
         l = {':FloatermSend<CR>',          'send line'},
         m = {':MatlabCopy<CR>',           'yank matlab'},
-        o  = {':call IPythonOpen()<CR>',  'open'},
+        -- o  = {':call IPythonOpen()<CR>',  'open'},
+		o = {tmux_ipython_open_right, 'open_l'},
         p = {':FloatermSend paste<CR>',    'paste'},
         r = {':FloatermSend reset -f<CR>', 'reset'},
         R = {":FloatermSend reset -f<CR>:FloatermSend clear<CR>:w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'Reset'},
