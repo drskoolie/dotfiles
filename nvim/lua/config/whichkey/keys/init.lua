@@ -101,10 +101,10 @@ wk_mappings = {
 		u = {':SignifyHunkUndo<CR>', 'undo'},
 	},
 
-
 	i = {
 		name = "+ipython",
 
+		c = {':silent !tmux send -t 1 \'<C-r>0\' Enter<CR>', 'c'},
         d = {':FloatermSend cd %:p:h<CR>', 'cd'},
         D = {':FloatermSend pwd<CR>',      'pwd'},
 		e = {':FloatermSend exit<CR>', 'exit'},
