@@ -5,6 +5,7 @@ require('core/settings')
 require('core/themes')
 require('core/highlighted-yank')
 require('core/python')
+require('core/augroups')
 
 -- ==> Config
 require('config/easymotion')
