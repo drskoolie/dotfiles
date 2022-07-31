@@ -7,6 +7,8 @@ local tmux_open_down_p = ':silent !tmux splitw<CR>'
 local tmux_open_up = ':silent !tmux splitw -bd<CR>'
 local tmux_open_up_p = ':silent !tmux splitw -b<CR>'
 
+local tmux_kill_pane_last = ':silent !tmux last-pane \\; kill-pane<CR>'
+
 local test = ':silent !tmux split-window -h \\; rename-window python \\; select-pane -T ipython \\; select-pane -L<CR>'
 
 wk_mappings = {
@@ -241,6 +243,8 @@ wk_mappings = {
 
 	t = {
 		name = "+tmux",
+
+		k = {tmux_kill_pane_last, 'kill'},
 
 		o = {
 			name = "+open",
