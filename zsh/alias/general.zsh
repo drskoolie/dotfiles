@@ -17,6 +17,7 @@ alias cddi='cd ~/.dotfiles/i3; ls'
 alias cddn='cd ~/.dotfiles/nvim/; ls'
 alias cddnl='cd ~/.dotfiles/nvim/lua; ls'
 alias cdds='cd ~/.dotfiles/setup; ls'
+alias cddt='cd ~/.dotfiles/tmux; ls'
 alias cddz='cd ~/.dotfiles/zsh; ls'
 alias cddza='cd ~/.dotfiles/zsh/alias; ls'
 
