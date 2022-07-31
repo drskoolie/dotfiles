@@ -105,6 +105,7 @@ wk_mappings = {
 		name = "+ipython",
 
 		c = {':silent !tmux send -t 1 \'<C-r>0\' Enter<CR>', 'c'},
+		C = {':silent !tmux send -t 1 \'\'%:p\'\' Enter<CR>', 'c'},
         d = {':FloatermSend cd %:p:h<CR>', 'cd'},
         D = {':FloatermSend pwd<CR>',      'pwd'},
 		e = {':FloatermSend exit<CR>', 'exit'},
