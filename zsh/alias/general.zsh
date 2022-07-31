@@ -8,9 +8,9 @@ alias xrandr5='~/.dotfiles/screenlayout/5Mons.sh'
 # +------------------+
 # | change directory |
 # +------------------+
-alias cdc='cd ~/.chronicles/'
-alias cdcs='cd ~/.chronicles/schedule/'
-alias cdcr='cd ~/.chronicles/research/'
+alias cdc='cd ~/.chronicles/;ls'
+alias cdcs='cd ~/.chronicles/schedule/;ls'
+alias cdcr='cd ~/.chronicles/research/;ls'
 
 alias cdd='cd ~/.dotfiles/; ls'
 alias cddi='cd ~/.dotfiles/i3; ls'
@@ -19,6 +19,8 @@ alias cddnl='cd ~/.dotfiles/nvim/lua; ls'
 alias cdds='cd ~/.dotfiles/setup; ls'
 alias cddz='cd ~/.dotfiles/zsh; ls'
 alias cddza='cd ~/.dotfiles/zsh/alias; ls'
+
+alias cdf='cd ~/.fit/; ls'
 
 # +-----+
 # | fzf |
