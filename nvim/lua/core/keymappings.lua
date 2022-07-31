@@ -8,15 +8,15 @@ local keymap = vim.api.nvim_set_keymap
 keymap('n', 'ZZ', '<NOP>', opts)
 
 -- Windows -- 
-keymap('n', '<C-h>', '<C-w>h', opts)
-keymap('n', '<C-j>', '<C-w>j', opts)
-keymap('n', '<C-k>', '<C-w>k', opts)
-keymap('n', '<C-l>', '<C-w>l', opts)
+-- keymap('n', '<C-h>', '<C-w>h', opts)
+-- keymap('n', '<C-j>', '<C-w>j', opts)
+-- keymap('n', '<C-k>', '<C-w>k', opts)
+-- keymap('n', '<C-l>', '<C-w>l', opts)
 
-keymap('i', '<C-h>', '<Esc><C-w>h', opts)
-keymap('i', '<C-j>', '<Esc><C-w>j', opts)
-keymap('i', '<C-k>', '<Esc><C-w>k', opts)
-keymap('i', '<C-l>', '<Esc><C-w>l', opts)
+-- keymap('i', '<C-h>', '<Esc><C-w>h', opts)
+-- keymap('i', '<C-j>', '<Esc><C-w>j', opts)
+-- keymap('i', '<C-k>', '<Esc><C-w>k', opts)
+-- keymap('i', '<C-l>', '<Esc><C-w>l', opts)
 
 keymap('n', '<Enter>', 'o<Esc>', opts)
 
