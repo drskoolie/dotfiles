@@ -1,5 +1,15 @@
-wk_mappings = {
+local tmux_open_right = ':silent !tmux splitw -dh<CR>'
+local tmux_open_right_p = ':silent !tmux splitw -h<CR>'
+local tmux_open_left = ':silent !tmux splitw -bdh<CR>'
+local tmux_open_left_p = ':silent !tmux splitw -bh<CR>'
+local tmux_open_down = ':silent !tmux splitw -d<CR>'
+local tmux_open_down_p = ':silent !tmux splitw<CR>'
+local tmux_open_up = ':silent !tmux splitw -bd<CR>'
+local tmux_open_up_p = ':silent !tmux splitw -b<CR>'
 
+local test = ':silent !tmux split-window -h \\; rename-window python \\; select-pane -T ipython \\; select-pane -L<CR>'
+
+wk_mappings = {
 
 	[" "] = {
 		name = "+easymotion",
@@ -232,8 +242,20 @@ wk_mappings = {
 	t = {
 		name = "+tmux",
 
-        l  = {':silent !tmux split-window -h<CR>',  'open_l'},
-        i  = {':silent !tmux split-window -h \\; rename-window python \\; select-pane -T ipython \\; select-pane -L<CR>',  'ipython'},
+		o = {
+			name = "+open",
+
+			l  = {tmux_open_right,  'right'},
+			L  = {tmux_open_right_p,  'right+'},
+			h  = {tmux_open_left,  'left'},
+			H  = {tmux_open_left_p,  'left+'},
+			k  = {tmux_open_up,  'up'},
+			K  = {tmux_open_up_p,  'up+'},
+			j  = {tmux_open_down,  'down'},
+			J  = {tmux_open_down_p,  'down+'},
+		},
+
+        t  = {test,  'test'},
 	}
 }
 
