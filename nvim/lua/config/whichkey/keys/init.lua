@@ -230,16 +230,10 @@ wk_mappings = {
 
 
 	t = {
-		name = "+terminal",
+		name = "+tmux",
 
-        c  = {':FloatermSend clear<CR>',  'clear'},
-        l  = {':call TerminalRight()<CR>',  'right'},
-        s  = {':FloatermSend ',  'send'},
-		o  = {':call FloatermOpen()<CR>', 'open'},
-        p  = {':FloatermPrev<CR>',  'prev'},
-        n  = {':FloatermNext<CR>',  'next'},
-        k  = {':FloatermKill<CR>',  'kill'},
-        t  = {':FloatermToggle<CR>',  'toggle'},
+        l  = {':silent !tmux split-window -h<CR>',  'open_l'},
+        i  = {':silent !tmux split-window -h \\; rename-window python \\; select-pane -T ipython \\; select-pane -L<CR>',  'ipython'},
 	}
 }
 
