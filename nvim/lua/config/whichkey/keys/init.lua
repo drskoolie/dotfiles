@@ -1,31 +1,3 @@
-function tmux_send(output)
-	return [[:silent !tmux send -t 1 ']] .. output .. [[' Enter<CR>]]
-end
-
-function tmux_sendv(output)
-	-- text = [[silent !tmux send -t 1 ']] .. output .. [[' Enter]]
-	text = string.sub(tmux_send(output), 2, -5)	
-	print(text)
-	vim.cmd(text)
-end
-
-function tmux_open_pane(options)
-	return [[:silent !tmux splitw ]] .. options .. [[<CR>]]
-end
-
-function tmux_send_reg(reg)
-	reg_store = vim.fn.getreg(reg)
-	tmux_sendv(reg_store)
-end
-
-vim.cmd([[com! -nargs=1 TmuxSend lua tmux_sendv(<q-args>)]])
-
--- print(vim.fn.getreg('a'))
-
--- print('Hiya from Neovim')
-
-local tmux_kill_pane_last = ':silent !tmux last-pane \\; kill-pane<CR>'
-
 wk_mappings = {
 
 	[" "] = {
@@ -66,30 +38,28 @@ wk_mappings = {
 
 	d = {
 		name = "+debug",
-		a = {':FloatermSend a<CR>', 'args'},
-		b = {':FloatermSend b<CR>', 'break'},
-		c = {':FloatermSend c<CR>', 'continue'},
-		C = {':FloatermSend clear ', 'clear'},
-		d = {':FloatermSend \\%debug<CR>', '%debug'},
+		a = {tmux_send('a'), 'args'},
+		b = {tmux_send('b'), 'break'},
+		c = {tmux_send('c'), 'continue'},
+		d = {tmux_send('\\%debug'), '%debug'},
 		D = {'iimport ipdb; ipdb.set_trace()<Esc>', 'ipdb'},
-		h = {':FloatermSend h ', 'help'},
-		i = {':FloatermSend interact<CR>', 'interact'},
+		h = {tmux_send('h'), 'help'},
 		j = {':FloatermSend j ', 'jump'},
-		l = {':FloatermSend ll<CR>', 'longlist'},
-		L = {':FloatermSend l<CR>', 'list'},
-		n = {':FloatermSend n<CR>', 'next'},
+		l = {tmux_send('ll'), 'longlist'},
+		L = {tmux_send('l'), 'list'},
+		n = {tmux_send('n'), 'next'},
 		p = {':FloatermSend pp ', 'pretty print'},
-		P = {':FloatermSend p<CR>', 'print'},
-		q = {':FloatermSend q<CR>', 'quit'},
-		r = {':FloatermSend return<CR>', 'return'},
-		R = {':FloatermSend retval<CR>', 'retval'},
-		s = {':FloatermSend s<CR>', 'step'},
-		S = {':FloatermSend sticky<CR>', 'sticky'},
-		t = {':FloatermSend tbreak ', 'tbreak'},
-		u = {':FloatermSend u<CR>', 'up'},
+		P = {tmux_send('p'), 'print'},
+		q = {tmux_send('q'), 'quit'},
+		r = {tmux_send('return'), 'return'},
+		R = {tmux_send('retval'), 'retval'},
+		s = {tmux_send('s'), 'step'},
+		S = {tmux_send('sticky'), 'sticky'},
+		t = {tmux_send('tbreak'), 'tbreak'},
+		u = {tmux_send('u'), 'up'},
 		U = {':FloatermSend unt ', 'until'},
-		w = {':FloatermSend w<CR>', 'where'},
-		W = {':FloatermSend whatis<CR>', 'whatis'},
+		w = {tmux_send('w'), 'where'},
+		W = {tmux_send('whatis'), 'whatis'},
 	},
 
 	f = {
@@ -256,7 +226,7 @@ wk_mappings = {
 
 		c = {tmux_send('clear'), 'clear'},
 		C = {tmux_send('C-c'), 'C-c'},
-		D = {tmux_send('C-d'), 'C-d'},
+		d = {tmux_send('C-d'), 'C-d'},
 		e = {tmux_send(''), 'enter'},
 		l = {tmux_send('lua %:p'), 'lua'},
 		k = {tmux_kill_pane_last, 'kill'},
