@@ -2,24 +2,27 @@ function tmux_send(output)
 	return [[:silent !tmux send -t 1 ']] .. output .. [[' Enter<CR>]]
 end
 
+function tmux_sendv(output)
+	-- text = [[silent !tmux send -t 1 ']] .. output .. [[' Enter]]
+	text = string.sub(tmux_send(output), 2, -5)	
+	print(text)
+	vim.cmd(text)
+end
+
 function tmux_open_pane(options)
 	return [[:silent !tmux splitw ]] .. options .. [[<CR>]]
 end
 
-function tmux_sendv(output)
-	text = [[silent !tmux send -t 1 ']] .. output .. [[' Enter]]
-	vim.cmd(text)
+function tmux_send_reg(reg)
+	reg_store = vim.fn.getreg(reg)
+	tmux_sendv(reg_store)
 end
 
+vim.cmd([[com! -nargs=1 TmuxSend lua tmux_sendv(<q-args>)]])
 
-local tmux_open_right = ':silent !tmux splitw -dh<CR>'
-local tmux_open_right_p = ':silent !tmux splitw -h<CR>'
-local tmux_open_left = ':silent !tmux splitw -bdh<CR>'
-local tmux_open_left_p = ':silent !tmux splitw -bh<CR>'
-local tmux_open_down = ':silent !tmux splitw -d<CR>'
-local tmux_open_down_p = ':silent !tmux splitw<CR>'
-local tmux_open_up = ':silent !tmux splitw -bd<CR>'
-local tmux_open_up_p = ':silent !tmux splitw -b<CR>'
+-- print(vim.fn.getreg('a'))
+
+-- print('Hiya from Neovim')
 
 local tmux_kill_pane_last = ':silent !tmux last-pane \\; kill-pane<CR>'
 
@@ -129,8 +132,6 @@ wk_mappings = {
 		name = "+ipython",
 
 		c = {':silent !tmux send -t 1 \'<C-r>0\' Enter<CR>', 'c'},
-		C = {':silent !tmux send -t 1 \'\'%:p\'\' Enter<CR>', 'c'},
-
 		f = {":w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'file'},
 		h = {"Ihelp(<ESC>A)<ESC>:FloatermSend<CR>$x05x", 'help'},
         l = {':FloatermSend<CR>',          'send line'},
