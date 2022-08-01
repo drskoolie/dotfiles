@@ -42,7 +42,6 @@ wk_mappings = {
 		b = {tmux_send('b'), 'break'},
 		c = {tmux_send('c'), 'continue'},
 		d = {tmux_send('\\%debug'), '%debug'},
-		D = {'iimport ipdb; ipdb.set_trace()<Esc>', 'ipdb'},
 		h = {tmux_send('h'), 'help'},
 		j = {':FloatermSend j ', 'jump'},
 		l = {tmux_send('ll'), 'longlist'},
@@ -102,17 +101,16 @@ wk_mappings = {
 		name = "+ipython",
 
 		c = {':silent !tmux send -t 1 \'<C-r>0\' Enter<CR>', 'c'},
+		d = {'iimport ipdb; ipdb.set_trace()<Esc>', 'ipdb'},
 		f = {":w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'file'},
-		h = {"Ihelp(<ESC>A)<ESC>:FloatermSend<CR>$x05x", 'help'},
         l = {':FloatermSend<CR>',          'send line'},
         m = {':MatlabCopy<CR>',           'yank matlab'},
 		o = {tmux_send('ipython --no-autoindent'), 'open'},
         p = {':FloatermSend paste<CR>',    'paste'},
-        r = {':FloatermSend reset -f<CR>', 'reset'},
-        R = {":FloatermSend reset -f<CR>:FloatermSend clear<CR>:w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'Reset'},
+        r = {tmux_send('reset -f'), 'reset'},
 		v = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>ddk0', 'variable'},
 		V = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>dd0', 'variable'},
-        w = {':FloatermSend whos<CR>',     'whos'},
+        w = {tmux_send('whos'),     'whos'},
 	},
 
 	n = {
