@@ -1,13 +1,16 @@
--- c = {':silent !tmux send -t 1 \'<C-r>0\' Enter<CR>', 'c'},
--- local tmux_ipython_open = [[:silent !tmux splitw -dh \; send -t 1 \'\'cd \ %:p:h\'\' Enter \; send -t 1 \'ipython \ --no-autoindent\' Enter<CR>]]
+function tmux_send(output)
+	return [[:silent !tmux send -t 1 ']] .. output .. [[' Enter<CR>]]
+end
 
-local tmux_ipython_open = [[:silent !tmux send -t 1 'ipython --no-autoindent' Enter<CR>]]
+function tmux_open_pane(options)
+	return [[:silent !tmux splitw ]] .. options .. [[<CR>]]
+end
 
-local tmux_send_clear = [[:silent !tmux send -t 1 'clear' Enter <CR>]]
-local tmux_send_enter = [[:silent !tmux send -t 1 '' Enter<CR>]]
-local tmux_send_ctrl_d = [[:silent !tmux send -t 1 'C-d'<CR>]]
-local tmux_send_ctrl_c = [[:silent !tmux send -t 1 'C-c'<CR>]]
-local tmux_send_y = [[:silent !tmux send -t 1 'y'<CR>]]
+function tmux_sendv(output)
+	text = [[silent !tmux send -t 1 ']] .. output .. [[' Enter]]
+	vim.cmd(text)
+end
+
 
 local tmux_open_right = ':silent !tmux splitw -dh<CR>'
 local tmux_open_right_p = ':silent !tmux splitw -h<CR>'
@@ -19,10 +22,6 @@ local tmux_open_up = ':silent !tmux splitw -bd<CR>'
 local tmux_open_up_p = ':silent !tmux splitw -b<CR>'
 
 local tmux_kill_pane_last = ':silent !tmux last-pane \\; kill-pane<CR>'
-
-local tmux_lua = [[:silent !tmux send -t 1 'lua %:p' Enter<CR>]]
-
-local test = ':silent !tmux split-window -h \\; rename-window python \\; select-pane -T ipython \\; select-pane -L<CR>'
 
 wk_mappings = {
 
@@ -136,7 +135,7 @@ wk_mappings = {
 		h = {"Ihelp(<ESC>A)<ESC>:FloatermSend<CR>$x05x", 'help'},
         l = {':FloatermSend<CR>',          'send line'},
         m = {':MatlabCopy<CR>',           'yank matlab'},
-		o = {tmux_ipython, 'open'},
+		o = {tmux_send('ipython --no-autoindent'), 'open'},
         p = {':FloatermSend paste<CR>',    'paste'},
         r = {':FloatermSend reset -f<CR>', 'reset'},
         R = {":FloatermSend reset -f<CR>:FloatermSend clear<CR>:w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'Reset'},
@@ -254,25 +253,25 @@ wk_mappings = {
 	t = {
 		name = "+tmux",
 
-		c = {tmux_send_clear, 'clear'},
-		C = {tmux_send_ctrl_c, 'C-c'},
-		D = {tmux_send_ctrl_d, 'C-d'},
-		e = {tmux_send_enter, 'CR'},
-		l = {tmux_lua, 'lua'},
+		c = {tmux_send('clear'), 'clear'},
+		C = {tmux_send('C-c'), 'C-c'},
+		D = {tmux_send('C-d'), 'C-d'},
+		e = {tmux_send(''), 'enter'},
+		l = {tmux_send('lua %:p'), 'lua'},
 		k = {tmux_kill_pane_last, 'kill'},
-		y = {tmux_send_y, 'y'},
+		y = {tmux_send('y'), 'y'},
 
 		o = {
 			name = "+open",
 
-			l  = {tmux_open_right,  'right'},
-			L  = {tmux_open_right_p,  'right+'},
-			h  = {tmux_open_left,  'left'},
-			H  = {tmux_open_left_p,  'left+'},
-			k  = {tmux_open_up,  'up'},
-			K  = {tmux_open_up_p,  'up+'},
-			j  = {tmux_open_down,  'down'},
-			J  = {tmux_open_down_p,  'down+'},
+			l  = {tmux_open_pane('-dh'),  'right'},
+			L  = {tmux_open_pane('-h'),  'right+'},
+			h  = {tmux_open_pane('-bdh'),  'left'},
+			H  = {tmux_open_pane('-bh'),  'left+'},
+			k  = {tmux_open_pane('-bd'),  'up'},
+			K  = {tmux_open_pane('-b'),  'up+'},
+			j  = {tmux_open_pane('-d'),  'down'},
+			J  = {tmux_open_pane(''),  'down+'},
 		},
 	}
 }
