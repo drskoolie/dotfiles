@@ -25,19 +25,32 @@ function tmux_paste()
 	vim.cmd(output4)
 end
 
-vim.cmd([[com! TmuxPaste lua tmux_paste()]])
-
 function tmux_open_pane(options)
-	return [[:silent !tmux splitw ]] .. options .. [[<CR>]]
+	return [[silent !tmux splitw]] .. options .. [[<CR>]]
 end
 
-function tmux_send_reg(reg)
-	reg_store = vim.fn.getreg(reg)
-	tmux_sendv(reg_store)
-end
-
+vim.cmd([[set clipboard=unnamedplus]])
+vim.cmd([[com! TmuxPaste lua tmux_paste()]])
 -- vim.cmd([[com! -nargs=+ TmuxSend lua tmux_send(<q-args>)]])
 
 local tmux_kill_pane_last = ':silent !tmux last-pane \\; kill-pane<CR>'
 
+-- block_copy
 
+function block_copy(pattern)
+	local top = vim.fn.search('^' .. pattern, 'bW')
+
+ 	vim.cmd('normal! 0V')
+
+	local bottom = vim.fn.search('^' .. pattern, 'nW')
+
+	if ( bottom == 0)
+	then 
+		vim.cmd('normal! G')
+	else
+		vim.cmd('normal! ' .. bottom - 1 .. 'gg')
+	end
+end
+
+vim.api.nvim_set_keymap('o', 'm', [[:<C-u>lua block_copy('##')<CR>]], { noremap = true, silent = true})
+vim.api.nvim_set_keymap('x', 'm', [[:<C-u>lua block_copy('##')<CR>]], { noremap = true, silent = true})
