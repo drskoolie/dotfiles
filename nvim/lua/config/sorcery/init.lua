@@ -26,7 +26,7 @@ function tmux_paste()
 end
 
 function tmux_open_pane(options)
-	return [[silent !tmux splitw]] .. options .. [[<CR>]]
+	return [[:silent !tmux splitw ]] .. options .. [[<CR>]]
 end
 
 vim.cmd([[set clipboard=unnamedplus]])
