@@ -33,6 +33,16 @@ vim.cmd([[set clipboard=unnamedplus]])
 vim.cmd([[com! TmuxPaste lua tmux_paste()]])
 -- vim.cmd([[com! -nargs=+ TmuxSend lua tmux_send(<q-args>)]])
 
+
+function tmux_pytest()
+	output0 = [[silent !tmux send -t pytest.0 'clear' Enter]]
+	output1 = [[silent !tmux send -t pytest.0 'pytest' Enter]]
+	output2 = [[silent !tmux select-window -t pytest]]
+	vim.cmd(output0)
+	vim.cmd(output1)
+	vim.cmd(output2)
+end
+
 local tmux_kill_pane_last = ':silent !tmux last-pane \\; kill-pane<CR>'
 
 -- block_copy

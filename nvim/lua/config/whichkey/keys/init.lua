@@ -108,9 +108,10 @@ wk_mappings = {
         m = {[[:norm mm<CR>:norm "+ym<CR>:lua tmux_send('\\%paste', 'vim_cmd')<CR>:norm 'm<CR>]],           'matlab'},
 		o = {tmux_send('ipython --no-autoindent'), 'open'},
         p = {':TmuxPaste<CR>',    'paste'},
-		P  = {'"+y:TmuxPaste<CR>', 'visual', mode='v'},
+		P = {'"+y:TmuxPaste<CR>', 'visual', mode='v'},
         r = {tmux_send('reset -f'), 'reset'},
 		s = {'iimport ipdb; ipdb.set_trace()<Esc>', 'ipdb'},
+		t = {':lua tmux_pytest()<CR>', 'pytest'},
 		v = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>ddk0', 'variable'},
 		V = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>dd0', 'variable'},
         w = {tmux_send('whos'),     'whos'},
@@ -119,11 +120,12 @@ wk_mappings = {
 	n = {
 		name = "+neovim",
 
-        i  = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
-        l  = {':w<CR>:luafile %<CR>',  'lua source'},
-        p  = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
-        w  = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
-        v  = {':w<CR>:source %<CR>',  'vim source'},
+        i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
+        l = {':w<CR>:luafile %<CR>',  'lua source'},
+        p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
+		s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
+        w = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
+        v = {':w<CR>:source %<CR>',  'vim source'},
 	},
 
 	p = {
