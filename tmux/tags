@@ -1,0 +1,147 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUILDER	plugins/tmux-themepack/Makefile	/^BUILDER := bin\/build-theme$/;"	m
+INCLUDES	plugins/tmux-themepack/Makefile	/^INCLUDES := $(shell find src -name '*.tmuxsh')$/;"	m
+TESTS	plugins/tmux-themepack/Makefile	/^TESTS := $(addsuffix .test,$(THEMES))$/;"	m
+THEMES	plugins/tmux-themepack/Makefile	/^THEMES := $(patsubst src\/%,%,$(THEME_SRC))$/;"	m
+THEME_SRC	plugins/tmux-themepack/Makefile	/^THEME_SRC := $(shell find src -name '*.tmuxtheme')$/;"	m
+TestBasicTheme	plugins/tmux-themepack/test/basic_test.go	/^func TestBasicTheme(t *testing.T) {$/;"	f
+TestBasicThemeOverrides	plugins/tmux-themepack/test/basic_test.go	/^func TestBasicThemeOverrides(t *testing.T) {$/;"	f
+TestBasicThemepackOverrides	plugins/tmux-themepack/test/basic_test.go	/^func TestBasicThemepackOverrides(t *testing.T) {$/;"	f
+TestDefaultTheme	plugins/tmux-themepack/test/default_test.go	/^func TestDefaultTheme(t *testing.T) {$/;"	f
+TestDefaultThemeOverrides	plugins/tmux-themepack/test/default_test.go	/^func TestDefaultThemeOverrides(t *testing.T) {$/;"	f
+TestPowerlineBlockThemeOverrides	plugins/tmux-themepack/test/powerline_block_test.go	/^func TestPowerlineBlockThemeOverrides(t *testing.T) {$/;"	f
+TestPowerlineBlockThemepackOverrides	plugins/tmux-themepack/test/powerline_block_test.go	/^func TestPowerlineBlockThemepackOverrides(t *testing.T) {$/;"	f
+TestPowerlineBlockThemes	plugins/tmux-themepack/test/powerline_block_test.go	/^func TestPowerlineBlockThemes(t *testing.T) {$/;"	f
+TestPowerlineDefaultThemeOverrides	plugins/tmux-themepack/test/powerline_default_test.go	/^func TestPowerlineDefaultThemeOverrides(t *testing.T) {$/;"	f
+TestPowerlineDefaultThemepackOverrides	plugins/tmux-themepack/test/powerline_default_test.go	/^func TestPowerlineDefaultThemepackOverrides(t *testing.T) {$/;"	f
+TestPowerlineDefaultThemes	plugins/tmux-themepack/test/powerline_default_test.go	/^func TestPowerlineDefaultThemes(t *testing.T) {$/;"	f
+TestPowerlineDoubleThemeOverrides	plugins/tmux-themepack/test/powerline_double_test.go	/^func TestPowerlineDoubleThemeOverrides(t *testing.T) {$/;"	f
+TestPowerlineDoubleThemepackOverrides	plugins/tmux-themepack/test/powerline_double_test.go	/^func TestPowerlineDoubleThemepackOverrides(t *testing.T) {$/;"	f
+TestPowerlineDoubleThemes	plugins/tmux-themepack/test/powerline_double_test.go	/^func TestPowerlineDoubleThemes(t *testing.T) {$/;"	f
+TestTmuxVersion	plugins/tmux-themepack/test/version_test.go	/^func TestTmuxVersion(t *testing.T) {$/;"	f
+_fatal_error_abort	scripts/tpm/scripts/helpers/plugin_functions.sh	/^_fatal_error_abort() {$/;"	f
+_get_user_tmux_conf	scripts/tpm/scripts/helpers/plugin_functions.sh	/^_get_user_tmux_conf() {$/;"	f
+_has_emacs_mode_keys	scripts/tpm/scripts/helpers/tmux_echo_functions.sh	/^_has_emacs_mode_keys() {$/;"	f
+_manual_expansion	scripts/tpm/scripts/helpers/plugin_functions.sh	/^_manual_expansion() {$/;"	f
+_sourced_files	scripts/tpm/scripts/helpers/plugin_functions.sh	/^_sourced_files() {$/;"	f
+_tmux_conf_contents	scripts/tpm/scripts/helpers/plugin_functions.sh	/^_tmux_conf_contents() {$/;"	f
+_tpm_path	scripts/tpm/scripts/helpers/plugin_functions.sh	/^_tpm_path() {$/;"	f
+assertHasPrefix	plugins/tmux-themepack/test/test_helpers.go	/^func assertHasPrefix(t *testing.T, s, prefix string) {$/;"	f
+assertHasSuffix	plugins/tmux-themepack/test/test_helpers.go	/^func assertHasSuffix(t *testing.T, s, prefix string) {$/;"	f
+check_binding_defined	scripts/tpm/tests/test_plugin_sourcing.sh	/^check_binding_defined() {$/;"	f
+check_dir_exists_helper	scripts/tpm/tests/helpers/tpm.sh	/^check_dir_exists_helper() {$/;"	f
+check_tpm_path	scripts/tpm/tests/test_plugin_sourcing.sh	/^check_tpm_path() {$/;"	f
+clean_plugins	scripts/tpm/scripts/clean_plugins.sh	/^clean_plugins() {$/;"	f
+clone	scripts/tpm/scripts/install_plugins.sh	/^clone() {$/;"	f
+clone_plugin	scripts/tpm/scripts/install_plugins.sh	/^clone_plugin() {$/;"	f
+create_test_plugin_helper	scripts/tpm/tests/test_plugin_sourcing.sh	/^create_test_plugin_helper() {$/;"	f
+display_message	scripts/tpm/scripts/check_tmux_version.sh	/^display_message() {$/;"	f
+display_plugin_update_list	scripts/tpm/bindings/update_plugins	/^display_plugin_update_list() {$/;"	f
+echo_err	scripts/tpm/scripts/helpers/shell_echo_functions.sh	/^echo_err() {$/;"	f
+echo_err	scripts/tpm/scripts/helpers/tmux_echo_functions.sh	/^echo_err() {$/;"	f
+echo_ok	scripts/tpm/scripts/helpers/shell_echo_functions.sh	/^echo_ok() {$/;"	f
+echo_ok	scripts/tpm/scripts/helpers/tmux_echo_functions.sh	/^echo_ok() {$/;"	f
+end_message	scripts/tpm/scripts/helpers/tmux_echo_functions.sh	/^end_message() {$/;"	f
+ensure_tpm_path_exists	scripts/tpm/scripts/helpers/utility.sh	/^ensure_tpm_path_exists() {$/;"	f
+exit_if_unsupported_version	scripts/tpm/scripts/check_tmux_version.sh	/^exit_if_unsupported_version() {$/;"	f
+exit_value_helper	scripts/tpm/scripts/helpers/utility.sh	/^exit_value_helper() {$/;"	f
+fail_helper	scripts/tpm/scripts/helpers/utility.sh	/^fail_helper() {$/;"	f
+get_digits_from_string	scripts/tpm/scripts/check_tmux_version.sh	/^get_digits_from_string() {$/;"	f
+get_tmux_option	scripts/tpm/scripts/check_tmux_version.sh	/^get_tmux_option() {$/;"	f
+get_tmux_option	scripts/tpm/tpm	/^get_tmux_option() {$/;"	f
+help	plugins/tmux-themepack/bin/build-theme	/^help() {$/;"	f
+install_plugin	scripts/tpm/scripts/install_plugins.sh	/^install_plugin() {$/;"	f
+install_plugins	scripts/tpm/scripts/install_plugins.sh	/^install_plugins() {$/;"	f
+main	plugins/tmux-themepack/bin/build-theme	/^main() {$/;"	f
+main	plugins/tmux-themepack/themepack.tmux	/^main() {$/;"	f
+main	scripts/tpm/bin/clean_plugins	/^main() {$/;"	f
+main	scripts/tpm/bin/install_plugins	/^main() {$/;"	f
+main	scripts/tpm/bin/update_plugins	/^main() {$/;"	f
+main	scripts/tpm/bindings/clean_plugins	/^main() {$/;"	f
+main	scripts/tpm/bindings/install_plugins	/^main() {$/;"	f
+main	scripts/tpm/bindings/update_plugins	/^main() {$/;"	f
+main	scripts/tpm/scripts/check_tmux_version.sh	/^main() {$/;"	f
+main	scripts/tpm/scripts/clean_plugins.sh	/^main() {$/;"	f
+main	scripts/tpm/scripts/install_plugins.sh	/^main() {$/;"	f
+main	scripts/tpm/scripts/source_plugins.sh	/^main() {$/;"	f
+main	scripts/tpm/scripts/update_plugin.sh	/^main() {$/;"	f
+main	scripts/tpm/scripts/update_plugin_prompt_handler.sh	/^main() {$/;"	f
+main	scripts/tpm/tpm	/^main() {$/;"	f
+manually_install_the_plugin	scripts/tpm/tests/test_plugin_clean.sh	/^manually_install_the_plugin() {$/;"	f
+manually_install_the_plugin	scripts/tpm/tests/test_plugin_update.sh	/^manually_install_the_plugin() {$/;"	f
+plugin_already_installed	scripts/tpm/scripts/helpers/plugin_functions.sh	/^plugin_already_installed() {$/;"	f
+plugin_dir_exists	scripts/tpm/scripts/source_plugins.sh	/^plugin_dir_exists() {$/;"	f
+plugin_name_helper	scripts/tpm/scripts/helpers/plugin_functions.sh	/^plugin_name_helper() {$/;"	f
+plugin_path_helper	scripts/tpm/scripts/helpers/plugin_functions.sh	/^plugin_path_helper() {$/;"	f
+powerlineBlockNames	plugins/tmux-themepack/test/powerline_block_test.go	/^var powerlineBlockNames = []string{$/;"	v
+powerlineColors	plugins/tmux-themepack/test/powerline_test.go	/^var powerlineColors = map[string]struct {$/;"	v
+powerlineDefaultNames	plugins/tmux-themepack/test/powerline_default_test.go	/^var powerlineDefaultNames = []string{$/;"	v
+powerlineDoubleNames	plugins/tmux-themepack/test/powerline_double_test.go	/^var powerlineDoubleNames = []string{$/;"	v
+pull_changes	scripts/tpm/scripts/update_plugin.sh	/^pull_changes() {$/;"	f
+reload_tmux_environment	scripts/tpm/scripts/helpers/tmux_utils.sh	/^reload_tmux_environment() {$/;"	f
+script_run_helper	scripts/tpm/tests/helpers/tpm.sh	/^script_run_helper() {$/;"	f
+set_default_tpm_path	scripts/tpm/tpm	/^set_default_tpm_path() {$/;"	f
+set_tpm_key_bindings	scripts/tpm/tpm	/^set_tpm_key_bindings() {$/;"	f
+set_tpm_path	scripts/tpm/tpm	/^set_tpm_path() {$/;"	f
+silently_source_all_tmux_files	scripts/tpm/scripts/source_plugins.sh	/^silently_source_all_tmux_files() {$/;"	f
+source_plugins	scripts/tpm/scripts/source_plugins.sh	/^source_plugins() {$/;"	f
+source_plugins	scripts/tpm/tpm	/^source_plugins() {$/;"	f
+supported_tmux_version_ok	scripts/tpm/tpm	/^supported_tmux_version_ok() {$/;"	f
+test	plugins/tmux-themepack/test/basic_test.go	/^package test$/;"	p
+test	plugins/tmux-themepack/test/default_test.go	/^package test$/;"	p
+test	plugins/tmux-themepack/test/powerline_block_test.go	/^package test$/;"	p
+test	plugins/tmux-themepack/test/powerline_default_test.go	/^package test$/;"	p
+test	plugins/tmux-themepack/test/powerline_double_test.go	/^package test$/;"	p
+test	plugins/tmux-themepack/test/powerline_test.go	/^package test$/;"	p
+test	plugins/tmux-themepack/test/setup.go	/^package test$/;"	p
+test	plugins/tmux-themepack/test/test_helpers.go	/^package test$/;"	p
+test	plugins/tmux-themepack/test/version_test.go	/^package test$/;"	p
+test_custom_tpm_path	scripts/tpm/tests/test_plugin_sourcing.sh	/^test_custom_tpm_path() {$/;"	f
+test_default_tpm_path	scripts/tpm/tests/test_plugin_sourcing.sh	/^test_default_tpm_path() {$/;"	f
+test_legacy_and_new_syntax_for_plugin_installation_work_via_script	scripts/tpm/tests/test_plugin_installation_legacy.sh	/^test_legacy_and_new_syntax_for_plugin_installation_work_via_script() {$/;"	f
+test_legacy_and_new_syntax_for_plugin_installation_work_via_tmux_key_binding	scripts/tpm/tests/test_plugin_installation_legacy.sh	/^test_legacy_and_new_syntax_for_plugin_installation_work_via_tmux_key_binding() {$/;"	f
+test_multiple_plugins_installation_via_script	scripts/tpm/tests/test_plugin_installation.sh	/^test_multiple_plugins_installation_via_script() {$/;"	f
+test_multiple_plugins_installation_via_tmux_key_binding	scripts/tpm/tests/test_plugin_installation.sh	/^test_multiple_plugins_installation_via_tmux_key_binding() {$/;"	f
+test_non_existing_plugin_installation_via_script	scripts/tpm/tests/test_plugin_installation.sh	/^test_non_existing_plugin_installation_via_script() {$/;"	f
+test_non_existing_plugin_installation_via_tmux_key_binding	scripts/tpm/tests/test_plugin_installation.sh	/^test_non_existing_plugin_installation_via_tmux_key_binding() {$/;"	f
+test_plugin_installation_custom_dir_via_script	scripts/tpm/tests/test_plugin_installation.sh	/^test_plugin_installation_custom_dir_via_script() {$/;"	f
+test_plugin_installation_custom_dir_via_tmux_key_binding	scripts/tpm/tests/test_plugin_installation.sh	/^test_plugin_installation_custom_dir_via_tmux_key_binding() {$/;"	f
+test_plugin_installation_via_script	scripts/tpm/tests/test_plugin_installation.sh	/^test_plugin_installation_via_script() {$/;"	f
+test_plugin_installation_via_script	scripts/tpm/tests/test_plugin_installation_legacy.sh	/^test_plugin_installation_via_script() {$/;"	f
+test_plugin_installation_via_tmux_key_binding	scripts/tpm/tests/test_plugin_installation.sh	/^test_plugin_installation_via_tmux_key_binding() {$/;"	f
+test_plugin_installation_via_tmux_key_binding	scripts/tpm/tests/test_plugin_installation_legacy.sh	/^test_plugin_installation_via_tmux_key_binding() {$/;"	f
+test_plugin_installation_via_tmux_key_binding_set_option	scripts/tpm/tests/test_plugin_installation.sh	/^test_plugin_installation_via_tmux_key_binding_set_option() {$/;"	f
+test_plugin_sourcing	scripts/tpm/tests/test_plugin_sourcing.sh	/^test_plugin_sourcing() {$/;"	f
+test_plugin_uninstallation_via_script	scripts/tpm/tests/test_plugin_clean.sh	/^test_plugin_uninstallation_via_script() {$/;"	f
+test_plugin_uninstallation_via_tmux_key_binding	scripts/tpm/tests/test_plugin_clean.sh	/^test_plugin_uninstallation_via_tmux_key_binding() {$/;"	f
+test_plugin_update_via_script	scripts/tpm/tests/test_plugin_update.sh	/^test_plugin_update_via_script() {$/;"	f
+test_plugin_update_via_tmux_key_binding	scripts/tpm/tests/test_plugin_update.sh	/^test_plugin_update_via_tmux_key_binding() {$/;"	f
+test_plugins_installation_from_multiple_sourced_files_via_script	scripts/tpm/tests/test_plugin_installation.sh	/^test_plugins_installation_from_multiple_sourced_files_via_script() {$/;"	f
+test_plugins_installation_from_multiple_sourced_files_via_tmux_key_binding	scripts/tpm/tests/test_plugin_installation.sh	/^test_plugins_installation_from_multiple_sourced_files_via_tmux_key_binding() {$/;"	f
+test_plugins_installation_from_sourced_file_via_script	scripts/tpm/tests/test_plugin_installation.sh	/^test_plugins_installation_from_sourced_file_via_script() {$/;"	f
+test_plugins_installation_from_sourced_file_via_tmux_key_binding	scripts/tpm/tests/test_plugin_installation.sh	/^test_plugins_installation_from_sourced_file_via_tmux_key_binding() {$/;"	f
+test_unsuccessful_plugin_uninstallation_via_script	scripts/tpm/tests/test_plugin_clean.sh	/^test_unsuccessful_plugin_uninstallation_via_script() {$/;"	f
+tm	plugins/tmux-themepack/test/setup.go	/^var tm = tmux.New()$/;"	v
+tmuxBinPath	plugins/tmux-themepack/test/setup.go	/^var tmuxBinPath = os.Getenv("TMUX_BIN_PATH")$/;"	v
+tmuxConfig	plugins/tmux-themepack/test/setup.go	/^var tmuxConfig = os.Getenv("TMUX_CONFIG")$/;"	v
+tmuxHasOptions	plugins/tmux-themepack/test/setup.go	/^func tmuxHasOptions(t *testing.T, theme string, s tmux.Scope, m tmux.Options) {$/;"	f
+tmuxSetup	plugins/tmux-themepack/test/setup.go	/^func tmuxSetup() {$/;"	f
+tmuxTearDown	plugins/tmux-themepack/test/setup.go	/^func tmuxTearDown() {$/;"	f
+tmuxVersion	plugins/tmux-themepack/test/setup.go	/^var tmuxVersion = os.Getenv("TMUX_VERSION")$/;"	v
+tmux_echo	scripts/tpm/scripts/helpers/tmux_echo_functions.sh	/^tmux_echo() {$/;"	f
+tmux_version_int	scripts/tpm/scripts/check_tmux_version.sh	/^tmux_version_int() {$/;"	f
+tpm_path	scripts/tpm/scripts/helpers/plugin_functions.sh	/^tpm_path() {$/;"	f
+tpm_path_set	scripts/tpm/tpm	/^tpm_path_set() {$/;"	f
+tpm_plugins_list_helper	scripts/tpm/scripts/helpers/plugin_functions.sh	/^tpm_plugins_list_helper() {$/;"	f
+trim	plugins/tmux-themepack/bin/build-theme	/^trim() {$/;"	f
+unsupported_version_message	scripts/tpm/scripts/check_tmux_version.sh	/^unsupported_version_message() {$/;"	f
+update	scripts/tpm/scripts/update_plugin.sh	/^update() {$/;"	f
+update_all	scripts/tpm/scripts/update_plugin.sh	/^update_all() {$/;"	f
+update_plugin_prompt	scripts/tpm/bindings/update_plugins	/^update_plugin_prompt() {$/;"	f
+update_plugins	scripts/tpm/scripts/update_plugin.sh	/^update_plugins() {$/;"	f
+verify_tpm_path_permissions	scripts/tpm/scripts/install_plugins.sh	/^verify_tpm_path_permissions() {$/;"	f
