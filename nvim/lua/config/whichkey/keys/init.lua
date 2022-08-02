@@ -101,7 +101,9 @@ wk_mappings = {
 		name = "+ipython",
 
 		a = {tmux_send('\\%paste'), 'paste'},
-		f = {":w<CR>:execute ':FloatermSend run' expand('%:p')<CR>", 'file'},
+		d = {tmux_send('pwd'), 'pwd'},
+		e = {tmux_send('exit'), 'exit'},
+		f = {tmux_send('run %:p'), 'file'},
         l = {':norm 0"+y$<CR>:TmuxPaste<CR>',          'send line'},
         m = {[[:norm mm<CR>:norm "+ym<CR>:lua tmux_send('\\%paste', 'vim_cmd')<CR>:norm 'm<CR>]],           'matlab'},
 		o = {tmux_send('ipython --no-autoindent'), 'open'},

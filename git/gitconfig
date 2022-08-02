@@ -9,6 +9,8 @@
 	ad = add
 	adi = add -i
 
+	br = branch
+
 	co = commit
 	com = commit -m
 
