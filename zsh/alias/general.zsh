@@ -3,6 +3,7 @@
 # +--------------+
 alias g='git'
 alias ls='ls -v --color'
+alias t='tmux'
 alias xrandr5='~/.dotfiles/screenlayout/5Mons.sh'
 
 # +------------------+
