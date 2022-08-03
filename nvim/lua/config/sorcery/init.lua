@@ -64,3 +64,17 @@ end
 
 vim.api.nvim_set_keymap('o', 'm', [[:<C-u>lua block_copy('##')<CR>]], { noremap = true, silent = true})
 vim.api.nvim_set_keymap('x', 'm', [[:<C-u>lua block_copy('##')<CR>]], { noremap = true, silent = true})
+
+function set_trace()
+	vim.cmd('normal! ^')
+	local indent = vim.fn.indent(vim.fn.line('.'))
+
+	vim.cmd('normal! o')
+	indent_space = string.rep(' ', indent)
+	indent_space = indent_space .. ' '
+	vim.cmd('normal! i' .. indent_space)
+
+	vim.cmd('normal! iimport ipdb; ipdb.set_trace()')
+	vim.cmd('normal! ^')
+end
+
