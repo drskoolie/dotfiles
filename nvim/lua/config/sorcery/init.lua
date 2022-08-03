@@ -78,3 +78,16 @@ function set_trace()
 	vim.cmd('normal! ^')
 end
 
+function set_trace_up()
+	vim.cmd('normal! ^')
+	local indent = vim.fn.indent(vim.fn.line('.'))
+
+	vim.cmd('normal! O')
+	indent_space = string.rep(' ', indent)
+	indent_space = indent_space .. ' '
+	vim.cmd('normal! i' .. indent_space)
+
+	vim.cmd('normal! iimport ipdb; ipdb.set_trace()')
+	vim.cmd('normal! ^')
+end
+

@@ -10,6 +10,11 @@
 	adi = add -i
 
 	br = branch
+	brr = branch -r
+
+	ch = checkout
+
+	cl = clone
 
 	co = commit
 	com = commit -m
@@ -22,4 +27,6 @@
 	st = status
 	sts = status -s
 
-	p = push
+	pu = push
+	puu = push --set-upstream
+	puuo = push --set-upstream origin

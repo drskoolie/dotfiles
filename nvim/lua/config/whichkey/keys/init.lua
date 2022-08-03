@@ -111,6 +111,7 @@ wk_mappings = {
 		P = {'"+y:TmuxPaste<CR>', 'visual', mode='v'},
         r = {tmux_send('reset -f'), 'reset'},
 		s = {':lua set_trace()<CR>', 'ipdb'},
+		S = {':lua set_trace_up()<CR>', 'ipdb_up'},
 		t = {':w<CR>:lua tmux_pytest()<CR>', 'pytest'},
 		v = {tmux_send('sop'), 'venv'},
 		V = {tmux_send('pip -V'), 'pip -V'},
