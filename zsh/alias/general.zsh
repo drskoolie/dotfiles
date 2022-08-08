@@ -12,6 +12,7 @@ alias xrandr5='~/.dotfiles/screenlayout/5Mons.sh'
 alias cdc='cd ~/.chronicles/;ls'
 alias cdcs='cd ~/.chronicles/schedule/;ls'
 alias cdcr='cd ~/.chronicles/research/;ls'
+alias cdcrc='cd ~/.chronicles/research/code;ls'
 
 alias cdd='cd ~/.dotfiles/; ls'
 alias cddi='cd ~/.dotfiles/i3; ls'

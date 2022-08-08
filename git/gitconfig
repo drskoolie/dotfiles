@@ -24,6 +24,9 @@
 
 	ed = config --global -e
 
+	lo = log
+	loa = log --all --decorate --oneline --graph
+
 	st = status
 	sts = status -s
 

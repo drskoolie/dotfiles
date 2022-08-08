@@ -36,6 +36,17 @@ wk_mappings = {
 	},
 
 
+	c = {
+		name = "+commands",
+
+		c = {tmux_send('cd ..;ls'), 'cd'},
+		C = {tmux_send('C-c'), 'C-c'},
+		d = {tmux_send('C-d'), 'C-d'},
+		l = {tmux_send('ls'), 'ls'},
+		y = {tmux_send('y'), 'y'},
+
+	},
+
 	d = {
 		name = "+debug",
 		a = {tmux_send('a'), 'args'},
@@ -101,9 +112,11 @@ wk_mappings = {
 		name = "+ipython",
 
 		a = {tmux_send('\\%paste'), 'paste'},
-		d = {tmux_send('pwd'), 'pwd'},
+		c = {tmux_send('pwd'), 'pwd'},
+		d = {tmux_send('dea'), 'dea'},
 		e = {tmux_send('exit'), 'exit'},
 		f = {tmux_send('run %:p'), 'file'},
+		g = {tmux_send('sog'), 'venv_global'},
         l = {':norm ^"+y$<CR>:TmuxPaste<CR>',          'send line'},
         m = {[[:norm mm<CR>:norm "+ym<CR>:lua tmux_send('\\%paste', 'vim_cmd')<CR>:norm 'm<CR>]],           'matlab'},
 		o = {tmux_send('ipython --no-autoindent'), 'open'},
@@ -231,26 +244,18 @@ wk_mappings = {
 		name = "+tmux",
 
 		c = {tmux_send('clear'), 'clear'},
-		C = {tmux_send('C-c'), 'C-c'},
-		d = {tmux_send('C-d'), 'C-d'},
 		e = {tmux_send(''), 'enter'},
-		l = {tmux_send('lua %:p'), 'lua'},
-		k = {tmux_kill_pane_last, 'kill'},
-		y = {tmux_send('y'), 'y'},
+		l  = {tmux_open_pane('-dh'),  'right'},
+		L  = {tmux_open_pane('-h'),  'right+'},
+		h  = {tmux_open_pane('-bdh'),  'left'},
+		H  = {tmux_open_pane('-bh'),  'left+'},
+		k  = {tmux_open_pane('-bd'),  'up'},
+		K  = {tmux_open_pane('-b'),  'up+'},
+		j  = {tmux_open_pane('-d'),  'down'},
+		J  = {tmux_open_pane(''),  'down+'},
+	},
 
-		o = {
-			name = "+open",
 
-			l  = {tmux_open_pane('-dh'),  'right'},
-			L  = {tmux_open_pane('-h'),  'right+'},
-			h  = {tmux_open_pane('-bdh'),  'left'},
-			H  = {tmux_open_pane('-bh'),  'left+'},
-			k  = {tmux_open_pane('-bd'),  'up'},
-			K  = {tmux_open_pane('-b'),  'up+'},
-			j  = {tmux_open_pane('-d'),  'down'},
-			J  = {tmux_open_pane(''),  'down+'},
-		},
-	}
 }
 
 wk_settings.register(wk_mappings, wk_opts)
