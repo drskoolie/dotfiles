@@ -15,7 +15,7 @@ bindsym $mod+o mode "open"
 mode "open" {
 		bindsym b exec virtualbox; mode "default"
         bindsym d exec dolphin; mode "default"
-        bindsym s exec spectacle; mode "default"
+        bindsym s exec screenshot; mode "default"
 		bindsym t exec qBittorent; mode "default"
         bindsym q exec qutebrowser; mode "default"
         bindsym v exec vivaldi-stable; mode "default"
