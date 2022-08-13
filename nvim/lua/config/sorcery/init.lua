@@ -12,6 +12,17 @@ function tmux_send(input, style)
 	end
 end
 
+function tmux_send_sql()
+	vim.cmd([[norm gg"+yG<CR>]])
+	tmux_paste()
+	vim.cmd([[silent !tmux send -t 1 C-l]])
+	vim.cmd([[silent !tmux send -t 1 '\;' Enter]])
+end
+
+function tmux_send_clear()
+	vim.cmd([[silent !tmux send -t 1 C-l]])
+end
+
 function tmux_paste()
 	output0 = [[silent !tmux select-pane -t 1]]
 	output1 = [[silent !xclip -o -sel clipboard | tmux load-buffer -]]
@@ -31,6 +42,9 @@ end
 
 vim.cmd([[set clipboard=unnamedplus]])
 vim.cmd([[com! TmuxPaste lua tmux_paste()]])
+vim.cmd([[com! TmuxSendSql lua tmux_send_sql()]])
+vim.cmd([[com! TmuxSendClear lua tmux_send_clear()]])
+
 -- vim.cmd([[com! -nargs=+ TmuxSend lua tmux_send(<q-args>)]])
 
 

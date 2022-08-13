@@ -239,11 +239,22 @@ wk_mappings = {
 		},
 	},
 
+	s = {
+		name = "+sql",
+
+		c = {tmux_send('\\c'), 'cancel'},
+		f = {':TmuxSendSql<CR>', 'file'},
+		l = {tmux_send('\\;'), 'line'},
+		o = {tmux_send('mysql -u root -p --local_infile=1'), 'open'},
+		q = {tmux_send('quit'), 'quit'},
+		t = {tmux_send('show tables\\;'), 'tables'},
+
+	},
 
 	t = {
 		name = "+tmux",
 
-		c = {tmux_send('clear'), 'clear'},
+		c = {':TmuxSendClear<CR>', 'clear'},
 		e = {tmux_send(''), 'enter'},
 		l  = {tmux_open_pane('-dh'),  'right'},
 		L  = {tmux_open_pane('-h'),  'right+'},
@@ -254,7 +265,6 @@ wk_mappings = {
 		j  = {tmux_open_pane('-d'),  'down'},
 		J  = {tmux_open_pane(''),  'down+'},
 	},
-
 
 }
 
