@@ -10,6 +10,7 @@ alias xrandr5='~/.dotfiles/screenlayout/5Mons.sh'
 # | change directory |
 # +------------------+
 alias cdc='cd ~/.chronicles/;ls'
+alias cdcb='cd ~/.chronicles/books/;ls'
 alias cdcs='cd ~/.chronicles/schedule/;ls'
 alias cdcr='cd ~/.chronicles/research/;ls'
 alias cdcrc='cd ~/.chronicles/research/code;ls'
@@ -83,6 +84,7 @@ alias sozai='source ~/.dotfiles/zsh/alias/init.zsh'
 
 # Todo
 alias todo='cat ~/.chronicles/schedule/2022.txt | ag "^-"'
+
 # +-------+
 # | trash |
 # +-------+
