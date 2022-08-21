@@ -4,27 +4,27 @@
 alias g='git'
 alias ls='ls -v --color'
 alias t='tmux'
-alias xrandr5='~/.dotfiles/screenlayout/5Mons.sh'
+alias xrandr5='~/dotfiles/screenlayout/5Mons.sh'
 
 # +------------------+
 # | change directory |
 # +------------------+
-alias cdc='cd ~/.chronicles/;ls'
-alias cdcb='cd ~/.chronicles/books/;ls'
-alias cdcs='cd ~/.chronicles/schedule/;ls'
-alias cdcr='cd ~/.chronicles/research/;ls'
-alias cdcrc='cd ~/.chronicles/research/code;ls'
+alias cdc='cd ~/chronicles/;ls'
+alias cdcb='cd ~/chronicles/books/;ls'
+alias cdcs='cd ~/chronicles/schedule/;ls'
+alias cdcr='cd ~/chronicles/research/;ls'
+alias cdcrc='cd ~/chronicles/research/code;ls'
 
-alias cdd='cd ~/.dotfiles/; ls'
-alias cddi='cd ~/.dotfiles/i3; ls'
-alias cddn='cd ~/.dotfiles/nvim/; ls'
-alias cddnl='cd ~/.dotfiles/nvim/lua; ls'
-alias cdds='cd ~/.dotfiles/setup; ls'
-alias cddt='cd ~/.dotfiles/tmux; ls'
-alias cddz='cd ~/.dotfiles/zsh; ls'
-alias cddza='cd ~/.dotfiles/zsh/alias; ls'
+alias cdd='cd ~/dotfiles/; ls'
+alias cddi='cd ~/dotfiles/i3; ls'
+alias cddn='cd ~/dotfiles/nvim/; ls'
+alias cddnl='cd ~/dotfiles/nvim/lua; ls'
+alias cdds='cd ~/dotfiles/setup; ls'
+alias cddt='cd ~/dotfiles/tmux; ls'
+alias cddz='cd ~/dotfiles/zsh; ls'
+alias cddza='cd ~/dotfiles/zsh/alias; ls'
 
-alias cdf='cd ~/.fit/; ls'
+alias cdf='cd ~/fit/; ls'
 
 # +-----+
 # | fzf |
@@ -43,20 +43,20 @@ alias lgd='lazygit -p ~/.dotfiles/'
 # +--------+
 # | neovim |
 # +--------+
-alias nvimcs='nvim ~/.chronicles/schedule/2022.txt'
+alias nvimcs='nvim ~/chronicles/schedule/2022.txt'
 
 alias nvimg='nvim .gitignore'
 
-alias nvimi='nvim ~/.dotfiles/i3/config'
+alias nvimi='nvim ~/dotfiles/i3/config'
 
 alias nviml='nvim *.tex'
 
-alias nvimt='nvim ~/.dotfiles/tmux/tmux.conf'
+alias nvimt='nvim ~/dotfiles/tmux/tmux.conf'
 
-alias nvimz='nvim ~/.dotfiles/zsh/.zshrc'
-alias nvimzp='nvim ~/.dotfiles/zsh/packages.zsh'
-alias nvimzai='nvim ~/.dotfiles/zsh/alias/init.zsh'
-alias nvimzag='nvim ~/.dotfiles/zsh/alias/general.zsh'
+alias nvimz='nvim ~/dotfiles/zsh/.zshrc'
+alias nvimzp='nvim ~/dotfiles/zsh/packages.zsh'
+alias nvimzai='nvim ~/dotfiles/zsh/alias/init.zsh'
+alias nvimzag='nvim ~/dotfiles/zsh/alias/general.zsh'
 
 # +-------+
 # | nohup |
@@ -79,11 +79,11 @@ alias sog='source ~/Documents/venv_global/bin/activate'
 alias sop='source venv*/bin/activate'
 alias dea='deactivate'
 
-alias soz='source ~/.dotfiles/zsh/.zshrc'
-alias sozai='source ~/.dotfiles/zsh/alias/init.zsh'
+alias soz='source ~/dotfiles/zsh/.zshrc'
+alias sozai='source ~/dotfiles/zsh/alias/init.zsh'
 
 # Todo
-alias todo='cat ~/.chronicles/schedule/2022.txt | ag "^-"'
+alias todo='cat ~/chronicles/schedule/2022.txt | ag "^-"'
 
 # +-------+
 # | trash |

@@ -15,6 +15,6 @@ require('config/sorcery')
 require('config/ultisnips')
 
 -- ==> WhichKey
-vim.cmd('source ~/.dotfiles/nvim/lua/config/whichkey/function.vim') 
+vim.cmd('source ~/dotfiles/nvim/lua/config/whichkey/function.vim') 
 require('config/whichkey/config')
 require('config/whichkey/keys')
