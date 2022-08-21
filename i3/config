@@ -50,9 +50,19 @@ mode "open" {
 # finds out, if available)
 bar
 {
-		# status_command i3status
-		status_command exec ~/dotfiles/i3status/shell/mybar.sh
+		# status_command exec ~/dotfiles/i3status/shell/mybar.sh
 		strip_workspace_numbers yes
+		status_command ~/dotfiles/i3/bumblebee-status/bumblebee-status	\
+		-m	\
+		cpu	\
+		memory \
+		time \
+		pasink \
+		pasource \
+		-p \
+		timeformat="%H:%M"	\
+		-t \
+		solarized
 }
 
 #  __^__         __^__
