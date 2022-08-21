@@ -23,3 +23,6 @@ source ~/dotfiles/zsh/p10k/p10k_end.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/zsh//.p10k.zsh.
 [[ ! -f ~/.dotfiles/zsh//.p10k.zsh ]] || source ~/.dotfiles/zsh//.p10k.zsh
+
+# Created by `pipx` on 2022-08-21 12:26:54
+export PATH="$PATH:/home/drskoolie/.local/bin"

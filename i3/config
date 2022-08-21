@@ -189,8 +189,8 @@ bindsym $mod+t mode "ws_move"
 mode "ws_move" {
 
 	# move entire workspace
-	bindsym h move workspace to left
-	bindsym l move workspace to right
+	bindsym h move workspace to output left
+	bindsym l move workspace to output right
 
 	bindsym k workspace next_on_output
 	bindsym j workspace prev_on_output
