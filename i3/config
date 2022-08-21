@@ -14,8 +14,9 @@ font pango:DejaVu Sans Mono 9
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id exec /$HOME/dotfiles/screenlayout/5Mons.sh
-exec --no-startup-id feh --bg-fill -- $HOME/dotfiles/wallpaper/winter-forest.jpg
+exec --no-startup-id feh --bg-fill -- $HOME/dotfiles/wallpaper/mountain-grass.jpg
 exec --no-startup-id picom -b --experimental-backends --backend glx
+exec --no-startup-id pulseaudio
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -78,7 +79,8 @@ floating_modifier $mod
 # ---------------------- Configuration ---------------------- 
 
 bindsym $mod+Shift+r restart
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e reload
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 
 # ---------------------- Part 10: KDE ---------------------- 
@@ -87,20 +89,12 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
-for_window [class="Pavucontrol"] floating enable, resize set 500px 500px, move position center, border normal
+for_window [class="Pavucontrol"] floating enable, resize set 900px 500px, move position center, border normal
 for_window [class="dolphin"] floating enable, resize set 900px 600px, move position center, border normal
 for_window [class="plasma-discover"] floating enable, resize set 500px 500px, move position center, border normal
 for_window [class="yakuake"] floating enable
 for_window [class="systemsettings"] floating enable
 for_window [class="plasmashell"] floating enable;
-for_window [class="Plasma"] floating enable; border none
-for_window [title="plasma-desktop"] floating enable; border none
-for_window [title="win7"] floating enable; border none
-for_window [class="krunner"] floating enable; border none
-for_window [class="Kmix"] floating enable; border none
-for_window [class="Klipper"] floating enable; border none
-for_window [class="Plasmoidviewer"] floating enable; border none
-for_window [class="(?i)*nextcloud*"] floating disable
 for_window [class="plasmashell" window_type="notification"] border none, move right 600px, move up 400px
 no_focus [class="plasmashell" window_type="notification"]
 
