@@ -13,6 +13,8 @@
 	brr = branch -r
 
 	ch = checkout
+	chb = checkout -b
+	chm = checkout main
 
 	cl = clone
 
