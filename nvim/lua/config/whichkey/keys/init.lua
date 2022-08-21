@@ -42,6 +42,7 @@ wk_mappings = {
 		c = {tmux_send('cd ..;ls'), 'cd'},
 		C = {tmux_send('C-c'), 'C-c'},
 		d = {tmux_send('C-d'), 'C-d'},
+		k = {':silent !tmux kill-pane -t 1<CR>', 'kill'},
 		l = {tmux_send('ls'), 'ls'},
 		y = {tmux_send('y'), 'y'},
 
@@ -176,6 +177,7 @@ wk_mappings = {
 
 			a  = {':ColorizerAttachToBuffer<CR>',  'attach'},
 			d  = {':ColorizerDetachFromBuffer<CR>',  'detach'},
+			k = {':silent !tmux kill-pane -t 1', 'kill'},
 			r  = {':ColorizerReloadAllBuffers<CR>',  'reload'},
 			t  = {':ColorizerToggle<CR>',  'toggle'},
 			x  = {':XtermColorTable<CR>',  'xterm'},

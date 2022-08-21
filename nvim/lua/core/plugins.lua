@@ -63,6 +63,10 @@ return require('packer').startup(function()
   
   use 'p00f/nvim-ts-rainbow'
 
+  -- +--------------+
+  -- | autocomplete |
+  -- +--------------+
+
   -- +--------+
   -- | useful |
   -- +--------+
@@ -76,8 +80,6 @@ return require('packer').startup(function()
   -- +-----+
   use 'easymotion/vim-easymotion'
   use 'psliwka/vim-smoothie'
-  use 'SirVer/ultisnips'
-  use 'voldikss/vim-floaterm'
 
   -- +----------+
   -- | whichkey |

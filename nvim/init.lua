@@ -7,6 +7,7 @@ require('core/highlighted-yank')
 require('core/python')
 
 -- ==> Config
+require('config/cmp')
 require('config/easymotion')
 require('config/lualine')
 require('config/nvim-colorizer')
