@@ -14,6 +14,7 @@ source ~/dotfiles/zsh/help.zsh
 source ~/dotfiles/zsh/functions.zsh
 source ~/dotfiles/zsh/misc.zsh
 source ~/dotfiles/zsh/packages.zsh
+source ~/dotfiles/zsh/spark.zsh
 source ~/dotfiles/zsh/p10k/p10k_end.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

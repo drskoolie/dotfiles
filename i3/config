@@ -54,7 +54,6 @@ bar
 		strip_workspace_numbers yes
 		status_command ~/dotfiles/i3/bumblebee-status/bumblebee-status	\
 		-m	\
-		cpu	\
 		memory \
 		time \
 		pasink \

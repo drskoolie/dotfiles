@@ -29,6 +29,8 @@
 	lo = log
 	loa = log --all --decorate --oneline --graph
 
+	re = restore
+
 	st = status
 	sts = status -s
 
