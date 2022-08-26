@@ -55,13 +55,15 @@ bar
 		status_command ~/dotfiles/i3/bumblebee-status/bumblebee-status	\
 		-m	\
 		memory \
-		time \
 		pasink \
 		pasource \
+		date \
+		time \
 		-p \
-		timeformat="%H:%M"	\
+		date.format="%b %d"		\
+		memory.format="{used}" \
 		-t \
-		solarized
+		iceberg-rainbow
 }
 
 #  __^__         __^__
