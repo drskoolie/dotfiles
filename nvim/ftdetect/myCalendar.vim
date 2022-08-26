@@ -1,1 +1,1 @@
-autocmd BufRead,BufNewFile ~/.chronicles/schedule/*.txt set filetype=myCalendar
+autocmd BufRead,BufNewFile ~/chronicles/schedule/*.txt set filetype=myCalendar
