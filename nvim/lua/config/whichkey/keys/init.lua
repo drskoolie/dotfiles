@@ -141,6 +141,9 @@ wk_mappings = {
 	l = {
 		name = "+lsp",
 		
+		d = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
+		D = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
+		i = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
 		l = {'<cmd>lua vim.diagnostic.open_float()<CR>', 'line', silent = true},
 		n = {'<cmd>lua vim.diagnostic.goto_next()<CR>', 'next', silent = true}, 
 		p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true}, 
