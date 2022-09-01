@@ -10,6 +10,12 @@ end
 return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+
+  -- +--------+
+  -- | python |
+  -- +--------+
+
+  use 'averms/black-nvim'
 	
   -- +--------+
   -- | colors |

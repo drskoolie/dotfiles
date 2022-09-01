@@ -39,11 +39,14 @@ wk_mappings = {
 	c = {
 		name = "+commands",
 
-		c = {tmux_send('cd ..;ls'), 'cd'},
-		C = {tmux_send('C-c'), 'C-c'},
+		C = {tmux_send('cd ..;ls'), 'cd'},
+		c = {tmux_send('C-c'), 'C-c'},
 		d = {tmux_send('C-d'), 'C-d'},
 		k = {':silent !tmux kill-pane -t 1<CR>', 'kill'},
 		l = {tmux_send('ls'), 'ls'},
+		-- o = {':TmuxPytestOpen<CR>', 'open pytest'},
+		-- p = {':TmuxPytestRun<CR>', 'run pytest'},
+		p = {tmux_send('pytest'), 'pytest'},
 		y = {tmux_send('y'), 'y'},
 
 	},
@@ -213,8 +216,6 @@ wk_mappings = {
 			l = {':w<CR>:silent !pdflatex %:p:. <CR>', 'LaTeX'},
 			L = {':w<CR>:!pdflatex %:p:. <CR>', 'LaTeX no hide'},
 		},
-
-
 
 		p = {
 			name = "+packer",

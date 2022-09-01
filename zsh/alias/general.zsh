@@ -10,6 +10,7 @@ alias xrandr5='~/dotfiles/screenlayout/5Mons.sh'
 # | change directory |
 # +------------------+
 alias cdc='cd ~/chronicles/;ls'
+alias cdca='cd ~/chronicles/adventofcode/2015/;ls'
 alias cdcb='cd ~/chronicles/books/;ls'
 alias cdcs='cd ~/chronicles/schedule/;ls'
 alias cdcr='cd ~/chronicles/research/;ls'

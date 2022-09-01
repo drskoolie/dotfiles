@@ -14,7 +14,8 @@ font pango:Hack Regular Nerd Font Complete 9
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec --no-startup-id exec /$HOME/dotfiles/screenlayout/5Mons.sh
+# exec --no-startup-id exec /$HOME/dotfiles/screenlayout/5Mons.sh
+exec --no-startup-id exec /$HOME/dotfiles/screenlayout/4Mons.sh
 exec --no-startup-id feh --bg-fill -- $HOME/dotfiles/wallpaper/mountain-grass.jpg
 exec --no-startup-id picom -b --experimental-backends --backend glx
 exec --no-startup-id pulseaudio
@@ -609,6 +610,8 @@ set $ws106 "106:discord"
 set $ws108 "108: vpn"     
 set $ws109 "109: whatsapp"
 set $ws110 "110:✈ virtualbox"
+set $ws111 "111:slack"
+set $ws112 "112:github"
 
 # resize window (you can also use the mouse for that)
 mode "ws0" {
@@ -623,6 +626,8 @@ mode "ws0" {
 	bindsym v workspace number $ws108; mode "default"
 	bindsym w workspace number $ws109; mode "default"
 	bindsym b workspace number $ws110; mode "default"
+	bindsym s workspace number $ws111; mode "default"
+	bindsym h workspace number $ws112; mode "default"
 
 	bindsym Escape mode "default"
 
@@ -640,6 +645,8 @@ mode "cws0" {
 	bindsym v move container to workspace number $ws108; mode "default"
 	bindsym w move container to workspace number $ws109; mode "default"
 	bindsym b move container to workspace number $ws110; mode "default"
+	bindsym s move container to workspace number $ws111; mode "default"
+	bindsym h move container to workspace number $ws112; mode "default"
 
 	bindsym Escape mode "default"
 }

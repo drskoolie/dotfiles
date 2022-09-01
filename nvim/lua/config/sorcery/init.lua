@@ -47,15 +47,22 @@ vim.cmd([[com! TmuxSendClear lua tmux_send_clear()]])
 
 -- vim.cmd([[com! -nargs=+ TmuxSend lua tmux_send(<q-args>)]])
 
+function tmux_pytest_open()
+	vim.cmd([[silent !tmux new-window -n pytest]])
+end
 
-function tmux_pytest()
+
+function tmux_pytest_run()
 	output0 = [[silent !tmux send -t pytest.0 'clear' Enter]]
-	output1 = [[silent !tmux send -t pytest.0 'pytest' Enter]]
+	output1 = [[silent !tmux send -t pytest.0 'python3 -m pytest' Enter]]
 	output2 = [[silent !tmux select-window -t pytest]]
 	vim.cmd(output0)
 	vim.cmd(output1)
 	vim.cmd(output2)
 end
+
+vim.cmd([[com! TmuxPytestOpen lua tmux_pytest_open()]])
+vim.cmd([[com! TmuxPytestRun lua tmux_pytest_run()]])
 
 local tmux_kill_pane_last = ':silent !tmux last-pane \\; kill-pane<CR>'
 
