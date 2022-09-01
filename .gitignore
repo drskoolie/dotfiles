@@ -4,3 +4,5 @@ zsh/packages/zsh-syntax-highlighting/*
 zsh/.zcompdump
 zsh/packages/zsh-syntax-highlighting
 venv/venv*
+package*.json
+node_modules/*
