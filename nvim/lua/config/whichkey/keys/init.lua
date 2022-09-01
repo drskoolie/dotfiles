@@ -138,22 +138,10 @@ wk_mappings = {
         w = {tmux_send('whos'),     'whos'},
 	},
 	
-	l = {
-		name = "+lsp",
-		
-		d = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
-		D = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
-		i = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
-		l = {'<cmd>lua vim.diagnostic.open_float()<CR>', 'line', silent = true},
-		n = {'<cmd>lua vim.diagnostic.goto_next()<CR>', 'next', silent = true}, 
-		p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true}, 
-	},
-
-		
 	n = {
 		name = "+neovim",
 
-        c = {':tabnew<CR>:e ~/.config/nvim/lua/config/lsp/init.lua<CR>',  'plugins'},
+        c = {':tabnew<CR>:e ~/.config/nvim/lua/config/lsp/init.lua<CR>',  'lsp'},
         i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
         l = {':w<CR>:luafile %<CR>',  'lua source'},
         p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
@@ -245,13 +233,15 @@ wk_mappings = {
 			u = {':PackerUpdate<CR>', 'update'},
 		},
 
-		s = {
-			name = "+ultisnips",
-
-			a = {':tabedit ~/.dotfiles/nvim/lua/config/ultisnips/snips/all.snippets<CR>', 'all'},
-			e = {':UltiSnipsEdit<CR>', 'edit'},
+		t = {
+			name = "+trouble",
+			c = {'<cmd>TroubleToggle document_diagnostics<CR>', 'current'},
+			d = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
+			D = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
+			r = {'<cmd>TroubleToggle lsp_references<CR>', 'refs'},
+			t = {'<cmd>TroubleToggle<CR>', 'toggle'},
 		},
-
+			
 		u = {
 			name = "+undotree",
 

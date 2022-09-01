@@ -33,6 +33,15 @@ return require('packer').startup(function()
   -- | lsp |
   -- +-----+
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+  use {'ms-jpq/coq_nvim', branch = 'coq'}
+  use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
+  use {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {}
+    end
+  }
 
   -- +-----+
   -- | git |
