@@ -12,12 +12,6 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   -- +--------+
-  -- | python |
-  -- +--------+
-
-  use 'averms/black-nvim'
-	
-  -- +--------+
   -- | colors |
   -- +--------+
   use 'norcalli/nvim-colorizer.lua'
@@ -36,12 +30,22 @@ return require('packer').startup(function()
   use 'junegunn/fzf.vim'
 
   -- +-----+
+  -- | lsp |
+  -- +-----+
+  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+
+  -- +-----+
   -- | git |
   -- +-----+
   use 'lewis6991/gitsigns.nvim'
   use 'mhinz/vim-signify'     -- Git diff icons on the side of the file lines
   use 'tpope/vim-fugitive'
 
+  -- +--------+
+  -- | python |
+  -- +--------+
+  use 'averms/black-nvim'
+	
   -- +-------+
   -- | pulse |
   -- +-------+

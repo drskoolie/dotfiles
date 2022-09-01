@@ -7,13 +7,15 @@ require('core/highlighted-yank')
 require('core/python')
 
 -- ==> Config
-require('config/cmp')
 require('config/easymotion')
 require('config/lualine')
 require('config/nvim-colorizer')
 require('config/nvim-treesitter')
 require('config/sorcery')
 require('config/ultisnips')
+
+-- ==> LSP
+require('config/lsp')
 
 -- ==> WhichKey
 vim.cmd('source ~/dotfiles/nvim/lua/config/whichkey/function.vim') 

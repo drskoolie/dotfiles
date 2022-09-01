@@ -23,3 +23,6 @@ export MANWIDTH=999
 
 # Adding to the path (~/bin)
 export PATH=$PATH:$HOME/bin
+
+# Npm
+export PATH=~/.npm_global/bin:$PATH

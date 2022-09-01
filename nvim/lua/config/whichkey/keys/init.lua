@@ -137,10 +137,20 @@ wk_mappings = {
 		-- V = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>dd0', 'variable'},
         w = {tmux_send('whos'),     'whos'},
 	},
+	
+	l = {
+		name = "+lsp",
+		
+		l = {'<cmd>lua vim.diagnostic.open_float()<CR>', 'line', silent = true},
+		n = {'<cmd>lua vim.diagnostic.goto_next()<CR>', 'next', silent = true}, 
+		p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true}, 
+	},
 
+		
 	n = {
 		name = "+neovim",
 
+        c = {':tabnew<CR>:e ~/.config/nvim/lua/config/lsp/init.lua<CR>',  'plugins'},
         i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
         l = {':w<CR>:luafile %<CR>',  'lua source'},
         p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
