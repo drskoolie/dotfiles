@@ -238,6 +238,7 @@ wk_mappings = {
 			c = {'<cmd>TroubleToggle document_diagnostics<CR>', 'current'},
 			d = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
 			D = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
+			n = {'<cmd>lua vim.lsp.buf.rename()<CR>', 'rename', silent = true},
 			r = {'<cmd>TroubleToggle lsp_references<CR>', 'refs'},
 			t = {'<cmd>TroubleToggle<CR>', 'toggle'},
 		},
@@ -250,18 +251,6 @@ wk_mappings = {
 			s = {':UndotreeShow<CR>', 'show'},
 			t = {':UndotreeToggle<CR>', 'toggle'},
 		},
-	},
-
-	s = {
-		name = "+sql",
-
-		c = {tmux_send('\\c'), 'cancel'},
-		f = {':TmuxSendSql<CR>', 'file'},
-		l = {tmux_send('\\;'), 'line'},
-		o = {tmux_send('mysql -u root -p --local_infile=1'), 'open'},
-		q = {tmux_send('quit'), 'quit'},
-		t = {tmux_send('show tables\\;'), 'tables'},
-
 	},
 
 	t = {
