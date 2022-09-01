@@ -209,6 +209,12 @@ wk_mappings = {
 			},
 		},
 
+		f = {
+			name = "+fern",
+
+			o = {':Fern % <CR>', 'open'},
+		},
+
 		l = {
 			name = "+latex",
 
