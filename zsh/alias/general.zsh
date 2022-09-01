@@ -76,7 +76,7 @@ function noz ()
 # +--------+
 # | source |
 # +--------+
-alias sog='source ~/Documents/venv_global/bin/activate'
+alias sog='source ~/.local/venv/venv_global/bin/activate'
 alias sop='source venv*/bin/activate'
 alias dea='deactivate'
 

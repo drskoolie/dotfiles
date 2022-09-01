@@ -116,6 +116,7 @@ wk_mappings = {
 		name = "+ipython",
 
 		a = {tmux_send('\\%paste'), 'paste'},
+		b = {':w<CR>:call Black()<CR>', 'black'},
 		c = {tmux_send('pwd'), 'pwd'},
 		d = {tmux_send('dea'), 'dea'},
 		e = {tmux_send('exit'), 'exit'},

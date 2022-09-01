@@ -3,3 +3,4 @@ taskwarrior/task/*
 zsh/packages/zsh-syntax-highlighting/*
 zsh/.zcompdump
 zsh/packages/zsh-syntax-highlighting
+venv/venv*
