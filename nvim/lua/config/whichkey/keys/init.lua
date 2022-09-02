@@ -138,6 +138,19 @@ wk_mappings = {
         w = {tmux_send('whos'),     'whos'},
 	},
 	
+	l = {
+		name = "+lsp",
+		c = {'<cmd>TroubleToggle document_diagnostics<CR>', 'current'},
+		d = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
+		D = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
+		f = {'<cmd>TroubleToggle lsp_references<CR>', 'refs'},
+		p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true},
+		n = {'<cmd>lua vim.diagnostic.goto_next()<CR>', 'next', silent = true},
+		r = {'<cmd>lua vim.lsp.buf.rename()<CR>', 'rename', silent = true},
+		t = {'<cmd>TroubleToggle<CR>', 'toggle'},
+	},
+			
+
 	n = {
 		name = "+neovim",
 
@@ -233,16 +246,6 @@ wk_mappings = {
 			u = {':PackerUpdate<CR>', 'update'},
 		},
 
-		t = {
-			name = "+trouble",
-			c = {'<cmd>TroubleToggle document_diagnostics<CR>', 'current'},
-			d = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
-			D = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
-			n = {'<cmd>lua vim.lsp.buf.rename()<CR>', 'rename', silent = true},
-			r = {'<cmd>TroubleToggle lsp_references<CR>', 'refs'},
-			t = {'<cmd>TroubleToggle<CR>', 'toggle'},
-		},
-			
 		u = {
 			name = "+undotree",
 
