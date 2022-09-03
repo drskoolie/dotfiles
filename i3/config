@@ -30,6 +30,7 @@ exec --no-startup-id nm-applet
 # start j4-dmenu-desktop (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show run
 bindsym $mod+Shift+d exec --no-startup-id rofi -show window
+bindsym $mod+Shift+s exec --no-startup-id systemctl suspend
 
 # start a terminal
 bindsym $mod+Return exec xfce4-terminal
@@ -42,6 +43,7 @@ bindsym $mod+o mode "open"
 mode "open" {
 
 		bindsym v exec vivaldi-stable; mode "default"
+		bindsym Return exec xfce4-terminal; mode "default"
 
         bindsym Escape mode "default"
 }
@@ -564,7 +566,7 @@ set $ws95 "95:calibre"
 set $ws96 "96:stack-overflow"
 set $ws97 "97:facebook"
 set $ws98 "98:ieee"
-set $ws99 "99"
+set $ws99 "99:book"
 
 mode "ws9" {
 
@@ -577,6 +579,7 @@ mode "ws9" {
 	bindsym s workspace number $ws96; mode "default"
 	bindsym f workspace number $ws97; mode "default"
 	bindsym i workspace number $ws98; mode "default"
+	bindsym b workspace number $ws99; mode "default"
 
 	bindsym Escape mode "default"
 }
@@ -593,6 +596,7 @@ mode "cws9" {
 	bindsym s move container to workspace number $ws96; mode "default"
 	bindsym f move container to workspace number $ws97; mode "default"
 	bindsym i move container to workspace number $ws98; mode "default"
+	bindsym b move container to workspace number $ws99; mode "default"
 
 	bindsym Escape mode "default"
 }

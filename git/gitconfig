@@ -8,6 +8,7 @@
 [alias]
 	ad = add
 	ada	= add .
+	adc = !git add . && git commit
 	adi = add -i
 
 	br = branch
