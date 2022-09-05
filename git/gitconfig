@@ -12,7 +12,9 @@
 	adi = add -i
 
 	br = branch
+	brd = branch -d
 	brr = branch -r
+	brv = branch -v
 
 	ch = checkout
 	chb = checkout -b
@@ -22,6 +24,7 @@
 
 	co = commit
 	com = commit -m
+	coam = commit -a -m
 
 	di = diff
 	dis = diff --staged
@@ -30,6 +33,9 @@
 
 	lo = log
 	loa = log --all --decorate --oneline --graph
+	
+	me = merge
+	met = mergetool
 
 	re = restore
 	res = restore --staged
@@ -40,3 +46,10 @@
 	pu = push
 	puu = push --set-upstream
 	puuo = push --set-upstream origin
+
+[mergetool "nvim"]
+  cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
+[merge]
+  tool = nvim
+[mergetool]
+  prompt = false

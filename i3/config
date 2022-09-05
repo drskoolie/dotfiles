@@ -43,7 +43,7 @@ bindsym $mod+o mode "open"
 mode "open" {
 
 		bindsym v exec vivaldi-stable; mode "default"
-		bindsym Return exec xfce4-terminal; mode "default"
+		bindsym s exec simplescreenrecorder; mode "default"
 
         bindsym Escape mode "default"
 }
