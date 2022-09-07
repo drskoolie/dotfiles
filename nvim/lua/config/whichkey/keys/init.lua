@@ -20,6 +20,21 @@ wk_mappings = {
         W  = {'<Plug>(easymotion-W)',  'W'},
 	},
 
+	a = {
+		name = "+nvim-tree",
+
+		b = {':NvimTreeFindFile<CR>', 'buffer'},
+		c = {':NvimTreeCollapse<CR>', 'collapse'},
+		f = {':NvimTreeFocus<CR>', 'focus'},
+		o = {':NvimTreeOpen<CR>', 'open'},
+		R = {':NvimTreeRefresh<CR>', 'refresh'},
+		r = {':NvimTreeResize ', 'resize'},
+		p = {':NvimTreeClipboard <CR>', 'clipboard'},
+		t = {':NvimTreeToggle<CR>', 'toggle'},
+		q = {':NvimTreeClose<CR>', 'quit'},
+
+	},
+
 	c = {
 		name = "+commands",
 
