@@ -49,7 +49,7 @@ return require('packer').startup(function()
   -- +-----+
   -- | git |
   -- +-----+
-  use 'lewis6991/gitsigns.nvim'
+  
   use 'mhinz/vim-signify'     -- Git diff icons on the side of the file lines
   use 'tpope/vim-fugitive'
 

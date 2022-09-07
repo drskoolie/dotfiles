@@ -99,3 +99,7 @@ require("catppuccin").setup({
 
 vim.cmd [[colorscheme catppuccin]]
 vim.cmd [[hi Normal ctermbg=none guibg=none]]
+vim.cmd [[hi NormalFloat ctermbg=none guibg=none]]
+vim.cmd [[hi NormalNC ctermbg=none guibg=none]]
+vim.cmd [[hi SignColumn ctermbg=none guibg=none]]
+
