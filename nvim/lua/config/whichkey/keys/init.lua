@@ -3,7 +3,6 @@ wk_mappings = {
 	[" "] = {
 		name = "+easymotion",
 		
-		-- https://github.com/easymotion/vim-easymotion/blob/master/doc/easymotion.txt
         b  = {'<Plug>(easymotion-b)',  'b'},
         B  = {'<Plug>(easymotion-B)',  'B'},
         e  = {'<Plug>(easymotion-e)',  'e'},
@@ -21,31 +20,13 @@ wk_mappings = {
         W  = {'<Plug>(easymotion-W)',  'W'},
 	},
 
-	a = {':noh<CR>', 'noh'},
-
-	b = {
-		name = "+buffers",
-
-        c  = {':tabclose<CR>',  'tab close'},
-        d  = {':ls<CR>:bdelete',  'del'},
-        g  = {':ls<CR>:b',  'goto'},
-        l  = {':b#<CR>',        'last'},
-        n  = {':bnext<CR>',     'next'},
-        p  = {':bprev<CR>',     'prev'},
-        t  = {':tabnew<CR>',    'tab new'},
-	},
-
-
 	c = {
 		name = "+commands",
 
-		C = {tmux_send('cd ..;ls'), 'cd'},
 		c = {tmux_send('C-c'), 'C-c'},
 		d = {tmux_send('C-d'), 'C-d'},
-		k = {':silent !tmux kill-pane -t 1<CR>', 'kill'},
+		e = {tmux_send(''), 'enter'},
 		l = {tmux_send('ls'), 'ls'},
-		-- o = {':TmuxPytestOpen<CR>', 'open pytest'},
-		-- p = {':TmuxPytestRun<CR>', 'run pytest'},
 		p = {tmux_send('pytest'), 'pytest'},
 		y = {tmux_send('y'), 'y'},
 
@@ -53,27 +34,22 @@ wk_mappings = {
 
 	d = {
 		name = "+debug",
-		a = {tmux_send('a'), 'args'},
 		b = {tmux_send('b'), 'break'},
 		c = {tmux_send('c'), 'continue'},
 		d = {tmux_send('\\%debug'), '%debug'},
 		h = {tmux_send('h'), 'help'},
-		j = {':FloatermSend j ', 'jump'},
+		i = {':lua set_trace()<CR>', 'ipdb'},
+		I = {':lua set_trace_up()<CR>', 'ipdb_up'},
 		l = {tmux_send('ll'), 'longlist'},
 		L = {tmux_send('l'), 'list'},
 		n = {tmux_send('n'), 'next'},
-		p = {':FloatermSend pp ', 'pretty print'},
-		P = {tmux_send('p'), 'print'},
+		p = {tmux_send('p'), 'print'},
 		q = {tmux_send('q'), 'quit'},
-		r = {tmux_send('return'), 'return'},
-		R = {tmux_send('retval'), 'retval'},
 		s = {tmux_send('s'), 'step'},
 		S = {tmux_send('sticky'), 'sticky'},
 		t = {tmux_send('tbreak'), 'tbreak'},
 		u = {tmux_send('u'), 'up'},
-		U = {':FloatermSend unt ', 'until'},
 		w = {tmux_send('w'), 'where'},
-		W = {tmux_send('whatis'), 'whatis'},
 	},
 
 	f = {
@@ -128,13 +104,9 @@ wk_mappings = {
         p = {':TmuxPaste<CR>',    'paste'},
 		P = {'"+y:TmuxPaste<CR>', 'visual', mode='v'},
         r = {tmux_send('reset -f'), 'reset'},
-		s = {':lua set_trace()<CR>', 'ipdb'},
-		S = {':lua set_trace_up()<CR>', 'ipdb_up'},
-		t = {':w<CR>:lua tmux_pytest()<CR>', 'pytest'},
 		v = {tmux_send('sop'), 'venv'},
 		V = {tmux_send('pip -V'), 'pip -V'},
 		-- v = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>ddk0', 'variable'},
-		-- V = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>dd0', 'variable'},
         w = {tmux_send('whos'),     'whos'},
 	},
 	
@@ -155,11 +127,17 @@ wk_mappings = {
 		name = "+neovim",
 
         c = {':tabnew<CR>:e ~/.config/nvim/lua/config/lsp/init.lua<CR>',  'lsp'},
+        C = {':e ~/.config/nvim/lua/config/lsp/init.lua<CR>',  'lsp'},
         i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
+        I = {':e ~/.config/nvim/init.lua<CR>',  'init'},
         l = {':w<CR>:luafile %<CR>',  'lua source'},
         p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
+        P = {':e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 		s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
+		S = {':e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
         w = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
+        W = {':e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
+        t  = {':tabnew<CR>',    'tab new'},
         v = {':w<CR>:source %<CR>',  'vim source'},
 	},
 
@@ -223,12 +201,6 @@ wk_mappings = {
 			},
 		},
 
-		f = {
-			name = "+fern",
-
-			o = {':Fern % <CR>', 'open'},
-		},
-
 		l = {
 			name = "+latex",
 
@@ -260,15 +232,9 @@ wk_mappings = {
 		name = "+tmux",
 
 		c = {':TmuxSendClear<CR>', 'clear'},
-		e = {tmux_send(''), 'enter'},
+		k = {':silent !tmux kill-pane -t 1<CR>', 'kill'},
 		l  = {tmux_open_pane('-dh'),  'right'},
-		L  = {tmux_open_pane('-h'),  'right+'},
-		h  = {tmux_open_pane('-bdh'),  'left'},
-		H  = {tmux_open_pane('-bh'),  'left+'},
-		k  = {tmux_open_pane('-bd'),  'up'},
-		K  = {tmux_open_pane('-b'),  'up+'},
 		j  = {tmux_open_pane('-d'),  'down'},
-		J  = {tmux_open_pane(''),  'down+'},
 	},
 
 }

@@ -54,6 +54,11 @@ alias nvimi='nvim ~/dotfiles/i3/config'
 
 alias nviml='nvim *.tex'
 
+alias nvimni='nvim ~/dotfiles/nvim/init.lua'
+alias nvimns='nvim ~/dotfiles/nvim/lua/config/sorcery/init.lua'
+alias nvimnw='nvim ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua'
+alias nvimnp='nvim ~/dotfiles/nvim/lua/core/plugins.lua'
+
 alias nvimt='nvim ~/dotfiles/tmux/tmux.conf'
 
 alias nvimz='nvim ~/dotfiles/zsh/.zshrc'

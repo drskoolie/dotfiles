@@ -13,6 +13,8 @@
 
 	br = branch
 	brd = branch -d
+	brnm = branch --no-merged
+	brm = branch --merged
 	brr = branch -r
 	brv = branch -v
 
@@ -36,6 +38,8 @@
 	
 	me = merge
 	met = mergetool
+
+	rb = rebase
 
 	re = restore
 	res = restore --staged

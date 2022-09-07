@@ -20,8 +20,13 @@ return require('packer').startup(function()
   -- +--------------+
   -- | file browser |
   -- +--------------+
-  use "lambdalisue/fern.vim"
-  use "antoinemadec/fixcursorhold.nvim"
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
 
   -- +----------+
   -- | junegunn |
@@ -33,8 +38,6 @@ return require('packer').startup(function()
   -- | lsp |
   -- +-----+
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
-  use {'ms-jpq/coq_nvim', branch = 'coq'}
-  use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
   use {
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
@@ -42,7 +45,6 @@ return require('packer').startup(function()
       require("trouble").setup {}
     end
   }
-  use 'ray-x/lsp_signature.nvim'
 
   -- +-----+
   -- | git |
@@ -82,10 +84,6 @@ return require('packer').startup(function()
   }
   
   use 'p00f/nvim-ts-rainbow'
-
-  -- +--------------+
-  -- | autocomplete |
-  -- +--------------+
 
   -- +--------+
   -- | useful |
