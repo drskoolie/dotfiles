@@ -1,8 +1,4 @@
-# rm ~/.zshrc
-# rm ~/.zshenv
-
-# ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
-# ln -s ~/.dotfiles/zsh/.zshenv ~/.zshenv
+ln -s ~/dotfiles/zsh/.zshrc ~/zshrc
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/dotfiles/zsh/packages/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/dotfiles/zsh/packages/zsh-autosuggestions
