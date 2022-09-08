@@ -105,7 +105,6 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
 for_window [class="Pavucontrol"] floating enable, resize set 900px 500px, move position center, border normal
-for_window [class="dolphin"] floating enable, resize set 900px 600px, move position center, border normal
 for_window [class="plasma-discover"] floating enable, resize set 500px 500px, move position center, border normal
 for_window [class="yakuake"] floating enable
 for_window [class="systemsettings"] floating enable
@@ -114,8 +113,6 @@ for_window [class="plasmashell" window_type="notification"] border none, move ri
 no_focus [class="plasmashell" window_type="notification"]
 
 
-# Kill Existing window that covers everything
-for_window [title="Desktop — Plasma"] kill; floating enable; border none
 # ---------------------- Media ----------------------
 
 bindsym $mod+m mode "media"

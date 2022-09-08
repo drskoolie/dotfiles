@@ -19,3 +19,6 @@ source ~/dotfiles/zsh/packages.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Created by `pipx` on 2022-09-08 12:58:58
+export PATH="$PATH:/home/drskoolie/.local/bin"
