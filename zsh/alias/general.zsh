@@ -61,7 +61,7 @@ alias nvimnp='nvim ~/dotfiles/nvim/lua/core/plugins.lua'
 
 alias nvimt='nvim ~/dotfiles/tmux/tmux.conf'
 
-alias nvimz='nvim ~/dotfiles/zsh/.zshrc'
+alias nvimz='nvim ~/dotfiles/zsh/zshrc'
 alias nvimzp='nvim ~/dotfiles/zsh/packages.zsh'
 alias nvimzai='nvim ~/dotfiles/zsh/alias/init.zsh'
 alias nvimzag='nvim ~/dotfiles/zsh/alias/general.zsh'
@@ -87,7 +87,7 @@ alias sog='source ~/dotfiles/venv/venv_global/bin/activate'
 alias sop='source venv*/bin/activate'
 alias dea='deactivate'
 
-alias soz='source ~/dotfiles/zsh/.zshrc'
+alias soz='source ~/dotfiles/zsh/zshrc'
 alias sozai='source ~/dotfiles/zsh/alias/init.zsh'
 
 # Todo
