@@ -65,6 +65,3 @@ else
 	echo "nvim isn't linked, linking"
 	ln -s $HOME/.dotfiles/nvim ~/.config/nvim
 fi
-
-ln -s $HOME/.dotfiles/taskwarrior/.task ~/.task
-ln -s $HOME/.dotfiles/taskwarrior/.taskrc ~/.taskrc
