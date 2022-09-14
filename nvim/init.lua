@@ -19,6 +19,5 @@ require('config/ultisnips')
 require('config/lsp')
 
 -- ==> WhichKey
-vim.cmd('source ~/dotfiles/nvim/lua/config/whichkey/function.vim') 
 require('config/whichkey/config')
 require('config/whichkey/keys')
