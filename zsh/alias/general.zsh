@@ -36,16 +36,11 @@ alias fzfp="fzf --preview 'batcat --style=numbers --color=always --style=numbers
 	--bind shift-up:preview-page-up,shift-down:preview-page-down\
 	|xclip -selection clipboard"
 
-# +---------+
-# | lazygit |
-# +---------+
-alias lg='lazygit'
-alias lgc='lazygit -p ~/.chronicles/'
-alias lgd='lazygit -p ~/.dotfiles/'
-
 # +--------+
 # | neovim |
 # +--------+
+alias n='nvim'
+
 alias nvimcs='nvim ~/chronicles/schedule/2022.txt'
 
 alias nvimg='nvim .gitignore'
@@ -53,6 +48,8 @@ alias nvimg='nvim .gitignore'
 alias nvimi='nvim ~/dotfiles/i3/config'
 
 alias nviml='nvim *.tex'
+
+alias nvimm='nvim ~/dotfiles/mpv/input.conf'
 
 alias nvimni='nvim ~/dotfiles/nvim/init.lua'
 alias nvimns='nvim ~/dotfiles/nvim/lua/config/sorcery/init.lua'
@@ -88,7 +85,6 @@ alias sop='source venv*/bin/activate'
 alias dea='deactivate'
 
 alias soz='source ~/dotfiles/zsh/zshrc'
-alias sozai='source ~/dotfiles/zsh/alias/init.zsh'
 
 alias zshs='zsh source.zsh'
 
@@ -98,7 +94,6 @@ alias todo='cat ~/chronicles/schedule/2022.txt | ag "^-"'
 # +-------+
 # | trash |
 # +-------+
-alias tre='trash-empty'
 alias trl='trash-list'
 alias trp='trash-put'
 alias trr='trash-restore'
