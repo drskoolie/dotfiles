@@ -12,8 +12,9 @@ source ~/dotfiles/zsh/packages/powerlevel10k/powerlevel10k.zsh-theme
 source ~/dotfiles/zsh/alias/init.zsh
 source ~/dotfiles/zsh/export/export.zsh
 source ~/dotfiles/zsh/compint.zsh
-source ~/dotfiles/zsh/help.zsh
 source ~/dotfiles/zsh/functions.zsh
+source ~/dotfiles/zsh/help.zsh
+source ~/dotfiles/zsh/lf.zsh
 source ~/dotfiles/zsh/misc.zsh
 source ~/dotfiles/zsh/packages.zsh
 
