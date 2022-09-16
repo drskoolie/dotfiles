@@ -1,5 +1,4 @@
 # Installing zsh
-sudo apt install zsh
 chsh -s $(which zsh)
 
 # Linking zshrc

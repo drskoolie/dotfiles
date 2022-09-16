@@ -1,5 +1,3 @@
-sudo apt install i3
-
 if test -d ~/.config/i3; then
 	rm -rf ~/.config/i3
 	ln -s ~/dotfiles/i3 ~/.config
