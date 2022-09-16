@@ -28,13 +28,13 @@ else
 fi
 
 if [ ! -d "$FOLDER_AUTOSUGGESTIONS" ]; then
-	git clone --depth=1 $GIT_AUTOSUGGESTIONS $FOLDER_SYNTAX
+	git clone --depth=1 $GIT_AUTOSUGGESTIONS $FOLDER_AUTOSUGGESTIONS
 else
 	echo "$GIT_AUTOSUGGESTIONS already cloned"
 fi
 
 if [ ! -d "$FOLDER_POWERLEVEL10K" ]; then
-	git clone --depth=1 $GIT_POWERLEVEL10K $FOLDER_SYNTAX
+	git clone --depth=1 $GIT_POWERLEVEL10K $FOLDER_POWERLEVEL10K
 else
 	echo "$GIT_POWERLEVEL10K already cloned"
 fi
