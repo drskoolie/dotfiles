@@ -28,4 +28,9 @@ printf '________________________\n\n'
 sleep 1
 source ~/dotfiles/i3/install.sh
 
-
+# Part V: Setting up xinitrc
+printf '________________________\n'
+printf 'Part V: Setting up xinitrc\n'
+printf '________________________\n\n'
+sleep 1
+source ~/dotfiles/xinitrc/install.sh
