@@ -10,7 +10,7 @@ printf '________________________\n'
 printf 'Part II: Installing Everything\n'
 printf '________________________\n\n'
 sleep 1
-sudo apt install i3 xorg zsh
+sudo apt install zsh i3 xorg xfce4-terminal mpv trash-cli
 
 # Part III: Make ~/.config
 printf '________________________\n'
@@ -34,3 +34,10 @@ printf 'Part V: Setting up xinitrc\n'
 printf '________________________\n\n'
 sleep 1
 source ~/dotfiles/xinitrc/install.sh
+
+# Part VI: Setting up mpv
+printf '________________________\n'
+printf 'Part VI: Setting up mpv\n'
+printf '________________________\n\n'
+sleep 1
+source ~/dotfiles/mpv/install.sh
