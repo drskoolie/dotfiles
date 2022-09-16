@@ -1,2 +1,3 @@
 # This is a comment
-printf 'Testing\n'
+printf '------------------\n'
+printf 'Part I: Installing Zsh\n'
