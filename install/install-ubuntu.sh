@@ -10,7 +10,7 @@ printf '________________________\n'
 printf 'Part II: Installing Everything\n'
 printf '________________________\n\n'
 sleep 1
-sudo apt update
+sudo apt update && sudo apt update --fix-missing && sudo apt upgrade
 sudo apt install zsh i3 xorg xfce4-terminal mpv trash-cli neovim
 
 # Part III: Zsh
