@@ -1,4 +1,3 @@
-#!/bin/bash
 # Part I: Zsh
 printf '________________________\n'
 printf 'Part I: Installing Zsh\n'
