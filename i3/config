@@ -121,6 +121,25 @@ mode "media" {
 
 	bindsym c exec pavucontrol; mode "default"
 
+	# Toggle play
+	bindsym e exec --no-startup-id cmus-remote -u 
+	# Next in playlist
+	bindsym n exec --no-startup-id cmus-remote -n
+	# Prev in playlist
+	bindsym p exec --no-startup-id cmus-remote -r
+	# Increase volume
+	bindsym k exec --no-startup-id cmus-remote -v +3%
+	bindsym Shift+k exec --no-startup-id cmus-remote -v +10%
+	# Decrease volume
+	bindsym j exec --no-startup-id cmus-remote -v -3%
+	bindsym Shift+j exec --no-startup-id cmus-remote -v -10%
+	# Seek forward
+	bindsym l exec --no-startup-id cmus-remote -k +5
+	bindsym Shift+l exec --no-startup-id cmus-remote -k +30
+	# Seek backward
+	bindsym h exec --no-startup-id cmus-remote -k -5
+	bindsym Shift+h exec --no-startup-id cmus-remote -k -30
+
 	bindsym Escape mode "default"
 
 }
