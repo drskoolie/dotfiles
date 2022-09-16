@@ -5,14 +5,15 @@ printf '_____________________________\n\n'
 sleep 1
 source ~/dotfiles/git/install.sh
 
-# Part II: Zsh
+# Part II: Installing Everything
 printf '________________________\n'
 printf 'Part II: Installing Everything\n'
 printf '________________________\n\n'
 sleep 1
-sudo apt install zsh i3 xorg xfce4-terminal mpv trash-cli
+sudo apt update
+sudo apt install zsh i3 xorg xfce4-terminal mpv trash-cli neovim
 
-# Part III: Make ~/.config
+# Part III: Zsh
 printf '________________________\n'
 printf 'Part III: Setting up zsh\n'
 printf '________________________\n\n'
@@ -41,3 +42,10 @@ printf 'Part VI: Setting up mpv\n'
 printf '________________________\n\n'
 sleep 1
 source ~/dotfiles/mpv/install.sh
+
+# Part VII: Neovim
+printf '________________________\n'
+printf 'Part VII: Setting up neovim\n'
+printf '________________________\n\n'
+sleep 1
+source ~/dotfiles/nvim/install.sh
