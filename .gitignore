@@ -1,8 +1,8 @@
+node_modules/*
+package*.json
 powerlevel10k/
-taskwarrior/task/*
-zsh/packages/zsh-syntax-highlighting/*
+tmux/plugins/tmux-themepack/
+venv/venv*
 zsh/.zcompdump
 zsh/packages/zsh-syntax-highlighting
-venv/venv*
-package*.json
-node_modules/*
+zsh/packages/zsh-syntax-highlighting/*
