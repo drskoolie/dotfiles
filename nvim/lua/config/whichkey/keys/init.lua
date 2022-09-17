@@ -236,7 +236,7 @@ wk_mappings = {
 		name = "+script",
 
 		c = {tmux_send('make %:p:t:r'), 'C'},
-		d = {tmux_send('di %:p:t:r'), 'diff'},
+		d = {tmux_send('di %:p:t:r[1:2]'), 'diff'},
 	},
 
 	t = {
