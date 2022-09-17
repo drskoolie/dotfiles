@@ -1,8 +1,10 @@
 if test -d ~/.config/i3; then
 	rm -rf ~/.config/i3
 	ln -s ~/dotfiles/i3 ~/.config
+	echo "i3 set up"
 else
 	ln -s ~/dotfiles/i3 ~/.config
+	echo "i3 set up"
 fi
 
 GIT_BUMBLEBEE=https://github.com/tobi-wan-kenobi/bumblebee-status
