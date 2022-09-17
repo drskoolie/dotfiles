@@ -235,8 +235,14 @@ wk_mappings = {
 	s = {
 		name = "+script",
 
-		c = {tmux_send('make %:p:t:r'), 'C'},
-		d = {tmux_send('di %:p:t:r[1:2]'), 'diff'},
+		c = {tmux_send('make %:p:t:r && ./%:p:t:r'), 'make and run'},
+		d = {tmux_send('diff --color -EbZ %:p:t ../%:p:t:r/%:p:t'), 'diff'},
+		g = {tmux_send('gdb ./%:p:t:r'), 'gdb'},
+		G = {tmux_send('gdb --batch --ex run --ex bt --ex q --args ./%:p:t:r'), 'gdb super'},
+		l = {tmux_send('make clean'), 'clean'},
+		m = {tmux_send('make %:p:t:r'), 'make'},
+		r = {tmux_send('./%:p:t:r'), 'run'},
+		s = {tmux_send('splint ./%:p:t'), 'splint'},
 	},
 
 	t = {
@@ -245,7 +251,9 @@ wk_mappings = {
 		c = {':TmuxSendClear<CR>', 'clear'},
 		k = {':silent !tmux kill-pane -t 1<CR>', 'kill'},
 		l  = {tmux_open_pane('-dh'),  'right'},
+		L  = {':silent !tmux move-pane -f -s 1 -t 0<CR>',  'right'},
 		j  = {tmux_open_pane('-d'),  'down'},
+		J  = {':silent !tmux move-pane -h -s 1 -t 0<CR>',  'down'},
 	},
 
 }

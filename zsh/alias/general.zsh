@@ -77,9 +77,11 @@ function noz ()
 	nohup zathura $1 >/dev/null 2>&1 &
 }
 
-function di ()
+alias nozc='nohup zathura ~/chronicles/books/C/LCTHW/Learn_C_the_Hard_Way.pdf >/dev/null 2>&1 &'
+
+function mkc ()
 {
-	diff --color -EbZ ex$1.c ../ex$1/ex$1.c
+	mkdir -p $1 && cd $1
 }
 
 # +--------+

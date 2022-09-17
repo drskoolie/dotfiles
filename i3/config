@@ -633,6 +633,7 @@ set $ws110 "110:✈ virtualbox"
 set $ws111 "111:slack"
 set $ws112 "112:github"
 set $ws113 "113:piazza"
+set $ws114 "114:anki"
 
 # resize window (you can also use the mouse for that)
 mode "ws0" {
@@ -650,6 +651,7 @@ mode "ws0" {
 	bindsym s workspace number $ws111; mode "default"
 	bindsym h workspace number $ws112; mode "default"
 	bindsym p workspace number $ws113; mode "default"
+	bindsym a workspace number $ws114; mode "default"
 
 	bindsym Escape mode "default"
 
@@ -670,6 +672,7 @@ mode "cws0" {
 	bindsym s move container to workspace number $ws111; mode "default"
 	bindsym h move container to workspace number $ws112; mode "default"
 	bindsym p move container to workspace number $ws113; mode "default"
+	bindsym a move container to workspace number $ws114; mode "default"
 
 	bindsym Escape mode "default"
 }
