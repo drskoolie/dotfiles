@@ -81,7 +81,7 @@ alias nozc='nohup zathura ~/chronicles/books/C/LCTHW/Learn_C_the_Hard_Way.pdf >/
 
 function mkc ()
 {
-	mkdir -p $1 && cd $1
+	mkdir -p $1 && cd $1 && ls
 }
 
 # +--------+

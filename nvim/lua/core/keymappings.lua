@@ -8,6 +8,8 @@ local keymap = vim.api.nvim_set_keymap
 keymap('n', 'ZZ', '<NOP>', opts)
 keymap('i', '<C-g>', '<C-x><C-f>', opts)
 
+-- vim.cmd([[set cmdheight=0]])
+
 -- keymap('n', '<Enter>', 'o<Esc>', opts)
 
 -- Resize

@@ -15,11 +15,11 @@ wk_mappings = {
 		f = {':NvimTreeFocus<CR>', 'focus'},
 		o = {':NvimTreeOpen<CR>', 'open'},
 		R = {':NvimTreeRefresh<CR>', 'refresh'},
-		r = {':NvimTreeResize ', 'resize'},
 		p = {':NvimTreeClipboard <CR>', 'clipboard'},
-		t = {':NvimTreeToggle<CR>', 'toggle'},
 		q = {':NvimTreeClose<CR>', 'quit'},
-
+		r = {':NvimTreeResize ', 'resize'},
+		t = {':NvimTreeToggle<CR>', 'toggle'},
+		v = {':lua require"nvim-tree".open_replacing_current_buffer()<CR>', 'vinegar'},
 	},
 
 	c = {
