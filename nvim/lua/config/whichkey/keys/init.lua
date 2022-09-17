@@ -11,15 +11,9 @@ wk_mappings = {
 		name = "+nvim-tree",
 
 		b = {':NvimTreeFindFile<CR>', 'buffer'},
-		c = {':NvimTreeCollapse<CR>', 'collapse'},
-		f = {':NvimTreeFocus<CR>', 'focus'},
 		o = {':NvimTreeOpen<CR>', 'open'},
-		R = {':NvimTreeRefresh<CR>', 'refresh'},
 		p = {':NvimTreeClipboard <CR>', 'clipboard'},
 		q = {':NvimTreeClose<CR>', 'quit'},
-		r = {':NvimTreeResize ', 'resize'},
-		t = {':NvimTreeToggle<CR>', 'toggle'},
-		v = {':lua require"nvim-tree".open_replacing_current_buffer()<CR>', 'vinegar'},
 	},
 
 	c = {

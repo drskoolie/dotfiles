@@ -1,3 +1,7 @@
+-- ==> Needed first
+vim.g.loaded = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- ==> Core 
 require('core/plugins')
 require('core/keymappings')
