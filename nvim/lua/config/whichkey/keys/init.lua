@@ -7,15 +7,6 @@ wk_mappings = {
         k  = {'<Plug>(easymotion-k)',  'k'},
 	},
 
-	a = {
-		name = "+nvim-tree",
-
-		b = {':NvimTreeFindFile<CR>', 'buffer'},
-		o = {':NvimTreeOpen<CR>', 'open'},
-		p = {':NvimTreeClipboard <CR>', 'clipboard'},
-		q = {':NvimTreeClose<CR>', 'quit'},
-	},
-
 	c = {
 		name = "+commands",
 
@@ -126,6 +117,8 @@ wk_mappings = {
 
         c = {':tabnew<CR>:e ~/.config/nvim/lua/config/lsp/init.lua<CR>',  'lsp'},
         C = {':e ~/.config/nvim/lua/config/lsp/init.lua<CR>',  'lsp'},
+		f = {':lua require"nvim-tree".open_replacing_current_buffer()<CR>', 'tree-buffer'}, 
+		F = {':NvimTreeOpen<CR>', 'tree-buffer'},
         i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
         I = {':e ~/.config/nvim/init.lua<CR>',  'init'},
         l = {':w<CR>:luafile %<CR>',  'lua source'},

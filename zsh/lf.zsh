@@ -10,6 +10,7 @@ l () {
         if [ -d "$dir" ]; then
             if [ "$dir" != "$(pwd)" ]; then
                 cd "$dir"
+				ls
             fi
         fi
     fi
