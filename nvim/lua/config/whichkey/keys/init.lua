@@ -3,21 +3,8 @@ wk_mappings = {
 	[" "] = {
 		name = "+easymotion",
 		
-        b  = {'<Plug>(easymotion-b)',  'b'},
-        B  = {'<Plug>(easymotion-B)',  'B'},
-        e  = {'<Plug>(easymotion-e)',  'e'},
-        E  = {'<Plug>(easymotion-E)',  'E'},
-        f  = {'<Plug>(easymotion-f)',  'f'},
-        F  = {'<Plug>(easymotion-F)',  'F'},
         j  = {'<Plug>(easymotion-j)',  'j'},
         k  = {'<Plug>(easymotion-k)',  'k'},
-        n  = {'<Plug>(easymotion-n)',  'n'},
-        N  = {'<Plug>(easymotion-N)',  'N'},
-        s  = {'<Plug>(easymotion-s)',  's'},
-        t  = {'<Plug>(easymotion-t)',  't'},
-        T  = {'<Plug>(easymotion-T)',  'T'},
-        w  = {'<Plug>(easymotion-w)',  'w'},
-        W  = {'<Plug>(easymotion-W)',  'W'},
 	},
 
 	a = {
@@ -243,6 +230,13 @@ wk_mappings = {
 			s = {':UndotreeShow<CR>', 'show'},
 			t = {':UndotreeToggle<CR>', 'toggle'},
 		},
+	},
+
+	s = {
+		name = "+script",
+
+		c = {tmux_send('make %:p:t:r'), 'C'},
+		d = {tmux_send('di %:p:t:r'), 'diff'},
 	},
 
 	t = {
