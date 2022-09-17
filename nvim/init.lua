@@ -8,6 +8,7 @@ require('core/python')
 
 -- ==> Config
 require('config/easymotion')
+require('config/leap')
 require('config/lualine')
 require('config/nvim-colorizer')
 require('config/nvim-tree')

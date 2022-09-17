@@ -92,6 +92,7 @@ return require('packer').startup(function()
   use "nvim-lua/plenary.nvim"
   use "tversteeg/registers.nvim"
   use "romainl/vim-cool"
+  use "ggandor/leap.nvim"
 
   -- +-----+
   -- | vim |

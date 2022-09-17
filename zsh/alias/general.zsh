@@ -77,6 +77,11 @@ function noz ()
 	nohup zathura $1 >/dev/null 2>&1 &
 }
 
+function di ()
+{
+	diff --color -EbZ ex$1.c ../ex$1/ex$1.c
+}
+
 # +--------+
 # | source |
 # +--------+
