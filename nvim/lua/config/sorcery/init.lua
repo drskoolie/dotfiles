@@ -95,7 +95,7 @@ function set_trace()
 	indent_space = indent_space .. ' '
 	vim.cmd('normal! i' .. indent_space)
 
-	vim.cmd('normal! iimport ipdb; ipdb.set_trace()')
+	vim.cmd('normal! iimport ipdb; ipdb.set_trace(context = 10)')
 	vim.cmd('normal! ^')
 end
 
@@ -108,7 +108,7 @@ function set_trace_up()
 	indent_space = indent_space .. ' '
 	vim.cmd('normal! i' .. indent_space)
 
-	vim.cmd('normal! iimport ipdb; ipdb.set_trace()')
+	vim.cmd('normal! iimport ipdb; ipdb.set_trace(context = 10)')
 	vim.cmd('normal! ^')
 end
 

@@ -4,29 +4,26 @@ local term_opts = { silent = true }
 
 local keymap = vim.api.nvim_set_keymap
 
--- General Mappings
+-- +---------+
+-- | General |
+-- +---------+
 keymap('n', 'ZZ', '<NOP>', opts)
+keymap('n', 'H', 'O<Esc>', opts)
+keymap('n', 'L', 'o<Esc>', opts)
+
+-- +--------+
+-- | Insert |
+-- +--------+
 keymap('i', '<C-g>', '<C-x><C-f>', opts)
-
--- vim.cmd([[set cmdheight=0]])
-
--- keymap('n', '<Enter>', 'o<Esc>', opts)
-
--- Resize
--- keymap('n', "<S-k>", ":resize +2<CR>", opts)
--- keymap('n', "<S-j>", ":resize -2<CR>", opts)
--- keymap('n', "<S-l>", ":vertical resize +2<CR>", opts)
--- keymap('n', "<S-h>", ":vertical resize -2<CR>", opts)
+keymap('i', '<C-y>', '<ESC>viwUea', opts)
 
 -- +--------+
 -- | Visual |
 -- +--------+
-
 -- Move Text
 keymap("v", "<a-j>", ":m .+2<CR>gv", opts)
 keymap("v", "<a-k>", ":m .-2<CR>gv", opts)
 keymap('v', 'y', 'ygv<Esc>', opts)
-
 
 -- Pasting better
 keymap("v", "p", '"_dP', opts)
@@ -35,8 +32,4 @@ keymap("v", "p", '"_dP', opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
--- Terminal
--- keymap('t', '<C-h>', '<C-\\><C-n><C-w>h', term_opts)
--- keymap('t', '<C-j>', '<C-\\><C-n><C-w>j', term_opts)
--- keymap('t', '<C-k>', '<C-\\><C-n><C-w>k', term_opts)
--- keymap('t', '<C-l>', '<C-\\><C-n><C-w>l', term_opts)
+-- vim.cmd([[set cmdheight=0]])

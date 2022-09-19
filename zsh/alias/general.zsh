@@ -27,7 +27,7 @@ alias cddv='cd ~/dotfiles/venv/;ls'
 alias cddz='cd ~/dotfiles/zsh; ls'
 alias cddza='cd ~/dotfiles/zsh/alias; ls'
 
-alias cdf='cd ~/fit/; ls'
+alias cdx='cd ~/Documents;ls'
 
 # +-----+
 # | fzf |
