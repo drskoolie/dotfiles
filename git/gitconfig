@@ -23,6 +23,8 @@
 	chm = checkout main
 
 	cl = clone
+	clh = "! f() { git clone https://github.com/$1/$2.git ; }; f"
+	cls = "! f() { git clone git@github.com:$1/$2.git ; }; f"
 
 	co = commit
 	com = commit -m
@@ -44,11 +46,13 @@
 	re = restore
 	res = restore --staged
 
+	rm = remote
+	rmao = "!f() { git remote add origin git@github.com:drskoolie/$1.git; }; f"
+
 	st = status
 	sts = status -s
 
 	pu = push
-	puu = push --set-upstream
 	puuo = push --set-upstream origin
 
 [mergetool "nvim"]
