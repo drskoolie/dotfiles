@@ -88,7 +88,6 @@ return require('packer').startup(function()
   -- +--------+
   -- | useful |
   -- +--------+
-  use "ggandor/leap.nvim"
   use({
       "iamcco/markdown-preview.nvim",
       run = function() vim.fn["mkdp#util#install"]() end,
@@ -97,11 +96,17 @@ return require('packer').startup(function()
   use "nvim-lua/plenary.nvim"
   use "romainl/vim-cool"
   use "tversteeg/registers.nvim"
+  use {
+	  "phaazon/hop.nvim",
+	  branch = 'v2',
+	  config = function()
+		  require'hop'.setup {}
+	  end
+  }
 
   -- +-----+
   -- | vim |
   -- +-----+
-  use 'easymotion/vim-easymotion'
   use 'psliwka/vim-smoothie'
 
   -- +----------+

@@ -11,8 +11,7 @@ require('core/highlighted-yank')
 require('core/python')
 
 -- ==> Config
-require('config/easymotion')
-require('config/leap')
+require('config/hop')
 require('config/lualine')
 require('config/nvim-colorizer')
 require('config/nvim-tree')

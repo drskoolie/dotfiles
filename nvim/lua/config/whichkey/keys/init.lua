@@ -1,12 +1,5 @@
 wk_mappings = {
 
-	[" "] = {
-		name = "+easymotion",
-		
-        j  = {'<Plug>(easymotion-j)',  'j'},
-        k  = {'<Plug>(easymotion-k)',  'k'},
-	},
-
 	c = {
 		name = "+commands",
 

@@ -42,8 +42,6 @@ alias fzfp="fzf --preview 'batcat --style=numbers --color=always --style=numbers
 # +--------+
 # | neovim |
 # +--------+
-# alias n='nvim'
-
 function n () 
 {
 	case $1 in
