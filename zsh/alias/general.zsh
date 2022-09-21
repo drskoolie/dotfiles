@@ -2,11 +2,11 @@
 # | applications |
 # +--------------+
 alias g='git'
-alias ls='ls -v --color'
 alias t='tmux'
 alias s='scrot --select --line mode=edge ~/Pictures/screenshot.png'
 alias S='scrot --select --line mode=edge'
-alias xrandr5='~/dotfiles/screenlayout/5Mons.sh'
+
+alias ls='ls -v --color'
 
 # +------------------+
 # | change directory |
@@ -104,9 +104,6 @@ alias dea='deactivate'
 alias soz='source ~/dotfiles/zsh/zshrc'
 
 alias zshs='zsh source.zsh'
-
-# Todo
-alias todo='cat ~/chronicles/schedule/2022.txt | ag "^-"'
 
 # +-------+
 # | trash |
