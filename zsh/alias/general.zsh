@@ -54,6 +54,7 @@ function n ()
 		m) nvim ~/dotfiles/mpv/input.conf;;
 
 		ni) nvim ~/dotfiles/nvim/init.lua;;
+		nh) nvim ~/dotfiles/nvim/lua/config/hop/init.lua;;
 		np) nvim ~/dotfiles/nvim/lua/core/plugins.lua;;
 		ns) nvim ~/dotfiles/nvim/lua/config/sorcery/init.lua;;
 		nw) nvim ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua;;
