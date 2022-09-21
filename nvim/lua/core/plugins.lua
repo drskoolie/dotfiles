@@ -88,11 +88,15 @@ return require('packer').startup(function()
   -- +--------+
   -- | useful |
   -- +--------+
+  use "ggandor/leap.nvim"
+  use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+  })
   use "mbbill/undotree"
   use "nvim-lua/plenary.nvim"
-  use "tversteeg/registers.nvim"
   use "romainl/vim-cool"
-  use "ggandor/leap.nvim"
+  use "tversteeg/registers.nvim"
 
   -- +-----+
   -- | vim |
@@ -110,14 +114,10 @@ end)
 
 --[[
 
-" ==> Misc
-Plug 't9md/vim-choosewin'                 " Choosing windows
-
 " ==> Python
 Plug 'dense-analysis/ale'           " ALE
 " Plug 'a-elhag/jupyter-vim'        " Jupyter mine
 " Plug 'goerz/jupytext.vim'         " Jupytext
-" Plug 'vim-python/python-syntax'   " Syntax
 
 " ==> Will do
 " Plug 'dhruvasagar/vim-table-mode'                   " Table Creator

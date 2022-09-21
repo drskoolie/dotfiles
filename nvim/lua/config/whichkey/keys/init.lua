@@ -115,6 +115,8 @@ wk_mappings = {
 	n = {
 		name = "+neovim",
 
+		a = {':set spell!<CR>', 'spell toggle'},
+		A = {':set nospell<CR>', 'nospell'},
         c = {':tabnew<CR>:e ~/.config/nvim/lua/config/lsp/init.lua<CR>',  'lsp'},
         C = {':e ~/.config/nvim/lua/config/lsp/init.lua<CR>',  'lsp'},
 		f = {':lua require"nvim-tree".open_replacing_current_buffer()<CR>', 'tree-buffer'}, 

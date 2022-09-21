@@ -4,6 +4,8 @@
 alias g='git'
 alias ls='ls -v --color'
 alias t='tmux'
+alias s='scrot --select --line mode=edge ~/Pictures/screenshot.png'
+alias S='scrot --select --line mode=edge'
 alias xrandr5='~/dotfiles/screenlayout/5Mons.sh'
 
 # +------------------+
@@ -14,7 +16,6 @@ alias cdca='cd ~/chronicles/adventofcode/2015/;ls'
 alias cdcb='cd ~/chronicles/books/;ls'
 alias cdcbp='cd ~/chronicles/books/python;ls'
 alias cdcs='cd ~/chronicles/schedule/;ls'
-alias cdcr='cd ~/chronicles/research/;ls'
 alias cdcrc='cd ~/chronicles/research/code;ls'
 
 alias cdd='cd ~/dotfiles/; ls'
@@ -26,6 +27,8 @@ alias cddt='cd ~/dotfiles/tmux; ls'
 alias cddv='cd ~/dotfiles/venv/;ls'
 alias cddz='cd ~/dotfiles/zsh; ls'
 alias cddza='cd ~/dotfiles/zsh/alias; ls'
+
+alias cdr='cd ~/research/;ls'
 
 alias cdx='cd ~/Documents;ls'
 
@@ -72,12 +75,15 @@ function no ()
 	nohup $1 >/dev/null 2>&1 &
 }
 
+function noo ()
+{
+	nohup okular $1 >/dev/null 2>&1 &
+}
+
 function noz ()
 {
 	nohup zathura $1 >/dev/null 2>&1 &
 }
-
-alias nozc='nohup zathura ~/chronicles/books/C/LCTHW/Learn_C_the_Hard_Way.pdf >/dev/null 2>&1 &'
 
 function mkc ()
 {

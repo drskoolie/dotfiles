@@ -43,8 +43,9 @@ bindsym $mod+o mode "open"
 mode "open" {
 
 		bindsym a exec anki; mode "default"
+		bindsym s exec scrot --select --line mode=edge -F ~/Pictures/screenshot.png
+		bindsym r exec simplescreenrecorder; mode "default"
 		bindsym v exec vivaldi-stable; mode "default"
-		bindsym s exec simplescreenrecorder; mode "default"
 
         bindsym Escape mode "default"
 }
@@ -58,6 +59,7 @@ bar
 		strip_workspace_numbers yes
 		status_command ~/dotfiles/i3/bumblebee-status/bumblebee-status	\
 		-m	\
+		cmus\
 		memory \
 		pasink \
 		pasource \
