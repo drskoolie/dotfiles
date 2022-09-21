@@ -42,29 +42,34 @@ alias fzfp="fzf --preview 'batcat --style=numbers --color=always --style=numbers
 # +--------+
 # | neovim |
 # +--------+
-alias n='nvim'
+# alias n='nvim'
 
-alias nvimcs='nvim ~/chronicles/schedule/2022.txt'
+function n () 
+{
+	case $1 in
+		g) nvim .gitignore;;
 
-alias nvimg='nvim .gitignore'
+		i) nvim ~/dotfiles/i3/config;;
 
-alias nvimi='nvim ~/dotfiles/i3/config'
+		l) nvim *.tex;;
 
-alias nviml='nvim *.tex'
+		m) nvim ~/dotfiles/mpv/input.conf;;
 
-alias nvimm='nvim ~/dotfiles/mpv/input.conf'
+		ni) nvim ~/dotfiles/nvim/init.lua;;
+		np) nvim ~/dotfiles/nvim/lua/core/plugins.lua;;
+		ns) nvim ~/dotfiles/nvim/lua/config/sorcery/init.lua;;
+		nw) nvim ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua;;
 
-alias nvimni='nvim ~/dotfiles/nvim/init.lua'
-alias nvimns='nvim ~/dotfiles/nvim/lua/config/sorcery/init.lua'
-alias nvimnw='nvim ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua'
-alias nvimnp='nvim ~/dotfiles/nvim/lua/core/plugins.lua'
+		t) nvim ~/dotfiles/tmux/tmux.conf;;
 
-alias nvimt='nvim ~/dotfiles/tmux/tmux.conf'
+		z) nvim ~/dotfiles/zsh/zshrc;;
+		zag) nvim ~/dotfiles/zsh/alias/general.zsh;;
+		zai) nvim ~/dotfiles/zsh/alias/init.zsh;;
+		zp) nvim ~/dotfiles/zsh/packages.zsh;;
+		*) nvim $1;;
+	esac
+}
 
-alias nvimz='nvim ~/dotfiles/zsh/zshrc'
-alias nvimzp='nvim ~/dotfiles/zsh/packages.zsh'
-alias nvimzai='nvim ~/dotfiles/zsh/alias/init.zsh'
-alias nvimzag='nvim ~/dotfiles/zsh/alias/general.zsh'
 
 # +-------+
 # | nohup |
