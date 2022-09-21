@@ -1,23 +1,42 @@
 require'hop'.setup {
-	keys = 'asdfghjel;qwkrtyuiopzxcvbnm,./1234567890'
 }
 
-vim.api.nvim_set_keymap('', 'f', 
+vim.api.nvim_set_keymap('n', 'f', 
 [[<cmd>lua require'hop'.hint_char1({ current_line_only = false, })<CR>]],
 {})
 
-vim.api.nvim_set_keymap('', 'F',
+vim.api.nvim_set_keymap('v', 'f', 
+[[<cmd>lua require'hop'.hint_char1({ current_line_only = false, })<CR>]],
+{})
+
+vim.api.nvim_set_keymap('n', 'F',
 [[:HopPattern<CR>]],
 {})
 
-vim.api.nvim_set_keymap('', 't', 
+vim.api.nvim_set_keymap('v', 'F',
+[[:HopPattern<CR>]],
+{})
+
+vim.api.nvim_set_keymap('n', 't', 
 [[<cmd>lua require'hop'.hint_char1({ hint_offset = -1 })<cr>]],
 {})
 
-vim.api.nvim_set_keymap('', 'T', 
+vim.api.nvim_set_keymap('v', 't', 
+[[<cmd>lua require'hop'.hint_char1({ hint_offset = -1 })<cr>]],
+{})
+
+vim.api.nvim_set_keymap('n', 'T', 
 [[<cmd>lua require'hop'.hint_char1({ hint_offset = 1 })<cr>]],
 {})
 
-vim.api.nvim_set_keymap('', 's',
+vim.api.nvim_set_keymap('v', 'T', 
+[[<cmd>lua require'hop'.hint_char1({ hint_offset = 1 })<cr>]],
+{})
+
+vim.api.nvim_set_keymap('n', 's',
+[[<cmd>lua require'hop'.hint_lines()<CR>]],
+{})
+
+vim.api.nvim_set_keymap('v', 's',
 [[<cmd>lua require'hop'.hint_lines()<CR>]],
 {})
