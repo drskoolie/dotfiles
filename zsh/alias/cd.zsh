@@ -20,3 +20,8 @@ alias cdrli='cd ~/research/lit/ieee/;ls'
 
 alias cdx='cd ~/Documents;ls'
 
+function mkc ()
+{
+	mkdir -p $1 && cd $1 && ls
+}
+
