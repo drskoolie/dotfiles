@@ -192,10 +192,8 @@ wk_mappings = {
 		l = {
 			name = "+latex",
 
-			b = {':w<CR>:silent !bibtex Report.aux<CR>', 'bibtex'},
-			B = {':w<CR>:silent !pdflatex %:p:. <CR>:silent !bibtex Report.aux<CR>:silent !pdflatex %:p:. <CR>:silent !pdflatex %:p:. <CR>', 'bibtex full'},
-			l = {':w<CR>:silent !pdflatex %:p:. <CR>', 'LaTeX'},
-			L = {':w<CR>:!pdflatex %:p:. <CR>', 'LaTeX no hide'},
+			l = {':TmuxSendLatex<CR>', 'latexmk'},
+			r = {tmux_send('r'), 'refresh'},
 		},
 
 		p = {

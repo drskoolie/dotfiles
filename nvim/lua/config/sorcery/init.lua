@@ -12,13 +12,6 @@ function tmux_send(input, style)
 	end
 end
 
-function tmux_send_sql()
-	vim.cmd([[norm gg"+yG<CR>]])
-	tmux_paste()
-	vim.cmd([[silent !tmux send -t 1 C-l]])
-	vim.cmd([[silent !tmux send -t 1 '\;' Enter]])
-end
-
 function tmux_send_clear()
 	vim.cmd([[silent !tmux send -t 1 C-l]])
 end
@@ -42,7 +35,6 @@ end
 
 vim.cmd([[set clipboard=unnamedplus]])
 vim.cmd([[com! TmuxPaste lua tmux_paste()]])
-vim.cmd([[com! TmuxSendSql lua tmux_send_sql()]])
 vim.cmd([[com! TmuxSendClear lua tmux_send_clear()]])
 
 -- vim.cmd([[com! -nargs=+ TmuxSend lua tmux_send(<q-args>)]])
@@ -50,7 +42,6 @@ vim.cmd([[com! TmuxSendClear lua tmux_send_clear()]])
 function tmux_pytest_open()
 	vim.cmd([[silent !tmux new-window -n pytest]])
 end
-
 
 function tmux_pytest_run()
 	output0 = [[silent !tmux send -t pytest.0 'clear' Enter]]
@@ -112,3 +103,15 @@ function set_trace_up()
 	vim.cmd('normal! ^')
 end
 
+function tmux_latex_clear()
+	vim.cmd([[silent !tmux sent -t latex.0 'latexmk -c' Enter]])
+end
+
+function tmux_latex_run()
+	vim.cmd([[silent !tmux new-window -n latex]])
+	vim.cmd([[silent !tmux select-window -n -p]])
+	vim.cmd[[silent !tmux send -t latex.0 'latexmk -pvc' Enter]]
+end
+
+vim.cmd([[com! TmuxLatexClear lua tmux_latex_clear()]])
+vim.cmd([[com! TmuxLatexRun lua tmux_latex_run()]])

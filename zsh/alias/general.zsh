@@ -12,11 +12,7 @@ alias ls='ls -v --color'
 # | change directory |
 # +------------------+
 alias cdc='cd ~/chronicles/;ls'
-alias cdca='cd ~/chronicles/adventofcode/2015/;ls'
 alias cdcb='cd ~/chronicles/books/;ls'
-alias cdcbp='cd ~/chronicles/books/python;ls'
-alias cdcs='cd ~/chronicles/schedule/;ls'
-alias cdcrc='cd ~/chronicles/research/code;ls'
 
 alias cdd='cd ~/dotfiles/; ls'
 alias cddi='cd ~/dotfiles/i3; ls'
