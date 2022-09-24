@@ -29,6 +29,8 @@ alias cddz='cd ~/dotfiles/zsh; ls'
 alias cddza='cd ~/dotfiles/zsh/alias; ls'
 
 alias cdr='cd ~/research/;ls'
+alias cdrl='cd ~/research/lit/;ls'
+alias cdrli='cd ~/research/lit/ieee/;ls'
 
 alias cdx='cd ~/Documents;ls'
 
