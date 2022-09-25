@@ -4,3 +4,5 @@ if test -d ~/.config/nvim; then
 else
 	ln -s ~/dotfiles/nvim ~/.config/
 fi
+
+nvim -c PackerInstall

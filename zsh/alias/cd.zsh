@@ -19,7 +19,7 @@ alias cdrl='cd ~/research/lit/;ls'
 alias cdrli='cd ~/research/lit/ieee/;ls'
 
 alias cdx='cd ~/Documents;ls'
-alias cdx='cd ~/Documents/C/;ls'
+alias cdxc='cd ~/Documents/C/;ls'
 
 function mkc ()
 {
