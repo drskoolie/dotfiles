@@ -16,7 +16,11 @@ return require('packer').startup(function()
   -- +--------+
   use 'norcalli/nvim-colorizer.lua'
   use 'guns/xterm-color-table.vim' -- :XtermColorTable
-
+  use ({"ziontee113/color-picker.nvim",
+      config = function()
+          require("color-picker")
+      end,
+  })
   -- +--------------+
   -- | file browser |
   -- +--------------+
@@ -49,7 +53,6 @@ return require('packer').startup(function()
   -- +-----+
   -- | git |
   -- +-----+
-  
   use 'mhinz/vim-signify'     -- Git diff icons on the side of the file lines
   use 'tpope/vim-fugitive'
 
@@ -69,7 +72,6 @@ return require('packer').startup(function()
   -- +--------+
   use 'NLKNguyen/papercolor-theme'
   use { "catppuccin/nvim", as = "catppuccin" }
-
   use {
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
@@ -117,6 +119,7 @@ return require('packer').startup(function()
 end)
 
 
+-- use "lukas-reineke/indent-blankline.nvim"
 --[[
 
 " ==> Python

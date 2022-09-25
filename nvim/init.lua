@@ -11,7 +11,9 @@ require('core/highlighted-yank')
 require('core/python')
 
 -- ==> Config
+require('config/color-picker')
 require('config/hop')
+-- require('config/indent-blankline')
 require('config/lualine')
 require('config/nvim-colorizer')
 require('config/nvim-tree')

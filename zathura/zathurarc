@@ -1,1 +1,11 @@
 set selection-clipboard clipboard
+
+map b adjust_window best-fit
+map w adjust_window width
+
+map a zoom in
+map s zoom out
+
+map i toggle_index
+
+set scroll-step 100

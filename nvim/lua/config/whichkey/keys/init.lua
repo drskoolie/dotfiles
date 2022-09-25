@@ -46,6 +46,8 @@ wk_mappings = {
 		l = {':BLines<CR>', 'blines'},
 		L = {':Lines<CR>', 'lines'},
 		m = {':Marks<CR>', 'marks'},
+		n = {':bnext<CR>', 'next'},
+		p = {':bprevious<CR>', 'prev'},
 		r = {':Rg<CR>', 'rg'},
 		s = {':Snippets<CR>', 'snippets'},
 		t = {':BTags<CR>', 'btags'},
@@ -110,8 +112,6 @@ wk_mappings = {
 
 		a = {':set spell!<CR>', 'spell toggle'},
 		A = {':set nospell<CR>', 'nospell'},
-        c = {':tabnew<CR>:e ~/.config/nvim/lua/config/lsp/init.lua<CR>',  'lsp'},
-        C = {':e ~/.config/nvim/lua/config/lsp/init.lua<CR>',  'lsp'},
 		f = {':lua require"nvim-tree".open_replacing_current_buffer()<CR>', 'tree-buffer'}, 
 		F = {':NvimTreeOpen<CR>', 'tree-buffer'},
         i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
@@ -159,12 +159,12 @@ wk_mappings = {
 		c = {
 			name = "+colorizer",
 
-			a  = {':ColorizerAttachToBuffer<CR>',  'attach'},
-			d  = {':ColorizerDetachFromBuffer<CR>',  'detach'},
-			k = {':silent !tmux kill-pane -t 1', 'kill'},
-			r  = {':ColorizerReloadAllBuffers<CR>',  'reload'},
-			t  = {':ColorizerToggle<CR>',  'toggle'},
-			x  = {':XtermColorTable<CR>',  'xterm'},
+			a = {':ColorizerAttachToBuffer<CR>',  'attach'},
+			d = {':ColorizerDetachFromBuffer<CR>',  'detach'},
+			p = {'<cmd>PickColor<CR>', 'picker'},
+			r = {':ColorizerReloadAllBuffers<CR>',  'reload'},
+			t = {':ColorizerToggle<CR>',  'toggle'},
+			x = {':XtermColorTable<CR>',  'xterm'},
 		},
 		 
 		d = {
@@ -222,7 +222,7 @@ wk_mappings = {
 		g = {tmux_send('gdb ./%:p:t:r'), 'gdb'},
 		G = {tmux_send('gdb --batch --ex run --ex bt --ex q --args ./%:p:t:r'), 'gdb super'},
 		l = {tmux_send('make clean'), 'clean'},
-		m = {tmux_send('make %:p:t:r'), 'make'},
+		m = {tmux_send('make'), 'make'},
 		r = {tmux_send('./%:p:t:r'), 'run'},
 		s = {tmux_send('splint ./%:p:t'), 'splint'},
 	},
