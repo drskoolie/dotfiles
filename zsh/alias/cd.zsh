@@ -20,6 +20,7 @@ alias cdrli='cd ~/research/lit/ieee/;ls'
 
 alias cdx='cd ~/Documents;ls'
 alias cdxc='cd ~/Documents/C/;ls'
+alias cdxf='cd ~/Documents/fit/;ls'
 
 function mkc ()
 {
