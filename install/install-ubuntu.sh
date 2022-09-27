@@ -12,6 +12,7 @@ printf '________________________\n\n'
 sleep 1
 sudo apt update && sudo apt update --fix-missing && sudo apt upgrade -y
 sudo apt install zsh i3 xorg xfce4-terminal mpv tmux trash-cli vim cmus feh picom rofi simplescreenrecorder pavucontrol pulseaudio -y
+sudo timedatectl set-timezone America/Toronto
 
 # Part III: Zsh
 printf '________________________\n'

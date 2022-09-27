@@ -21,14 +21,14 @@ exec --no-startup-id pulseaudio
 # Startup Screens
 # https://unix.stackexchange.com/questions/96798/i3wm-start-applications-on-specific-workspaces-when-i3-starts
 # https://unix.stackexchange.com/questions/533371/how-to-autostart-more-than-one-app-in-different-workspaces-in-i3wm 
-exec --no-startup-id sh -c 'sleep 1; i3-msg "workspace 1"'
-exec --no-startup-id sh -c 'sleep 2; xfce4-terminal'
-exec --no-startup-id sh -c 'sleep 3; i3-msg "workspace 2"'
-exec --no-startup-id sh -c 'sleep 4; xfce4-terminal'
-exec --no-startup-id sh -c 'sleep 5; i3-msg "workspace 3"'
-exec --no-startup-id sh -c 'sleep 6; xfce4-terminal'
-exec --no-startup-id sh -c 'sleep 7; i3-msg "workspace 4"'
-exec --no-startup-id sh -c 'sleep 8; xfce4-terminal'
+exec --no-startup-id sh -c 'sleep 0.2; i3-msg "workspace 1"'
+exec --no-startup-id sh -c 'sleep 0.4; xfce4-terminal'
+exec --no-startup-id sh -c 'sleep 0.6; i3-msg "workspace 2"'
+exec --no-startup-id sh -c 'sleep 0.8; xfce4-terminal'
+exec --no-startup-id sh -c 'sleep 1.0; i3-msg "workspace 3"'
+exec --no-startup-id sh -c 'sleep 1.2; xfce4-terminal'
+exec --no-startup-id sh -c 'sleep 1.4; i3-msg "workspace 4"'
+exec --no-startup-id sh -c 'sleep 1.6; xfce4-terminal'
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
