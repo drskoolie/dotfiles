@@ -53,7 +53,8 @@ source ~/dotfiles/nvim/install.sh
 
 # Part VIII: Tmux
 printf '________________________\n'
-printf 'Part VIII: Setting up tmux\n'
+printf 'Part VIII: Setting up tmux and picom\n'
 printf '________________________\n\n'
 sleep 1
 source ~/dotfiles/tmux/install.sh
+source ~/dotfiles/picom/install.sh
