@@ -48,7 +48,9 @@
 	res = restore --staged
 
 	rt = remote
-	rtao = "!f() { git remote add origin git@github.com:drskoolie/$1.git; }; f"
+	rtv = remote -v
+	rts = "!f() { git remote set-url origin git@github.com:$1/$2.git; }; f"
+	rtao = "!f() { git remote add origin git@github.com:$1/$2.git; }; f"
 
 	st = status
 	sts = status -s
