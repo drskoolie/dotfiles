@@ -11,7 +11,7 @@ printf 'Part II: Installing Everything\n'
 printf '________________________\n\n'
 sleep 1
 sudo apt update && sudo apt update --fix-missing && sudo apt upgrade -y
-sudo apt install zsh i3 xorg xfce4-terminal mpv trash-cli vim cmus feh picom rofi simplescreenrecorder pavucontrol pulseaudio -y
+sudo apt install zsh i3 xorg xfce4-terminal mpv tmux trash-cli vim cmus feh picom rofi simplescreenrecorder pavucontrol pulseaudio -y
 
 # Part III: Zsh
 printf '________________________\n'
@@ -49,3 +49,11 @@ printf 'Part VII: Setting up neovim\n'
 printf '________________________\n\n'
 sleep 1
 source ~/dotfiles/nvim/install.sh
+
+
+# Part VIII: Tmux
+printf '________________________\n'
+printf 'Part VIII: Setting up tmux\n'
+printf '________________________\n\n'
+sleep 1
+source ~/dotfiles/tmux/install.sh
