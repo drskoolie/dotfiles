@@ -1,3 +1,5 @@
+i3/bumblebee-status/
+i3/bumblebee-status/*
 node_modules/*
 package*.json
 powerlevel10k/
