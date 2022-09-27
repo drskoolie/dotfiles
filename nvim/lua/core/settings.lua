@@ -27,11 +27,11 @@ vim.opt.undofile = true
 -- More
 -- vim.opt.cursorline = true
 
-vim.cmd([[
-augroup debianlatexfix
-  " Remove all vimrc autocommands within scope
-  autocmd!
-  autocmd BufNewFile,BufRead *.tex   set syntax=tex
-  autocmd BufNewFile,BufRead *.cls   set syntax=tex
-augroup END
-]])
+-- vim.cmd([[
+-- augroup debianlatexfix
+--   " Remove all vimrc autocommands within scope
+--   autocmd!
+--   autocmd BufNewFile,BufRead *.tex   set syntax=tex
+--   autocmd BufNewFile,BufRead *.cls   set syntax=tex
+-- augroup END
+-- ]])
