@@ -41,6 +41,7 @@
 	lod = log --decorate --oneline --graph
 	
 	me = merge
+	mem = merge main
 	met = mergetool
 
 	rb = rebase
@@ -57,6 +58,7 @@
 	sts = status -s
 
 	tg = tag
+	tga = tag -a
 	tgn = tag -n99
 
 	pu = push

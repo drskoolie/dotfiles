@@ -1,0 +1,3 @@
+directory_repo: "/home/drskoolie/chronicles/"
+directory_db: "/home/drskoolie/chronicles/data/fit.db"
+directory_db_relative: "data/fit.db"
