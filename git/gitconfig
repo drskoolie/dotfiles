@@ -38,6 +38,7 @@
 
 	lo = log
 	loa = log --all --decorate --oneline --graph
+	lod = log --decorate --oneline --graph
 	
 	me = merge
 	met = mergetool
@@ -54,6 +55,9 @@
 
 	st = status
 	sts = status -s
+
+	tg = tag
+	tgn = tag -n99
 
 	pu = push
 	puuo = push --set-upstream origin

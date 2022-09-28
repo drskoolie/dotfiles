@@ -16,6 +16,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id exec /$HOME/dotfiles/screenlayout/4Mons.sh
 exec --no-startup-id feh --bg-fill -- $HOME/dotfiles/wallpaper/mountain-grass.jpg
 exec --no-startup-id picom -b --experimental-backends --backend glx
+exec --no-startup-id alsactl init
 exec --no-startup-id pulseaudio
 
 # Startup Screens
