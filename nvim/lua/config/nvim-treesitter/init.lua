@@ -13,7 +13,6 @@ require'nvim-treesitter.configs'.setup {
 	  "latex",
 	  "lua",
 	  "make",
-	  "markdown",
 	  "regex",
 	  "rust",
 	  "sql",

@@ -21,6 +21,7 @@
 	ch = checkout
 	chb = checkout -b
 	chm = checkout main
+	chd = checkout develop
 
 	cl = clone
 	clh = "! f() { git clone https://github.com/$1/$2.git ; }; f"
@@ -42,6 +43,7 @@
 	
 	me = merge
 	mem = merge main
+	memd = merge main develop
 	met = mergetool
 
 	rb = rebase
