@@ -21,6 +21,8 @@ function n ()
 
 		t) nvim ~/dotfiles/tmux/tmux.conf;;
 
+		u) nvim ~/dotfiles/install/install-ubuntu.sh;;
+
 		z) nvim ~/dotfiles/zsh/zshrc;;
 		zaa) nvim ~/dotfiles/zsh/alias/applications.zsh;;
 		zac) nvim ~/dotfiles/zsh/alias/cd.zsh;;

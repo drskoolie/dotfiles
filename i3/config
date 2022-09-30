@@ -531,6 +531,56 @@ mode "cws5" {
 # |            |
 # +------------+
 
+# ---------------------- Part 7: Workspaces Extra 7 ----------------------
+bindsym $mod+7 mode "ws7"
+bindsym $mod+Shift+7 mode "cws7"
+
+set $ws7 "7:v0"
+set $ws71 "71:v1"
+set $ws72 "72:v2"
+set $ws73 "73:v3"
+set $ws74 "74:v4"
+set $ws75 "75:v5"
+set $ws76 "76:v6"
+set $ws77 "77:v7"
+set $ws78 "78:v8"
+set $ws79 "79:v9"
+
+# resize window (you can also use the mouse for that)
+mode "ws7" {
+
+	# extra switch/move to workspace
+	bindsym 0 workspace number $ws7; mode "default"
+	bindsym 1 workspace number $ws71; mode "default"
+	bindsym 2 workspace number $ws72; mode "default"
+	bindsym 3 workspace number $ws73; mode "default"
+	bindsym 4 workspace number $ws74; mode "default"
+	bindsym 5 workspace number $ws75; mode "default"
+	bindsym 6 workspace number $ws76; mode "default"
+ 	bindsym 7 workspace number $ws77; mode "default"
+ 	bindsym 8 workspace number $ws78; mode "default"
+ 	bindsym 9 workspace number $ws79; mode "default"
+
+	bindsym Escape mode "default"
+
+}
+
+
+mode "cws7" {
+
+	bindsym 0 move container to workspace number $ws7; mode "default"
+	bindsym 1 move container to workspace number $ws71; mode "default"
+	bindsym 2 move container to workspace number $ws72; mode "default"
+	bindsym 3 move container to workspace number $ws73; mode "default"
+	bindsym 4 move container to workspace number $ws74; mode "default"
+	bindsym 5 move container to workspace number $ws75; mode "default"
+	bindsym 6 move container to workspace number $ws76; mode "default"
+ 	bindsym 7 move container to workspace number $ws77; mode "default"
+ 	bindsym 8 move container to workspace number $ws78; mode "default"
+	bindsym 9 move container to workspace number $ws79; mode "default"
+
+	bindsym Escape mode "default"
+}
 # ---------------------- Part 8: Workspaces Extra 8 ----------------------
 bindsym $mod+8 mode "ws8"
 bindsym $mod+Shift+8 mode "cws8"

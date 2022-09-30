@@ -1,5 +1,106 @@
 wk_mappings = {
 
+	[" "] = {
+		name = "+<SPC>",
+
+		a = {
+			name = "+accounting",
+
+			b = {':w|!bean-report % balances<CR>', 'balances'},
+			c = {':w|!bean-check %<CR>', 'check'},
+		},
+
+		b = {
+			name = "+boxes",
+
+			b = {'!boxes -a hcvc -d ', 'boxes', mode='v'},
+			c = {'!boxes -a hcvc -d columns<CR>', 'columns', mode='v'},
+			d = {'!boxes -a hcvc -d dog<CR>', 'dog', mode='v'},
+			g = {'!boxes -a hcvc -d girl<CR>', 'girl', mode='v'},
+			i = {'!boxes -a hcvc -d ian jones<CR>', 'ian jones', mode='v'},
+			m = {'!boxes -a hcvc -d mouse<CR>', 'mouse', mode='v'},
+			n = {'!boxes -a hcvc -d spring<CR>', 'spring', mode='v'},
+			p = {'!boxes -a hlvt -d parchment<CR>', 'parchment', mode='v'},
+			s = {'!boxes -a hcvc -d stone<CR>', 'stone', mode='v'},
+			u = {'!boxes -a hcvc -d unicornsay<CR>', 'unicornsay', mode='v'},
+			v = {'!boxes -a hcvc -d unicornthink<CR>', 'unicornthink', mode='v'},
+			y = {'!boxes -a hcvc -d boy<CR>', 'boy', mode='v'},
+		},
+
+		c = {
+			name = "+colorizer",
+
+			a = {':ColorizerAttachToBuffer<CR>',  'attach'},
+			d = {':ColorizerDetachFromBuffer<CR>',  'detach'},
+			p = {'<cmd>PickColor<CR>', 'picker'},
+			r = {':ColorizerReloadAllBuffers<CR>',  'reload'},
+			t = {':ColorizerToggle<CR>',  'toggle'},
+			x = {':XtermColorTable<CR>',  'xterm'},
+		},
+		 
+		d = {
+			name = "+dates",
+
+			c  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d "', 'custom'},
+			n  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n"<CR>', 'now'},
+			t  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d tomorrow<CR>', 'tomorrow'},
+			v  = {'!xargs -I {} date -d {} "+☢ [\\%j] --> \\%F (\\%A) \\%n"<CR>', 'visual', mode='v'},
+			y  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d yesterday<CR>', 'yesterday'},
+
+			w = {
+				name = "+weeks",
+
+				m  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Monday<CR>', 'mon'},
+				t  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Tuesday<CR>', 'tues'},
+				w  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Wednesday<CR>', 'wedn'},
+				r  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Thursday<CR>', 'thurs'},
+				f  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Friday<CR>', 'fri'},
+				s  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Saturday<CR>', 'sat'},
+				u  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Sunday<CR>', 'sun'},
+			},
+		},
+
+		l = {
+			name = "+latex",
+
+			l = {':TmuxSendLatex<CR>', 'latexmk'},
+			r = {tmux_send('r'), 'refresh'},
+		},
+
+		m = {
+			name = "+markdown",
+
+			p = {':MarkdownPreview<CR>', 'preview'},
+			q = {':MarkdownPreviewStop<CR>', 'quit'},
+		},
+
+
+
+		p = {
+			name = "+packer",
+
+			c = {':PackerClean<CR>', 'clean'},
+			i = {':PackerInstall<CR>', 'install'},
+			u = {':PackerUpdate<CR>', 'update'},
+		},
+
+		s = {
+			name = "+spell",
+
+			f = {':set textwidth=110<CR>:set fo+=a<CR>', 'format'},
+			q = {':set nospell<CR>', 'nospell'},
+			t = {':set spell!<CR>', 'spell toggle'},
+		},
+
+		u = {
+			name = "+undotree",
+
+			f = {':UndotreeFocus<CR>', 'focus'},
+			h = {':UndotreeHide<CR>', 'hide'},
+			s = {':UndotreeShow<CR>', 'show'},
+			t = {':UndotreeToggle<CR>', 'toggle'},
+		},
+	},
 	c = {
 		name = "+commands",
 
@@ -110,8 +211,6 @@ wk_mappings = {
 	n = {
 		name = "+neovim",
 
-		a = {':set spell!<CR>', 'spell toggle'},
-		A = {':set nospell<CR>', 'nospell'},
 		f = {':lua require"nvim-tree".open_replacing_current_buffer()<CR>', 'tree-buffer'}, 
 		F = {':NvimTreeOpen<CR>', 'tree-buffer'},
         i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
@@ -129,90 +228,6 @@ wk_mappings = {
         v = {':w<CR>:source %<CR>',  'vim source'},
 	},
 
-	p = {
-		name = "+plugins",
-
-		a = {
-			name = "+accounting",
-
-			b = {':w|!bean-report % balances<CR>', 'balances'},
-			c = {':w|!bean-check %<CR>', 'check'},
-		},
-
-		b = {
-			name = "+boxes",
-
-			b = {'!boxes -a hcvc -d ', 'boxes', mode='v'},
-			c = {'!boxes -a hcvc -d columns<CR>', 'columns', mode='v'},
-			d = {'!boxes -a hcvc -d dog<CR>', 'dog', mode='v'},
-			g = {'!boxes -a hcvc -d girl<CR>', 'girl', mode='v'},
-			i = {'!boxes -a hcvc -d ian jones<CR>', 'ian jones', mode='v'},
-			m = {'!boxes -a hcvc -d mouse<CR>', 'mouse', mode='v'},
-			n = {'!boxes -a hcvc -d spring<CR>', 'spring', mode='v'},
-			p = {'!boxes -a hlvt -d parchment<CR>', 'parchment', mode='v'},
-			s = {'!boxes -a hcvc -d stone<CR>', 'stone', mode='v'},
-			u = {'!boxes -a hcvc -d unicornsay<CR>', 'unicornsay', mode='v'},
-			v = {'!boxes -a hcvc -d unicornthink<CR>', 'unicornthink', mode='v'},
-			y = {'!boxes -a hcvc -d boy<CR>', 'boy', mode='v'},
-		},
-
-		c = {
-			name = "+colorizer",
-
-			a = {':ColorizerAttachToBuffer<CR>',  'attach'},
-			d = {':ColorizerDetachFromBuffer<CR>',  'detach'},
-			p = {'<cmd>PickColor<CR>', 'picker'},
-			r = {':ColorizerReloadAllBuffers<CR>',  'reload'},
-			t = {':ColorizerToggle<CR>',  'toggle'},
-			x = {':XtermColorTable<CR>',  'xterm'},
-		},
-		 
-		d = {
-			name = "+dates",
-
-			c  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d "', 'custom'},
-			n  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n"<CR>', 'now'},
-			t  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d tomorrow<CR>', 'tomorrow'},
-			v  = {'!xargs -I {} date -d {} "+☢ [\\%j] --> \\%F (\\%A) \\%n"<CR>', 'visual', mode='v'},
-			y  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d yesterday<CR>', 'yesterday'},
-
-			w = {
-				name = "+weeks",
-
-				m  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Monday<CR>', 'mon'},
-				t  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Tuesday<CR>', 'tues'},
-				w  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Wednesday<CR>', 'wedn'},
-				r  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Thursday<CR>', 'thurs'},
-				f  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Friday<CR>', 'fri'},
-				s  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Saturday<CR>', 'sat'},
-				u  = {':r!date "+☢ [\\%j] --> \\%F (\\%A) \\%n" -d Sunday<CR>', 'sun'},
-			},
-		},
-
-		l = {
-			name = "+latex",
-
-			l = {':TmuxSendLatex<CR>', 'latexmk'},
-			r = {tmux_send('r'), 'refresh'},
-		},
-
-		p = {
-			name = "+packer",
-
-			c = {':PackerClean<CR>', 'clean'},
-			i = {':PackerInstall<CR>', 'install'},
-			u = {':PackerUpdate<CR>', 'update'},
-		},
-
-		u = {
-			name = "+undotree",
-
-			f = {':UndotreeFocus<CR>', 'focus'},
-			h = {':UndotreeHide<CR>', 'hide'},
-			s = {':UndotreeShow<CR>', 'show'},
-			t = {':UndotreeToggle<CR>', 'toggle'},
-		},
-	},
 
 	s = {
 		name = "+script",
