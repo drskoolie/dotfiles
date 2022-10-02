@@ -3,6 +3,7 @@
 # +------------------+
 alias cdc='cd ~/chronicles/;ls'
 alias cdcb='cd ~/chronicles/books/;ls'
+alias cdcbp='cd ~/chronicles/books/python;ls'
 
 alias cdd='cd ~/dotfiles/; ls'
 alias cddi='cd ~/dotfiles/i3; ls'
@@ -19,9 +20,9 @@ alias cdrt='cd ~/research/txt/;ls'
 alias cdrl='cd ~/research/lit/;ls'
 alias cdrli='cd ~/research/lit/ieee/;ls'
 
+alias cdp='cd ~/projects/;ls'
+
 alias cdx='cd ~/Documents;ls'
-alias cdxc='cd ~/Documents/C/;ls'
-alias cdxf='cd ~/Documents/fit/;ls'
 
 function mkc ()
 {
