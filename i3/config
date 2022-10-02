@@ -14,12 +14,11 @@ font pango:Hack Regular Nerd Font Complete 9
 # Startup Applications
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id exec /$HOME/dotfiles/screenlayout/4Mons.sh
-exec --no-startup-id feh --bg-fill -- $HOME/dotfiles/wallpaper/mountain-grass.jpg
+exec --no-startup-id feh --bg-fill -- $HOME/dotfiles/wallpaper/purple-trees.jpg
 exec --no-startup-id picom -b --experimental-backends --backend glx
 exec --no-startup-id alsactl init
 exec --no-startup-id pulseaudio
-
-exec "xautolock -detectsleep -time 10 -locker \"i3lock -c 000000\""
+exec --no-startup-id "xautolock -detectsleep -time 10 -locker \"i3lock -c 000000\""
 
 
 # Startup Screens
