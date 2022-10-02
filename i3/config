@@ -19,6 +19,9 @@ exec --no-startup-id picom -b --experimental-backends --backend glx
 exec --no-startup-id alsactl init
 exec --no-startup-id pulseaudio
 
+exec "xautolock -detectsleep -time 10 -locker \"i3lock -c 000000\""
+
+
 # Startup Screens
 # https://unix.stackexchange.com/questions/96798/i3wm-start-applications-on-specific-workspaces-when-i3-starts
 # https://unix.stackexchange.com/questions/533371/how-to-autostart-more-than-one-app-in-different-workspaces-in-i3wm 
@@ -41,7 +44,7 @@ exec --no-startup-id nm-applet
 # start j4-dmenu-desktop (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show run
 bindsym $mod+Shift+d exec --no-startup-id rofi -show window
-bindsym $mod+Shift+s exec --no-startup-id systemctl suspend
+bindsym $mod+Shift+s exec "i3lock -c 000000"
 
 # start a terminal
 bindsym $mod+Return exec xfce4-terminal
