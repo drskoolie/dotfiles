@@ -38,6 +38,11 @@ return require('packer').startup(function()
   use { "junegunn/fzf", run = ":call fzf#install()" }
   use 'junegunn/fzf.vim'
 
+  -- +-------+
+  -- | latex |
+  -- +-------+
+  use 'lervag/vimtex'
+
   -- +-----+
   -- | lsp |
   -- +-----+
@@ -119,16 +124,15 @@ return require('packer').startup(function()
 end)
 
 
--- use "lukas-reineke/indent-blankline.nvim"
+  -- use "lukas-reineke/indent-blankline.nvim"
+  
 --[[
 
 " ==> Python
-Plug 'dense-analysis/ale'           " ALE
 " Plug 'a-elhag/jupyter-vim'        " Jupyter mine
 " Plug 'goerz/jupytext.vim'         " Jupytext
 
 " ==> Will do
 " Plug 'dhruvasagar/vim-table-mode'                   " Table Creator
 " Plug 'majutsushi/tagbar'                            " Class/module browser
-winston0410/range-highlight.nvim
 --]]

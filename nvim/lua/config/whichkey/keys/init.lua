@@ -48,8 +48,7 @@ wk_mappings = {
 		l = {
 			name = "+latex",
 
-			l = {':TmuxSendLatex<CR>', 'latexmk'},
-			r = {tmux_send('r'), 'refresh'},
+			l = {':VimtexCompile<CR>', 'latexmk'},
 		},
 
 		m = {
