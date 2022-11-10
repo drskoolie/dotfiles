@@ -65,6 +65,7 @@
 	tgn = tag -n99
 
 	pu = push
+	pudo = push -d origin
 	puuo = push --set-upstream origin
 
 [mergetool "nvim"]

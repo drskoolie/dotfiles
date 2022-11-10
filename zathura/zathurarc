@@ -10,8 +10,8 @@ map i toggle_index
 
 set scroll-step 100
 
-map h scroll half-up
-map l scroll half-down
+# map h scroll half-up
+# map l scroll half-down
 
 map H rotate rotate-ccw
 map L rotate rotate-cw
