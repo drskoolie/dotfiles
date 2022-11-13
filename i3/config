@@ -202,6 +202,9 @@ bindsym $mod+Shift+l move right
 # kill focused window
 bindsym $mod+q kill
 
+# fullscreen
+bindsym $mod+Shift+f fullscreen toggle global
+
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split

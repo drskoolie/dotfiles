@@ -27,6 +27,7 @@ keymap('i', '<C-h>', '<ESC>viwuea', opts)
 keymap("v", "<a-j>", ":m .+2<CR>gv", opts)
 keymap("v", "<a-k>", ":m .-2<CR>gv", opts)
 keymap('v', 'y', 'ygv<Esc>', opts)
+keymap("v", "<c-s>", ':sort<CR>', opts)
 
 -- Pasting better
 keymap("v", "p", '"_dP', opts)
