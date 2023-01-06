@@ -60,10 +60,21 @@ mode "open" {
 		bindsym a exec anki; mode "default"
 		bindsym s exec scrot --select --line mode=edge -F ~/Pictures/screenshot.png
 		bindsym r exec simplescreenrecorder; mode "default"
-		bindsym v exec vivaldi-stable; mode "default"
 
         bindsym Escape mode "default"
 }
+
+bindsym $mod+v mode "vivaldi"
+mode "vivaldi" {
+
+		bindsym c exec vivaldi-stable --new-window "connect.uwaterloo.ca"; mode "default"
+		bindsym f exec firefox; mode "default"
+		bindsym v exec vivaldi-stable; mode "default"
+		bindsym y exec vivaldi-stable --new-window "www.youtube.com"; mode "default"
+
+        bindsym Escape mode "default"
+}
+
 
 # ---------------------- Part 9: Bar ---------------------- 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -219,7 +230,7 @@ bindsym $mod+Shift+space floating toggle; border toggle
 bindsym $mod+b split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+# bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
