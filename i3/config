@@ -70,7 +70,9 @@ mode "vivaldi" {
 		bindsym c exec vivaldi-stable --new-window "connect.uwaterloo.ca"; mode "default"
 		bindsym f exec firefox; mode "default"
 		bindsym g exec vivaldi-stable --new-window "google.ca"; mode "default"
+		bindsym l exec vivaldi-stable --new-window "learn.uwaterloo.ca"; mode "default"
 		bindsym n exec vivaldi-stable --new-window "netflix.com"; mode "default"
+		bindsym r exec vivaldi-stable --new-window "reddit.com"; mode "default"
 		bindsym v exec vivaldi-stable; mode "default"
 		bindsym y exec vivaldi-stable --new-window "www.youtube.com"; mode "default"
 
