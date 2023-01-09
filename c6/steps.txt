@@ -1,0 +1,53 @@
+https://www.reddit.com/r/Amd/comments/7tkigu/automating_disabling_of_c6_states_in_arch_linux/
+
+Automating disabling of C6 States in (Arch) Linux on Ryzen
+Discussion
+After the lively discussion on a 1700 that kept segfaulting under Linux, there was also discussion of crashes under light loads because of C6 states. I thought I'd share the scripts I use to automate disabling C6 states on sleep (they like to re-enable themselves) and boot, as BIOS settings and kernel boot line parameters didn't seem to take for me on my X370 Taichi. More discussion on the kernel bugzilla. This is for Arch Linux using systemd.
+
+My username in all of this is "dk" if that isn't obvious. Substitute your own username in the examples below.
+
+On Sleep
+
+Create /etc/modules-load.d/msr.conf and add these lines
+
+# Load msr.ko module at boot
+msr
+Clone ZenStates-Linux from github from within /home/dk/Ryzen
+
+# git clone https://github.com/r4m0n/ZenStates-Linux.git
+Created a script disable-c6.sh
+
+#!/bin/sh
+if [ "${1}" == "post" ]; then
+
+  # Disable c6 coming out of sleep
+  /home/dk/Ryzen/ZenStates-Linux/zenstates.py --c6-disable
+fi
+Make it executable
+
+# chmod a+x disable-c6.sh
+Test it
+
+# disable-c6.sh post
+And put it in /usr/lib/systemd/system-sleep/
+
+On Boot
+
+Create a file disable-c6.service in /etc/systemd/system that contains
+
+[Unit]
+Description=Disable C6 on boot
+After=default.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/dk/Ryzen/ZenStates-Linux/zenstates.py --c6-disable
+
+[Install]
+WantedBy=default.target
+Start it to disable C6 if it is currently enabled...
+
+# systemctl start disable-c6.service
+And get it to run on boot
+
+# systemctl enable disable-c6.service
