@@ -196,8 +196,6 @@ wk_mappings = {
 	n = {
 		name = "+neovim",
 
-		f = {':lua require"nvim-tree".open_replacing_current_buffer()<CR>', 'tree-buffer'}, 
-		F = {':NvimTreeOpen<CR>', 'tree-buffer'},
         i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
         I = {':e ~/.config/nvim/init.lua<CR>',  'init'},
 		k = {':tabnew<CR>:e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'init'},
