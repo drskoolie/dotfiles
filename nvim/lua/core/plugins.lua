@@ -25,6 +25,17 @@ return require('packer').startup(function()
   -- | file browser |
   -- +--------------+
 
+  -- +-----+
+  -- | hop |
+  -- +-----+
+  use {
+	  "phaazon/hop.nvim",
+	  branch = 'v2',
+	  config = function()
+		  require'hop'.setup {}
+	  end
+  }
+
   -- +-------+
   -- | latex |
   -- +-------+
@@ -46,6 +57,14 @@ return require('packer').startup(function()
   -- | git |
   -- +-----+
   use 'tpope/vim-fugitive'
+
+  -- +----------+
+  -- | markdown |
+  -- +----------+
+  use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+  })
 
   -- +--------+
   -- | python |
@@ -81,21 +100,10 @@ return require('packer').startup(function()
   -- +--------+
   -- | useful |
   -- +--------+
-  use({
-      "iamcco/markdown-preview.nvim",
-      run = function() vim.fn["mkdp#util#install"]() end,
-  })
   use "mbbill/undotree"
   use "nvim-lua/plenary.nvim"
-  use "romainl/vim-cool"
+  use "romainl/vim-cool" -- hl-search fix
   use "tversteeg/registers.nvim"
-  use {
-	  "phaazon/hop.nvim",
-	  branch = 'v2',
-	  config = function()
-		  require'hop'.setup {}
-	  end
-  }
 
   -- +-----+
   -- | vim |
