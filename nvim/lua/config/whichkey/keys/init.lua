@@ -85,16 +85,6 @@ wk_mappings = {
 			t = {':UndotreeToggle<CR>', 'toggle'},
 		},
 	},
-	c = {
-		name = "+commands",
-
-		c = {tmux_send('C-c'), 'C-c'},
-		d = {tmux_send('C-d'), 'C-d'},
-		e = {tmux_send(''), 'enter'},
-		l = {tmux_send('ls'), 'ls'},
-		y = {tmux_send('y'), 'y'},
-
-	},
 
 	d = {
 		name = "+debug",
@@ -229,11 +219,15 @@ wk_mappings = {
 		name = "+tmux",
 
 		c = {':TmuxSendClear<CR>', 'clear'},
+		C = {tmux_send('C-c'), 'C-c'},
+		d = {tmux_send('C-d'), 'C-d'},
+		e = {tmux_send(''), 'enter'},
 		k = {':silent !tmux kill-pane -t 1<CR>', 'kill'},
 		l  = {tmux_open_pane('-dh'),  'right'},
 		L  = {':silent !tmux move-pane -f -s 1 -t 0<CR>',  'right'},
 		j  = {tmux_open_pane('-d'),  'down'},
 		J  = {':silent !tmux move-pane -h -s 1 -t 0<CR>',  'down'},
+		y = {tmux_send('y'), 'y'},
 	},
 
 }
