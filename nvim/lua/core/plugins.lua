@@ -25,12 +25,6 @@ return require('packer').startup(function()
   -- | file browser |
   -- +--------------+
 
-  -- +----------+
-  -- | junegunn |
-  -- +----------+
-  use { "junegunn/fzf", run = ":call fzf#install()" }
-  use 'junegunn/fzf.vim'
-
   -- +-------+
   -- | latex |
   -- +-------+
@@ -51,7 +45,6 @@ return require('packer').startup(function()
   -- +-----+
   -- | git |
   -- +-----+
-  use 'mhinz/vim-signify'     -- Git diff icons on the side of the file lines
   use 'tpope/vim-fugitive'
 
   -- +--------+

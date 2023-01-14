@@ -58,7 +58,23 @@ wk_mappings = {
 			q = {':MarkdownPreviewStop<CR>', 'quit'},
 		},
 
+		n = {
+			name = "+neovim",
 
+			i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
+			I = {':e ~/.config/nvim/init.lua<CR>',  'init'},
+			k = {':tabnew<CR>:e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'keymappings'},
+			K = {':e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'keymappings'},
+			l = {':w<CR>:luafile %<CR>',  'lua source'},
+			p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
+			P = {':e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
+			s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
+			S = {':e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
+			w = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
+			W = {':e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
+			t  = {':tabnew<CR>',    'tab new'},
+			v = {':w<CR>:source %<CR>',  'vim source'},
+		},
 
 		p = {
 			name = "+packer",
@@ -108,43 +124,6 @@ wk_mappings = {
 		w = {tmux_send('w'), 'where'},
 	},
 
-	f = {
-		name = '+fzf',
-
-		a = {':Ag<CR>', 'ag'},
-		b = {':Buffers<CR>', 'buffers'},
-		c = {':Commands<CR>', 'commands'},
-		f = {':Files ~<CR>', 'files ~'},
-		F = {':Files<CR>', 'files'},
-		g = {':GFiles<CR>', 'gfiles'},
-		h = {':History<CR>', 'history'},
-		H = {':History:<CR>', 'history commands'},
-		l = {':BLines<CR>', 'blines'},
-		L = {':Lines<CR>', 'lines'},
-		m = {':Marks<CR>', 'marks'},
-		n = {':bnext<CR>', 'next'},
-		p = {':bprevious<CR>', 'prev'},
-		r = {':Rg<CR>', 'rg'},
-		s = {':Snippets<CR>', 'snippets'},
-		t = {':BTags<CR>', 'btags'},
-		T = {':Tags<CR>', 'tags'},
-		w = {':Windows<CR>', 'windows'},
-
-	},
-
-	g = {
-		name = '+git',
-
-		c = {':BCommits<CR>', 'commits'},
-		C = {':Commits<CR>', 'bcommits'},
-		d = {':SignifyDiff<CR>', 'diff'},
-		f = {':SignifyFold<CR>', 'fold'},
-		h = {':SignifyToggleHighlight<CR>', 'highlight'},
-		p = {':SignifyHunkDiff<CR>', 'preview hunk'},
-		s = {':GFiles?<CR>', 'status'},
-		t = {':SignifyToggle<CR>', 'toggle'},
-		u = {':SignifyHunkUndo<CR>', 'undo'},
-	},
 
 	i = {
 		name = "+ipython",
@@ -182,38 +161,6 @@ wk_mappings = {
 		q = {'<cmd>TroubleClose<CR>', 'quit'},
 	},
 			
-
-	n = {
-		name = "+neovim",
-
-        i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
-        I = {':e ~/.config/nvim/init.lua<CR>',  'init'},
-		k = {':tabnew<CR>:e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'init'},
-        K = {':e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'init'},
-        l = {':w<CR>:luafile %<CR>',  'lua source'},
-        p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
-        P = {':e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
-		s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
-		S = {':e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
-        w = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
-        W = {':e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
-        t  = {':tabnew<CR>',    'tab new'},
-        v = {':w<CR>:source %<CR>',  'vim source'},
-	},
-
-
-	s = {
-		name = "+script",
-
-		c = {tmux_send('make %:p:t:r && ./%:p:t:r'), 'make and run'},
-		d = {tmux_send('diff --color -EbZ %:p:t ../%:p:t:r/%:p:t'), 'diff'},
-		g = {tmux_send('gdb ./%:p:t:r'), 'gdb'},
-		G = {tmux_send('gdb --batch --ex run --ex bt --ex q --args ./%:p:t:r'), 'gdb super'},
-		l = {tmux_send('make clean'), 'clean'},
-		m = {tmux_send('make'), 'make'},
-		r = {tmux_send('./%:p:t:r'), 'run'},
-		s = {tmux_send('splint ./%:p:t'), 'splint'},
-	},
 
 	t = {
 		name = "+tmux",
