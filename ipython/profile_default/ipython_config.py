@@ -38,7 +38,7 @@ c = get_config()  #noqa
 
 ## A list of dotted module names of IPython extensions to load.
 #  Default: []
-c.InteractiveShellApp.extensions ["rich"]
+# c.InteractiveShellApp.extensions []
 
 ## Dotted module name(s) of one or more IPython extensions to load.
 #  
@@ -46,7 +46,7 @@ c.InteractiveShellApp.extensions ["rich"]
 #  
 #  .. versionadded:: 7.10
 #  Default: []
-# c.InteractiveShellApp.extra_extensions = []
+c.InteractiveShellApp.extra_extensions = ["rich"]
 
 ## A file to be run
 #  Default: ''
