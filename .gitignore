@@ -1,5 +1,6 @@
 i3/bumblebee-status/
 i3/bumblebee-status/*
+ipython/profile_default/history.sqlite
 node_modules/*
 package*.json
 powerlevel10k/
