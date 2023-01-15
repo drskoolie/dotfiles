@@ -16,7 +16,7 @@ keymap('n', 'L', 'o<Esc>', opts)
 -- | Insert |
 -- +--------+
 keymap('i', '<C-f>', '<C-x><C-f>', opts)
-keymap('i', '<C-y>', '<ESC>viwUea', opts)
+keymap('i', '<C-i>', '<ESC>viwUea', opts)
 keymap('i', '<C-l>', ' <ESC>dT_xa', opts)
 keymap('i', '<C-h>', '<ESC>viwuea', opts)
 
