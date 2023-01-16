@@ -71,10 +71,12 @@ wk_mappings = {
 			s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
 			S = {':e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
 			w = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
+			
 			W = {':e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
 			t  = {':tabnew<CR>',    'tab new'},
 			v = {':w<CR>:source %<CR>',  'vim source'},
 		},
+
 
 		p = {
 			name = "+packer",
@@ -91,6 +93,13 @@ wk_mappings = {
 			q = {':set nospell<CR>', 'nospell'},
 			t = {':set spell!<CR>', 'spell toggle'},
 		},
+		
+		t = {
+			name = "+tabularize",
+			a = {':Tabularize /;<CR>', 'semi-colon', mode='v'},
+			a = {':Tabularize /;<CR>', 'semi-colon'},
+		},
+
 
 		u = {
 			name = "+undotree",
