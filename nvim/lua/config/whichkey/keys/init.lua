@@ -96,8 +96,7 @@ wk_mappings = {
 		
 		t = {
 			name = "+tabularize",
-			a = {':Tabularize /;<CR>', 'semi-colon', mode='v'},
-			a = {':Tabularize /;<CR>', 'semi-colon'},
+			a = {"mjggVG:Tabularize/;<CR>'j", ';'},
 		},
 
 
