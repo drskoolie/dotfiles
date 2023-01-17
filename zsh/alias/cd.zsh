@@ -3,7 +3,6 @@
 # +------------------+
 alias cdc='cd ~/chronicles/;ls'
 alias cdcb='cd ~/chronicles/books/;ls'
-alias cdcbp='cd ~/chronicles/books/python;ls'
 
 alias cdd='cd ~/dotfiles/; ls'
 alias cddi='cd ~/dotfiles/i3; ls'
@@ -16,11 +15,13 @@ alias cddz='cd ~/dotfiles/zsh; ls'
 alias cddza='cd ~/dotfiles/zsh/alias; ls'
 
 alias cdr='cd ~/research/;ls'
-alias cdrt='cd ~/research/txt/;ls'
 alias cdrl='cd ~/research/lit/;ls'
 alias cdrli='cd ~/research/lit/ieee/;ls'
+alias cdrt='cd ~/research/txt/;ls'
+alias cdrtp='cd ~/research/txt/proposal/;ls'
 
 alias cdp='cd ~/projects/;ls'
+alias cdpa='cd ~/projects/assembly/;ls'
 
 alias cdx='cd ~/Documents;ls'
 
