@@ -50,6 +50,7 @@ wk_mappings = {
 
 			c = {':VimtexCompile<CR>', 'compile'},
 			d = {':VimtexDocPackage<CR>', 'docs'},
+			e = {':VimtexErrors<CR>', 'errors'},
 			i = {':VimtexInfo<CR>', 'info'},
 			s = {':VimtexStop<CR>', 'stop'},
 			r = {':VimtexClean<CR>', 'rm auxillary'},
