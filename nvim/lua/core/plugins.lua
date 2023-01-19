@@ -29,7 +29,7 @@ return require('packer').startup(function()
   -- +--------------+
   -- | file browser |
   -- +--------------+
-
+  
   -- +-----+
   -- | hop |
   -- +-----+

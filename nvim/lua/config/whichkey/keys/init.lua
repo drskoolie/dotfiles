@@ -48,7 +48,13 @@ wk_mappings = {
 		l = {
 			name = "+latex",
 
-			l = {':VimtexCompile<CR>', 'latexmk'},
+			c = {':VimtexCompile<CR>', 'compile'},
+			d = {':VimtexDocPackage<CR>', 'docs'},
+			i = {':VimtexInfo<CR>', 'info'},
+			s = {':VimtexStop<CR>', 'stop'},
+			r = {':VimtexClean<CR>', 'rm auxillary'},
+			t =	{':VimtexTocOpen<CR>', 'toc'},
+			z = {':VimtexView<CR>', 'zathura'},
 		},
 
 		m = {
@@ -96,7 +102,8 @@ wk_mappings = {
 		
 		t = {
 			name = "+tabularize",
-			a = {"mjggVG:Tabularize/;<CR>'j", ';'},
+			a = {"mjggVG:Tabularize /;<CR>'j", ';'},
+			b = {":Tabularize /;<CR>", ';', mode='v'},
 		},
 
 
