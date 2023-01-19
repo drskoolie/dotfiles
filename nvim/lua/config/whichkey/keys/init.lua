@@ -78,9 +78,7 @@ wk_mappings = {
 			s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
 			S = {':e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
 			w = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
-			
 			W = {':e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
-			t  = {':tabnew<CR>',    'tab new'},
 			v = {':w<CR>:source %<CR>',  'vim source'},
 		},
 
@@ -116,6 +114,16 @@ wk_mappings = {
 			s = {':UndotreeShow<CR>', 'show'},
 			t = {':UndotreeToggle<CR>', 'toggle'},
 		},
+	},
+
+	b = {
+		name = "+buffers",
+
+		m = {':tabm +1<CR>',    'tab mov +1'},
+		M = {':tabm -1<CR>',    'tab mov -1'},
+		n = {':bn<CR>', 'next'},
+		p = {':bp<CR>', 'prev'},
+		t  = {':tabnew<CR>',    'tab new'},
 	},
 
 	d = {
