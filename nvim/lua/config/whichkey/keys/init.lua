@@ -54,6 +54,7 @@ wk_mappings = {
 			s = {':VimtexStop<CR>', 'stop'},
 			r = {':VimtexClean<CR>', 'rm auxillary'},
 			t =	{':VimtexTocOpen<CR>', 'toc'},
+			w = {':VimtexCountWords<CR>', 'words'},
 			z = {':VimtexView<CR>', 'zathura'},
 		},
 
@@ -95,8 +96,8 @@ wk_mappings = {
 		s = {
 			name = "+spell",
 
-			f = {':set textwidth=110<CR>:set fo+=a<CR>', 'format'},
-			q = {':set nospell<CR>', 'nospell'},
+			a = {':set textwidth=110<CR>:set fo=tc<CR>:set spell<CR>', 'all'},
+			n = {':set nospell<CR>', 'nospell'},
 			t = {':set spell!<CR>', 'spell toggle'},
 		},
 		
