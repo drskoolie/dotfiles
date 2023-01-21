@@ -5,6 +5,21 @@ printf '_____________________________\n\n'
 sleep 1
 source ~/dotfiles/git/install.sh
 
+# Part II: Remove snap
+printf '_____________________________\n'
+printf 'Part II: Removing snap\n'
+printf '_____________________________\n'
+sleep 1
+source ~/dotfiles/snap/uninstall.sh
+
+# Part III: Remove snap
+printf '_____________________________\n'
+printf 'Part III: Installing Firefox\n'
+printf '_____________________________\n'
+sleep 1
+source ~/dotfiles/snap/firefox.sh
+
+
 # Part II: Installing Everything
 printf '________________________\n'
 printf 'Part II: Installing Everything\n'
