@@ -13,4 +13,4 @@ sudo apt autoremove --purge snapd -y
 
 rm -rf ~/snap
 
-sudo ln -s ~/dotfiles/snap/nosnap /etc/apt/preferences.d/nosnap
+sudo ln -s ~/dotfiles/snap/nosnap.pref /etc/apt/preferences.d/nosnap.pref
