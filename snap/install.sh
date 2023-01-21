@@ -9,6 +9,6 @@ sudo snap remove --purge core20
 sudo snap remove --purge snapd
 
 sudo rm -rf /var/cache/snapd
-sudo apt autoremove --purge snapd
+sudo apt autoremove --purge snapd -y
 
 rm -rf ~/snap
