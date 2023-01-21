@@ -12,3 +12,5 @@ sudo rm -rf /var/cache/snapd
 sudo apt autoremove --purge snapd -y
 
 rm -rf ~/snap
+
+sudo ln -s ~/dotfiles/snap/nosnap /etc/apt/preferences.d/nosnap
