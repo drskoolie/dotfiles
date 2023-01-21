@@ -15,7 +15,6 @@ require'nvim-treesitter.configs'.setup {
 	  "make",
 	  "regex",
 	  "rust",
-	  "sql",
 	  "python",
 	  "todotxt",
 	  "vim",
