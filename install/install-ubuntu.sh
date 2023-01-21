@@ -12,14 +12,6 @@ printf '_____________________________\n'
 sleep 1
 source ~/dotfiles/snap/uninstall.sh
 
-# Part III: Remove snap
-printf '_____________________________\n'
-printf 'Part III: Installing Firefox\n'
-printf '_____________________________\n'
-sleep 1
-source ~/dotfiles/snap/firefox.sh
-
-
 # Part II: Installing Everything
 printf '________________________\n'
 printf 'Part II: Installing Everything\n'
@@ -74,3 +66,10 @@ printf '________________________\n\n'
 sleep 1
 source ~/dotfiles/tmux/install.sh
 source ~/dotfiles/picom/install.sh
+
+# Part VIV: Remove snap
+printf '_____________________________\n'
+printf 'Part VIV: Installing Firefox\n'
+printf '_____________________________\n'
+sleep 1
+source ~/dotfiles/snap/firefox.sh
