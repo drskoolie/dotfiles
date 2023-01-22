@@ -1,13 +1,13 @@
 # Part I: Remove snap
 printf '_____________________________\n'
-printf 'Part II: Removing snap\n'
+printf 'Part 1: Removing snap\n'
 printf '_____________________________\n'
 sleep 1
 source ~/dotfiles/snap/uninstall.sh
 
 # Part II: Installing Everything
 printf '________________________\n'
-printf 'Part II: Installing Everything\n'
+printf 'Part 2: Installing Everything\n'
 printf '________________________\n\n'
 sleep 1
 sudo apt update && sudo apt update --fix-missing && sudo apt upgrade -y
@@ -18,7 +18,7 @@ sudo timedatectl set-timezone America/Toronto
 
 # Part III: Symliking
 printf '________________________\n'
-printf 'Part III: Symlinking\n'
+printf 'Part 3: Symlinking\n'
 printf '________________________\n\n'
 mkdir -p ~/.config
 source ~/dotfiles/fonts/source.zsh
