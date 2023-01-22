@@ -44,7 +44,7 @@
 	
 	me = merge
 	mem = merge main
-	memd = merge main develop
+	med = merge develop
 	met = mergetool
 
 	rb = rebase
