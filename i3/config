@@ -60,7 +60,8 @@ mode "open" {
 		bindsym a exec anki; mode "default"
 		bindsym s exec scrot --select --line mode=edge -F ~/Pictures/screenshot.png
 		bindsym r exec simplescreenrecorder; mode "default"
-		bindsym q exec qbittorrent; mode "default
+		bindsym q exec qbittorrent; mode "default"
+		bindsym v exec virtualbox; mode "default"
 
         bindsym Escape mode "default"
 }
