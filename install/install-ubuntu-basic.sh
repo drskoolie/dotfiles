@@ -11,8 +11,9 @@ printf 'Part II: Installing Everything\n'
 printf '________________________\n\n'
 sleep 1
 sudo apt update && sudo apt update --fix-missing && sudo apt upgrade -y
-sudo apt install boxes batcat cmus feh i3 mpv nvim okular pavucontrol picom pulseaudio - y
-sudo apt install rofi scrot simplescreenrecorder tmux trash-cli vim xclip xfce4-terminal xorg zathura zsh -y
+sudo apt install xorg xinit i3 -y
+sudo apt install boxes batcat cmus feh mpv neovim okular pavucontrol picom pulseaudio -y
+sudo apt install rofi scrot simplescreenrecorder tmux trash-cli vim xclip xfce4-terminal zathura zsh -y
 sudo timedatectl set-timezone America/Toronto
 
 # Part III: Symliking
