@@ -11,7 +11,7 @@ printf 'Part 2: Installing Everything\n'
 printf '________________________\n\n'
 sleep 1
 sudo apt update && sudo apt update --fix-missing && sudo apt upgrade -y
-sudo apt install xorg xinit i3 feh neovim pavucontrol picom pulseaudio rofi scrot tmux vim zsh -y
+sudo apt install xorg xinit i3 feh pavucontrol picom pulseaudio rofi scrot tmux xfce4-terminal vim zsh -y
 sudo timedatectl set-timezone America/Toronto
 
 # Part III: Symliking
