@@ -8,7 +8,7 @@ printf '_____________________________\n'
 printf 'Part 2: Building neovim\n'
 printf '_____________________________\n'
 sleep 1
-# source ~/dotfiles/nvim/build.sh
+source ~/dotfiles/nvim/build.sh
 
 printf '_____________________________\n'
 printf 'Part 3: Installing Latex\n'
