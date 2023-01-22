@@ -64,6 +64,7 @@
 	tg = tag
 	tga = tag -a
 	tgn = tag -n99
+	tgnr = tag -n99 -l --sort=-v:refname
 
 	pu = push
 	puo = push origin
