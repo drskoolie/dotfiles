@@ -10,3 +10,5 @@ include files/workspace1.conf
 include files/workspace2.conf
 include files/workspace3.conf
 include files/workspace4.conf
+include files/workspace5.conf
+include files/workspace6.conf
