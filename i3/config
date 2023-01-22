@@ -1,5 +1,7 @@
 set $mod Mod4
 
 include files/startup.conf
-include files/base.conf
+include files/bar.conf
 include files/modes.conf
+include files/base.conf
+include files/workspaces.conf
