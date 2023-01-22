@@ -32,8 +32,9 @@ exec --no-startup-id sh -c 'sleep 1.4; i3-msg "workspace 3"'
 exec --no-startup-id sh -c 'sleep 1.6; xfce4-terminal'
 exec --no-startup-id sh -c 'sleep 1.8; i3-msg "workspace 4"'
 exec --no-startup-id sh -c 'sleep 2.0; xfce4-terminal'
-exec --no-startup-id sh -c 'sleep 2.2; i3-msg "workspace 21"'
-exec --no-startup-id sh -c 'sleep 2.4; firefox'
+exec --no-startup-id sh -c 'sleep 2.2; i3-msg "workspace 2"'
+exec --no-startup-id sh -c 'sleep 2.4; i3-msg "workspace 21"'
+exec --no-startup-id sh -c 'sleep 2.6; firefox'
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -58,7 +59,7 @@ bindsym $mod+o mode "open"
 mode "open" {
 
 		bindsym a exec anki; mode "default"
-		bindsym s exec scrot --select --line mode=edge -F ~/Pictures/screenshot.png
+		bindsym s exec scrot --select --line mode=edge -F ~/media/screenshots/screenshot.png
 		bindsym r exec simplescreenrecorder; mode "default"
 		bindsym q exec qbittorrent; mode "default"
 		bindsym v exec virtualbox; mode "default"
