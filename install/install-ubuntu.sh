@@ -18,7 +18,7 @@ printf 'Part II: Installing Everything\n'
 printf '________________________\n\n'
 sleep 1
 sudo apt update && sudo apt update --fix-missing && sudo apt upgrade -y
-sudo apt install zsh i3 xorg xfce4-terminal mpv tmux trash-cli vim cmus feh picom rofi simplescreenrecorder pavucontrol pulseaudio scrot zathura okular -y
+sudo apt install cmus feh i3 mpv okular pavucontrol picom pulseaudio rofi scrot simplescreenrecorder tmux trash-cli vim xclip xfce4-terminal xorg zathura zsh-y
 sudo timedatectl set-timezone America/Toronto
 
 # Part III: Zsh
@@ -73,3 +73,10 @@ printf 'Part VIV: Installing Firefox\n'
 printf '_____________________________\n'
 sleep 1
 source ~/dotfiles/snap/firefox.sh
+
+# Part V: Adding Fonts
+printf '_____________________________\n'
+printf 'Part VIV: Installing Firefox\n'
+printf '_____________________________\n'
+sleep 1
+source ~/dotfiles/fonts/source.zsh
