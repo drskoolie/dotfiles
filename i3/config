@@ -4,4 +4,9 @@ include files/startup.conf
 include files/bar.conf
 include files/modes.conf
 include files/base.conf
+
 include files/workspaces.conf
+include files/workspace1.conf
+include files/workspace2.conf
+include files/workspace3.conf
+include files/workspace4.conf
