@@ -57,6 +57,7 @@ printf '________________________\n'
 printf 'Part VII: Setting up neovim\n'
 printf '________________________\n\n'
 sleep 1
+source ~/dotfiles/nvim/build.sh
 source ~/dotfiles/nvim/install.sh
 
 
@@ -81,3 +82,10 @@ printf 'Part VIV: Installing Firefox\n'
 printf '_____________________________\n'
 sleep 1
 source ~/dotfiles/fonts/source.zsh
+
+# Part VI: Setting up lf
+printf '_____________________________\n'
+printf 'Part VI: Installing LF\n'
+printf '_____________________________\n'
+sleep 1
+source ~/dotfiles/lf/install.sh
