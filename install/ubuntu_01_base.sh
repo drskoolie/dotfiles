@@ -23,7 +23,6 @@ source ~/dotfiles/git/install.sh
 source ~/dotfiles/i3/install.sh
 source ~/dotfiles/lf/install.sh
 source ~/dotfiles/mpv/install.sh
-source ~/dotfiles/nvim/install.sh
 source ~/dotfiles/picom/install.sh
 source ~/dotfiles/tmux/install.sh
 source ~/dotfiles/xinitrc/install.sh
