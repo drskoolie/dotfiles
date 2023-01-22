@@ -1,4 +1,10 @@
 printf '_____________________________\n'
+printf 'Part 0: Updating\n'
+printf '_____________________________\n'
+sleep 1
+sudo apt update && sudo apt update --fix-missing && sudo apt upgrade -y
+
+printf '_____________________________\n'
 printf 'Part 1: Building firefox\n'
 printf '_____________________________\n'
 sleep 1
