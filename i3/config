@@ -1,6 +1,7 @@
 set $mod Mod4
 
 include files/startup.conf
+include files/wallpaper.conf
 include files/bar.conf
 include files/borders.conf
 include files/modes.conf
