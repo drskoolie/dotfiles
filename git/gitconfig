@@ -41,6 +41,7 @@
 	lo = log
 	loa = log --all --decorate --oneline --graph
 	lod = log --decorate --oneline --graph
+	lot = log --simplify-by-decoration
 	
 	me = merge
 	mem = merge main
