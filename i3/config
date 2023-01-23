@@ -5,6 +5,7 @@ include files/bar.conf
 include files/borders.conf
 include files/modes.conf
 include files/base.conf
+include files/windows.conf
 
 include files/workspaces/workspace1.conf
 include files/workspaces/workspace2.conf
