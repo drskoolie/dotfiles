@@ -4,5 +4,5 @@ vim.cmd([[
 	set nu rnu
 
 	" Mappings that are free to use
-	" -, \, H, M, L, <bs>, <cr>
+	" -, \, M, <bs>, <cr>, <c-c>, <c-[>
 ]])

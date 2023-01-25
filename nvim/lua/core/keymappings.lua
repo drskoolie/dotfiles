@@ -8,19 +8,22 @@ local keymap = vim.api.nvim_set_keymap
 -- +---------+
 -- | General |
 -- +---------+
-keymap('n', 'ZZ', '<NOP>', opts)
 keymap('n', 'H', 'O<Esc>', opts)
 keymap('n', 'L', 'o<Esc>', opts)
+-- keymap('n', 'M', 'o<Esc>', opts)
 
 -- +--------+
 -- | Insert |
 -- +--------+
 keymap('i', '<C-f>', '<C-x><C-f>', opts)
+-- Delete to underscore
 keymap('i', '<C-l>', ' <ESC>dT_xa', opts)
+-- Make lower case
 keymap('i', '<C-j>', '<ESC>viwuea', opts)
+-- Make upper case
 keymap('i', '<C-h>', '<ESC>viwUea', opts)
 
---+--------+
+-- +--------+
 -- | Visual |
 -- +--------+
 -- Move Text
@@ -37,3 +40,11 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- vim.cmd([[set cmdheight=0]])
+
+-- +--------+
+-- | Resize |
+-- +--------+
+keymap("n", "<up>", ":resize +1<cr>", opts)
+keymap("n", "<down>", ":resize -1<cr>", opts)
+keymap("n", "<right>", ":vert resize +1<cr>", opts)
+keymap("n", "<left>", ":vert resize -1<cr>", opts)
