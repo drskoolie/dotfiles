@@ -58,6 +58,11 @@ return require('packer').startup(function()
     end
   }
 
+  -- +-------+
+  -- | games |
+  -- +-------+
+  use 'ThePrimeagen/vim-be-good'
+
   -- +-----+
   -- | git |
   -- +-----+

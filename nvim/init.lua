@@ -9,6 +9,7 @@ require('core/settings')
 require('core/themes')
 require('core/highlighted-yank')
 require('core/python')
+require('core/vimscript')
 
 -- ==> Config
 require('config/color-picker')
