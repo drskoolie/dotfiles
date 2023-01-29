@@ -77,6 +77,14 @@ return require('packer').startup(function()
       run = function() vim.fn["mkdp#util#install"]() end,
   })
 
+  -- +-------+
+  -- | neorg |
+  -- +-------+
+  use {
+      "nvim-neorg/neorg",
+  --    run = ":Neorg sync-parsers", -- This is the important bit!
+  }
+
   -- +--------+
   -- | python |
   -- +--------+
