@@ -46,17 +46,17 @@ wk_mappings = {
 		},
 
 		l = {
-			name = "+latex",
-
-			c = {':VimtexCompile<CR>', 'compile'},
-			d = {':VimtexDocPackage<CR>', 'docs'},
-			e = {':VimtexErrors<CR>', 'errors'},
-			i = {':VimtexInfo<CR>', 'info'},
-			s = {':VimtexStop<CR>', 'stop'},
-			r = {':VimtexClean<CR>', 'rm auxillary'},
-			t =	{':VimtexTocOpen<CR>', 'toc'},
-			w = {':VimtexCountWords<CR>', 'words'},
-			z = {':VimtexView<CR>', 'zathura'},
+			name = "+lsp",
+			c = {'<cmd>TroubleToggle document_diagnostics<CR>', 'current'},
+			d = {'<cmd>TroubleToggle lsp_definitions<CR>', 'definition', silent = true},
+			f = {'<cmd>TroubleToggle lsp_references<CR>', 'refs'},
+			p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true},
+			n = {'<cmd>lua vim.diagnostic.goto_next()<CR>', 'next', silent = true},
+			r = {'<cmd>lua vim.lsp.buf.rename()<CR>', 'rename', silent = true},
+			t = {'<cmd>TroubleToggle<CR>', 'toggle'},
+			v = {'<cmd>lua vim.diagnostic.disable()<CR>', 'disable virtual'},
+			V = {'<cmd>lua vim.diagnostic.enable()<CR>', 'enable virtual'},
+			q = {'<cmd>TroubleClose<CR>', 'quit'},
 		},
 
 		m = {
@@ -173,21 +173,21 @@ wk_mappings = {
 		-- v = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>ddk0', 'variable'},
         w = {tmux_send('whos'),     'whos'},
 	},
-	
-	l = {
-		name = "+lsp",
-		c = {'<cmd>TroubleToggle document_diagnostics<CR>', 'current'},
-		d = {'<cmd>TroubleToggle lsp_definitions<CR>', 'definition', silent = true},
-		f = {'<cmd>TroubleToggle lsp_references<CR>', 'refs'},
-		p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true},
-		n = {'<cmd>lua vim.diagnostic.goto_next()<CR>', 'next', silent = true},
-		r = {'<cmd>lua vim.lsp.buf.rename()<CR>', 'rename', silent = true},
-		t = {'<cmd>TroubleToggle<CR>', 'toggle'},
-		v = {'<cmd>lua vim.diagnostic.disable()<CR>', 'disable virtual'},
-		V = {'<cmd>lua vim.diagnostic.enable()<CR>', 'enable virtual'},
-		q = {'<cmd>TroubleClose<CR>', 'quit'},
-	},
 			
+	l = {
+		name = "+latex",
+
+		c = {':VimtexCompile<CR>', 'compile'},
+		d = {':VimtexDocPackage<CR>', 'docs'},
+		e = {':VimtexErrors<CR>', 'errors'},
+		i = {':VimtexInfo<CR>', 'info'},
+		s = {':VimtexStop<CR>', 'stop'},
+		r = {':VimtexClean<CR>', 'rm auxillary'},
+		t =	{':VimtexTocOpen<CR>', 'toc'},
+		w = {':VimtexCountWords<CR>', 'words'},
+		z = {':VimtexView<CR>', 'zathura'},
+	},
+
 
 	t = {
 		name = "+tmux",
