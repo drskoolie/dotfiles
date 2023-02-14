@@ -45,6 +45,18 @@ wk_mappings = {
 
 		},
 
+		f = {
+			name = "+figlet",
+
+			b = {'!figlet -f big <CR>', 'big', mode='v'},
+			B = {'!figlet -f bubble <CR>', 'bubble', mode='v'},
+			f = {'!figlet <CR>', 'boxes', mode='v'},
+			m = {'!figlet -f mono9 <CR>', 'mono9', mode='v'},
+			M = {'!figlet -f mono12 <CR>', 'mono12', mode='v'},
+			s = {'!figlet -f script <CR>', 'script', mode='v'},
+		},
+
+
 		l = {
 			name = "+lsp",
 			c = {'<cmd>TroubleToggle document_diagnostics<CR>', 'current'},
