@@ -53,14 +53,14 @@ wk_mappings = {
 		g = {
 			name = "+gams",
 
-			s = {':w<CR>:silent !gams %:p:t:r.gms<CR>', 'silent'},
-			r = {':w<CR>:!gams %:p:t:r.gms<CR>', 'run'},
+			s = {':w<CR>:silent !gams %:p:t:r.gms > %:p:t:r.outCR>', 'silent'},
+			r = {':w<CR>:!gams %:p:t:r.gms > %:p:t:r.out<CR>', 'run'},
 		},
 
 		i = {
 			name = "+insert",
 
-			f  = {'i<C-r>=expand("%:p:t:r")<CR>', 'file'},
+			f  = {'i<C-r>=expand("%:p:t:r")<CR><Esc>', 'file'},
 			n  = {':r!date +"\\%Y-\\%m-\\%d (\\%H:\\%M)"<CR>kJ', 'now'},
 
 		},
