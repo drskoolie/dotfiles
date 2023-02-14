@@ -58,6 +58,11 @@ return require('packer').startup(function()
     end
   }
 
+  -- +------+
+  -- | gams |
+  -- +------+
+  use 'zorab47/vim-gams'
+
   -- +-------+
   -- | games |
   -- +-------+
