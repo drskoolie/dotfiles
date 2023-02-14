@@ -38,13 +38,6 @@ wk_mappings = {
 			x = {':XtermColorTable<CR>',  'xterm'},
 		},
 		 
-		d = {
-			name = "+dates",
-
-			n  = {':r!date +"\\%Y-\\%m-\\%d (\\%H:\\%M)"<CR>kJ', 'now'},
-
-		},
-
 		f = {
 			name = "+figlet",
 
@@ -56,6 +49,21 @@ wk_mappings = {
 			s = {'!figlet -f script <CR>', 'script', mode='v'},
 		},
 
+
+		g = {
+			name = "+gams",
+
+			s = {':w<CR>:silent !gams %:p:t:r.gms<CR>', 'silent'},
+			r = {':w<CR>:!gams %:p:t:r.gms<CR>', 'run'},
+		},
+
+		i = {
+			name = "+insert",
+
+			f  = {'i<C-r>=expand("%:p:t:r")<CR>', 'file'},
+			n  = {':r!date +"\\%Y-\\%m-\\%d (\\%H:\\%M)"<CR>kJ', 'now'},
+
+		},
 
 		l = {
 			name = "+lsp",
