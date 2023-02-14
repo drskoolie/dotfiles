@@ -26,3 +26,6 @@ export PATH=$PATH:$HOME/bin
 
 # Npm
 export PATH=~/.npm_global/bin:$PATH
+
+# Adding Gams
+export PATH=/opt/gams/gams42.1_linux_x64_64_sfx/:$PATH
