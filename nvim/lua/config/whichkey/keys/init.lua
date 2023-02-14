@@ -53,8 +53,9 @@ wk_mappings = {
 		g = {
 			name = "+gams",
 
-			s = {':w<CR>:silent !gams %:p:t:r.gms > %:p:t:r.outCR>', 'silent'},
-			r = {':w<CR>:!gams %:p:t:r.gms > %:p:t:r.out<CR>', 'run'},
+			o = {':w<CR>:!gams %:p:t:r.gms > %:p:t:r.out<CR>', 'out'},
+			r = {':w<CR>:!gams %:p:t:r.gms<CR>', 'run'},
+			s = {':w<CR>:silent !gams %:p:t:r.gms > %:p:t:r.out<CR>', 'silent'},
 		},
 
 		i = {
