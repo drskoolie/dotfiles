@@ -26,7 +26,9 @@
 
 	cl = clone
 	clh = "! f() { git clone https://github.com/$1/$2.git ; }; f"
+	clsh = "! f() { git clone https://github.com/drskoolie/$2.git ; }; f"
 	cls = "! f() { git clone git@github.com:$1/$2.git ; }; f"
+	clsd = "! f() { git clone git@github.com:drskoolie/$2.git ; }; f"
 
 	co = commit
 	coi = commit -m "initial commit"
