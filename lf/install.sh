@@ -4,3 +4,9 @@ if test -d ~/.config/lf; then
 else
 	ln -s ~/dotfiles/lf ~/.config/lf
 fi
+
+
+if test -f /bin/lf; then
+else
+	cp ~/dotfiles/lf/lf_bin /bin/lf
+fi
