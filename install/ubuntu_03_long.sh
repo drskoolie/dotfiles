@@ -27,4 +27,4 @@ printf '_____________________________\n'
 printf 'Part 4: Installing Libreoffice\n'
 printf '_____________________________\n'
 sleep 1
-sudo apt install libreoffice
+sudo apt install libreoffice libreoffice-kde
