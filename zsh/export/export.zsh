@@ -29,3 +29,4 @@ export PATH=~/.npm_global/bin:$PATH
 
 # Adding Gams
 export PATH=/opt/gams/gams42.1_linux_x64_64_sfx/:$PATH
+export PATH=/opt/gams/gams42.2_linux_x64_64_sfx/:$PATH

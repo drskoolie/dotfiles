@@ -6,7 +6,4 @@ else
 fi
 
 
-if test -f /bin/lf; then
-else
-	cp ~/dotfiles/lf/lf_bin /bin/lf
-fi
+# cp ~/dotfiles/lf/lf_bin /bin/lf
