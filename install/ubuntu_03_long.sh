@@ -22,3 +22,9 @@ printf 'Part 3: Installing Latex\n'
 printf '_____________________________\n'
 sleep 1
 sudo apt install texlive-full
+
+printf '_____________________________\n'
+printf 'Part 4: Installing Libreoffice\n'
+printf '_____________________________\n'
+sleep 1
+sudo apt install libreoffice
