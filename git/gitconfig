@@ -81,4 +81,4 @@
 [merge]
   tool = nvim
 [mergetool]
-  prompt = false
+  prompt = true
