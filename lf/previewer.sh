@@ -5,5 +5,6 @@ case "$1" in
     *.rar) unrar l "$1";;
     *.7z) 7z l "$1";;
     *.pdf) pdftotext "$1" -;;
-    *) batcat --color --style=plain always "$1" ;;
+    *) batcat "$1" ;;
 esac
+# *) batcat --color --style=plain always "$1" ;;

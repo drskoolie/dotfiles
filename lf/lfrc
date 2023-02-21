@@ -108,5 +108,5 @@ cmd zip ${{
 # +-------+
 # | pager |
 # +-------+
-set previewer ~/dotfiles/lf/previewer.sh
-map i ~/dotfiles/lf/previewer.sh $f | less -R
+set previewer ~/.config/lf/previewer.sh
+map i ~/.config/lf/previewer.sh $f | less -R
