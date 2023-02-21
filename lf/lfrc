@@ -39,14 +39,21 @@ map se :set sortby ext; set info
 
 map <space> :toggle; down
 
+map H top
+map M middle
+map L low
+
 # +------------------+
 # | Change Directory |
 # +------------------+
 map gd cd ~/dotfiles/
+map gD cd ~/media/downloads/
 map gi cd ~/dotfiles/i3/files/
 map gl cd ~/dotfiles/lf/
+map gm cd ~/media/
 map gn cd ~/dotfiles/nvim/
 map gr cd ~/github/research/
+map gs cd ~/media/screenshots/
 map gt cd ~/dotfiles/tmux
 map gz cd ~/dotfiles/zsh
 
