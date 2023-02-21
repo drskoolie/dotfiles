@@ -13,7 +13,7 @@ include files/modes.conf
 include files/base.conf
 include files/windows.conf
 
-include files/workspaces/workspaces_numerical.conf
+include files/workspaces/numerical.conf
 include files/workspaces/workspace6.conf
 include files/workspaces/workspace7.conf
 include files/workspaces/workspace8.conf
