@@ -1,4 +1,8 @@
-set $mod Mod4
+# This is for the super key
+# set $mod Mod4
+
+# This is for the alt key
+set $mod Mod1
 
 include files/startup.conf
 include files/monitors.conf

@@ -11,5 +11,5 @@ function sshmake ()
 
 function sshcopy()
 {
-	cat ~/.ssh/id_ed25519.pub | pbcopy
+	cat ~/.ssh/id_ed25519.pub | xclip -selection clipboard
 }
