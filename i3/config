@@ -15,3 +15,5 @@ include files/windows.conf
 
 include files/workspaces/numerical.conf
 include files/workspaces/alphabetical.conf
+include files/workspaces/workspace7.conf
+include files/workspaces/workspace8.conf
