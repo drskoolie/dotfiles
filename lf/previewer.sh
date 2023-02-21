@@ -1,6 +1,4 @@
 #!/bin/sh
-# unset COLORTERM
-# batcat --style=plain --color always "$@"
 
 case "$1" in
     *.tar*) tar tf "$1";;
