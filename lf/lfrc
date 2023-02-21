@@ -43,6 +43,7 @@ map L low
 set mouse on
 set icons on
 set relativenumber on
+set dirpreviews on
 
 # +------------------+
 # | Change Directory |
@@ -73,30 +74,6 @@ cmd open ${{
     esac
 }}
 
-# define a custom 'rename' command without prompt for overwrite
-# cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
-# map r push :rename<space>
-
-# make sure trash folder exists
-# %mkdir -p ~/.trash
-
-# move current file or selected files to trash folder
-# (also see 'man mv' for backup/overwrite options)
-cmd trash %set -f; mv $fx ~/.trash
-
-# define a custom 'delete' command
-# cmd delete ${{
-#     set -f
-#     printf "$fx\n"
-#     printf "delete?[y/n]"
-#     read ans
-#     [ "$ans" = "y" ] && rm -rf $fx
-# }}
-
-# use '<delete>' key for either 'trash' or 'delete' command
-# map <delete> trash
-# map <delete> delete
-
 # extract the current file with the right command
 # (xkcd link: https://xkcd.com/1168/)
 cmd extract ${{
@@ -110,7 +87,6 @@ cmd extract ${{
         *.7z) 7z x $f;;
     esac
 }}
-
 # compress current file or selected files with tar and gunzip
 cmd tar ${{
     set -f
@@ -132,4 +108,5 @@ cmd zip ${{
 # +-------+
 # | pager |
 # +-------+
-set previewer ~/.go/bin/pistol
+set previewer ~/dotfiles/lf/previewer.sh
+map i ~/dotfiles/lf/previewer.sh $f | less -R
