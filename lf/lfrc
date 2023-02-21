@@ -1,37 +1,32 @@
-# Basics
+# +--------+
+# | Basics |
+# +--------+
 set shell sh
 set shellopts '-eu'
 set ifs "\n"
 set scrolloff 10
-
-# cd
-map gd cd ~/dotfiles/
-map gdi cd ~/dotfiles/i3
-map gdif cd ~/dotfiles/i3/files/
-map gdn cd ~/dotfiles/nvim/
-map gdnl cd ~/dotfiles/nvim/lua
-map gdt cd ~/dotfiles/tmux
-map gdv cd ~/dotfiles/venv/
-map gdz cd ~/dotfiles/zsh
-map gdza cd ~/dotfiles/zsh/alias
-map gr cd ~/research/
-map grl cd ~/research/lit/
-map grli cd ~/research/lit/ieee/
-map grt cd ~/research/txt/
-map grtp cd ~/research/txt/proposal/
-map grto cd ~/research/txt/proposal_other/
-
-map D $trash-put $f
 # use enter for shell commands
 map <enter> shell
-
 # execute current file (must be executable)
 map x $$f
 map X !$f
-
 # dedicated keys for file opener actions
 map o &mimeopen $f
 map O $mimeopen --ask $f
+
+# +------------------+
+# | Change Directory |
+# +------------------+
+map gd cd ~/dotfiles/
+map gi cd ~/dotfiles/i3/files/
+map gl cd ~/dotfiles/lf/
+map gn cd ~/dotfiles/nvim/
+map gr cd ~/github/research/
+map gt cd ~/dotfiles/tmux
+map gz cd ~/dotfiles/zsh
+
+map D $trash-put $f
+
 
 # define a custom 'open' command
 cmd open ${{
