@@ -14,12 +14,6 @@ map X !$f
 map o &mimeopen $f
 map O $mimeopen --ask $f
 
-# +---------+
-# | Options |
-# +---------+
-set mouse on
-set icons on
-
 # +----------+
 # | Original |
 # +----------+
@@ -42,6 +36,13 @@ map <space> :toggle; down
 map H top
 map M middle
 map L low
+
+# +---------+
+# | Options |
+# +---------+
+set mouse on
+set icons on
+set relativenumber on
 
 # +------------------+
 # | Change Directory |
