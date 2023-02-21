@@ -50,8 +50,10 @@ map gr cd ~/github/research/
 map gt cd ~/dotfiles/tmux
 map gz cd ~/dotfiles/zsh
 
+# +----------+
+# | Commands |
+# +----------+
 map D $trash-put $f
-
 
 # define a custom 'open' command
 cmd open ${{
