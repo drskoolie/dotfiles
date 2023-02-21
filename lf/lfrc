@@ -61,7 +61,8 @@ map gz cd ~/dotfiles/zsh
 # +----------+
 # | Commands |
 # +----------+
-map D $trash-put $f
+map D $trash-put $fx
+map U !du -csh *
 
 # define a custom 'open' command
 cmd open ${{
