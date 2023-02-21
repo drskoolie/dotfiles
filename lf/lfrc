@@ -13,8 +13,12 @@ map X !$f
 # dedicated keys for file opener actions
 map o &mimeopen $f
 map O $mimeopen --ask $f
-# turn on mouse
+
+# +---------+
+# | Options |
+# +---------+
 set mouse on
+set icons on
 
 # +----------+
 # | Original |
