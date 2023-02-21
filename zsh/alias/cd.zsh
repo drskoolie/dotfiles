@@ -1,9 +1,6 @@
 # +------------------+
 # | change directory |
 # +------------------+
-alias cdc='cd ~/chronicles/;ls'
-alias cdcb='cd ~/chronicles/books/;ls'
-
 alias cdd='cd ~/dotfiles/; ls'
 alias cddi='cd ~/dotfiles/i3; ls'
 alias cddif='cd ~/dotfiles/i3/files/; ls'
@@ -20,8 +17,6 @@ alias cdrli='cd ~/research/lit/ieee/;ls'
 alias cdrt='cd ~/research/txt/;ls'
 alias cdrtp='cd ~/research/txt/proposal/;ls'
 alias cdrto='cd ~/research/txt/proposal_other/;ls'
-
-alias cdp='cd ~/projects/;ls'
 
 function mkc ()
 {

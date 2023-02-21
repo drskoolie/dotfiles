@@ -1,0 +1,33 @@
+ _____      _             _       _ 
+|_   _|   _| |_ ___  _ __(_) __ _| |
+  | || | | | __/ _ \| '__| |/ _` | |
+  | || |_| | || (_) | |  | | (_| | |
+  |_| \__,_|\__\___/|_|  |_|\__,_|_|
+                                  
+
+<space> `toggle`
+<v> `inverts`
+<u> `unmark`
+
+<y> `copy`
+<d> `cut`
+<p> `paste`
+<c> `clear`
+
+<:> `read` -> read in a command
+<$> `shell` -> runs a shell command
+<%> `pipe` -> runs a shell command and pipes the input/output to lf
+<!> `shell-wait` -> runs a shell command and waits for key press afterwards
+<&> `shell-asycn` -> runs a shell command asynchronously
+
+</> `search` -> searches for a pattern
+<?> `search-back` -> searches in the opposite direction
+<n> `search-next`
+<N> `search-prev`
+
+<z> -> default keybindings are mapped here
+<s> -> sort-by are prefixed here
+
+<e> -> open editor
+<i> -> open pager
+<w> -> open shell
