@@ -37,6 +37,9 @@
 	dis = diff --staged
 
 	ed = config --global -e
+	
+	fe = fetch
+	feo = fetch origin
 
 	lo = "! f() { git log --no-color --no-decorate | bat -n -l 'Git log' ; }; f"
 	loa = log --all --decorate --oneline --graph
