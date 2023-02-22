@@ -43,7 +43,6 @@ map L low
 set mouse on
 set icons on
 set relativenumber on
-set dirpreviews on
 
 # +------------------+
 # | Change Directory |
