@@ -8,5 +8,5 @@ case "$1" in
     *.pdf) pdftotext "$1" -;;
 	*.pptx) unzip -qc "$1" | grep -oP '(?<=\<a:t\>).*?(?=\</a:t\>)';;
 
-    *) batcat -n --color always "$1" ;;
+    *) bat -n --color always "$1" ;;
 esac
