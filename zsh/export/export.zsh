@@ -17,7 +17,8 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
  # manpages
-export MANPAGER='nvim +Man!'
+# export MANPAGER='nvim +Man!'
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANWIDTH=999
 
 
