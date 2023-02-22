@@ -40,7 +40,7 @@
 
 	ed = config --global -e
 
-	lo = log
+	lo = "! f() { git log --no-color --no-decorate | bat -n -l 'Git log' ; }; f"
 	loa = log --all --decorate --oneline --graph
 	lod = log --decorate --oneline --graph
 	lop = log -p
