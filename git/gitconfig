@@ -18,11 +18,9 @@
 	brr = branch -r
 	brv = branch -v
 
-	ch = checkout
-	chb = checkout -b
-	chbd = checkout -b develop
-	chm = checkout main
-	chd = checkout develop
+	cn = clean
+	cnn = clean -n
+	cnf = clean -f
 
 	cl = clone
 	clh = "! f() { git clone https://github.com/$1/$2.git ; }; f"
@@ -63,6 +61,12 @@
 	rtsd = remote set-url origin git@github.com:drskoolie/dotfiles.git
 	rtao = "!f() { git remote add origin git@github.com:$1/$2.git; }; f"
 
+	sw = switch
+	swc = switch -c
+	swcd = switch -c develop
+	swm = switch main
+	swd = switch develop
+
 	st = status
 	sts = status -s
 
@@ -81,4 +85,4 @@
 [merge]
   tool = nvim
 [mergetool]
-  prompt = true
+  prompt = false
