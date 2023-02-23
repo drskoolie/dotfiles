@@ -19,6 +19,7 @@
 	brv = branch -v
 
 	cn = clean
+	cni = clean -i
 	cnn = clean -n
 	cnf = clean -f
 
