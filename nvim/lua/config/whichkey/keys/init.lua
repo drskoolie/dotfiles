@@ -183,6 +183,7 @@ wk_mappings = {
 		e = {tmux_send('exit'), 'exit'},
 		f = {tmux_send('run %:p'), 'file'},
 		g = {tmux_send('sog'), 'venv_global'},
+		G = {tmux_send('som'), 'venv_ml'},
         l = {':norm ^"+y$<CR>:TmuxPaste<CR>',          'send line'},
         m = {[[:norm mm<CR>:norm "+ym<CR>:lua tmux_send('\\%paste', 'vim_cmd')<CR>:norm 'm<CR>]],           'matlab'},
 		o = {tmux_send('ipython --no-autoindent'), 'open'},
