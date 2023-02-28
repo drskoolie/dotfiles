@@ -15,7 +15,6 @@ keymap('n', 'L', 'o<Esc>', opts)
 -- +--------+
 -- | Insert |
 -- +--------+
-keymap('i', '<C-f>', '<C-x><C-f>', opts)
 -- Delete to underscore
 keymap('i', '<C-l>', ' <ESC>dT_xa', opts)
 -- Make lower case
@@ -44,7 +43,7 @@ keymap("v", ">", ">gv", opts)
 -- +--------+
 -- | Resize |
 -- +--------+
-keymap("n", "<up>", ":resize +1<cr>", opts)
-keymap("n", "<down>", ":resize -1<cr>", opts)
+-- keymap("n", "<up>", ":resize +1<cr>", opts)
+-- keymap("n", "<down>", ":resize -1<cr>", opts)
 keymap("n", "<right>", ":vert resize +1<cr>", opts)
 keymap("n", "<left>", ":vert resize -1<cr>", opts)
