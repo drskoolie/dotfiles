@@ -43,7 +43,7 @@ keymap("v", ">", ">gv", opts)
 -- +--------+
 -- | Resize |
 -- +--------+
--- keymap("n", "<up>", ":resize +1<cr>", opts)
--- keymap("n", "<down>", ":resize -1<cr>", opts)
+keymap("n", "<up>", ":resize +1<cr>", opts)
+keymap("n", "<down>", ":resize -1<cr>", opts)
 keymap("n", "<right>", ":vert resize +1<cr>", opts)
 keymap("n", "<left>", ":vert resize -1<cr>", opts)
