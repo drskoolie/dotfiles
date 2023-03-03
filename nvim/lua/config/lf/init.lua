@@ -1,5 +1,5 @@
 require("lf").setup({
-  default_cmd = "lf", -- default `lf` command
+  default_cmd = "~/dotfiles/lf/lf_bin", -- default `lf` command
   default_action = "edit", -- default action when `Lf` opens a file
   default_actions = { -- default action keybindings
     ["<C-t>"] = "tabedit",
