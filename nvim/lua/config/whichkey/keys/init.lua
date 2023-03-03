@@ -56,6 +56,7 @@ wk_mappings = {
 			o = {':w<CR>:!gams %:p:t:r.gms > %:p:t:r.out<CR>', 'out'},
 			r = {':w<CR>:!gams %:p:t:r.gms<CR>', 'run'},
 			s = {':w<CR>:silent !gams %:p:t:r.gms > %:p:t:r.out<CR>', 'silent'},
+			w = {':w<CR>:vsp %:p:t:r.lst<CR>G:sp %:p:t:r.out<CR>G', 'window'},
 		},
 
 		i = {
