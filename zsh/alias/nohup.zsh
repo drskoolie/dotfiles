@@ -6,6 +6,17 @@ function no ()
 	nohup $1 >/dev/null 2>&1 &
 }
 
+function noc ()
+{
+	nohup libreoffice --calc $1 >/dev/null 2>&1 &
+}
+
+function nol ()
+{
+	nohup libreoffice $1 >/dev/null 2>&1 &
+}
+
+
 function nom ()
 {
 	nohup mpv $1 >/dev/null 2>&1 &
