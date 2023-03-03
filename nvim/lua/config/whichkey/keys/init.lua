@@ -150,6 +150,8 @@ wk_mappings = {
 		t  = {':tabnew<CR>',    'tab new'},
 	},
 
+	f = {':Lf<CR>', 'lf'},
+
 	d = {
 		name = "+debug",
 		b = {tmux_send('b'), 'break'},

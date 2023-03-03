@@ -14,10 +14,12 @@ require('core/vimscript')
 -- ==> Config
 require('config/color-picker')
 require('config/hop')
+require('config/lf')
 require('config/lualine')
 require('config/nvim-colorizer')
 require('config/nvim-treesitter')
 require('config/sorcery')
+require('config/toggleterm')
 require('config/ultisnips')
 require('config/vimtex')
 
