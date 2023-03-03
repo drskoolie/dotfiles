@@ -5,7 +5,7 @@ require("lf").setup({
     ["<C-t>"] = "tabedit",
     ["<C-x>"] = "split",
     ["<C-v>"] = "vsplit",
-    ["<CR>"] = "edit",
+    ["e"] = "edit",
   },
 
   winblend = 10, -- psuedotransparency level
