@@ -181,6 +181,7 @@ wk_mappings = {
 
 		b = {':Gitsigns blame_line<CR>', 'blame'},
 		c = {':G commit<CR>', 'commit'},
+		f = {':G fetch<CR>', 'fetch'},
 		h = {
 			name = "+hunks",
 
@@ -189,6 +190,7 @@ wk_mappings = {
 			p = {':Gitsigns prev_hunk<CR>', 'prev hunk'},
 			q = {':Gitsigns setqflist<CR>', 'quickfix'},
 		},
+		m = {':G merge<CR>', 'merge'},
 		p = {':G push<CR>', 'push'},
 		r = {
 			name = "+reset",
