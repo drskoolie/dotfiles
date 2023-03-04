@@ -72,6 +72,22 @@ return require('packer').startup(function()
 	  end
   }
 
+  -- +------+
+  -- | gams |
+  -- +------+
+  use 'zorab47/vim-gams'
+
+  -- +-------+
+  -- | games |
+  -- +-------+
+  use 'ThePrimeagen/vim-be-good'
+
+  -- +-----+
+  -- | git |
+  -- +-----+
+  use 'mhinz/vim-signify'     -- Git diff icons on the side of the file lines
+  use 'tpope/vim-fugitive'
+  use 'lewis6991/gitsigns.nvim'
   -- +-------+
   -- | latex |
   -- +-------+
@@ -88,22 +104,6 @@ return require('packer').startup(function()
       require("trouble").setup {}
     end
   }
-
-  -- +------+
-  -- | gams |
-  -- +------+
-  use 'zorab47/vim-gams'
-
-  -- +-------+
-  -- | games |
-  -- +-------+
-  use 'ThePrimeagen/vim-be-good'
-
-  -- +-----+
-  -- | git |
-  -- +-----+
-  use 'mhinz/vim-signify'     -- Git diff icons on the side of the file lines
-  use 'tpope/vim-fugitive'
 
   -- +----------+
   -- | markdown |
