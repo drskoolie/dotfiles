@@ -180,10 +180,16 @@ wk_mappings = {
 		name = "+git",
 
 		b = {':Gitsigns blame_line<CR>', 'blame'},
-		h = {':Gitsigns preview_hunk<CR>', 'hunk'},
-		n = {':Gitsigns next_hunk<CR>', 'next hunk'},
-		p = {':Gitsigns prev_hunk<CR>', 'prev hunk'},
-		q = {':Gitsigns setqflist<CR>', 'quickfix'},
+		c = {':G commit<CR>', 'commit'},
+		h = {
+			name = "+hunks",
+
+			h = {':Gitsigns preview_hunk<CR>', 'hunk'},
+			n = {':Gitsigns next_hunk<CR>', 'next hunk'},
+			p = {':Gitsigns prev_hunk<CR>', 'prev hunk'},
+			q = {':Gitsigns setqflist<CR>', 'quickfix'},
+		},
+		p = {':G push<CR>', 'push'},
 		s = {':Gitsigns stage_buffer<CR>', 'stage buffer'},
 		t = {
 			name = "+toggle",
