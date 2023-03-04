@@ -33,6 +33,7 @@
 	coi = commit -m "initial commit"
 	com = commit -m
 	coam = commit -a -m
+	cov = commit --verbose
 
 	di = diff
 	dis = diff --staged
