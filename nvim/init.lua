@@ -13,6 +13,7 @@ require('core/vimscript')
 
 -- ==> Config
 require('config/color-picker')
+require('config/gitsigns')
 require('config/hop')
 require('config/lf')
 require('config/lualine')
