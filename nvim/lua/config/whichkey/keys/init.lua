@@ -194,11 +194,13 @@ wk_mappings = {
 			name = "+reset",
 
 			b = {':Gitsigns reset_buffer<CR>', 'buffer'},
+			h = {':Gitsigns reset_hunk<CR>', 'hunk'},
 		},
 		s = {
 			name = "+stage",
 
 			b = {':Gitsigns stage_buffer<CR>', 'buffer'},
+			h = {':Gitsigns stage_hunk<CR>', 'hunk'},
 		},
 		t = {
 			name = "+toggle",
