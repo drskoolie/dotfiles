@@ -158,6 +158,7 @@ wk_mappings = {
 		b = {tmux_send('b'), 'break'},
 		c = {tmux_send('c'), 'continue'},
 		d = {tmux_send('\\%debug'), '%debug'},
+		D = {tmux_send('d'), 'down'},
 		h = {tmux_send('h'), 'help'},
 		i = {':lua set_trace()<CR>', 'ipdb'},
 		I = {':lua set_trace_up()<CR>', 'ipdb_up'},
@@ -175,6 +176,19 @@ wk_mappings = {
 		w = {tmux_send('w'), 'where'},
 	},
 
+	g = {
+		name = "+git",
+
+		t = {
+			name = "+toggle",
+
+			a = {':Gitsigns toggle_linehl<CR>', 'added'},
+			b = {':Gitsigns toggle_current_line_blame<CR>', 'blame'},
+			d = {':Gitsigns toggle_deleted<CR>', 'deleted'},
+			n = {':Gitsigns toggle_numhl<CR>', 'numbers'},
+			w = {':Gitsigns toggle_word_diff<CR>', 'word_diff'},
+		},
+	},
 
 	i = {
 		name = "+ipython",
