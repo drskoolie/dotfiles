@@ -190,6 +190,11 @@ wk_mappings = {
 			q = {':Gitsigns setqflist<CR>', 'quickfix'},
 		},
 		p = {':G push<CR>', 'push'},
+		r = {
+			name = "+reset",
+
+			b = {':Gitsigns reset_buffer<CR>', 'buffer'},
+		},
 		s = {':Gitsigns stage_buffer<CR>', 'stage buffer'},
 		t = {
 			name = "+toggle",
