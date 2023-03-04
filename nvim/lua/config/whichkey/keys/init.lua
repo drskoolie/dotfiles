@@ -179,6 +179,10 @@ wk_mappings = {
 	g = {
 		name = "+git",
 
+		b = {':Gitsigns blame_line<CR>', 'blame'},
+		h = {':Gitsigns setqflist<CR>', 'hunks'},
+		n = {':Gitsigns next_hunk<CR>', 'next hunk'},
+		p = {':Gitsigns prev_hunk<CR>', 'prev hunk'},
 		t = {
 			name = "+toggle",
 
