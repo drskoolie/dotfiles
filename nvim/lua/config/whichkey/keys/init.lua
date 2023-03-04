@@ -195,7 +195,11 @@ wk_mappings = {
 
 			b = {':Gitsigns reset_buffer<CR>', 'buffer'},
 		},
-		s = {':Gitsigns stage_buffer<CR>', 'stage buffer'},
+		s = {
+			name = "+stage",
+
+			b = {':Gitsigns stage_buffer<CR>', 'buffer'},
+		},
 		t = {
 			name = "+toggle",
 
