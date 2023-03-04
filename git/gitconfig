@@ -1,10 +1,3 @@
-[user]
-	email = a.elhag01@gmail.com
-	name = Al-Baraa El-Hag
-[core]
-	editor = nvim
-[init]
-	defaultBranch = main
 [alias]
 	ad = add
 	ada	= add .
@@ -33,7 +26,6 @@
 	coi = commit -m "initial commit"
 	com = commit -m
 	coam = commit -a -m
-	cov = commit --verbose
 
 	di = diff
 	dis = diff --staged
@@ -87,9 +79,18 @@
 	pudo = push -d origin
 	puuo = push --set-upstream origin
 
+[commit]
+	verbose = true
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
 [mergetool "nvim"]
   cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
 [merge]
   tool = nvim
 [mergetool]
   prompt = false
+[user]
+	email = a.elhag01@gmail.com
+	name = Al-Baraa El-Hag
