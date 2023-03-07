@@ -191,7 +191,7 @@ wk_mappings = {
 			q = {':Gitsigns setqflist<CR>', 'quickfix'},
 		},
 		m = {':G merge<CR>', 'merge'},
-		p = {':G push<CR>', 'push'},
+		p = {':Git! push<CR>', 'push'},
 		r = {
 			name = "+reset",
 
