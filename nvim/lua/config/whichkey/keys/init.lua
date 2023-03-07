@@ -182,6 +182,7 @@ wk_mappings = {
 		b = {':Gitsigns blame_line<CR>', 'blame'},
 		c = {':Git commit<CR>', 'commit'},
 		f = {':Git fetch<CR>', 'fetch'},
+		g = {':Ggrep -q -n -I ', 'grep'},
 		h = {
 			name = "+hunks",
 
