@@ -35,6 +35,8 @@
 	fe = fetch
 	feo = fetch origin
 
+	gr = grep -n
+
 	lo = "! f() { git log --no-color --no-decorate | bat -n -l 'Git log' ; }; f"
 	loa = log --all --decorate --oneline --graph
 	lod = log --decorate --oneline --graph
