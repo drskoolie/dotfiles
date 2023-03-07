@@ -183,6 +183,11 @@ wk_mappings = {
 		c = {':Git commit<CR>', 'commit'},
 		f = {':Git fetch<CR>', 'fetch'},
 		g = {':Ggrep -q -n -I ', 'grep'},
+		l = {
+			name = "+log",
+
+			a = {':Git log --all --decorate --oneline --graph<CR>', 'all'},
+		},
 		h = {
 			name = "+hunks",
 
