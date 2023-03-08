@@ -7,7 +7,6 @@ require'nvim-treesitter.configs'.setup {
 	  "c",
 	  "cpp",
 	  "css",
-	  "dockerfile",
 	  "html",
 	  "json",
 	  "latex",
@@ -16,9 +15,7 @@ require'nvim-treesitter.configs'.setup {
 	  "regex",
 	  "rust",
 	  "python",
-	  "todotxt",
 	  "vim",
-
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
