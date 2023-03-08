@@ -32,6 +32,7 @@
 
 	di = diff
 	dis = diff --staged
+	din = !git --no-pager diff --no-color
 
 	ed = config --global -e
 	
