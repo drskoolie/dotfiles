@@ -196,6 +196,7 @@ wk_mappings = {
 			p = {':Gitsigns prev_hunk<CR>', 'prev hunk'},
 			q = {':Gitsigns setqflist<CR>', 'quickfix'},
 		},
+		H = {':GBrowse<CR>', 'github'},
 		m = {':Git merge<CR>', 'merge'},
 		p = {':Git! push<CR>', 'push'},
 		r = {
