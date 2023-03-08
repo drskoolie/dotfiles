@@ -31,8 +31,9 @@
 	de = describe
 
 	di = diff
-	dis = diff --staged
+	dih = diff HEAD~1
 	din = !git --no-pager diff --no-color
+	dis = diff --staged
 
 	ed = config --global -e
 	
