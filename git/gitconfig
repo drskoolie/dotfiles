@@ -74,7 +74,6 @@
 	swcd = switch -c develop
 	swm = switch main
 	swd = switch develop
-
 	sa = stash
 	sap = stash pop
 
@@ -87,8 +86,9 @@
 	tgnr = tag -n99 -l --sort=-v:refname
 
 	pu = push
+	pudo = push --delete origin
 	puo = push origin
-	pudo = push -d origin
+	puot = !git puo $(git describe --tags --abbrev=0)
 	puuo = push --set-upstream origin
 
 [color]
