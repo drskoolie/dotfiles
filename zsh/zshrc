@@ -14,7 +14,6 @@ source ~/dotfiles/zsh/applications/lf.zsh
 source ~/dotfiles/zsh/applications/bathelp.zsh
 source ~/dotfiles/zsh/compint.zsh
 source ~/dotfiles/zsh/export/export.zsh
-source ~/dotfiles/zsh/functions.zsh
 source ~/dotfiles/zsh/help.zsh
 source ~/dotfiles/zsh/misc.zsh
 source ~/dotfiles/zsh/packages.zsh
