@@ -28,6 +28,8 @@
 	com = commit -m
 	coam = commit -a -m
 
+	de = describe
+
 	di = diff
 	dis = diff --staged
 
@@ -54,12 +56,12 @@
 	rs = restore
 	rss = restore --staged
 
-	rt = remote
-	rtr = remote remove
-	rtv = remote -v
-	rts = "!f() { git remote set-url origin git@github.com:$1/$2.git; }; f"
-	rtsd = remote set-url origin git@github.com:drskoolie/dotfiles.git
-	rtao = "!f() { git remote add origin git@github.com:$1/$2.git; }; f"
+	rm = remote
+	rmr = remote remove
+	rmv = remote -v
+	rms = "!f() { git remote set-url origin git@github.com:$1/$2.git; }; f"
+	rmsd = remote set-url origin git@github.com:drskoolie/dotfiles.git
+	rmao = "!f() { git remote add origin git@github.com:$1/$2.git; }; f"
 
 	rv = revert
 
