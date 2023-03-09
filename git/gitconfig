@@ -12,16 +12,20 @@
 	brr = branch -r
 	brv = branch -v
 
-	cn = clean
-	cni = clean -i
-	cnn = clean -n
-	cnf = clean -f
+	cf = cat-file
+	cft = cat-file -t
+	cfp = cat-file -p
 
 	cl = clone
 	clh = "! f() { git clone https://github.com/$1/$2.git ; }; f"
 	clhd = "! f() { git clone https://github.com/drskoolie/$1.git ; }; f"
 	cls = "! f() { git clone git@github.com:$1/$2.git ; }; f"
 	clsd = "! f() { git clone git@github.com:drskoolie/$1.git ; }; f"
+
+	cn = clean
+	cni = clean -i
+	cnn = clean -n
+	cnf = clean -f
 
 	co = commit
 	coi = commit -m "initial commit"
