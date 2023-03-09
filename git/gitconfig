@@ -32,6 +32,7 @@
 	di = diff
 	dih = diff HEAD~1
 	din = !git --no-pager diff --no-color
+	diw = diff --color-words='[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+'
 	dis = diff --staged
 
 	ed = config --global -e
@@ -72,6 +73,7 @@
 
 	rs = restore
 	rss = restore --staged
+	rssa = restore --staged .
 
 	sa = stash
 	sap = stash pop
