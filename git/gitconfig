@@ -6,9 +6,6 @@
 
 	br = branch
 	brd = branch -d
-	brf = branch -f
-	brnm = branch --no-merged
-	brm = branch --merged
 	brr = branch -r
 	brv = branch -v
 
@@ -97,7 +94,7 @@
 	pu = push
 	pudo = push --delete origin
 	puo = push origin
-	puot = !git puo $(git describe --tags --abbrev=0)
+	puot = !git push origin $(git describe --tags --abbrev=0)
 	puuo = push --set-upstream origin
 
 [color]
