@@ -50,6 +50,7 @@ set relativenumber on
 map gd cd ~/dotfiles/
 map gD cd ~/media/downloads/
 map gi cd ~/dotfiles/i3/files/
+map gj cd ~/media/junk/
 map gl cd ~/dotfiles/lf/
 map gm cd ~/media/
 map gn cd ~/dotfiles/nvim/

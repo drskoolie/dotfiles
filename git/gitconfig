@@ -67,7 +67,14 @@
 
 	rv = revert
 
+	sa = stash
+	sap = stash pop
+
 	sh = show
+
+	sm = submodule
+	sma = submodule add
+	smad = submodule add --depth 1
 
 	sw = switch
 	sw- = switch -
@@ -75,8 +82,6 @@
 	swcd = switch -c develop
 	swm = switch main
 	swd = switch develop
-	sa = stash
-	sap = stash pop
 
 	st = status
 	sts = status -s
