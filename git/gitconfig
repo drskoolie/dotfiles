@@ -10,8 +10,8 @@
 	brv = branch -v
 
 	cf = cat-file
-	cft = cat-file -t
 	cfp = cat-file -p
+	cft = cat-file -t
 
 	cl = clone
 	clh = "! f() { git clone https://github.com/$1/$2.git ; }; f"
@@ -20,9 +20,9 @@
 	clsd = "! f() { git clone git@github.com:drskoolie/$1.git ; }; f"
 
 	cn = clean
+	cnf = clean -f
 	cni = clean -i
 	cnn = clean -n
-	cnf = clean -f
 
 	co = commit
 	com = commit -m
@@ -35,7 +35,7 @@
 	dis = diff --staged
 
 	ed = config --global -e
-	
+
 	fe = fetch
 	feo = fetch origin
 
@@ -45,27 +45,33 @@
 	loa = log --all --decorate --oneline --graph
 	lod = log --decorate --oneline --graph
 	lop = log -p
-	lot = log --simplify-by-decoration
 	lor = git log --graph --decorate --oneline $(git rev-list -g --all)
-	
+	lot = log --simplify-by-decoration
+
 	me = merge
-	mem = merge main
 	med = merge develop
+	mem = merge main
 	met = mergetool
+
+	pu = push
+	puo = push origin
+	puod = push --delete origin
+	puot = !git push origin $(git describe --tags --abbrev=0)
+	puuo = push --set-upstream origin
 
 	rb = rebase
 
-	rg = reflog
+	rf = reflog
+
+	rm = remote
+	rmao = "!f() { git remote add origin git@github.com:$1/$2.git; }; f"
+	rmr = remote remove
+	rms = "!f() { git remote set-url origin git@github.com:$1/$2.git; }; f"
+	rmsd = remote set-url origin git@github.com:drskoolie/dotfiles.git
+	rmv = remote -v
 
 	rs = restore
 	rss = restore --staged
-
-	rm = remote
-	rmr = remote remove
-	rmv = remote -v
-	rms = "!f() { git remote set-url origin git@github.com:$1/$2.git; }; f"
-	rmsd = remote set-url origin git@github.com:drskoolie/dotfiles.git
-	rmao = "!f() { git remote add origin git@github.com:$1/$2.git; }; f"
 
 	sa = stash
 	sap = stash pop
@@ -76,26 +82,21 @@
 	sma = submodule add
 	smad = submodule add --depth 1
 
+	st = status
+	sts = status -s
+
 	sw = switch
 	sw- = switch -
 	swc = switch -c
 	swcd = switch -c develop
-	swm = switch main
 	swd = switch develop
-
-	st = status
-	sts = status -s
+	swm = switch main
 
 	tg = tag
 	tga = tag -a
+	tgd = tag -d
 	tgn = tag -n99
 	tgnr = tag -n99 -l --sort=-v:refname
-
-	pu = push
-	pudo = push --delete origin
-	puo = push origin
-	puot = !git push origin $(git describe --tags --abbrev=0)
-	puuo = push --set-upstream origin
 
 [color]
 	ui = true
