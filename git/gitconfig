@@ -28,9 +28,7 @@
 	cnf = clean -f
 
 	co = commit
-	coi = commit -m "initial commit"
 	com = commit -m
-	coam = commit -a -m
 
 	de = describe
 
