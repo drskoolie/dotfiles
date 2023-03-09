@@ -9,10 +9,6 @@
 	brr = branch -r
 	brv = branch -v
 
-	cf = cat-file
-	cfp = cat-file -p
-	cft = cat-file -t
-
 	cl = clone
 	clh = "! f() { git clone https://github.com/$1/$2.git ; }; f"
 	clhd = "! f() { git clone https://github.com/drskoolie/$1.git ; }; f"
