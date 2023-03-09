@@ -5,3 +5,4 @@ source ~/dotfiles/zsh/alias/general.zsh
 source ~/dotfiles/zsh/alias/nohup.zsh
 source ~/dotfiles/zsh/alias/nvim.zsh
 source ~/dotfiles/zsh/alias/source.zsh
+source ~/dotfiles/zsh/alias/weather.zsh
