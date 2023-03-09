@@ -51,6 +51,7 @@
 	lod = log --decorate --oneline --graph
 	lop = log -p
 	lot = log --simplify-by-decoration
+	lor = git log --graph --decorate --oneline $(git rev-list -g --all)
 	
 	me = merge
 	mem = merge main
@@ -58,6 +59,8 @@
 	met = mergetool
 
 	rb = rebase
+
+	rg = reflog
 
 	rs = restore
 	rss = restore --staged
@@ -68,8 +71,6 @@
 	rms = "!f() { git remote set-url origin git@github.com:$1/$2.git; }; f"
 	rmsd = remote set-url origin git@github.com:drskoolie/dotfiles.git
 	rmao = "!f() { git remote add origin git@github.com:$1/$2.git; }; f"
-
-	rv = revert
 
 	sa = stash
 	sap = stash pop
