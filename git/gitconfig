@@ -38,11 +38,11 @@
 
 	gr = grep -n -I
 
-	lo = "! f() { git log --no-color --no-decorate | bat -n -l 'Git log' ; }; f"
+	lo = log
 	loa = log --all --decorate --oneline --graph
 	lod = log --decorate --oneline --graph
 	lop = log -p
-	lor = git log --graph --decorate --oneline $(git rev-list -g --all)
+	lor = !git log --graph --decorate --oneline $(git rev-list -g --all)
 	lot = log --simplify-by-decoration
 
 	me = merge
@@ -97,17 +97,23 @@
 	tgnr = tag -n99 -l --sort=-v:refname
 
 [color]
-	ui = true
+	ui = auto
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
+[color "branch"]
+	current = green reverse
+	local = green
+	remote = green
+[color "decorate"]
+	branch = blue bold
 [color "diff"]
 	meta = 7
 	frag = magenta bold
 	func = 146 bold
-	commit = yellow bold
+	commit = blue bold
 	old = red bold
 	new = green bold
 	whitespace = red reverse
