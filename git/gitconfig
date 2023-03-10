@@ -72,6 +72,7 @@
 	rssa = restore --staged .
 
 	sa = stash
+	sal = stash list
 	sap = stash pop
 
 	sh = show
@@ -96,6 +97,7 @@
 	tgn = tag -n99
 	tgnr = tag -n99 -l --sort=-v:refname
 
+
 [color]
 	ui = auto
 [color "diff-highlight"]
@@ -112,11 +114,12 @@
 	remoteBranch = green
 	tag = green
 	stash = green
+	HEAD = green
 [color "diff"]
+	commit = red
 	meta = 7
 	frag = magenta bold
 	func = 146 bold
-	commit = blue bold
 	old = red bold
 	new = green bold
 	whitespace = red reverse
