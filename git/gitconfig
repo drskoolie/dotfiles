@@ -40,6 +40,7 @@
 
 	lo = log
 	loa = log --all --decorate --oneline --graph
+	lob = "! f() { git log --no-color --no-decorate | bat -n -l 'Git log' ; }; f"
 	lod = log --decorate --oneline --graph
 	lop = log -p
 	lor = !git log --graph --decorate --oneline $(git rev-list -g --all)
