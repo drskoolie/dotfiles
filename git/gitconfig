@@ -109,6 +109,9 @@
 	remote = green
 [color "decorate"]
 	branch = blue bold
+	remoteBranch = green
+	tag = green
+	stash = green
 [color "diff"]
 	meta = 7
 	frag = magenta bold
