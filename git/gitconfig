@@ -99,7 +99,6 @@
 	tgn = tag -n99
 	tgnr = tag -n99 -l --sort=-v:refname
 
-
 [color]
 	ui = auto
 [color "diff-highlight"]
@@ -116,9 +115,9 @@
 	HEAD = cyan bold
  	remoteBranch = red bold
  	tag = yellow bold
-# [color "diff"]
+[color "diff"]
+	meta = 7
 # 	commit = red
-# 	meta = 7
 # 	frag = magenta bold
 # 	func = 146 bold
 # 	old = red bold
