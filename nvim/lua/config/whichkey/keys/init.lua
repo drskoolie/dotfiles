@@ -198,7 +198,8 @@ wk_mappings = {
 		},
 		H = {':GBrowse<CR>', 'github'},
 		m = {':Git merge<CR>', 'merge'},
-		p = {':Git! push<CR>', 'push'},
+		p = {':Git push<CR>', 'push'},
+		P = {':Git! push<CR>', 'push!'},
 		r = {
 			name = "+reset",
 

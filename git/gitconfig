@@ -2,6 +2,7 @@
 	ad = add
 	ada	= add .
 	adc = !git add . && git commit
+	adcv = !git add . && git commit -v
 	adi = add -i
 
 	br = branch
@@ -22,6 +23,7 @@
 
 	co = commit
 	com = commit -m
+	cov = commit -v
 
 	de = describe
 
@@ -123,8 +125,6 @@
  	old = red bold
  	new = green bold
  	whitespace = red reverse
-[commit]
-	verbose = true
 [core]
 	editor = nvim
 	pager = diff-so-fancy | less --tabs=4 -RFX
