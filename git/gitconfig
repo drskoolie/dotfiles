@@ -113,8 +113,8 @@
 [color "decorate"]
 	branch = green bold
 	HEAD = cyan bold
-# 	remoteBranch = green
-# 	tag = green
+ 	remoteBranch = red bold
+ 	tag = yellow bold
 # 	stash = green
 # [color "diff"]
 # 	commit = red
