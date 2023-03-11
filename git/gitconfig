@@ -108,22 +108,22 @@
 	newHighlight = green bold 22
 [color "branch"]
 	current = green reverse
-	local = green
+	local = white
 	remote = green
 [color "decorate"]
-	branch = blue bold
-	remoteBranch = green
-	tag = green
-	stash = green
-	HEAD = green
-[color "diff"]
-	commit = red
-	meta = 7
-	frag = magenta bold
-	func = 146 bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+	branch = green bold
+	HEAD = cyan bold
+# 	remoteBranch = green
+# 	tag = green
+# 	stash = green
+# [color "diff"]
+# 	commit = red
+# 	meta = 7
+# 	frag = magenta bold
+# 	func = 146 bold
+# 	old = red bold
+# 	new = green bold
+# 	whitespace = red reverse
 [commit]
 	verbose = true
 [core]
