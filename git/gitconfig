@@ -75,6 +75,7 @@
 	sa = stash
 	sal = stash list
 	sap = stash pop
+	sas = stash show
 
 	sh = show
 
@@ -115,7 +116,6 @@
 	HEAD = cyan bold
  	remoteBranch = red bold
  	tag = yellow bold
-# 	stash = green
 # [color "diff"]
 # 	commit = red
 # 	meta = 7
