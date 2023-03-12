@@ -71,6 +71,7 @@
 	rmv = remote -v
 
 	rs = restore
+	rsa = restore .
 	rss = restore --staged
 	rssa = restore --staged .
 
