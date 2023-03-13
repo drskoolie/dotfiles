@@ -88,6 +88,7 @@ return require('packer').startup(function()
   use 'tpope/vim-rhubarb'
   use 'tpope/vim-fugitive'
   use 'lewis6991/gitsigns.nvim'
+
   -- +-------+
   -- | latex |
   -- +-------+
@@ -157,6 +158,7 @@ return require('packer').startup(function()
   -- +--------+
   use "mbbill/undotree"
   use "romainl/vim-cool" -- hl-search fix
+  use "tpope/vim-eunuch"
   use "tversteeg/registers.nvim"
 
   -- +-----+
