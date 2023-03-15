@@ -151,6 +151,12 @@ wk_mappings = {
 		t  = {':tabnew<CR>',    'tab new'},
 	},
 
+	c = {
+		name = "+coding",
+
+		m = {tmux_send('make'), 'make'},
+	},
+
 	f = {':Lf<CR>', 'lf'},
 
 	d = {
