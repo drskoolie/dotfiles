@@ -49,6 +49,7 @@ set relativenumber on
 # +------------------+
 map gd cd ~/dotfiles/
 map gD cd ~/media/downloads/
+map gh cd ~/github/
 map gi cd ~/dotfiles/i3/files/
 map gj cd ~/media/junk/
 map gl cd ~/dotfiles/lf/
