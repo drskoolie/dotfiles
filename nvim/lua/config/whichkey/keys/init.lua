@@ -91,6 +91,7 @@ wk_mappings = {
 		n = {
 			name = "+neovim",
 
+			e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
 			i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
 			I = {':e ~/.config/nvim/init.lua<CR>',  'init'},
 			k = {':tabnew<CR>:e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'keymappings'},
@@ -154,6 +155,7 @@ wk_mappings = {
 	c = {
 		name = "+coding",
 
+		g = {tmux_send('gcc -o %:t:r %:p:t'), 'gcc'},
 		m = {tmux_send('make'), 'make'},
 	},
 
