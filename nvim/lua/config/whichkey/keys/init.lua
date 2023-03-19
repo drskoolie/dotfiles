@@ -155,8 +155,11 @@ wk_mappings = {
 	c = {
 		name = "+coding",
 
-		g = {tmux_send('gcc -o %:t:r %:p:t'), 'gcc'},
+		g = {tmux_send('gcc -Wall -o %:t:r %:p:t'), 'gcc'},
+		G = {tmux_send('gcc -o %:t:r %:p:t'), 'gcc no warn'},
 		m = {tmux_send('make'), 'make'},
+		r = {tmux_send('./%:t:r'), 'run'},
+		R = {tmux_send('gcc -Wall -o %:t:r %:p:t && ./%:t:r'), 'gcc & run'},
 	},
 
 	f = {':Lf<CR>', 'lf'},
