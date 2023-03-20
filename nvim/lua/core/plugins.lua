@@ -29,26 +29,38 @@ return require('packer').startup(function()
   -- +--------------+
   -- | file browser |
   -- +--------------+
-  -- use(
-  --     {
-  --         "lmburns/lf.nvim",
-  --         config = function()
-  --           -- This feature will not work if the plugin is lazy-loaded
-  --           vim.g.lf_netrw = 1
-  -- 
-  --           require("lf").setup(
-  --               {
-  --                   escape_quit = false,
-  --                   border = "rounded",
-  --                   highlights = {FloatBorder = {guifg = require("kimbox.palette").colors.magenta}}
-  --               }
-  --           )
-  -- 
-  --           vim.keymap.set("n", "<C-o>", ":Lf<CR>")
-  --         end,
-  --         requires = {"plenary.nvim", "toggleterm.nvim"}
-  --     }
-  -- )
+  use(
+      {
+          "lmburns/lf.nvim",
+          config = function()
+            -- This feature will not work if the plugin is lazy-loaded
+            vim.g.lf_netrw = 1
+  
+            require("lf").setup(
+                {
+                    escape_quit = false,
+                    border = "rounded",
+                    highlights = {FloatBorder = {guifg = require("kimbox.palette").colors.magenta}}
+                }
+            )
+  
+            vim.keymap.set("n", "<C-o>", ":Lf<CR>")
+          end,
+          requires = {"plenary.nvim", "toggleterm.nvim"}
+      }
+  )
+
+  vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
+  
+  use {
+    "nvim-neo-tree/neo-tree.nvim",
+      branch = "v2.x",
+      requires = { 
+        "nvim-lua/plenary.nvim",
+        "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+        "MunifTanjim/nui.nvim",
+      }
+    }
 
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
     require("toggleterm").setup()
