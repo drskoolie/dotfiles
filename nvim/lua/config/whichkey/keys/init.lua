@@ -164,7 +164,7 @@ wk_mappings = {
 		r = {tmux_send('./%:t:r'), 'run'},
 	},
 
-	f = {':Lf<CR>', 'lf'},
+	f = {':Neotree<CR>', 'neotree'},
 
 	d = {
 		name = "+debug",
