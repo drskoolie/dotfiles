@@ -69,6 +69,11 @@ wk_mappings = {
 
 		l = {
 			name = "+lsp",
+			i = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
+		},
+
+		L = {
+			name = "+lsp_old",
 			c = {'<cmd>TroubleToggle document_diagnostics<CR>', 'current'},
 			d = {'<cmd>TroubleToggle lsp_definitions<CR>', 'definition', silent = true},
 			f = {'<cmd>TroubleToggle lsp_references<CR>', 'refs'},
