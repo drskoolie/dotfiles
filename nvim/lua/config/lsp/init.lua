@@ -13,11 +13,15 @@ local cmp = require('cmp')
 
 lsp.setup_nvim_cmp({
   mapping = lsp.defaults.cmp_mappings({
-    ['<C-y>'] = cmp.mapping.complete(),
+	['c-space'] = cmp.mapping.complete(),
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<CR>'] = vim.NIL,
   })
+})
+
+lsp.nvim_workspace({
+  library = vim.api.nvim_get_runtime_file('', true)
 })
 
 lsp.setup()
