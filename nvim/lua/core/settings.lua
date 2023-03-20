@@ -22,6 +22,8 @@ vim.opt.shiftwidth = 4
 
 -- Persistent Undo
 -- vim.opt.undodir = "~/.dotfiles/nvim/.undodir"
+vim.opt.swapfile = false
+vim.opt.backup = false
 vim.opt.undofile = true
 
 -- More
