@@ -73,6 +73,7 @@ wk_mappings = {
 			d = {'<cmd>TroubleToggle lsp_definitions<CR>', 'definition', silent = true},
 			f = {'<cmd>TroubleToggle lsp_references<CR>', 'refs'},
 			p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true},
+			P = {':TSPlayground<CR>', 'ts-playground'},
 			n = {'<cmd>lua vim.diagnostic.goto_next()<CR>', 'next', silent = true},
 			r = {'<cmd>lua vim.lsp.buf.rename()<CR>', 'rename', silent = true},
 			t = {'<cmd>TroubleToggle<CR>', 'toggle'},
@@ -145,6 +146,7 @@ wk_mappings = {
 	b = {
 		name = "+buffers",
 
+		c = {':cd %:p:h<CR>', 'cd'},
 		m = {':tabm +1<CR>',    'tab mov +1'},
 		M = {':tabm -1<CR>',    'tab mov -1'},
 		n = {':bn<CR>', 'next'},
@@ -155,11 +157,11 @@ wk_mappings = {
 	c = {
 		name = "+coding",
 
+		f = {tmux_send('gcc -Wall -o %:t:r %:p:t && ./%:t:r'), 'gcc & run'},
 		g = {tmux_send('gcc -Wall -o %:t:r %:p:t'), 'gcc'},
 		G = {tmux_send('gcc -o %:t:r %:p:t'), 'gcc no warn'},
 		m = {tmux_send('make'), 'make'},
 		r = {tmux_send('./%:t:r'), 'run'},
-		R = {tmux_send('gcc -Wall -o %:t:r %:p:t && ./%:t:r'), 'gcc & run'},
 	},
 
 	f = {':Lf<CR>', 'lf'},

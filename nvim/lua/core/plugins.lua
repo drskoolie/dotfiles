@@ -150,6 +150,8 @@ return require('packer').startup(function()
       'nvim-treesitter/nvim-treesitter',
       run = ':TSUpdate',
   }
+
+  use ('nvim-treesitter/playground')
   
   use 'p00f/nvim-ts-rainbow'
 

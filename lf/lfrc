@@ -47,6 +47,7 @@ set relativenumber on
 # +------------------+
 # | Change Directory |
 # +------------------+
+map gb cd ~/github/books/
 map gd cd ~/dotfiles/
 map gD cd ~/media/downloads/
 map gh cd ~/github/
