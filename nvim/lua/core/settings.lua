@@ -28,3 +28,6 @@ vim.opt.undofile = true
 
 -- Additions
 vim.opt.signcolumn = 'yes'
+
+-- Primeagen
+vim.opt.scrolloff = 8

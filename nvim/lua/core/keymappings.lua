@@ -47,3 +47,11 @@ keymap("n", "<up>", ":resize +1<cr>", opts)
 keymap("n", "<down>", ":resize -1<cr>", opts)
 keymap("n", "<right>", ":vert resize +1<cr>", opts)
 keymap("n", "<left>", ":vert resize -1<cr>", opts)
+
+-- +-----------+
+-- | Primeagen |
+-- +-----------+
+
+-- Move in visual mode
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
