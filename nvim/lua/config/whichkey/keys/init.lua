@@ -265,7 +265,12 @@ wk_mappings = {
 		name = "+lsp",
 		d = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
 		h = {'<cmd>lua vim.lsp.buf.hover()<CR>', 'hover', silent = true},
-		i = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
+		i = {':LspInstall<CR>', 'install'},
+		I = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
+		m = {':Mason<CR>', 'mason'},
+		r = {'<cmd> lua vim.lsp.buf.rename()<CR>', 'rename'},
+		t = {'<cmd>lua vim.lsp.buf.type_definition()<CR>', 'type definition', silent = true},
+		v = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
 	},
 
 	t = {
