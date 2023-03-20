@@ -67,11 +67,6 @@ wk_mappings = {
 
 		},
 
-		l = {
-			name = "+lsp",
-			i = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
-		},
-
 		L = {
 			name = "+lsp_old",
 			c = {'<cmd>TroubleToggle document_diagnostics<CR>', 'current'},
@@ -267,19 +262,11 @@ wk_mappings = {
 	},
 			
 	l = {
-		name = "+latex",
-
-		c = {':VimtexCompile<CR>', 'compile'},
-		d = {':VimtexDocPackage<CR>', 'docs'},
-		e = {':VimtexErrors<CR>', 'errors'},
-		i = {':VimtexInfo<CR>', 'info'},
-		s = {':VimtexStop<CR>', 'stop'},
-		r = {':VimtexClean<CR>', 'rm auxillary'},
-		t =	{':VimtexTocOpen<CR>', 'toc'},
-		w = {':VimtexCountWords<CR>', 'words'},
-		z = {':VimtexView<CR>', 'zathura'},
+		name = "+lsp",
+		d = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
+		h = {'<cmd>lua vim.lsp.buf.hover()<CR>', 'hover', silent = true},
+		i = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
 	},
-
 
 	t = {
 		name = "+tmux",
@@ -296,6 +283,19 @@ wk_mappings = {
 		y = {tmux_send('y'), 'y'},
 	},
 
+	x = {
+		name = "+latex",
+
+		c = {':VimtexCompile<CR>', 'compile'},
+		d = {':VimtexDocPackage<CR>', 'docs'},
+		e = {':VimtexErrors<CR>', 'errors'},
+		i = {':VimtexInfo<CR>', 'info'},
+		s = {':VimtexStop<CR>', 'stop'},
+		r = {':VimtexClean<CR>', 'rm auxillary'},
+		t =	{':VimtexTocOpen<CR>', 'toc'},
+		w = {':VimtexCountWords<CR>', 'words'},
+		z = {':VimtexView<CR>', 'zathura'},
+	},
 }
 
 wk_settings.register(wk_mappings, wk_opts)
