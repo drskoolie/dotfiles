@@ -264,7 +264,7 @@ wk_mappings = {
 		name = "+lsp",
 		a = {'<cmd>lua vim.lsp.buf.code_action()<CR>', 'code action', silent = true},
 		d = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
-		f = {'<cmd>lua vim.lsp.buf.format()<CR>', 'format', silent = true},
+		f = {'<cmd>lua vim.lsp.buf.format()<CR>', 'format'},
 		h = {'<cmd>lua vim.lsp.buf.hover()<CR>', 'hover', silent = true},
 		i = {':LspInstall<CR>', 'install'},
 		I = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
