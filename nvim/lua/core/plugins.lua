@@ -109,6 +109,8 @@ return require('packer').startup(function()
      }
    }
 
+  use 'jose-elias-alvarez/null-ls.nvim'
+
   -- +----------+
   -- | markdown |
   -- +----------+
