@@ -11,12 +11,6 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-
-  -- +-------+
-  -- | align |
-  -- +-------+
-  use 'godlygeek/tabular'
-
   -- +-------+
   -- | async |
   -- +-------+
@@ -77,11 +71,6 @@ return require('packer').startup(function()
   -- +------+
   use 'zorab47/vim-gams'
 
-  -- +-------+
-  -- | games |
-  -- +-------+
-  use 'ThePrimeagen/vim-be-good'
-
   -- +-----+
   -- | git |
   -- +-----+
@@ -97,14 +86,6 @@ return require('packer').startup(function()
   -- +-----+
   -- | lsp |
   -- +-----+
-  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
-  use {
-    "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
-    config = function()
-      require("trouble").setup {}
-    end
-  }
 
   -- +----------+
   -- | markdown |
@@ -113,14 +94,6 @@ return require('packer').startup(function()
       "iamcco/markdown-preview.nvim",
       run = function() vim.fn["mkdp#util#install"]() end,
   })
-
-  -- +-------+
-  -- | neorg |
-  -- +-------+
-  use {
-      "nvim-neorg/neorg",
-  --    run = ":Neorg sync-parsers", -- This is the important bit!
-  }
 
   -- +--------+
   -- | python |
@@ -136,7 +109,6 @@ return require('packer').startup(function()
   -- +--------+
   -- | themes |
   -- +--------+
-  use 'NLKNguyen/papercolor-theme'
   use { "catppuccin/nvim", as = "catppuccin" }
   use {
     'nvim-lualine/lualine.nvim',
@@ -174,17 +146,3 @@ return require('packer').startup(function()
   use 'folke/which-key.nvim'
 
 end)
-
-
-  -- use "lukas-reineke/indent-blankline.nvim"
-  
---[[
-
-" ==> Python
-" Plug 'a-elhag/jupyter-vim'        " Jupyter mine
-" Plug 'goerz/jupytext.vim'         " Jupytext
-
-" ==> Will do
-" Plug 'dhruvasagar/vim-table-mode'                   " Table Creator
-" Plug 'majutsushi/tagbar'                            " Class/module browser
---]]

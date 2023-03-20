@@ -26,14 +26,5 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undofile = true
 
--- More
--- vim.opt.cursorline = true
-
--- vim.cmd([[
--- augroup debianlatexfix
---   " Remove all vimrc autocommands within scope
---   autocmd!
---   autocmd BufNewFile,BufRead *.tex   set syntax=tex
---   autocmd BufNewFile,BufRead *.cls   set syntax=tex
--- augroup END
--- ]])
+-- Additions
+vim.opt.signcolumn = 'yes'
