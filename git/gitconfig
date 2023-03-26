@@ -22,6 +22,8 @@
 	cnn = clean -n
 
 	co = commit
+	coa = commit --amend
+	coav = commit --amend -v
 	com = commit -m
 	cov = commit -v
 
