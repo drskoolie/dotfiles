@@ -1,6 +1,15 @@
 vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 
 require("neo-tree").setup({
+		event_handlers = {
+			  {
+				event = "file_opened",
+				handler = function(file_path)
+				  --auto close
+				  require("neo-tree").close_all()
+				end
+			  },
+        },
         close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
         popup_border_style = "rounded",
         enable_git_status = true,
@@ -69,7 +78,7 @@ require("neo-tree").setup({
         },
         window = {
           position = "left",
-          width = 40,
+          width = 36,
           mapping_options = {
             noremap = true,
             nowait = true,
@@ -81,9 +90,10 @@ require("neo-tree").setup({
             },
             ["<2-LeftMouse>"] = "open",
             ["<cr>"] = "open",
+			["l"] = "open",
             ["<esc>"] = "revert_preview",
             ["P"] = { "toggle_preview", config = { use_float = true } },
-            ["l"] = "focus_preview",
+            -- ["l"] = "focus_preview",
             ["S"] = "open_split",
             ["s"] = "open_vsplit",
             -- ["S"] = "split_with_window_picker",
@@ -92,7 +102,6 @@ require("neo-tree").setup({
             -- ["<cr>"] = "open_drop",
             -- ["t"] = "open_tab_drop",
             ["w"] = "open_with_window_picker",
-            --["P"] = "toggle_preview", -- enter preview mode, which shows the current node without focusing
             ["C"] = "close_node",
             -- ['C'] = 'close_all_subnodes',
             ["z"] = "close_all_nodes",
@@ -164,6 +173,7 @@ require("neo-tree").setup({
           window = {
             mappings = {
               ["<bs>"] = "navigate_up",
+              ["h"] = "navigate_up",
               ["."] = "set_root",
               ["H"] = "toggle_hidden",
               ["/"] = "fuzzy_finder",
