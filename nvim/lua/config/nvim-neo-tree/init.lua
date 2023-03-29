@@ -104,10 +104,13 @@ require("neo-tree").setup({
               }
             },
             ["A"] = "add_directory", -- also accepts the optional config.show_path option like "add". this also supports BASH style brace expansion.
-            ["c"] = "copy", -- takes text input for destination, also accepts the optional config.show_path option like "add":
-            ["C"] = "close_node",
+			["b"] = function() vim.api.nvim_exec('Neotree focus buffers left', true) end,
+            ["c"] = "close_node",
+            ["C"] = "copy", -- takes text input for destination, also accepts the optional config.show_path option like "add":
             -- ['C'] = 'close_all_subnodes',
             ["d"] = "delete",
+			["e"] = function() vim.api.nvim_exec('Neotree focus filesystem left', true) end,
+			["g"] = function() vim.api.nvim_exec('Neotree focus git_status left', true) end,
 			["l"] = "open",
             -- ["l"] = "focus_preview",
             ["m"] = "move", -- takes text input for destination, also accepts the optional config.show_path option like "add".
