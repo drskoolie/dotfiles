@@ -10,3 +10,4 @@ zsh/.zcompdump
 zsh/packages/zsh-syntax-highlighting
 zsh/packages/zsh-autosuggestions/
 zsh/packages/zsh-syntax-highlighting/*
+nvim/plugin/packer_compiled.lua

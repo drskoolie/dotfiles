@@ -49,7 +49,6 @@ set relativenumber on
 # +------------------+
 map gb cd ~/github/books/
 map gd cd ~/dotfiles/
-map gD cd ~/media/downloads/
 map gh cd ~/github/
 map gi cd ~/dotfiles/i3/files/
 map gj cd ~/media/junk/
@@ -60,6 +59,7 @@ map gp cd ~/github/research/txt/proposal/
 map gr cd ~/github/research/
 map gs cd ~/media/screenshots/
 map gt cd ~/dotfiles/tmux
+map gw cd ~/media/downloads/
 map gz cd ~/dotfiles/zsh
 
 
