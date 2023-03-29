@@ -294,7 +294,7 @@ wk_mappings = {
 		y = {tmux_send('y'), 'y'},
 	},
 
-	--w = {'<cmd>lua require(\'window-picker\').pick_window()<CR>', 'window'},
+	w = {'<cmd>lua NvimWindowPicker()<CR>', 'window'},
 
 	x = {
 		name = "+latex",
