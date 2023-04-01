@@ -11,10 +11,8 @@ source ~/dotfiles/zsh/packages/powerlevel10k/powerlevel10k.zsh-theme
 # Sourcing
 source ~/dotfiles/zsh/alias/init.zsh
 source ~/dotfiles/zsh/applications/lf.zsh
-source ~/dotfiles/zsh/applications/bathelp.zsh
 source ~/dotfiles/zsh/compint.zsh
 source ~/dotfiles/zsh/export/export.zsh
-source ~/dotfiles/zsh/help.zsh
 source ~/dotfiles/zsh/misc.zsh
 source ~/dotfiles/zsh/packages/packages_source.zsh
 source ~/dotfiles/zsh/zoxide.zsh
