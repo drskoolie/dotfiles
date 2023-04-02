@@ -55,7 +55,7 @@ map gj cd ~/media/junk/
 map gl cd ~/dotfiles/lf/
 map gm cd ~/media/
 map gn cd ~/dotfiles/nvim/
-map gp cd ~/github/research/txt/proposal/
+map gp cd ~/github/research/docs/txt/proposal/
 map gr cd ~/github/research/
 map gs cd ~/media/screenshots/
 map gt cd ~/media/trash/
