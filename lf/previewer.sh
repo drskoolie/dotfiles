@@ -13,5 +13,7 @@ case "$1" in
 
     *.csv) rich -h 50 --force-terminal --no-wrap --theme dracula "$1" ;;
 
+    *.ipynb) rich -h 50 --force-terminal --no-wrap --theme dracula "$1" ;;
+
     *) bat -n --color always "$1" ;;
 esac
