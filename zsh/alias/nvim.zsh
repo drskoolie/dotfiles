@@ -7,7 +7,7 @@ function n ()
 	case $1 in
 		g) nvim .gitignore;;
 
-		l) nvim *.tex;;
+		t) nvim *.tex;;
 
 		*) nvim $1;;
 	esac
