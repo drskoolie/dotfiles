@@ -11,5 +11,7 @@ case "$1" in
 
 	*.png|*.jpg|*.jpeg|*.mkv|*.mp4|*.3gp) mediainfo "$1";;
 
+    *.csv) rich -h 50 --force-terminal --no-wrap --theme dracula "$1" ;;
+
     *) bat -n --color always "$1" ;;
 esac
