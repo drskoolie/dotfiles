@@ -3,7 +3,7 @@ export LS_COLORS
 
 l () {
     tmp="$(mktemp)"
-    ~/dotfiles/lf/lf_bin -last-dir-path="$tmp" "$@"
+    lf -last-dir-path="$tmp" "$@"
     if [ -f "$tmp" ]; then
         dir="$(cat "$tmp")"
         rm -f "$tmp"
