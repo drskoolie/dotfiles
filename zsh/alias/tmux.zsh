@@ -5,6 +5,9 @@
 function t () 
 {
 	case $1 in
+		as) tmux attach-session;;
+		ast) tmux attach-session -t $2;;
+
 		ls) tmux list-sessions;;
 
 		ks) tmux kill-session;;
