@@ -9,3 +9,5 @@ bindkey "^A" vi-beginning-of-line
 bindkey "^E" vi-end-of-line
 bindkey "^B" vi-forward-char
 bindkey "^F" vi-backward-char
+
+autoload zmv
