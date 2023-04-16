@@ -110,7 +110,7 @@ require("neo-tree").setup({
             -- ['C'] = 'close_all_subnodes',
             ["d"] = "delete",
 			["e"] = function() vim.api.nvim_exec('Neotree focus filesystem left', true) end,
-			["G"] = function() vim.api.nvim_exec('Neotree focus git_status left', true) end,
+			["S"] = function() vim.api.nvim_exec('Neotree focus git_status left', true) end,
 			["l"] = "open",
             -- ["l"] = "focus_preview",
             ["m"] = "move", -- takes text input for destination, also accepts the optional config.show_path option like "add".
