@@ -122,6 +122,7 @@ wk_mappings = {
 			name = "+spell",
 
 			a = {':set textwidth=110<CR>:set fo=tc<CR>:set spell<CR>', 'all'},
+			A = {':set textwidth=150<CR>:set fo=tc<CR>:set spell<CR>', 'All'},
 			f = {'<ESC>[sz=1<CR>A', 'fix'},
 			F = {'[s<C-o>z=1<CR><C-o>A', 'fix'},
 			n = {':set nospell<CR>', 'nospell'},

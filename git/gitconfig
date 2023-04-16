@@ -56,10 +56,10 @@
 	met = mergetool
 
 	pu = push
+	pudo = push --delete origin
 	puo = push origin
-	puod = push --delete origin
 	puot = !git push origin $(git describe --tags --abbrev=0)
-	puuo = push --set-upstream origin
+	puso = push --set-upstream origin
 
 	rb = rebase
 
