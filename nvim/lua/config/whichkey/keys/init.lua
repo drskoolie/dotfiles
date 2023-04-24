@@ -282,6 +282,15 @@ wk_mappings = {
 		v = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
 	},
 
+	s = {
+		name = "+sql",
+
+		c = {tmux_send('.shell clear'), 'clear'},
+		f = {tmux_send('.read %:p'), 'file'},
+		o = {tmux_send('sqlite3 chinook.db'), 'open'},
+
+	},
+
 	t = {
 		name = "+tmux",
 
