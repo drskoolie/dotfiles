@@ -1,1 +1,3 @@
-LDFLAGS="-lm -lcompiler_rt" pip install cython numpy matplotlib pandas scikit-learn
+LDFLAGS="-lm -lcompiler_rt" pip install cython numpy pandas scikit-learn
+LDFLAGS="-L/system/lib64/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install Pillow
+pkg install binutils
