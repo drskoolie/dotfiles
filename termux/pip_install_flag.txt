@@ -2,3 +2,11 @@ LDFLAGS="-lm -lcompiler_rt" pip install cython numpy pandas scikit-learn
 LDFLAGS="-L/system/lib64/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install Pillow
 pkg install binutils
 pkg install python-tkinter
+
+pip install PyQt5
+import PyQt4
+import matplotlib
+matplotlib.use('qt4agg')
+import matplotlib.pyplot as plt
+plt.plot([1,2,3])
+plt.show()
