@@ -32,6 +32,7 @@ vim.cmd([[
 	 au BufNewFile,BufRead *.sql iab current_time CURRENT_TIME
 	 au BufNewFile,BufRead *.sql iab current_timestamp CURRENT_TIMESTAMP
 	 au BufNewFile,BufRead *.sql iab database DATABASE
+	 au BufNewFile,BufRead *.sql iab decimal DECIMAL
 	 au BufNewFile,BufRead *.sql iab default DEFAULT
 	 au BufNewFile,BufRead *.sql iab deferrable DEFERRABLE
 	 au BufNewFile,BufRead *.sql iab deferred DEFERRED
@@ -68,6 +69,7 @@ vim.cmd([[
 	 au BufNewFile,BufRead *.sql iab instead INSTEAD
 	 au BufNewFile,BufRead *.sql iab intersect INTERSECT
 	 au BufNewFile,BufRead *.sql iab into INTO
+	 au BufNewFile,BufRead *.sql iab integer INTEGER
 	 au BufNewFile,BufRead *.sql iab is IS
 	 au BufNewFile,BufRead *.sql iab isnull ISNULL
 	 au BufNewFile,BufRead *.sql iab join JOIN
@@ -109,6 +111,7 @@ vim.cmd([[
 	 au BufNewFile,BufRead *.sql iab table TABLE
 	 au BufNewFile,BufRead *.sql iab temp TEMP
 	 au BufNewFile,BufRead *.sql iab temporary TEMPORARY
+	 au BufNewFile,BufRead *.sql iab text TEXT
 	 au BufNewFile,BufRead *.sql iab then THEN
 	 au BufNewFile,BufRead *.sql iab to TO
 	 au BufNewFile,BufRead *.sql iab transaction TRANSACTION
