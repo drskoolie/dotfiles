@@ -19,6 +19,9 @@ require('config/sorcery')
 require('config/ultisnips')
 require('config/vimtex')
 
+-- ==> Languages
+require('languages/sqlite')
+
 -- ==> LSP
 require('config/lsp')
 

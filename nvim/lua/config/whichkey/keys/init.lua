@@ -287,7 +287,7 @@ wk_mappings = {
 
 		c = {tmux_send('.shell clear'), 'clear'},
 		f = {tmux_send('.read %:p'), 'file'},
-		o = {tmux_send('sqlite3 chinook.db'), 'open'},
+		o = {tmux_send('sqlite3 test.db'), 'open'},
 
 	},
 
