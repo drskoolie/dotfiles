@@ -257,6 +257,7 @@ wk_mappings = {
         p = {':TmuxPaste<CR>',    'paste'},
 		P = {'"+y:TmuxPaste<CR>', 'visual', mode='v'},
         r = {tmux_send('reset -f'), 'reset'},
+        s = {tmux_send('sop'), 'sop'},
 		v = {tmux_send('sop'), 'venv'},
 		V = {tmux_send('pip -V'), 'pip -V'},
 		-- v = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>ddk0', 'variable'},
