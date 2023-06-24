@@ -5,10 +5,6 @@ local lsp = require('lsp-zero').preset({
   suggest_lsp_servers = false,
 })
 
-lsp.ensure_installed({
-	'pyright',
-})
-
 local cmp = require('cmp')
 
 lsp.setup_nvim_cmp({

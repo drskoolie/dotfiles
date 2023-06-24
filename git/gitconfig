@@ -104,7 +104,7 @@
 	tg = tag
 	tga = tag -a
 	tgd = tag -d
-	tgn = tag -n99
+	tgn = tag -n99 -l --sort=v:refname
 	tgnh = "! f() { git tag -n99 -l --sort=-v:refname | head ; }; f"
 	tgnr = tag -n99 -l --sort=-v:refname
 
