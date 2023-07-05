@@ -160,9 +160,9 @@ wk_mappings = {
 	c = {
 		name = "+coding",
 
-		f = {tmux_send('gcc -Wall -o %:t:r %:p:t && ./%:t:r'), 'gcc & run'},
-		g = {tmux_send('gcc -Wall -o %:t:r %:p:t'), 'gcc'},
-		G = {tmux_send('gcc -o %:t:r %:p:t'), 'gcc no warn'},
+		f = {tmux_send('clang++ -Wall -o %:t:r %:p:t && ./%:t:r'), 'clang++ & run'},
+		g = {tmux_send('clang++ -Wall -o %:t:r %:p:t'), 'clang++'},
+		G = {tmux_send('clang++ -o %:t:r %:p:t'), 'clang++ no warn'},
 		m = {tmux_send('make'), 'make'},
 		r = {tmux_send('./%:t:r'), 'run'},
 	},
