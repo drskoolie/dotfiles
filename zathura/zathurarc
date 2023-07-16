@@ -15,3 +15,8 @@ set scroll-step 100
 
 map H rotate rotate-ccw
 map L rotate rotate-cw
+
+set highlight-active-color "#ffffff"
+set highlight-color "#ffffff"
+set highlight-fg "#ffffff"
+set highlight-transparency 0
