@@ -164,6 +164,7 @@ wk_mappings = {
 		f = {tmux_send('clang++ -Wall -o %:t:r %:p:t && ./%:t:r'), 'clang++ & run'},
 		g = {tmux_send('clang++ -Wall -o %:t:r %:p:t'), 'clang++'},
 		G = {tmux_send('clang++ -o %:t:r %:p:t'), 'clang++ no warn'},
+		l = {tmux_send('lua  %:p'), 'lua'},
 		m = {tmux_send('make'), 'make'},
 		r = {tmux_send('./%:t:r'), 'run'},
 	},

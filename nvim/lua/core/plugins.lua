@@ -159,6 +159,22 @@ return require('packer').startup(function()
   
   use 'p00f/nvim-ts-rainbow'
 
+  -- +---------+
+  -- | chatgpt |
+  -- +---------+
+  use({
+    "jackMort/ChatGPT.nvim",
+      config = function()
+        require("chatgpt").setup()
+      end,
+      requires = {
+        "MunifTanjim/nui.nvim",
+        "nvim-lua/plenary.nvim",
+        "nvim-telescope/telescope.nvim"
+      }
+  })
+
+
   -- +--------+
   -- | useful |
   -- +--------+
