@@ -1,4 +1,3 @@
-
 local conf = {
 	-- required openai api key
 	openai_api_key = os.getenv("OPENAI_API_KEY"),
@@ -19,14 +18,24 @@ local conf = {
 		    vim.api.nvim_command("%" .. plugin.config.cmd_prefix .. "ChatNew")
 		end,
 
-        BufferCommandNew = function(plugin, _)
-            -- Update the model and system prompt for the command model
-            plugin.config.command_model = { model = "gpt-3.5-turbo-16k", temperature = 0.7, top_p = 1 }
-            plugin.config.command_system_prompt = "You are an AI that strictly generates just the formated final code."
+		ModelPrint = function(plugin, _)
+			print(string.format("Model: %s", vim.inspect(plugin.config.chat_model.model)))
+			print(string.format("Temperature: %s", vim.inspect(plugin.config.chat_model.temperature)))
+			print(string.format("Top_p: %s", vim.inspect(plugin.config.chat_model.temperature)))
+			print(string.format("Prompt: %s", vim.inspect(plugin.config.chat_system_prompt)))
+		end,
 
-            -- call GpChatNew command in range mode on whole buffer
-            vim.api.nvim_command(plugin.config.cmd_prefix .. "ChatNew")
-        end,
+		ModelGeneral = function(plugin, _)
+			-- Update the model and system prompt for the command model
+			plugin.config.chat_model = { model = "gpt-3.5-turbo-16k", temperature = 0.7, top_p = 1 } 
+			plugin.config.chat_system_prompt = "You are a general AI assistant." 
+		end,
+
+		ModelCode = function(plugin, _)
+			-- Update the model and system prompt for the command model
+			plugin.config.chat_model = { model = "gpt-3.5-turbo-16k", temperature = 0.7, top_p = 1 } 
+			plugin.config.chat_system_prompt = "You are an AI that strictly generates just the formated final code." 
+		end,
 
 	},
 
@@ -70,5 +79,3 @@ local conf = {
 
 -- call setup on your config
 require("gp").setup(conf)
-
--- shortcuts might be setup here (see Usage > Shortcuts in Readme)
