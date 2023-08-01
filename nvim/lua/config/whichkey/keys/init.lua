@@ -299,6 +299,7 @@ wk_mappings = {
 
 			c = {":GpModelCode<CR>", "code"},
 			g = {":GpModelGeneral<CR>", "general"},
+			e = {":GpModelEquations<CR>", "equations"},
 			p = {":GpModelPrint<CR>", "print"},
 		},
 

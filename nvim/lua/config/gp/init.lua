@@ -33,8 +33,14 @@ local conf = {
 
 		ModelCode = function(plugin, _)
 			-- Update the model and system prompt for the command model
-			plugin.config.chat_model = { model = "gpt-3.5-turbo-16k", temperature = 0.7, top_p = 1 } 
+			plugin.config.chat_model = { model = "gpt-3.5-turbo-16k", temperature = 0.3, top_p = 0.3 } 
 			plugin.config.chat_system_prompt = "You are an AI that strictly generates just the formated final code." 
+		end,
+
+		ModelEquations = function(plugin, _)
+			-- Update the model and system prompt for the command model
+			plugin.config.chat_model = { model = "gpt-3.5-turbo-16k", temperature = 0.3, top_p = 0.3 } 
+			plugin.config.chat_system_prompt = "You are an AI that strictly generates LaTeX equations that start with \\begin{equation} and end with \\end{equation}" 
 		end,
 
 	},
