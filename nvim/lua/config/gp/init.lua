@@ -5,10 +5,17 @@ local conf = {
 	cmd_prefix = "Gp",
 	-- example hook functions
 	hooks = {
+
+		CustomChatNew = function(plugin, params)
+			local chat_model = { model = "gpt-4", temperature = 0.7, top_p = 1 }
+			local chat_system_prompt = "You are a general AI assisstant"
+			plugin.cmd.ChatNew(params, chat_model, chat_system_prompt)
+		end, 
+
 		InspectPlugin = function(plugin, params)
-			-- print(string.format("Plugin structure:\n%s", vim.inspect(plugin)))
-			-- print(string.format("Command params:\n%s", vim.inspect(params)))
-			print(string.format("Command params:\n%s", vim.inspect(plugin.config.cmd_prefix)))
+			print(string.format("Plugin structure:\n%s", vim.inspect(plugin)))
+			print(string.format("Command params:\n%s", vim.inspect(params)))
+			-- print(string.format("Command params:\n%s", vim.inspect(plugin.config.cmd_prefix)))
 		end,
 
 		-- -- example of making :%GpChatNew a dedicated command which
