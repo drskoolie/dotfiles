@@ -9,17 +9,17 @@ vim.api.nvim_set_keymap('v', 't',
 {})
 
 vim.api.nvim_set_keymap('n', 'T', 
-[[<cmd>lua require'hop'.hint_words({ current_line_only = false, })<CR>]],
+[[<cmd>lua require'hop'.hint_char2({ current_line_only = false, })<CR>]],
 {})
 
 vim.api.nvim_set_keymap('v', 'T', 
-[[<cmd>lua require'hop'.hint_words({ current_line_only = false, })<CR>]],
+[[<cmd>lua require'hop'.hint_char2({ current_line_only = false, })<CR>]],
 {})
 
 vim.api.nvim_set_keymap('n', 's', 
-[[<cmd>lua require'hop'.hint_lines()<CR>]],
+[[<cmd>lua require'hop'.hint_words({ current_line_only = false, })<CR>]],
 {})
 
 vim.api.nvim_set_keymap('v', 's', 
-[[<cmd>lua require'hop'.hint_lines()<CR>]],
+[[<cmd>lua require'hop'.hint_words({ current_line_only = false, })<CR>]],
 {})
