@@ -93,6 +93,8 @@ wk_mappings = {
 		n = {
 			name = "+neovim",
 
+			a = {':set nrformats+=alpha<CR>', 'alpha+'},
+			A = {':set nrformats-=alpha<CR>', 'alpha-'},
 			e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
 			i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
 			I = {':e ~/.config/nvim/init.lua<CR>',  'init'},

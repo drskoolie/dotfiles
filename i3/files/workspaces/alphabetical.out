@@ -1,0 +1,11 @@
+--- Job alphabetical.gms Start 08/14/23 22:26:12 42.2.0 ef14ea53 LEX-LEG x86 64bit/Linux
+*** Unable to open input file (RC=2) alphabetical.gms
+*** SysMsg: No such file or directory
+--- Applying:
+    /opt/gams/gams42.2_linux_x64_64_sfx/gmsprmun.txt
+--- GAMS Parameters defined
+    Input alphabetical.gms
+    ScrDir /home/drskoolie/dotfiles/i3/files/workspaces/225a/
+    SysDir /opt/gams/gams42.2_linux_x64_64_sfx/
+*** Status: Terminated due to parameter errors
+--- Job alphabetical.gms Stop 08/14/23 22:26:12 elapsed 0:00:00.001
