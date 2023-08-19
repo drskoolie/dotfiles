@@ -287,31 +287,9 @@ wk_mappings = {
 		v = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
 	},
 
-	o = {
-		name = "+openai",
+	n = {
+		name = "+neorg",
 
-		d = {":GpChatDelete<CR>", "delete"},
-		f = {":GpChatFinder<CR>", "finder"},
-		i = {":GpInspectPlugin<CR>", "inspect"},
-		n =	{":GpChatNew<CR>", "new"},
-		e = {":GpChatRespond<CR>", "espond"},
-
-		m = {
-			name = "+models",
-
-			c = {":GpModelCode<CR>", "code"},
-			g = {":GpModelGeneral<CR>", "general"},
-			e = {":GpModelEquations<CR>", "equations"},
-			p = {":GpModelPrint<CR>", "print"},
-		},
-
-
-
-		a = {":GpAppend<CR>", "append", mode="v"},
-		b = {":GpEnew<CR>", "buffer", mode="v"},
-		p = {":GpPrepend<CR>", "prepend", mode="v"},
-		r = {":GpRewrite<CR>", "rewrite", mode="v"},
-		u = {":GpPopup<CR>", "popup", mode="v"},
 	},
 
 	s = {
