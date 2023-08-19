@@ -290,6 +290,13 @@ wk_mappings = {
 	n = {
 		name = "+neorg",
 
+		w = {
+			name = "+workspaces",
+
+			w = {':Neorg workspace home<CR>', 'home'},
+			w = {':Neorg workspace work<CR>', 'work'},
+		}
+
 	},
 
 	s = {
