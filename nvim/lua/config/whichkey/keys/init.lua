@@ -301,7 +301,8 @@ wk_mappings = {
 			name = "+journal",
 
 			c = {":Neorg journal custom ", "custom"},
-			f = {":Neorg journal toc<CR>", "toc"},
+			f = {":Neorg journal toc open<CR>", "toc"},
+			F = {":Neorg journal toc update<CR>", "toc update"},
 			m = {":Neorg journal tomorrow<CR>", "tomorrow"},
 			t = {":Neorg journal today<CR>", "today"},
 			y = {":Neorg journal yesterday<CR>", "yesterday"},
