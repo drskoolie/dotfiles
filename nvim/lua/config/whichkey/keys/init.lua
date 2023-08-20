@@ -101,6 +101,7 @@ wk_mappings = {
 			k = {':tabnew<CR>:e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'keymappings'},
 			K = {':e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'keymappings'},
 			l = {':w<CR>:luafile %<CR>',  'lua source'},
+			L = {':luafile ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey source'},
 			p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 			P = {':e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 			s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
@@ -290,10 +291,32 @@ wk_mappings = {
 	n = {
 		name = "+neorg",
 
+
+		c = {':Neorg toggle-concealer<CR>', 'concealer'},
+		d = {':Neorg keybind norg core.qol.todo_items.todo.task_done<CR>', 'done'},
+		D = {':Neorg keybind norg core.qol.todo_items.todo.task_undone<CR>', 'undone'},
+		k = {':Neorg keybind norg<CR>', 'keybind'},
+		r = {':Neorg return<CR>', 'return'},
+		s = {':Neorg sync-parsers<CR>', 'sync-parsers'},
+
+		t = {
+			name = "+todo",
+				a = {':Neorg keybind norg core.qol.todo_items.todo.task_ambiguous<CR>', 'ambiguous'},
+				c = {':Neorg keybind norg core.qol.todo_items.todo.task_cancelled<CR>', 'cancelled'},
+				i = {':Neorg keybind norg core.qol.todo_items.todo.task_important<CR>', 'important'},
+				o = {':Neorg keybind norg core.qol.todo_items.todo.task_on_hold<CR>', 'on_hold'},
+				p = {':Neorg keybind norg core.qol.todo_items.todo.task_pending<CR>', 'pending'},
+				r = {':Neorg keybind norg core.qol.todo_items.todo.task_recurring<CR>', 'recurring'},
+				t = {':Neorg keybind norg core.qol.todo_items.todo.task_cycle<CR>', 'cycle'},
+				T = {':Neorg keybind norg core.qol.todo_items.todo.task_cycle_reverse<CR>', 'cycle reverse'},
+		}, 
+
+		
 		w = {
 			name = "+workspaces",
 
-			w = {':Neorg workspace home<CR>', 'home'},
+			i = {':Neorg index<CR>', 'index'},
+			h = {':Neorg workspace home<CR>', 'home'},
 			w = {':Neorg workspace work<CR>', 'work'},
 		}
 

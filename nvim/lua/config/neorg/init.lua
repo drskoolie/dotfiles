@@ -2,7 +2,11 @@ require('neorg').setup {
 	build = ":Neorg sync-parsers",
     load = {
 
-		["core.concealer"] = {},
+		["core.concealer"] = {
+			config = {
+				folds = true,
+				icon_preset = "diamond",
+			}},
         ["core.defaults"] = {},
         ["core.dirman"] = {
             config = {
