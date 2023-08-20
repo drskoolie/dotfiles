@@ -295,21 +295,35 @@ wk_mappings = {
 		c = {':Neorg toggle-concealer<CR>', 'concealer'},
 		d = {':Neorg keybind norg core.qol.todo_items.todo.task_done<CR>', 'done'},
 		D = {':Neorg keybind norg core.qol.todo_items.todo.task_undone<CR>', 'undone'},
+		f = {':Neorg toc<CR>', 'toc'},
+
+		j = {
+			name = "+journal",
+
+			c = {":Neorg journal custom ", "custom"},
+			f = {":Neorg journal toc<CR>", "toc"},
+			m = {":Neorg journal tomorrow<CR>", "tomorrow"},
+			t = {":Neorg journal today<CR>", "today"},
+			y = {":Neorg journal yesterday<CR>", "yesterday"},
+				
+		},
+
 		k = {':Neorg keybind norg<CR>', 'keybind'},
+		m = {':Neorg inject-metadata<CR>', 'metadata'},
 		r = {':Neorg return<CR>', 'return'},
 		s = {':Neorg sync-parsers<CR>', 'sync-parsers'},
 
 		t = {
 			name = "+todo",
-				a = {':Neorg keybind norg core.qol.todo_items.todo.task_ambiguous<CR>', 'ambiguous'},
-				c = {':Neorg keybind norg core.qol.todo_items.todo.task_cancelled<CR>', 'cancelled'},
-				i = {':Neorg keybind norg core.qol.todo_items.todo.task_important<CR>', 'important'},
-				o = {':Neorg keybind norg core.qol.todo_items.todo.task_on_hold<CR>', 'on_hold'},
-				p = {':Neorg keybind norg core.qol.todo_items.todo.task_pending<CR>', 'pending'},
-				r = {':Neorg keybind norg core.qol.todo_items.todo.task_recurring<CR>', 'recurring'},
-				t = {':Neorg keybind norg core.qol.todo_items.todo.task_cycle<CR>', 'cycle'},
-				T = {':Neorg keybind norg core.qol.todo_items.todo.task_cycle_reverse<CR>', 'cycle reverse'},
-		}, 
+			a = {':Neorg keybind norg core.qol.todo_items.todo.task_ambiguous<CR>', 'ambiguous'},
+			c = {':Neorg keybind norg core.qol.todo_items.todo.task_cancelled<CR>', 'cancelled'},
+			i = {':Neorg keybind norg core.qol.todo_items.todo.task_important<CR>', 'important'},
+			o = {':Neorg keybind norg core.qol.todo_items.todo.task_on_hold<CR>', 'on_hold'},
+			p = {':Neorg keybind norg core.qol.todo_items.todo.task_pending<CR>', 'pending'},
+			r = {':Neorg keybind norg core.qol.todo_items.todo.task_recurring<CR>', 'recurring'},
+			t = {':Neorg keybind norg core.qol.todo_items.todo.task_cycle<CR>', 'cycle'},
+			T = {':Neorg keybind norg core.qol.todo_items.todo.task_cycle_reverse<CR>', 'cycle reverse'},
+	}, 
 
 		
 		w = {
