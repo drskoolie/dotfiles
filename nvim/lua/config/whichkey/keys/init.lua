@@ -296,6 +296,12 @@ wk_mappings = {
 		d = {':Neorg keybind norg core.qol.todo_items.todo.task_done<CR>', 'done'},
 		D = {':Neorg keybind norg core.qol.todo_items.todo.task_undone<CR>', 'undone'},
 		f = {':Neorg toc<CR>', 'toc'},
+		h = {':Neorg keybind norg core.integrations.treesitter.next.heading<CR>', 'head n'},
+		H = {':Neorg keybind norg core.integrations.treesitter.previous.heading<CR>', 'head p'},
+		l = {':Neorg keybind norg core.integrations.treesitter.next.link<CR>', 'link n'},
+		L = {':Neorg keybind norg core.integrations.treesitter.previous.link<CR>', 'link p'},
+		i = {':Neorg keybind norg core.integrations.treesitter.next.iteration<CR>', 'iteration n'},
+		I = {':Neorg keybind norg core.integrations.treesitter.previous.iteration<CR>', 'iteration p'},
 
 		j = {
 			name = "+journal",
@@ -311,6 +317,7 @@ wk_mappings = {
 
 		k = {':Neorg keybind norg<CR>', 'keybind'},
 		m = {':Neorg inject-metadata<CR>', 'metadata'},
+		n = {':Neorg keybind norg core.dirman.new.note<CR>', 'new'},
 		r = {':Neorg return<CR>', 'return'},
 		s = {':Neorg sync-parsers<CR>', 'sync-parsers'},
 
