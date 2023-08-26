@@ -336,6 +336,7 @@ wk_mappings = {
 
 			i = {':Neorg index<CR>', 'index'},
 			h = {':Neorg workspace home<CR>', 'home'},
+			t = {':Neorg workspace todo<CR>', 'todo'},
 			w = {':Neorg workspace work<CR>', 'work'},
 		}
 
