@@ -16,11 +16,6 @@ return require('packer').startup(function()
   -- +-------+
   use "nvim-lua/plenary.nvim"
   
-  -- +---------+
-  -- | chatgpt |
-  -- +---------+
-  use "robitx/gp.nvim"
-
   -- +--------+
   -- | colors |
   -- +--------+

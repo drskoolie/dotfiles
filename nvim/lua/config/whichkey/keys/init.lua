@@ -101,6 +101,7 @@ wk_mappings = {
 			k = {':tabnew<CR>:e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'keymappings'},
 			K = {':e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'keymappings'},
 			l = {':w<CR>:luafile %<CR>',  'lua source'},
+			L = {':luafile ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey source'},
 			p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 			P = {':e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 			s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
@@ -287,31 +288,60 @@ wk_mappings = {
 		v = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
 	},
 
-	o = {
-		name = "+openai",
+	n = {
+		name = "+neorg",
 
-		d = {":GpChatDelete<CR>", "delete"},
-		f = {":GpChatFinder<CR>", "finder"},
-		i = {":GpInspectPlugin<CR>", "inspect"},
-		n =	{":GpChatNew<CR>", "new"},
-		e = {":GpChatRespond<CR>", "espond"},
 
-		m = {
-			name = "+models",
+		c = {':Neorg toggle-concealer<CR>', 'concealer'},
+		d = {':Neorg keybind norg core.qol.todo_items.todo.task_done<CR>', 'done'},
+		D = {':Neorg keybind norg core.qol.todo_items.todo.task_undone<CR>', 'undone'},
+		f = {':Neorg toc<CR>', 'toc'},
+		h = {':Neorg keybind norg core.integrations.treesitter.next.heading<CR>', 'head n'},
+		H = {':Neorg keybind norg core.integrations.treesitter.previous.heading<CR>', 'head p'},
+		l = {':Neorg keybind norg core.integrations.treesitter.next.link<CR>', 'link n'},
+		L = {':Neorg keybind norg core.integrations.treesitter.previous.link<CR>', 'link p'},
+		i = {':Neorg keybind norg core.integrations.treesitter.next.iteration<CR>', 'iteration n'},
+		I = {':Neorg keybind norg core.integrations.treesitter.previous.iteration<CR>', 'iteration p'},
 
-			c = {":GpModelCode<CR>", "code"},
-			g = {":GpModelGeneral<CR>", "general"},
-			e = {":GpModelEquations<CR>", "equations"},
-			p = {":GpModelPrint<CR>", "print"},
+		j = {
+			name = "+journal",
+
+			c = {":Neorg journal custom ", "custom"},
+			f = {":Neorg journal toc open<CR>", "toc"},
+			F = {":Neorg journal toc update<CR>", "toc update"},
+			m = {":Neorg journal tomorrow<CR>", "tomorrow"},
+			t = {":Neorg journal today<CR>", "today"},
+			y = {":Neorg journal yesterday<CR>", "yesterday"},
+				
 		},
 
+		k = {':Neorg keybind norg<CR>', 'keybind'},
+		m = {':Neorg inject-metadata<CR>', 'metadata'},
+		n = {':Neorg keybind norg core.dirman.new.note<CR>', 'new'},
+		r = {':Neorg return<CR>', 'return'},
+		s = {':Neorg sync-parsers<CR>', 'sync-parsers'},
 
+		t = {
+			name = "+todo",
+			a = {':Neorg keybind norg core.qol.todo_items.todo.task_ambiguous<CR>', 'ambiguous'},
+			c = {':Neorg keybind norg core.qol.todo_items.todo.task_cancelled<CR>', 'cancelled'},
+			i = {':Neorg keybind norg core.qol.todo_items.todo.task_important<CR>', 'important'},
+			o = {':Neorg keybind norg core.qol.todo_items.todo.task_on_hold<CR>', 'on_hold'},
+			p = {':Neorg keybind norg core.qol.todo_items.todo.task_pending<CR>', 'pending'},
+			r = {':Neorg keybind norg core.qol.todo_items.todo.task_recurring<CR>', 'recurring'},
+			t = {':Neorg keybind norg core.qol.todo_items.todo.task_cycle<CR>', 'cycle'},
+			T = {':Neorg keybind norg core.qol.todo_items.todo.task_cycle_reverse<CR>', 'cycle reverse'},
+	}, 
 
-		a = {":GpAppend<CR>", "append", mode="v"},
-		b = {":GpEnew<CR>", "buffer", mode="v"},
-		p = {":GpPrepend<CR>", "prepend", mode="v"},
-		r = {":GpRewrite<CR>", "rewrite", mode="v"},
-		u = {":GpPopup<CR>", "popup", mode="v"},
+		
+		w = {
+			name = "+workspaces",
+
+			i = {':Neorg index<CR>', 'index'},
+			h = {':Neorg workspace home<CR>', 'home'},
+			w = {':Neorg workspace work<CR>', 'work'},
+		}
+
 	},
 
 	s = {
