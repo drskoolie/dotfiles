@@ -18,6 +18,7 @@ require('neorg').setup {
             config = {
                 workspaces = {
                     home = "~/github/neorg-notes/home",
+                    todo = "~/github/neorg-notes/todo",
                     work = "~/github/neorg-notes/work",
                 }}},
 		["core.keybinds"] = {
