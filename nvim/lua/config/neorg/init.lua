@@ -27,9 +27,6 @@ require('neorg').setup {
 				hook = function(keybinds)
 					keybinds.remap_event("norg", "n", "<CR>", "core.esupports.hop.hop-link")
 				end,
-                    -- { "gd", "core.esupports.hop.hop-link", opts = { desc = "Jump to Link" } },
-                    -- { "gf", "core.esupports.hop.hop-link", opts = { desc = "Jump to Link" } },
-                    -- { "gF", "core.esupports.hop.hop-link", opts = { desc = "Jump to Link" } },
 			}},
     }
 }
