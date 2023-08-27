@@ -290,6 +290,8 @@ wk_mappings = {
 
 		c = {':Neorg toggle-concealer<CR>', 'concealer'},
 		f = {':Neorg toc<CR>', 'toc'},
+		g = {':!cd ~/github/neorg-notes/ && git add . && git commit -m "new update" && git push<CR>', 'git'},
+		G = {':!cd ~/github/neorg-notes/ && git add . && git push<CR>', 'Git'},
 		h = {':Neorg keybind norg core.integrations.treesitter.next.heading<CR>', 'head n'},
 		H = {':Neorg keybind norg core.integrations.treesitter.previous.heading<CR>', 'head p'},
 		l = {':Neorg keybind norg core.integrations.treesitter.next.link<CR>', 'link n'},
