@@ -99,13 +99,13 @@ wk_mappings = {
 			i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
 			k = {':tabnew<CR>:e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'keymappings'},
 			l = {':w<CR>:luafile %<CR>',  'lua source'},
-			L = {':luafile ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey source'},
 			n = {':tabnew<CR>:e ~/.config/nvim/lua/config/neorg/init.lua<CR>', 'neorg'},
 			p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 			P = {':e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 			s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
 			t = {':tabnew<CR>:e ~/github/research/TODO.md<CR>', 'todo'},
 			w = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
+			W = {':luafile ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey source'},
 			v = {':w<CR>:source %<CR>',  'vim source'},
 		},
 
@@ -288,10 +288,7 @@ wk_mappings = {
 	n = {
 		name = "+neorg",
 
-
 		c = {':Neorg toggle-concealer<CR>', 'concealer'},
-		d = {':Neorg keybind norg core.qol.todo_items.todo.task_done<CR>', 'done'},
-		D = {':Neorg keybind norg core.qol.todo_items.todo.task_undone<CR>', 'undone'},
 		f = {':Neorg toc<CR>', 'toc'},
 		h = {':Neorg keybind norg core.integrations.treesitter.next.heading<CR>', 'head n'},
 		H = {':Neorg keybind norg core.integrations.treesitter.previous.heading<CR>', 'head p'},
@@ -322,12 +319,14 @@ wk_mappings = {
 			name = "+todo",
 			a = {':Neorg keybind norg core.qol.todo_items.todo.task_ambiguous<CR>', 'ambiguous'},
 			c = {':Neorg keybind norg core.qol.todo_items.todo.task_cancelled<CR>', 'cancelled'},
+			d = {':Neorg keybind norg core.qol.todo_items.todo.task_done<CR>', 'done'},
 			i = {':Neorg keybind norg core.qol.todo_items.todo.task_important<CR>', 'important'},
 			o = {':Neorg keybind norg core.qol.todo_items.todo.task_on_hold<CR>', 'on_hold'},
 			p = {':Neorg keybind norg core.qol.todo_items.todo.task_pending<CR>', 'pending'},
 			r = {':Neorg keybind norg core.qol.todo_items.todo.task_recurring<CR>', 'recurring'},
 			t = {':Neorg keybind norg core.qol.todo_items.todo.task_cycle<CR>', 'cycle'},
 			T = {':Neorg keybind norg core.qol.todo_items.todo.task_cycle_reverse<CR>', 'cycle reverse'},
+			u = {':Neorg keybind norg core.qol.todo_items.todo.task_undone<CR>', 'undone'},
 	}, 
 
 		
