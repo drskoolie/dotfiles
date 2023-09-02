@@ -16,6 +16,7 @@ include files/windows.conf
 include files/workspaces/alphabetical.conf
 include files/workspaces/numerical.conf
 
-include files/workspaces/adhd.conf
-include files/workspaces/linux.conf
-include files/workspaces/media.conf
+include files/workspaces/10_adhd.conf
+include files/workspaces/20_linux.conf
+include files/workspaces/30_media.conf
+include files/workspaces/40_question.conf
