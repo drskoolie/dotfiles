@@ -13,6 +13,7 @@ include files/modes.conf
 include files/base.conf
 include files/windows.conf
 
-include files/workspaces/adhd.conf
 include files/workspaces/alphabetical.conf
+include files/workspaces/adhd.conf
+include files/workspaces/linux.conf
 include files/workspaces/numerical.conf
