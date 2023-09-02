@@ -20,3 +20,4 @@ include files/workspaces/10_adhd.conf
 include files/workspaces/20_linux.conf
 include files/workspaces/30_media.conf
 include files/workspaces/40_question.conf
+include files/workspaces/50_pdf.conf
