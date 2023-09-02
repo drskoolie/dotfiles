@@ -22,3 +22,4 @@ include files/workspaces/30_media.conf
 include files/workspaces/40_question.conf
 include files/workspaces/50_pdf.conf
 include files/workspaces/60_social.conf
+include files/workspaces/70_university.conf
