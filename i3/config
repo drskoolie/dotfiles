@@ -24,3 +24,4 @@ include files/workspaces/50_pdf.conf
 include files/workspaces/60_social.conf
 include files/workspaces/70_university.conf
 include files/workspaces/80_vim.conf
+include files/workspaces/90_pdf.conf
