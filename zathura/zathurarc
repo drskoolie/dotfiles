@@ -1,4 +1,5 @@
 set selection-clipboard clipboard
+set highlight-links false
 
 map b adjust_window best-fit
 map w adjust_window width
