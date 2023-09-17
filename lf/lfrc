@@ -49,7 +49,7 @@ set relativenumber 'true'
 # +------------------+
 map gb cd ~/github/books/
 map gd cd ~/dotfiles/
-map gh cd ~/github/
+map gh cd ~/github/housing/
 map gi cd ~/dotfiles/i3/files/
 map gj cd ~/media/junk/
 map gl cd ~/dotfiles/lf/
