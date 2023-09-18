@@ -9,7 +9,7 @@ fi
 source ~/dotfiles/zsh/packages/powerlevel10k/powerlevel10k.zsh-theme
 
 # Sourcing
-source ~/dotfiles/api/api.zsh
+source ~/dotfiles/zsh/api.zsh
 source ~/dotfiles/zsh/alias/init.zsh
 source ~/dotfiles/zsh/applications/lf.zsh
 source ~/dotfiles/zsh/compint.zsh
