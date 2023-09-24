@@ -1,1 +1,1 @@
-source ~/dotfiles/api/fred.zsh
+# source ~/dotfiles/api/fred.zsh

@@ -13,3 +13,5 @@ zsh/packages/zsh-autosuggestions/
 zsh/packages/zsh-syntax-highlighting
 zsh/packages/zsh-syntax-highlighting/*
 api/*
+
+fonts/nerd-fonts/*
