@@ -5,7 +5,7 @@
 export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files'
 
 # Editor
-export EDITOR=/usr/local/bin/nvim
+export EDITOR="/usr/local/bin/nvim"
 
 # colours
 export LESS_TERMCAP_mb=$'\e[1;32m'
