@@ -60,6 +60,7 @@ map gr cd ~/github/research/
 map gs cd ~/media/screenshots/
 map gt cd ~/media/trash/
 map gw cd ~/media/downloads/
+map gx cd ~/github/research/latex/proposal-xtra-report/
 map gz cd ~/dotfiles/zsh
 
 
