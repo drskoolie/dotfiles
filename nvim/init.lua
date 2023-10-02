@@ -1,10 +1,11 @@
 -- ==> Core 
-require('core/plugins')
+require('core/highlighted-yank')
 require('core/keymappings')
+require('core/keyword')
+require('core/plugins')
+require('core/python')
 require('core/settings')
 require('core/themes')
-require('core/highlighted-yank')
-require('core/python')
 require('core/vimscript')
 
 -- ==> Config
