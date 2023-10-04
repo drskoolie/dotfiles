@@ -72,9 +72,9 @@ map U !du -csh *
 # define a custom 'open' command
 cmd open ${{
     test -L $f && f=$(readlink -f $f)
-    case $(file --mime-type $f -b) in
-        text/*) $EDITOR $fx;;
-        *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
+    case $(file --mime-type "$f" -b) in
+        application/pdf) zathura "$f" ;;
+        *) for f in $fx; do $OPENER "$f" & done ;;
     esac
 }}
 
