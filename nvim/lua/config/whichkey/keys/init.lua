@@ -284,6 +284,7 @@ wk_mappings = {
 
 			i = {':LspInfo<CR>', 'info'},
 			l = {':LspLog<CR>', 'log'},
+			o = {':verbose set omnifunc?<CR>', 'omnifunc'},
 			p = {':LspStop ', 'stop'},
 			r = {':LspRestart ', 'restart'},
 			s = {':LspStart ', 'start'},

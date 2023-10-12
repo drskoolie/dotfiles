@@ -23,7 +23,7 @@ require('config/vimtex')
 -- ==> Languages
 require('languages/sqlite')
 
--- -- ==> LSP
+-- ==> LSP
 require('config/lsp')
 
 -- ==> WhichKey
