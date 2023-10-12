@@ -1,8 +1,10 @@
+api/*
 i3/bumblebee-status/
 i3/bumblebee-status/*
 ipython/profile_default/history.sqlite
 node_modules/*
 nvim/plugin/packer_compiled.lua
+npm-global/*
 openai/api.zsh
 package*.json
 powerlevel10k/
@@ -12,4 +14,3 @@ zsh/.zcompdump
 zsh/packages/zsh-autosuggestions/
 zsh/packages/zsh-syntax-highlighting
 zsh/packages/zsh-syntax-highlighting/*
-api/*

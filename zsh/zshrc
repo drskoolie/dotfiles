@@ -14,6 +14,7 @@ source ~/dotfiles/zsh/alias/init.zsh
 source ~/dotfiles/zsh/applications/lf.zsh
 source ~/dotfiles/zsh/compint.zsh
 source ~/dotfiles/zsh/export/export.zsh
+source ~/dotfiles/zsh/path.zsh
 source ~/dotfiles/zsh/misc.zsh
 source ~/dotfiles/zsh/packages/packages_source.zsh
 source ~/dotfiles/zsh/zoxide.zsh
@@ -21,8 +22,3 @@ source ~/dotfiles/zsh/zoxide.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Created by `pipx` on 2022-09-08 12:58:58
-export PATH="$PATH:/home/drskoolie/.local/bin"
-
-# Created by `pipx` on 2023-02-10 16:58:28
-export PATH="$PATH:/data/data/com.termux/files/home/.local/bin"
