@@ -272,9 +272,7 @@ wk_mappings = {
 		d = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
 		f = {'<cmd>lua vim.lsp.buf.format()<CR>', 'format'},
 		h = {'<cmd>lua vim.lsp.buf.hover()<CR>', 'hover', silent = true},
-		i = {':LspInstall<CR>', 'install'},
 		I = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
-		m = {':Mason<CR>', 'mason'},
 		n = {'<cmd>lua vim.diagnostic.goto_next()<CR>', 'next', silent = true},
 		o = {'<cmd>lua vim.diagnostic.open_float()<CR>', 'open_float', silent = true},
 		p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true},
@@ -283,64 +281,6 @@ wk_mappings = {
 		s = {'<cmd>lua vim.lsp.buf.document_symbol()<CR>', 'symbol'},
 		t = {'<cmd>lua vim.lsp.buf.type_definition()<CR>', 'type definition', silent = true},
 		v = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
-	},
-
-	n = {
-		name = "+neorg",
-
-		c = {':Neorg toggle-concealer<CR>', 'concealer'},
-		f = {':Neorg toc<CR>', 'toc'},
-		g = {':!cd ~/github/neorg-notes/ && git add . && git commit -m "new update" && git push<CR>', 'git'},
-		G = {':!cd ~/github/neorg-notes/ && git add . && git push<CR>', 'Git'},
-		h = {':Neorg keybind norg core.integrations.treesitter.next.heading<CR>', 'head n'},
-		H = {':Neorg keybind norg core.integrations.treesitter.previous.heading<CR>', 'head p'},
-		l = {':Neorg keybind norg core.integrations.treesitter.next.link<CR>', 'link n'},
-		L = {':Neorg keybind norg core.integrations.treesitter.previous.link<CR>', 'link p'},
-		i = {':Neorg keybind norg core.integrations.treesitter.next.iteration<CR>', 'iteration n'},
-		I = {':Neorg keybind norg core.integrations.treesitter.previous.iteration<CR>', 'iteration p'},
-
-		j = {
-			name = "+journal",
-
-			c = {":Neorg journal custom ", "custom"},
-			f = {":Neorg journal toc open<CR>", "toc"},
-			F = {":Neorg journal toc update<CR>", "toc update"},
-			m = {":Neorg journal tomorrow<CR>", "tomorrow"},
-			t = {":Neorg journal today<CR>", "today"},
-			y = {":Neorg journal yesterday<CR>", "yesterday"},
-				
-		},
-
-		k = {':Neorg keybind norg<CR>', 'keybind'},
-		m = {':Neorg inject-metadata<CR>', 'metadata'},
-		n = {':Neorg keybind norg core.dirman.new.note<CR>', 'new'},
-		r = {':Neorg return<CR>', 'return'},
-		s = {':Neorg sync-parsers<CR>', 'sync-parsers'},
-
-		t = {
-			name = "+todo",
-			a = {':Neorg keybind norg core.qol.todo_items.todo.task_ambiguous<CR>', 'ambiguous'},
-			c = {':Neorg keybind norg core.qol.todo_items.todo.task_cancelled<CR>', 'cancelled'},
-			d = {':Neorg keybind norg core.qol.todo_items.todo.task_done<CR>', 'done'},
-			i = {':Neorg keybind norg core.qol.todo_items.todo.task_important<CR>', 'important'},
-			o = {':Neorg keybind norg core.qol.todo_items.todo.task_on_hold<CR>', 'on_hold'},
-			p = {':Neorg keybind norg core.qol.todo_items.todo.task_pending<CR>', 'pending'},
-			r = {':Neorg keybind norg core.qol.todo_items.todo.task_recurring<CR>', 'recurring'},
-			t = {':Neorg keybind norg core.qol.todo_items.todo.task_cycle<CR>', 'cycle'},
-			T = {':Neorg keybind norg core.qol.todo_items.todo.task_cycle_reverse<CR>', 'cycle reverse'},
-			u = {':Neorg keybind norg core.qol.todo_items.todo.task_undone<CR>', 'undone'},
-	}, 
-
-		
-		w = {
-			name = "+workspaces",
-
-			i = {':Neorg index<CR>', 'index'},
-			h = {':Neorg workspace home<CR>', 'home'},
-			t = {':Neorg workspace todo<CR>', 'todo'},
-			w = {':Neorg workspace work<CR>', 'work'},
-		}
-
 	},
 
 	s = {
