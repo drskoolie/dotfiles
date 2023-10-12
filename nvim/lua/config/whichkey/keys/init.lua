@@ -103,7 +103,6 @@ wk_mappings = {
 			p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 			P = {':e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 			s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
-			t = {':tabnew<CR>:e ~/github/research/TODO.md<CR>', 'todo'},
 			w = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
 			W = {':luafile ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey source'},
 			v = {':w<CR>:source %<CR>',  'vim source'},
