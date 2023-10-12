@@ -267,19 +267,30 @@ wk_mappings = {
 			
 	l = {
 		name = "+lsp",
-		a = {'<cmd>lua vim.lsp.buf.code_action()<CR>', 'code action', silent = true},
-		d = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
-		f = {'<cmd>lua vim.lsp.buf.format()<CR>', 'format'},
+		-- a = {'<cmd>lua vim.lsp.buf.code_action()<CR>', 'code action', silent = true},
+		-- d = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
+		-- f = {'<cmd>lua vim.lsp.buf.format()<CR>', 'format'},
+		-- I = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
+		-- s = {'<cmd>lua vim.lsp.buf.document_symbol()<CR>', 'symbol'},
+		-- t = {'<cmd>lua vim.lsp.buf.type_definition()<CR>', 'type definition', silent = true},
+		-- v = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
 		h = {'<cmd>lua vim.lsp.buf.hover()<CR>', 'hover', silent = true},
-		I = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
 		n = {'<cmd>lua vim.diagnostic.goto_next()<CR>', 'next', silent = true},
 		o = {'<cmd>lua vim.diagnostic.open_float()<CR>', 'open_float', silent = true},
 		p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true},
 		r = {'<cmd>lua vim.lsp.buf.rename()<CR>', 'rename'},
+		s = {
+			name ="+settings",
+
+			i = {':LspInfo<CR>', 'info'},
+			l = {':LspLog<CR>', 'log'},
+			p = {':LspStop ', 'stop'},
+			r = {':LspRestart ', 'restart'},
+			s = {':LspStart ', 'start'},
+		},
+
+
 		R = {'<cmd>lua vim.lsp.buf.references()<CR>', 'references'},
-		s = {'<cmd>lua vim.lsp.buf.document_symbol()<CR>', 'symbol'},
-		t = {'<cmd>lua vim.lsp.buf.type_definition()<CR>', 'type definition', silent = true},
-		v = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
 	},
 
 	s = {

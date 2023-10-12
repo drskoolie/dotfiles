@@ -93,8 +93,9 @@ return require('packer').startup(function()
   -- +-----+
   -- | lsp |
   -- +-----+
+  use 'neovim/nvim-lspconfig'
   
-
+  -- +----------+
   -- | markdown |
   -- +----------+
   use({
