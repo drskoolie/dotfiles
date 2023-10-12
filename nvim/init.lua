@@ -5,6 +5,7 @@ require('core/keyword')
 require('core/plugins')
 require('core/python')
 require('core/settings')
+require('core/spelling')
 require('core/themes')
 require('core/vimscript')
 
@@ -17,13 +18,12 @@ require('config/nvim-neo-tree')
 require('config/nvim-colorizer')
 require('config/nvim-treesitter')
 require('config/sorcery')
-require('config/ultisnips')
 require('config/vimtex')
 
 -- ==> Languages
 require('languages/sqlite')
 
--- ==> LSP
+-- -- ==> LSP
 require('config/lsp')
 
 -- ==> WhichKey
