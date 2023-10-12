@@ -62,7 +62,6 @@ return require('packer').startup(function()
     }
 
 
-
   -- +-----+
   -- | hop |
   -- +-----+
@@ -94,32 +93,8 @@ return require('packer').startup(function()
   -- +-----+
   -- | lsp |
   -- +-----+
-  use {
-     'VonHeikemen/lsp-zero.nvim',
-     branch = 'v1.x',
-     requires = {
-       -- LSP Support
-       {'neovim/nvim-lspconfig'},
-       {'williamboman/mason.nvim'},
-       {'williamboman/mason-lspconfig.nvim'},
- 
-       -- Autocompletion
-       {'hrsh7th/nvim-cmp'},
-       {'hrsh7th/cmp-buffer'},
-       {'hrsh7th/cmp-path'},
-       {'saadparwaiz1/cmp_luasnip'},
-       {'hrsh7th/cmp-nvim-lsp'},
-       {'hrsh7th/cmp-nvim-lua'},
- 
-       -- Snippets
-       {'L3MON4D3/LuaSnip'},
-       {'rafamadriz/friendly-snippets'},
-     }
-   }
+  
 
-  use 'jose-elias-alvarez/null-ls.nvim'
-
-  -- +----------+
   -- | markdown |
   -- +----------+
   use({
@@ -127,19 +102,6 @@ return require('packer').startup(function()
       run = function() vim.fn["mkdp#util#install"]() end,
   })
 
-  -- +-------+
-  -- | neorg |
-  -- +-------+
-  use {
-      "nvim-neorg/neorg",
-      run = ":Neorg sync-parsers", -- This is the important bit!
-  }
-
-  -- +--------+
-  -- | python |
-  -- +--------+
-  use 'averms/black-nvim'
-	
   -- +-------+
   -- | pulse |
   -- +-------+
@@ -173,7 +135,6 @@ return require('packer').startup(function()
   use "mbbill/undotree"
   use "romainl/vim-cool" -- hl-search fix
   use "tpope/vim-eunuch"
-  use "tversteeg/registers.nvim"
 
   -- +-----+
   -- | vim |
