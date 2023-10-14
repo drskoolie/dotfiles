@@ -59,6 +59,7 @@
 
 	pu = push
 	pudo = push --delete origin
+	puuom = push -u origin main
 	puo = push origin
 	puot = !git push origin $(git describe --tags --abbrev=0)
 	puso = push --set-upstream origin

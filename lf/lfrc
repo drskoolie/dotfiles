@@ -49,20 +49,20 @@ set relativenumber 'true'
 # +------------------+
 map gb cd ~/github/books/
 map gd cd ~/dotfiles/
-map gh cd ~/github/housing/
+map ge cd ~/phd/enova/
+map gf cd ~/phd/references/
+map gh cd ~/
 map gi cd ~/dotfiles/i3/files/
 map gj cd ~/media/junk/
 map gl cd ~/dotfiles/lf/
 map gm cd ~/media/
 map gn cd ~/dotfiles/nvim/
-map gp cd ~/github/research/latex/
-map gr cd ~/github/research/
+map gp cd ~/phd/
+map gr cd ~/phd/reports/
 map gs cd ~/media/screenshots/
 map gt cd ~/media/trash/
 map gw cd ~/media/downloads/
-map gx cd ~/github/research/latex/proposal-xtra-report/
 map gz cd ~/dotfiles/zsh
-
 
 # +----------+
 # | Commands |
