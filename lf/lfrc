@@ -51,6 +51,7 @@ map gb cd ~/github/books/
 map gd cd ~/dotfiles/
 map ge cd ~/phd/enova/
 map gf cd ~/phd/references/
+map gF cd ~/phd/reports/journals/minimum-life-remaining/figures-example/
 map gh cd ~/
 map gi cd ~/dotfiles/i3/files/
 map gj cd ~/media/junk/
@@ -59,6 +60,7 @@ map gm cd ~/media/
 map gn cd ~/dotfiles/nvim/
 map gp cd ~/phd/
 map gr cd ~/phd/reports/
+map gR cd ~/phd/reports/journals/minimum-life-remaining/tex/
 map gs cd ~/media/screenshots/
 map gt cd ~/media/trash/
 map gw cd ~/media/downloads/
