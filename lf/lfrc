@@ -1,3 +1,24 @@
+# +------------------+
+# | Change Directory |
+# +------------------+
+map gb cd ~/github/books/
+map gd cd ~/dotfiles/
+map ge cd ~/phd/enova/
+map gf cd ~/phd/references/
+map gF cd ~/phd/reports/journals/minimum-life-remaining/figures-example/
+map gh cd ~/
+map gi cd ~/dotfiles/i3/files/
+map gl cd ~/dotfiles/lf/
+map gm cd ~/media/
+map gn cd ~/dotfiles/nvim/
+map gp cd ~/phd/
+map gr cd ~/phd/reports/
+map gR cd ~/phd/reports/journals/minimum-life-remaining/tex/
+map gs cd ~/media/screenshots/
+map gw cd ~/media/downloads/
+map gz cd ~/dotfiles/zsh
+
+
 # +--------+
 # | Basics |
 # +--------+
@@ -43,28 +64,6 @@ map L low
 set mouse 'true'
 set icons 'true'
 set relativenumber 'true'
-
-# +------------------+
-# | Change Directory |
-# +------------------+
-map gb cd ~/github/books/
-map gd cd ~/dotfiles/
-map ge cd ~/phd/enova/
-map gf cd ~/phd/references/
-map gF cd ~/phd/reports/journals/minimum-life-remaining/figures-example/
-map gh cd ~/
-map gi cd ~/dotfiles/i3/files/
-map gj cd ~/media/junk/
-map gl cd ~/dotfiles/lf/
-map gm cd ~/media/
-map gn cd ~/dotfiles/nvim/
-map gp cd ~/phd/
-map gr cd ~/phd/reports/
-map gR cd ~/phd/reports/journals/minimum-life-remaining/tex/
-map gs cd ~/media/screenshots/
-map gt cd ~/media/trash/
-map gw cd ~/media/downloads/
-map gz cd ~/dotfiles/zsh
 
 # +----------+
 # | Commands |
@@ -117,3 +116,15 @@ cmd zip ${{
 # +-------+
 set previewer ~/dotfiles/lf/previewer.sh
 map i $~/dotfiles/lf/previewer.sh $f | less -R
+
+# +-------+
+# | Trash |
+# +-------+
+
+cmd trash ${{
+    set -f
+    trash-put $fx
+    set +f
+}}
+
+map d trash
