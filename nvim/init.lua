@@ -14,10 +14,11 @@ require('config/color-picker')
 require('config/gitsigns')
 require('config/hop')
 require('config/lualine')
-require('config/nvim-neo-tree')
 require('config/nvim-colorizer')
+require('config/nvim-neo-tree')
 require('config/nvim-treesitter')
 require('config/sorcery')
+require('config/tabular')
 require('config/vimtex')
 
 -- ==> Languages

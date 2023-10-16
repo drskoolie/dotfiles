@@ -135,6 +135,7 @@ return require('packer').startup(function()
   -- +--------+
   -- | useful |
   -- +--------+
+  use "godlygeek/tabular"
   use "mbbill/undotree"
   use "romainl/vim-cool" -- hl-search fix
   use "tpope/vim-eunuch"
