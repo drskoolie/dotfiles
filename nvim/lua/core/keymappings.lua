@@ -26,8 +26,6 @@ keymap('i', '<C-h>', '<ESC>viwUea', opts)
 -- | Visual |
 -- +--------+
 -- Move Text
-keymap("v", "<a-j>", ":m .+2<CR>gv", opts)
-keymap("v", "<a-k>", ":m .-2<CR>gv", opts)
 keymap('v', 'y', 'ygv<Esc>', opts)
 keymap("v", "<c-s>", ':sort<CR>', opts)
 
@@ -38,7 +36,7 @@ keymap("v", "p", '"_dP', opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
--- vim.cmd([[set cmdheight=0]])
+vim.cmd([[set cmdheight=0]])
 
 -- +--------+
 -- | Resize |
