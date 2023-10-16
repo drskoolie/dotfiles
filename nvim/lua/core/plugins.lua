@@ -11,10 +11,12 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- +-------+
-  -- | async |
-  -- +-------+
+  -- +--------+
+  -- | needed |
+  -- +--------+
   use "nvim-lua/plenary.nvim"
+  use "nvim-tree/nvim-web-devicons"
+  use "MunifTanjim/nui.nvim"
   
   -- +--------+
   -- | colors |
@@ -31,36 +33,20 @@ return require('packer').startup(function()
   -- +--------------+
   use {
     "nvim-neo-tree/neo-tree.nvim",
-      branch = "v2.x",
-      requires = { 
-        "nvim-lua/plenary.nvim",
-        "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-        "MunifTanjim/nui.nvim",
-	  {
-        -- only needed if you want to use the commands with "_with_window_picker" suffix
-        's1n7ax/nvim-window-picker',
-        tag = "v1.*",
-        config = function()
-          require'window-picker'.setup({
-            autoselect_one = true,
-            include_current = false,
-            filter_rules = {
-              -- filter using buffer options
-              bo = {
-                -- if the file type is one of following, the window will be ignored
-                filetype = { 'neo-tree', "neo-tree-popup", "notify" },
+      branch = "v2.x"}
 
-                -- if the buffer type is one of following, the window will be ignored
-                buftype = { 'terminal', "quickfix" },
-              },
-            },
-            other_win_hl_color = '#e35e4f',
-          })
-        end,
-		}
-      }
-    }
 
+  -- +------+
+  -- | font |
+  -- +------+
+  
+  use {
+      '2kabhishek/nerdy.nvim',
+      dependencies = {
+          'stevearc/dressing.nvim',
+          'nvim-telescope/telescope.nvim',
+      },
+      cmd = 'Nerdy'}
 
   -- +-----+
   -- | hop |
@@ -148,3 +134,23 @@ return require('packer').startup(function()
   use 'folke/which-key.nvim'
 
 end)
+
+-- ToDo
+  -- +----------+
+  -- | leetcode |
+  -- +----------+
+  --	use({
+  --    "kawre/leetcode.nvim",
+  --    build = ":TSUpdate html",
+  --    dependencies = {
+  --        "nvim-treesitter/nvim-treesitter",
+  --        "nvim-telescope/telescope.nvim",
+  --        "nvim-lua/plenary.nvim", -- required by telescope
+  --        "MunifTanjim/nui.nvim",
+  --
+  --        -- optional
+  --        "rcarriga/nvim-notify",
+  --        "nvim-tree/nvim-web-devicons",
+  --    }})
+
+--
