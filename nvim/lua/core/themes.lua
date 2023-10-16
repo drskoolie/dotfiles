@@ -84,7 +84,7 @@ require("catppuccin").setup({
 		markdown = true,
 		lightspeed = false,
 		ts_rainbow = false,
-		hop = false,
+		hop = true,
 		notify = true,
 		telekasten = true,
 		symbols_outline = true,
