@@ -69,43 +69,11 @@ wk_mappings = {
 
 		},
 
-		L = {
-			name = "+trouble",
-			c = {'<cmd>TroubleToggle document_diagnostics<CR>', 'current'},
-			d = {'<cmd>TroubleToggle lsp_definitions<CR>', 'definition', silent = true},
-			f = {'<cmd>TroubleToggle lsp_references<CR>', 'refs'},
-			P = {':TSPlayground<CR>', 'ts-playground'},
-			n = {'<cmd>lua vim.diagnostic.goto_next()<CR>', 'next', silent = true},
-			r = {'<cmd>lua vim.lsp.buf.rename()<CR>', 'rename', silent = true},
-			t = {'<cmd>TroubleToggle<CR>', 'toggle'},
-			v = {'<cmd>lua vim.diagnostic.disable()<CR>', 'disable virtual'},
-			V = {'<cmd>lua vim.diagnostic.enable()<CR>', 'enable virtual'},
-			q = {'<cmd>TroubleClose<CR>', 'quit'},
-		},
-
 		m = {
 			name = "+markdown",
 
 			p = {':MarkdownPreview<CR>', 'preview'},
 			q = {':MarkdownPreviewStop<CR>', 'quit'},
-		},
-
-		n = {
-			name = "+neovim",
-
-			a = {':set nrformats+=alpha<CR>', 'alpha+'},
-			A = {':set nrformats-=alpha<CR>', 'alpha-'},
-			e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
-			i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
-			k = {':tabnew<CR>:e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'keymappings'},
-			l = {':w<CR>:luafile %<CR>',  'lua source'},
-			n = {':tabnew<CR>:e ~/.config/nvim/lua/config/neorg/init.lua<CR>', 'neorg'},
-			p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
-			P = {':e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
-			s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
-			w = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
-			W = {':luafile ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey source'},
-			v = {':w<CR>:source %<CR>',  'vim source'},
 		},
 
 
@@ -128,23 +96,7 @@ wk_mappings = {
 			n = {':set nospell<CR>', 'nospell'},
 			t = {':set spell!<CR>', 'spell toggle'},
 		},
-		
-		t = {
-			name = "+tabularize",
-			a = {"mjggVG:Tabularize /;<CR>'j", ';'},
-			b = {":Tabularize /;<CR>", ';', mode='v'},
-		},
-
-
-		u = {
-			name = "+undotree",
-
-			f = {':UndotreeFocus<CR>', 'focus'},
-			h = {':UndotreeHide<CR>', 'hide'},
-			s = {':UndotreeShow<CR>', 'show'},
-			t = {':UndotreeToggle<CR>', 'toggle'},
-		},
-	},
+	},	
 
 	b = {
 		name = "+buffers",
@@ -294,6 +246,24 @@ wk_mappings = {
 		R = {'<cmd>lua vim.lsp.buf.references()<CR>', 'references'},
 	},
 
+	n = {
+		name = "+neovim",
+
+		a = {':set nrformats+=alpha<CR>', 'alpha+'},
+		A = {':set nrformats-=alpha<CR>', 'alpha-'},
+		e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
+		i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
+		k = {':tabnew<CR>:e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'keymappings'},
+		l = {':w<CR>:luafile %<CR>',  'lua source'},
+		n = {':tabnew<CR>:e ~/.config/nvim/lua/config/neorg/init.lua<CR>', 'neorg'},
+		p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
+		P = {':e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
+		s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
+		w = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
+		W = {':luafile ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey source'},
+		v = {':w<CR>:source %<CR>',  'vim source'},
+	},
+
 	s = {
 		name = "+sql",
 
@@ -334,6 +304,16 @@ wk_mappings = {
 		w = {':VimtexCountWords<CR>', 'words'},
 		z = {':VimtexView<CR>', 'zathura'},
 	},
+
+	u = {
+		name = "+undotree",
+
+		f = {':UndotreeFocus<CR>', 'focus'},
+		h = {':UndotreeHide<CR>', 'hide'},
+		s = {':UndotreeShow<CR>', 'show'},
+		t = {':UndotreeToggle<CR>', 'toggle'},
+	},
+
 }
 
 wk_settings.register(wk_mappings, wk_opts)
