@@ -28,9 +28,6 @@ vim.cmd([[
 	 au BufNewFile,BufRead *.sql iab constraint CONSTRAINT
 	 au BufNewFile,BufRead *.sql iab create CREATE
 	 au BufNewFile,BufRead *.sql iab cross CROSS
-	 au BufNewFile,BufRead *.sql iab current_date CURRENT_DATE
-	 au BufNewFile,BufRead *.sql iab current_time CURRENT_TIME
-	 au BufNewFile,BufRead *.sql iab current_timestamp CURRENT_TIMESTAMP
 	 au BufNewFile,BufRead *.sql iab database DATABASE
 	 au BufNewFile,BufRead *.sql iab decimal DECIMAL
 	 au BufNewFile,BufRead *.sql iab default DEFAULT
