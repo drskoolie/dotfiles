@@ -12,4 +12,10 @@ let g:vimtex_toc_config = {
       \ 'show_numbers' : 1,
       \ 'mode' : 1,
       \}
+
+augroup tex_settings
+    autocmd!
+    autocmd BufRead,BufNewFile *.tex set textwidth=110 | set fo=tc | set spell
+augroup END
+
 ]])

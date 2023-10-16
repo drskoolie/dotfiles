@@ -127,4 +127,4 @@ cmd trash ${{
     set +f
 }}
 
-map d trash
+map D trash
