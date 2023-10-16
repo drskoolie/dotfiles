@@ -36,8 +36,6 @@ keymap("v", "p", '"_dP', opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
-vim.cmd([[set cmdheight=0]])
-
 -- +--------+
 -- | Resize |
 -- +--------+
