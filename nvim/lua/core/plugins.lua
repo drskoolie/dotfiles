@@ -93,6 +93,11 @@ return require('packer').startup(function()
   use 'lervag/vimtex'
 
   -- +-----+
+  -- | llm |
+  -- +-----+
+  use 'david-kunz/gen.nvim'
+
+  -- +-----+
   -- | lsp |
   -- +-----+
   use 'neovim/nvim-lspconfig'
