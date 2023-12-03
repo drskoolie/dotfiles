@@ -1,0 +1,37 @@
+# further unsetting:
+scroll_right 
+scroll_left 
+scroll_up 
+scroll_down 
+# custom key mapping:
+# scroll_up Up j
+# scroll_down Down k
+# scroll_left Left h
+# scroll_right Right l
+
+# Move to the next and previous image
+next_img
+prev_img
+next_img        j
+prev_img        k
+
+# Zoom
+zoom_in 
+zoom_out 
+zoom_in     a
+zoom_out    s
+
+
+# Quit feh
+quit        q
+
+# Rotate
+rotate_left     h
+rotate_right    l
+
+# Toggle fullscreen
+fullscreen  f
+
+# Jump to the start/end of the file list
+jump_first x
+jump_last  X
