@@ -23,6 +23,7 @@ require('config/vimtex')
 
 -- ==> Languages
 require('languages/sqlite')
+require('languages/markdown')
 
 -- ==> LSP
 require('config/lsp')
