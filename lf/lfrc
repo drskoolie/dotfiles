@@ -11,11 +11,11 @@ map gi cd ~/dotfiles/i3/files/
 map gl cd ~/dotfiles/lf/
 map gm cd ~/media/
 map gn cd ~/dotfiles/nvim/
-map gp cd ~/phd/
+map go cd /mnt/c/Users/Al\ El-Hag/Onedrive\ -\ BoltonSmith\ Inc/Documents
 map gr cd ~/phd/reports/
 map gR cd ~/phd/reports/journals/minimum-life-remaining/tex/
 map gs cd ~/media/screenshots/
-map gw cd ~/media/downloads/
+map gw cd /var/www/dokuwiki/data/gitrepo/wiki/
 map gz cd ~/dotfiles/zsh
 
 

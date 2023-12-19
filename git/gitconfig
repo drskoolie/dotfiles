@@ -148,3 +148,5 @@
 	name = Al-Baraa El-Hag
 [interactive]
 	diffFilter = diff-so-fancy --patch
+[safe]
+	directory = /var/www/dokuwiki/data
