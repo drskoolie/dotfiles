@@ -13,7 +13,7 @@ keyboard.keymap = [
 	KC.TAB, KC.A, KC. S, KC.D, KC.F, KC.T, KC.HOME,
 	KC.EQUAL, KC.Q, KC.W, KC.E, KC.R, KC.N5, KC.N4,
 	KC.NO, KC.N1, KC.N2, KC.N3, KC.NO, KC.N4, KC.LGUI,
-	KC.NO, KC.N3, KC.N4, KC.N5, KC.N6, KC.N7 ,KC.BSPACE
+	KC.NO, KC.N3, KC.N4, KC.N5, KC.N6, KC.N7 ,KC.BSPACE,
 	]
 ] 
 
