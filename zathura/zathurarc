@@ -20,3 +20,10 @@ set highlight-active-color "#ff00ff"
 set highlight-color "#ffff00"
 set highlight-fg "#ffffff"
 # set highlight-transparency 0
+
+# Disable mouse text selection
+set selection-clipboard clipboard
+
+# Enable mouse dragging for scrolling
+set synctex true
+
