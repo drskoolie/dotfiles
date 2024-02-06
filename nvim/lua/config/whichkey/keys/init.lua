@@ -207,6 +207,7 @@ wk_mappings = {
         l = {':norm ^"+y$<CR>:TmuxPaste<CR>',          'send line'},
         m = {[[:norm mm<CR>:norm "+ym<CR>:lua tmux_send('\\%paste', 'vim_cmd')<CR>:norm 'm<CR>]],           'matlab'},
 		o = {tmux_send('ipython --no-autoindent'), 'open'},
+		O = {tmux_send('powershell.exe ipython --no-autoindent'), 'open powershell'},
         p = {':TmuxPaste<CR>',    'paste'},
 		P = {'"+y:TmuxPaste<CR>', 'visual', mode='v'},
         r = {tmux_send('reset -f'), 'reset'},

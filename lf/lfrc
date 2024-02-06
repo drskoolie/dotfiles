@@ -1,6 +1,7 @@
 # +------------------+
 # | Change Directory |
 # +------------------+
+map ga cd ~/enkompass/altizations/
 map gb cd ~/github/books/
 map gd cd ~/dotfiles/
 map ge cd ~/enkompass/projects/unfinished/
