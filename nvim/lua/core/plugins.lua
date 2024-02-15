@@ -98,6 +98,11 @@ return require('packer').startup(function()
   -- +-----+
   use 'david-kunz/gen.nvim'
 
+  -- +------+
+  -- | lint |
+  -- +------+
+  use 'mfussenegger/nvim-lint'
+
   -- +-----+
   -- | lsp |
   -- +-----+

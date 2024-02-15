@@ -77,15 +77,6 @@ wk_mappings = {
 		},
 
 
-		p = {
-			name = "+packer",
-
-			c = {':PackerClean<CR>', 'clean'},
-			i = {':PackerInstall<CR>', 'install'},
-			s = {':PackerSync<CR>', 'sync'},
-			u = {':PackerUpdate<CR>', 'update'},
-		},
-
 		s = {
 			name = "+spell",
 
@@ -250,13 +241,22 @@ wk_mappings = {
 	n = {
 		name = "+neovim",
 
+
+		I = {
+			name = "+packer",
+
+			c = {':PackerClean<CR>', 'clean'},
+			i = {':PackerInstall<CR>', 'install'},
+			s = {':PackerSync<CR>', 'sync'},
+			u = {':PackerUpdate<CR>', 'update'},
+		},
+
 		a = {':set nrformats+=alpha<CR>', 'alpha+'},
 		A = {':set nrformats-=alpha<CR>', 'alpha-'},
 		e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
 		i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
 		k = {':tabnew<CR>:e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'keymappings'},
 		l = {':w<CR>:luafile %<CR>',  'lua source'},
-		n = {':tabnew<CR>:e ~/.config/nvim/lua/config/neorg/init.lua<CR>', 'neorg'},
 		p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 		P = {':e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 		s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
