@@ -9,8 +9,8 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 )
 
 vim.cmd([[
-autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
-autocmd Filetype c setlocal omnifunc=v:lua.vim.lsp.omnifunc
+	autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
+	autocmd Filetype c setlocal omnifunc=v:lua.vim.lsp.omnifunc
 ]])
 
 -- set omnifunc=v:lua.vim.lsp.omnifunc
