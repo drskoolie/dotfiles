@@ -58,7 +58,7 @@
 	met = mergetool
 
 	pu = push
-	pudo = push --delete origin
+	puod = push origin --delete 
 	puuom = push -u origin main
 	puuo = push -u origin
 	puot = !git push origin $(git describe --tags --abbrev=0)
