@@ -1,16 +1,14 @@
 local lspconfig = require('lspconfig')
-require'lspconfig'.pyright.setup{}
-require'lspconfig'.ccls.setup{}
 
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-    vim.lsp.diagnostic.on_publish_diagnostics, {
-        virtual_text = false
-    }
-)
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "python",
+    callback = function()
 
-vim.cmd([[
-	autocmd Filetype python setlocal omnifunc=v:lua.vim.lsp.omnifunc
-	autocmd Filetype c setlocal omnifunc=v:lua.vim.lsp.omnifunc
-]])
+        lspconfig.pyright.setup{}
+		lspconfig.ruff_lsp.setup{
+			cmd = {"ruff-lsp"},
+		}
 
--- set omnifunc=v:lua.vim.lsp.omnifunc
+		-- require'lspconfig'.ccls.setup{}
+    end,
+})

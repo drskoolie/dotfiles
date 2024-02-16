@@ -15,4 +15,4 @@ pip install ipython rich numpy matplotlib pandas scikit-learn
 deactivate
 
 pip install pipx
-pipx install ruff
+pipx install ruff ruff-lsp

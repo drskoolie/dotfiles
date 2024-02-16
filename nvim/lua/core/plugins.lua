@@ -101,7 +101,7 @@ return require('packer').startup(function()
   -- +------+
   -- | lint |
   -- +------+
-  use 'mfussenegger/nvim-lint'
+  -- use 'mfussenegger/nvim-lint'
 
   -- +-----+
   -- | lsp |
