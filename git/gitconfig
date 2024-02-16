@@ -6,9 +6,9 @@
 	adi = add -i
 
 	br = branch
-	bra = branch -a
-	brd = branch -d
-	brr = branch -r
+	bra = branch --all
+	brd = branch --delete
+	brr = branch --remotes
 	brv = branch -v
 
 	cl = clone
