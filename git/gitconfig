@@ -6,9 +6,9 @@
 	adi = add -i
 
 	br = branch
-	bra = branch -a
-	brd = branch -d
-	brr = branch -r
+	bra = branch --all
+	brd = branch --delete
+	brr = branch --remotes
 	brv = branch -v
 
 	cl = clone
@@ -58,11 +58,10 @@
 	met = mergetool
 
 	pu = push
-	pudo = push --delete origin
+	puod = push origin --delete 
 	puuom = push -u origin main
-	puo = push origin
+	puuo = push -u origin
 	puot = !git push origin $(git describe --tags --abbrev=0)
-	puso = push --set-upstream origin
 
 	rb = rebase
 

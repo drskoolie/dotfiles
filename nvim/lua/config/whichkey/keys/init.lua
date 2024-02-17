@@ -77,15 +77,6 @@ wk_mappings = {
 		},
 
 
-		p = {
-			name = "+packer",
-
-			c = {':PackerClean<CR>', 'clean'},
-			i = {':PackerInstall<CR>', 'install'},
-			s = {':PackerSync<CR>', 'sync'},
-			u = {':PackerUpdate<CR>', 'update'},
-		},
-
 		s = {
 			name = "+spell",
 
@@ -220,27 +211,27 @@ wk_mappings = {
 			
 	l = {
 		name = "+lsp",
-		-- a = {'<cmd>lua vim.lsp.buf.code_action()<CR>', 'code action', silent = true},
-		-- d = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
-		-- f = {'<cmd>lua vim.lsp.buf.format()<CR>', 'format'},
-		-- I = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
-		-- s = {'<cmd>lua vim.lsp.buf.document_symbol()<CR>', 'symbol'},
-		-- t = {'<cmd>lua vim.lsp.buf.type_definition()<CR>', 'type definition', silent = true},
-		-- v = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
+		a = {'<cmd>lua vim.lsp.buf.code_action()<CR>', 'code action', silent = true},
+		d = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
+		f = {'<cmd>lua vim.lsp.buf.format()<CR>', 'format'},
 		h = {'<cmd>lua vim.lsp.buf.hover()<CR>', 'hover', silent = true},
+		I = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
 		n = {'<cmd>lua vim.diagnostic.goto_next()<CR>', 'next', silent = true},
 		o = {'<cmd>lua vim.diagnostic.open_float()<CR>', 'open_float', silent = true},
 		p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true},
 		r = {'<cmd>lua vim.lsp.buf.rename()<CR>', 'rename'},
+		s = {'<cmd>lua vim.lsp.buf.document_symbol()<CR>', 'symbol'},
+		t = {'<cmd>lua vim.lsp.buf.type_definition()<CR>', 'type definition', silent = true},
+		v = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
 		s = {
 			name ="+settings",
 
 			i = {':LspInfo<CR>', 'info'},
 			l = {':LspLog<CR>', 'log'},
 			o = {':verbose set omnifunc?<CR>', 'omnifunc'},
-			p = {':LspStop ', 'stop'},
-			r = {':LspRestart ', 'restart'},
-			s = {':LspStart ', 'start'},
+			p = {':LspStop <CR>', 'stop'},
+			r = {':LspRestart <CR>', 'restart'},
+			s = {':LspStart <CR>', 'start'},
 		},
 
 
@@ -250,13 +241,22 @@ wk_mappings = {
 	n = {
 		name = "+neovim",
 
+
+		I = {
+			name = "+packer",
+
+			c = {':PackerClean<CR>', 'clean'},
+			i = {':PackerInstall<CR>', 'install'},
+			s = {':PackerSync<CR>', 'sync'},
+			u = {':PackerUpdate<CR>', 'update'},
+		},
+
 		a = {':set nrformats+=alpha<CR>', 'alpha+'},
 		A = {':set nrformats-=alpha<CR>', 'alpha-'},
 		e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
 		i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
 		k = {':tabnew<CR>:e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'keymappings'},
 		l = {':w<CR>:luafile %<CR>',  'lua source'},
-		n = {':tabnew<CR>:e ~/.config/nvim/lua/config/neorg/init.lua<CR>', 'neorg'},
 		p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 		P = {':e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 		s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},

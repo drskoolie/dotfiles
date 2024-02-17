@@ -26,7 +26,9 @@ require('languages/sqlite')
 require('languages/markdown')
 
 -- ==> LSP
-require('config/lsp')
+require('lsp/base')
+require('lsp/lspconfig')
+-- require('lsp/nvim-lint')
 
 -- ==> WhichKey
 require('config/whichkey/config')
