@@ -284,8 +284,14 @@ wk_mappings = {
 			c = {":Telescope git_bcommits<CR>", 'bcommits'},
 			C = {":Telescope git_commits<CR>", 'commits'},
 			f = {":Telescope git_files<CR>", 'files'},
+			h = {":Telescope git_stash<CR>", 'stash'},
+			s = {":Telescope git_status<CR>", 'status'},
 		},
+
+		r = {":Telescope resume<CR>", 'resume'},
+		s = {":Telescope builtin<CR>", 'builtin'},
 		t = {":Telescope treesitter<CR>", 'treesitter'},
+
 	},
 
 	t = {
