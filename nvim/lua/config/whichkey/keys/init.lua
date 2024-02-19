@@ -280,6 +280,7 @@ wk_mappings = {
 		l = {":Telescope live_grep<CR>", 'live_grep'},
 		g = {
 			name = "+git",
+			b = {":Telescope git_bcommits<CR>", 'bcommits'},
 			c = {":Telescope git_commits<CR>", 'commits'},
 			f = {":Telescope git_files<CR>", 'files'},
 		},
