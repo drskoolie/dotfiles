@@ -93,11 +93,6 @@ return require('packer').startup(function()
   -- +-------+
   use 'lervag/vimtex'
 
-  -- +-----+
-  -- | llm |
-  -- +-----+
-  use 'david-kunz/gen.nvim'
-
   -- +------+
   -- | lint |
   -- +------+
@@ -119,6 +114,7 @@ return require('packer').startup(function()
       "iamcco/markdown-preview.nvim",
       run = function() vim.fn["mkdp#util#install"]() end,
   })
+
 
   -- +-------+
   -- | pulse |
@@ -144,21 +140,24 @@ return require('packer').startup(function()
   }
 
   use ('nvim-treesitter/playground')
-  
   use 'p00f/nvim-ts-rainbow'
 
   -- +--------+
   -- | useful |
   -- +--------+
-  use "godlygeek/tabular"
   use "mbbill/undotree"
   use "romainl/vim-cool" -- hl-search fix
   use "tpope/vim-eunuch"
 
-  -- +-----+
-  -- | vim |
-  -- +-----+
+  -- +----+
+  -- | ui |
+  -- +----+
+  use "rcarriga/nvim-notify"
   use 'psliwka/vim-smoothie'
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.5',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
   -- +----------+
   -- | whichkey |
@@ -166,23 +165,3 @@ return require('packer').startup(function()
   use 'folke/which-key.nvim'
 
 end)
-
--- ToDo
-  -- +----------+
-  -- | leetcode |
-  -- +----------+
-  --	use({
-  --    "kawre/leetcode.nvim",
-  --    build = ":TSUpdate html",
-  --    dependencies = {
-  --        "nvim-treesitter/nvim-treesitter",
-  --        "nvim-telescope/telescope.nvim",
-  --        "nvim-lua/plenary.nvim", -- required by telescope
-  --        "MunifTanjim/nui.nvim",
-  --
-  --        -- optional
-  --        "rcarriga/nvim-notify",
-  --        "nvim-tree/nvim-web-devicons",
-  --    }})
-
---
