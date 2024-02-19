@@ -1,5 +1,17 @@
 require("mason").setup()
-require("mason-lspconfig").setup()
+
+require("mason-lspconfig").setup {
+	ensure_installed = {
+		"clangd",
+		"cmake",
+		"html",
+		"jsonls",
+		"pyright",
+		"ruff_lsp",
+		"vimls",
+		"hydra_lsp",
+	},
+}
 
 local lspconfig = require('lspconfig')
 lspconfig.pyright.setup{}
