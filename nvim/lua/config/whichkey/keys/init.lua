@@ -247,7 +247,7 @@ wk_mappings = {
 		name = "+neovim",
 
 
-		I = {
+		p = {
 			name = "+packer",
 
 			c = {':PackerClean<CR>', 'clean'},
@@ -255,18 +255,20 @@ wk_mappings = {
 			s = {':PackerSync<CR>', 'sync'},
 			u = {':PackerUpdate<CR>', 'update'},
 		},
+		
+		o = {
+			name = "+open",
+
+			i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
+			p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
+			w = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
+			W = {':luafile ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey source'},
+		},
 
 		a = {':set nrformats+=alpha<CR>', 'alpha+'},
 		A = {':set nrformats-=alpha<CR>', 'alpha-'},
 		e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
-		i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
-		k = {':tabnew<CR>:e ~/.config/nvim/lua/core/keymappings.lua<CR>',  'keymappings'},
 		l = {':w<CR>:luafile %<CR>',  'lua source'},
-		p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
-		P = {':e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
-		s = {':tabnew<CR>:e ~/.config/nvim/lua/config/sorcery/init.lua<CR>', 'sorcery'},
-		w = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
-		W = {':luafile ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey source'},
 		v = {':w<CR>:source %<CR>',  'vim source'},
 	},
 
