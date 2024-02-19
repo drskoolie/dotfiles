@@ -273,14 +273,9 @@ wk_mappings = {
 	},
 
 	s = {
-		name = "+sql",
+		name = "+teleScope",
 
-		c = {tmux_send('.shell clear'), 'clear'},
-		d = {tmux_send('.databases'), 'databases'},
-		f = {tmux_send('.read %:p'), 'file'},
-		o = {tmux_send('sqlite3 test.db'), 'open'},
-		t = {tmux_send('.tables'), 'tables'},
-
+		c = {":Telescope find_files<CR>", 'find files'},
 	},
 
 	t = {
