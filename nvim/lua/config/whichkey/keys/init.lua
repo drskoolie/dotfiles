@@ -273,9 +273,11 @@ wk_mappings = {
 	},
 
 	s = {
-		name = "+teleScope",
+		name = "+telescope",
 
-		c = {":Telescope find_files<CR>", 'find files'},
+		f = {":Telescope find_files<CR>", 'find files'},
+		g = {":Telescope live_grep<CR>", 'live_grep'},
+
 	},
 
 	t = {
