@@ -19,7 +19,6 @@ require('config/nvim-neo-tree')
 require('config/nvim-notify')
 require('config/nvim-treesitter')
 require('config/sorcery')
-require('config/tabular')
 require('config/telescope')
 require('config/vimtex')
 

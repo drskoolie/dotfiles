@@ -275,9 +275,15 @@ wk_mappings = {
 	s = {
 		name = "+telescope",
 
+		b = {":Telescope current_buffer_fuzzy_find<CR>", "buffer"},
 		f = {":Telescope find_files<CR>", 'find files'},
-		g = {":Telescope live_grep<CR>", 'live_grep'},
-
+		l = {":Telescope live_grep<CR>", 'live_grep'},
+		g = {
+			name = "+git",
+			c = {":Telescope git_commits<CR>", 'commits'},
+			f = {":Telescope git_files<CR>", 'files'},
+		},
+		t = {":Telescope treesitter<CR>", 'treesitter'},
 	},
 
 	t = {
