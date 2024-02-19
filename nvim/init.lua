@@ -28,6 +28,7 @@ require('languages/markdown')
 -- ==> LSP
 require('lsp/base')
 require('lsp/lspconfig')
+require('lsp/mason')
 -- require('lsp/nvim-lint')
 
 -- ==> WhichKey

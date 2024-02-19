@@ -107,6 +107,7 @@ return require('packer').startup(function()
   -- | lsp |
   -- +-----+
   use 'neovim/nvim-lspconfig'
+  use 'williamboman/mason.nvim'
   
   -- +----------+
   -- | markdown |

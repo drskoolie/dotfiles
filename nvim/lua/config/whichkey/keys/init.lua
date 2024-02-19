@@ -216,6 +216,12 @@ wk_mappings = {
 		f = {'<cmd>lua vim.lsp.buf.format()<CR>', 'format'},
 		h = {'<cmd>lua vim.lsp.buf.hover()<CR>', 'hover', silent = true},
 		I = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
+		m = {
+			name = "+mason",
+			l = {':MasonLog<CR>', 'Log'},
+			m = {':Mason<CR>', 'Mason'},
+			u = {':MasonUpdate<CR>', 'Update'},
+		},
 		n = {'<cmd>lua vim.diagnostic.goto_next()<CR>', 'next', silent = true},
 		o = {'<cmd>lua vim.diagnostic.open_float()<CR>', 'open_float', silent = true},
 		p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true},
