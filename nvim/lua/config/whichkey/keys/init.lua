@@ -275,10 +275,16 @@ wk_mappings = {
 	s = {
 		name = "+telescope",
 
-		b = {":Telescope current_buffer_fuzzy_find<CR>", "buffer"},
 		c = {":Telescope commands<CR>", "commands"},
-		f = {":Telescope find_files<CR>", 'find files'},
-		l = {":Telescope live_grep<CR>", 'live_grep'},
+		f = {
+			name = "+files",
+
+			b = {":Telescope current_buffer_fuzzy_find<CR>", "buffer"},
+			f = {":Telescope find_files<CR>", 'find files'},
+			g = {":Telescope live_grep<CR>", 'live_grep'},
+			t = {":Telescope treesitter<CR>", 'treesitter'},
+		},
+
 		g = {
 			name = "+git",
 			b = {":Telescope git_branches<CR>", 'branches'},
@@ -289,10 +295,9 @@ wk_mappings = {
 			s = {":Telescope git_status<CR>", 'status'},
 		},
 
+		h = {":Telescope command_history<CR>", 'history'},
 		r = {":Telescope resume<CR>", 'resume'},
 		s = {":Telescope builtin<CR>", 'builtin'},
-		t = {":Telescope treesitter<CR>", 'treesitter'},
-		q = {":Telescope command_history<CR>", 'history'},
 
 	},
 
