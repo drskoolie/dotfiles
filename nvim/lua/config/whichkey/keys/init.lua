@@ -276,6 +276,7 @@ wk_mappings = {
 		name = "+telescope",
 
 		b = {":Telescope current_buffer_fuzzy_find<CR>", "buffer"},
+		c = {":Telescope commands<CR>", "commands"},
 		f = {":Telescope find_files<CR>", 'find files'},
 		l = {":Telescope live_grep<CR>", 'live_grep'},
 		g = {
@@ -291,6 +292,7 @@ wk_mappings = {
 		r = {":Telescope resume<CR>", 'resume'},
 		s = {":Telescope builtin<CR>", 'builtin'},
 		t = {":Telescope treesitter<CR>", 'treesitter'},
+		q = {":Telescope command_history<CR>", 'history'},
 
 	},
 
