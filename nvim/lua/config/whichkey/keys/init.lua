@@ -275,6 +275,8 @@ wk_mappings = {
 	s = {
 		name = "+telescope",
 
+		b = {":Telescope builtin<CR>", 'builtin'},
+		B = {":Telescope buffers<CR>", 'buffers'},
 		c = {":Telescope commands<CR>", "commands"},
 		f = {
 			name = "+files",
@@ -295,11 +297,30 @@ wk_mappings = {
 			s = {":Telescope git_status<CR>", 'status'},
 		},
 
+		l = {
+			name = "lsp",
+			d = {":Telescope lsp_definitions<CR>", 'r'},
+			D = {":Telescope lsp_dynamic_workspace_symbols<CR>", 'r'},
+			i = {":Telescope lsp_implementations<CR>", 'r'},
+			I = {":Telescope lsp_incoming_calls<CR>", 'r'},
+			O = {":Telescope lsp_outgoing_calls<CR>", 'r'},
+			r = {":Telescope lsp_references<CR>", 'r'},
+			t = {":Telescope lsp_type_definitions<CR>", 'r'},
+			s = {
+				name = "symobls",
+
+				d = {":Telescope lsp_document_symbols<CR>", 'r'},
+				w = {":Telescope lsp_workspace_symbols<CR>", 'r'},
+			},
+	    },
+
 		h = {":Telescope command_history<CR>", 'history'},
 		r = {":Telescope resume<CR>", 'resume'},
-		s = {":Telescope builtin<CR>", 'builtin'},
+		s = {":Telescope search_history<CR>", 'search_history'},
 
 	},
+
+
 
 	t = {
 		name = "+tmux",
