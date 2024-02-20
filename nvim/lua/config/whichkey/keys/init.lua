@@ -260,6 +260,7 @@ wk_mappings = {
 				o = {":Telescope lsp_outgoing_calls<CR>", 'outgoing'},
 			},
 			d = {":Telescope lsp_definitions<CR>", 'definitions'},
+			D = {":Telescope diagnostics<CR>", 'diagnostics'},
 			i = {":Telescope lsp_implementations<CR>", 'implementations'},
 			r = {":Telescope lsp_references<CR>", 'references'},
 			t = {":Telescope lsp_type_definitions<CR>", 'type'},
@@ -322,9 +323,7 @@ wk_mappings = {
 		h = {":Telescope command_history<CR>", 'history'},
 		r = {":Telescope resume<CR>", 'resume'},
 		s = {":Telescope search_history<CR>", 'search_history'},
-
 	},
-
 
 
 	t = {
