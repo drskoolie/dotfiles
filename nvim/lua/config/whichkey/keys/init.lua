@@ -149,6 +149,8 @@ wk_mappings = {
 
 			a = {':Git log --all --decorate --oneline --graph<CR>', 'all'},
 		},
+
+
 		h = {
 			name = "+hunks",
 
@@ -173,7 +175,7 @@ wk_mappings = {
 			b = {':Gitsigns stage_buffer<CR>', 'buffer'},
 			h = {':Gitsigns stage_hunk<CR>', 'hunk'},
 		},
-		t = {
+		T = {
 			name = "+toggle",
 
 			a = {':Gitsigns toggle_linehl<CR>', 'added'},
@@ -182,6 +184,17 @@ wk_mappings = {
 			n = {':Gitsigns toggle_numhl<CR>', 'numbers'},
 			w = {':Gitsigns toggle_word_diff<CR>', 'word_diff'},
 		},
+
+		t = {
+			name = "+telescope",
+			b = {":Telescope git_branches<CR>", 'branches'},
+			c = {":Telescope git_bcommits<CR>", 'bcommits'},
+			C = {":Telescope git_commits<CR>", 'commits'},
+			f = {":Telescope git_files<CR>", 'files'},
+			h = {":Telescope git_stash<CR>", 'stash'},
+			s = {":Telescope git_status<CR>", 'status'},
+		},
+
 	},
 
 	i = {
@@ -238,7 +251,27 @@ wk_mappings = {
 		p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true},
 		r = {'<cmd>lua vim.lsp.buf.rename()<CR>', 'rename'},
 		s = {'<cmd>lua vim.lsp.buf.document_symbol()<CR>', 'symbol'},
-		t = {'<cmd>lua vim.lsp.buf.type_definition()<CR>', 'type definition', silent = true},
+		T = {'<cmd>lua vim.lsp.buf.type_definition()<CR>', 'type definition', silent = true},
+		t = {
+			name = "+telescope",
+			c = {
+				name = "calls",
+				i = {":Telescope lsp_incoming_calls<CR>", 'incoming'},
+				o = {":Telescope lsp_outgoing_calls<CR>", 'outgoing'},
+			},
+			d = {":Telescope lsp_definitions<CR>", 'definitions'},
+			i = {":Telescope lsp_implementations<CR>", 'implementations'},
+			r = {":Telescope lsp_references<CR>", 'references'},
+			t = {":Telescope lsp_type_definitions<CR>", 'type'},
+			s = {
+				name = "symobls",
+
+				d = {":Telescope lsp_document_symbols<CR>", 'document'},
+				w = {":Telescope lsp_workspace_symbols<CR>", 'workspace'},
+				W = {":Telescope lsp_dynamic_workspace_symbols<CR>", 'dynamic'},
+			},
+	    },
+
 		v = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
 		R = {'<cmd>lua vim.lsp.buf.references()<CR>', 'references'},
 	},
@@ -286,37 +319,6 @@ wk_mappings = {
 			g = {":Telescope live_grep<CR>", 'live_grep'},
 			t = {":Telescope treesitter<CR>", 'treesitter'},
 		},
-
-		g = {
-			name = "+git",
-			b = {":Telescope git_branches<CR>", 'branches'},
-			c = {":Telescope git_bcommits<CR>", 'bcommits'},
-			C = {":Telescope git_commits<CR>", 'commits'},
-			f = {":Telescope git_files<CR>", 'files'},
-			h = {":Telescope git_stash<CR>", 'stash'},
-			s = {":Telescope git_status<CR>", 'status'},
-		},
-
-		l = {
-			name = "lsp",
-			c = {
-				name = "calls",
-				i = {":Telescope lsp_incoming_calls<CR>", 'incoming'},
-				o = {":Telescope lsp_outgoing_calls<CR>", 'outgoing'},
-			},
-			d = {":Telescope lsp_definitions<CR>", 'definitions'},
-			i = {":Telescope lsp_implementations<CR>", 'implementations'},
-			r = {":Telescope lsp_references<CR>", 'references'},
-			t = {":Telescope lsp_type_definitions<CR>", 'type'},
-			s = {
-				name = "symobls",
-
-				d = {":Telescope lsp_document_symbols<CR>", 'document'},
-				w = {":Telescope lsp_workspace_symbols<CR>", 'workspace'},
-				W = {":Telescope lsp_dynamic_workspace_symbols<CR>", 'dynamic'},
-			},
-	    },
-
 		h = {":Telescope command_history<CR>", 'history'},
 		r = {":Telescope resume<CR>", 'resume'},
 		s = {":Telescope search_history<CR>", 'search_history'},
