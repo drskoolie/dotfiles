@@ -299,18 +299,21 @@ wk_mappings = {
 
 		l = {
 			name = "lsp",
-			d = {":Telescope lsp_definitions<CR>", 'r'},
-			D = {":Telescope lsp_dynamic_workspace_symbols<CR>", 'r'},
-			i = {":Telescope lsp_implementations<CR>", 'r'},
-			I = {":Telescope lsp_incoming_calls<CR>", 'r'},
-			O = {":Telescope lsp_outgoing_calls<CR>", 'r'},
-			r = {":Telescope lsp_references<CR>", 'r'},
-			t = {":Telescope lsp_type_definitions<CR>", 'r'},
+			c = {
+				name = "calls",
+				i = {":Telescope lsp_incoming_calls<CR>", 'incoming'},
+				o = {":Telescope lsp_outgoing_calls<CR>", 'outgoing'},
+			},
+			d = {":Telescope lsp_definitions<CR>", 'definitions'},
+			i = {":Telescope lsp_implementations<CR>", 'implementations'},
+			r = {":Telescope lsp_references<CR>", 'references'},
+			t = {":Telescope lsp_type_definitions<CR>", 'type'},
 			s = {
 				name = "symobls",
 
-				d = {":Telescope lsp_document_symbols<CR>", 'r'},
-				w = {":Telescope lsp_workspace_symbols<CR>", 'r'},
+				d = {":Telescope lsp_document_symbols<CR>", 'document'},
+				w = {":Telescope lsp_workspace_symbols<CR>", 'workspace'},
+				W = {":Telescope lsp_dynamic_workspace_symbols<CR>", 'dynamic'},
 			},
 	    },
 
