@@ -149,3 +149,7 @@
 	diffFilter = diff-so-fancy --patch
 [safe]
 	directory = /var/www/dokuwiki/data
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
