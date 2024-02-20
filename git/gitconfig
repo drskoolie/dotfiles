@@ -79,10 +79,10 @@
 	rss = restore --staged
 	rssa = restore --staged .
 
-	sa = stash
-	sal = stash list
-	sap = stash pop
-	sas = stash show
+	sh = stash
+	shl = stash list
+	shp = stash pop
+	shs = stash show
 
 	sh = show
 
@@ -136,12 +136,10 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [init]
 	defaultBranch = main
-[mergetool "nvim"]
-  cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
 [merge]
-  tool = nvim
-[mergetool]
-  prompt = false
+  tool = vimdiff
+[mergetool  "vimdiff"]
+  path = nvim
 [user]
 	email = a.elhag01@gmail.com
 	name = Al-Baraa El-Hag
