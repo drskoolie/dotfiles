@@ -10,6 +10,7 @@ require("mason-lspconfig").setup {
 		"ruff_lsp",
 		"vimls",
 		"hydra_lsp",
+		"typst_lsp",
 	},
 }
 
@@ -18,4 +19,9 @@ lspconfig.pyright.setup{}
 lspconfig.ruff_lsp.setup{
 	cmd = {"ruff-lsp"},
 	root_dir = lspconfig.util.root_pattern(".git", "setup.py", "pyproject.toml", ".ruff-lsp.toml", "."),
+}
+lspconfig.typst_lsp.setup{
+	settings = {
+		exportPdf = "onSave" -- Choose onType, onSave or never.
+	}
 }

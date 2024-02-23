@@ -294,6 +294,7 @@ wk_mappings = {
 			name = "+open",
 
 			i = {':tabnew<CR>:e ~/.config/nvim/init.lua<CR>',  'init'},
+			m = {':tabnew<CR>:e ~/.config/nvim/lua/lsp/mason/init.lua<CR>',  'init'},
 			p = {':tabnew<CR>:e ~/.config/nvim/lua/core/plugins.lua<CR>',  'plugins'},
 			w = {':tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey'},
 			W = {':luafile ~/dotfiles/nvim/lua/config/whichkey/keys/init.lua<CR>',  'whichkey source'},
