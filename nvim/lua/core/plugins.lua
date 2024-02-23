@@ -115,6 +115,8 @@ return require('packer').startup(function()
       run = function() vim.fn["mkdp#util#install"]() end,
   })
 
+  -- typst
+  use {'kaarmu/typst.vim', ft = {'typst'}}
 
   -- +-------+
   -- | pulse |
