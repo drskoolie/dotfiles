@@ -58,11 +58,10 @@
 
 	pu = push
 	puod = push origin --delete 
-	puuom = push -u origin main
 	puuo = push -u origin
 	puuob = "!f() { \
 		CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD); \
-		git branch --set-upstream-to=origin/$CURRENT_BRANCH $CURRENT_BRANCH; \
+		git push --set-upstream origin $CURRENT_BRANCH; \
 	}; f"
 	puot = !git push origin $(git describe --tags --abbrev=0)
 
