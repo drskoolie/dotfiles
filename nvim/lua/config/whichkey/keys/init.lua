@@ -92,6 +92,7 @@ wk_mappings = {
 	b = {
 		name = "+buffers",
 
+		s = {":Telescope buffers<CR>", 'buffers'},
 		c = {':cd %:p:h<CR>', 'cd'},
 		m = {':tabm +1<CR>',    'tab mov +1'},
 		M = {':tabm -1<CR>',    'tab mov -1'},
@@ -311,7 +312,6 @@ wk_mappings = {
 		name = "+telescope",
 
 		b = {":Telescope builtin<CR>", 'builtin'},
-		B = {":Telescope buffers<CR>", 'buffers'},
 		c = {":Telescope commands<CR>", "commands"},
 		f = {
 			name = "+files",
