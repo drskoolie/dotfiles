@@ -60,6 +60,10 @@
 	puod = push origin --delete 
 	puuom = push -u origin main
 	puuo = push -u origin
+	puuob = "!f() { \
+		CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD); \
+		git branch --set-upstream-to=origin/$CURRENT_BRANCH $CURRENT_BRANCH; \
+	}; f"
 	puot = !git push origin $(git describe --tags --abbrev=0)
 
 	rb = rebase
@@ -73,15 +77,10 @@
 	rmsd = remote set-url origin git@github.com:drskoolie/dotfiles.git
 	rmv = remote -v
 
-	rs = restore
-	rsa = restore .
-	rss = restore --staged
-	rssa = restore --staged .
-
-	sh = stash
-	shl = stash list
-	shp = stash pop
-	shs = stash show
+	sa = stash
+	sal = stash list
+	sap = stash pop
+	sas = stash show
 
 	sh = show
 
