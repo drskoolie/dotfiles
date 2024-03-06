@@ -366,6 +366,8 @@ wk_mappings = {
 		t = {':UndotreeToggle<CR>', 'toggle'},
 	},
 
+	q = {':cclose<CR>', 'quit quickfix'},
+
 }
 
 wk_settings.register(wk_mappings, wk_opts)
