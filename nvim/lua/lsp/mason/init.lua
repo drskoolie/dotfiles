@@ -22,6 +22,6 @@ lspconfig.ruff_lsp.setup{
 }
 lspconfig.typst_lsp.setup{
 	settings = {
-		exportPdf = "onSave" -- Choose onType, onSave or never.
+		exportPdf = "never" -- Choose onType, onSave or never.
 	}
 }
