@@ -1,3 +1,7 @@
+if [ "$(hostname)" = "drskoolie5mon" ]; then
+    alias bat='batcat'
+fi
+
 # +-------+
 # | trash |
 # +-------+
