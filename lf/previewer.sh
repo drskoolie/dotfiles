@@ -1,5 +1,16 @@
 #!/bin/sh
 
+HOSTNAME=$(hostname)
+
+# Decide whether to use bat or batcat based on the hostname
+if [ "$HOSTNAME" = "drskoolie5mon" ]; then
+    BATCMD="batcat"
+else
+    # Default command if neither hostname matches
+    BATCMD="bat"
+fi
+
+
 case "$1" in
     *.tar*) tar tf "$1";;
     *.zip) unzip -l "$1";;
@@ -15,5 +26,5 @@ case "$1" in
 
     *.ipynb) rich -h 50 --force-terminal --no-wrap --theme dracula "$1" ;;
 
-    *) bat -n --color always "$1" ;;
+    *) $BATCMD -n --color always "$1" ;;
 esac
