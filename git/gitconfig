@@ -58,7 +58,7 @@
 
 	pu = push
 	puod = push origin --delete 
-	puuo = push -u origin
+	puuo = push --set-upstream origin
 	puuob = "!f() { \
 		CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD); \
 		git push --set-upstream origin $CURRENT_BRANCH; \
