@@ -29,7 +29,6 @@ require('languages/markdown')
 -- ==> LSP
 require('lsp/base')
 require('lsp/mason')
--- require('lsp/nvim-lint')
 
 -- ==> WhichKey
 require('config/whichkey/config')

@@ -93,11 +93,6 @@ return require('packer').startup(function()
   -- +-------+
   use 'lervag/vimtex'
 
-  -- +------+
-  -- | lint |
-  -- +------+
-  -- use 'mfussenegger/nvim-lint'
-
   -- +-----+
   -- | lsp |
   -- +-----+
