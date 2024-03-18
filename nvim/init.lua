@@ -17,7 +17,6 @@ require('config/lualine')
 require('config/nvim-colorizer')
 require('config/nvim-neo-tree')
 require('config/nvim-notify')
-require('config/nvim-treesitter')
 require('config/sorcery')
 require('config/telescope')
 require('config/vimtex')
@@ -29,6 +28,7 @@ require('languages/markdown')
 -- ==> LSP
 require('lsp/base')
 require('lsp/mason')
+require('lsp/treesitter')
 
 -- ==> WhichKey
 require('config/whichkey/config')
