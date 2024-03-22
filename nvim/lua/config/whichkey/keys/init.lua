@@ -127,12 +127,8 @@ wk_mappings = {
 		n = {tmux_send('n'), 'next'},
 		q = {tmux_send('q'), 'quit'},
 		p = {tmux_send('\\%debug'), '%debug'},
-		P = {tmux_send('pytest %:p'), 'pytest file'},
 		s = {tmux_send('s'), 'step'},
 		S = {tmux_send('sticky'), 'sticky'},
-		t = {tmux_send('pytest'), 'pytest'},
-		T = {tmux_send('pytest --pdb --pdbcls=IPython.terminal.debugger:TerminalPdb'), 'pytest debug'},
-		f = {tmux_send('run %:p'), 'file'},
 		u = {tmux_send('u'), 'up'},
 		w = {tmux_send('w'), 'where'},
 	},
@@ -212,8 +208,7 @@ wk_mappings = {
 		P = {'"+y:TmuxPaste<CR>', 'visual', mode='v'},
         r = {tmux_send('reset -f'), 'reset'},
         s = {tmux_send('sop'), 'sop'},
-		v = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>ddk0', 'variable'},
-        w = {tmux_send('whos'),     'whos'},
+		v = {'0yt=:TmuxPaste<CR>', 'variable'},
 	},
 			
 	l = {
