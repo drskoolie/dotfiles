@@ -1,5 +1,6 @@
 require("mason").setup()
 
+		-- "pylyzer",
 require("mason-lspconfig").setup {
 	ensure_installed = {
 		"clangd",
@@ -61,6 +62,10 @@ lspconfig.pyright.setup{
     },
 }
 
+-- lspconfig.pylyzer.setup{
+-- 	cmd = {"pylyzer"},
+-- 	root_dir = python_root_pattern,
+-- }
 lspconfig.ruff_lsp.setup{
 	cmd = {"ruff-lsp"},
 	root_dir = python_root_pattern,
