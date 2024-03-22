@@ -1,7 +1,7 @@
 require("mason").setup()
 
-		-- "pylyzer",
 require("mason-lspconfig").setup {
+	PATH = "prepend",
 	ensure_installed = {
 		"clangd",
 		"cmake",
@@ -62,14 +62,11 @@ lspconfig.pyright.setup{
     },
 }
 
--- lspconfig.pylyzer.setup{
--- 	cmd = {"pylyzer"},
--- 	root_dir = python_root_pattern,
--- }
 lspconfig.ruff_lsp.setup{
 	cmd = {"ruff-lsp"},
 	root_dir = python_root_pattern,
 }
+
 lspconfig.typst_lsp.setup{
 	settings = {
 		exportPdf = "never" -- Choose onType, onSave or never.
