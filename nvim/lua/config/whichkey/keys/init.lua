@@ -201,14 +201,9 @@ wk_mappings = {
 	i = {
 		name = "+ipython",
 
-		a = {tmux_send('\\%paste'), 'paste'},
-		b = {':w<CR>:call Black()<CR>', 'black'},
-		c = {tmux_send('pwd'), 'pwd'},
 		d = {tmux_send('dea'), 'dea'},
 		e = {tmux_send('exit'), 'exit'},
 		f = {tmux_send('run %:p'), 'file'},
-		g = {tmux_send('som'), 'venv_ml'},
-		G = {tmux_send('sog'), 'venv_global'},
         l = {':norm ^"+y$<CR>:TmuxPaste<CR>',          'send line'},
         m = {[[:norm mm<CR>:norm "+ym<CR>:lua tmux_send('\\%paste', 'vim_cmd')<CR>:norm 'm<CR>]],           'matlab'},
 		o = {tmux_send('ipython --no-autoindent'), 'open'},
@@ -217,9 +212,7 @@ wk_mappings = {
 		P = {'"+y:TmuxPaste<CR>', 'visual', mode='v'},
         r = {tmux_send('reset -f'), 'reset'},
         s = {tmux_send('sop'), 'sop'},
-		v = {tmux_send('sop'), 'venv'},
-		V = {tmux_send('pip -V'), 'pip -V'},
-		-- v = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>ddk0', 'variable'},
+		v = {'0yeoprint(<ESC>pA)<ESC>:FloatermSend<CR>ddk0', 'variable'},
         w = {tmux_send('whos'),     'whos'},
 	},
 			
