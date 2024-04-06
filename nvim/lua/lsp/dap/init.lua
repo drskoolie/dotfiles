@@ -5,4 +5,5 @@ require("mason-nvim-dap").setup({
 	automatic_setup = true,
 })
 
-require ("lsp/dap/settings/cpptools")
+require("dapui").setup()
+require("lsp/dap/settings/cpptools")
