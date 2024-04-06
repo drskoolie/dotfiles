@@ -118,10 +118,14 @@ wk_mappings = {
 		name = "+debug2",
 
 		b = {'<cmd> lua require("dap").toggle_breakpoint()<CR>', 'breakpoint'},
+		B = {'<cmd> lua require("dap").clear_breakpoint()<CR>', 'clear'},
 		c = {'<cmd> lua require("dap").continue()<CR>', 'continue'},
+		g = {'<cmd> lua require("dap").goto_()<CR>', 'goto'},
 		f = {
 			name = "+frame",
 			d = {'<cmd> lua require("dap").down()<CR>', 'down'},
+			f = {'<cmd> lua require("dap").focus_frame()<CR>', 'focus'},
+			r = {'<cmd> lua require("dap").restart_frame()<CR>', 'restart'},
 			u = {'<cmd> lua require("dap").up()<CR>', 'up'},
 		},
 		r = {'<cmd> lua require("dap").restart()<CR>', 'restart'},
