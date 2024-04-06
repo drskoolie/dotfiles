@@ -28,6 +28,7 @@ require('languages/markdown')
 -- ==> LSP
 require('lsp/base')
 require('lsp/mason')
+require('lsp/dap')
 require('lsp/treesitter')
 
 -- ==> WhichKey
