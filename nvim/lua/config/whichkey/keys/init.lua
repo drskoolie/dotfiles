@@ -118,7 +118,6 @@ wk_mappings = {
 		name = "+debug2",
 
 		b = {'<cmd> lua require("dap").toggle_breakpoint()<CR>', 'breakpoint'},
-		B = {'<cmd> lua require("dap").step_back()<CR>', 'step_back'},
 		c = {'<cmd> lua require("dap").continue()<CR>', 'continue'},
 		f = {
 			name = "+frame",
@@ -128,9 +127,11 @@ wk_mappings = {
 		r = {'<cmd> lua require("dap").restart()<CR>', 'restart'},
 		s = {
 			name = "+step",
-			i = {'<cmd> lua require("dap").step_into()<CR>', 'step_into'},
-			o = {'<cmd> lua require("dap").step_out()<CR>', 'step_out'},
-			v = {'<cmd> lua require("dap").step_over()<CR>', 'step_over'},
+			b = {'<cmd> lua require("dap").step_back()<CR>', 'back'},
+			c = {'<cmd> lua require("dap").run_to_cursor()<CR>', 'run to cursor'},
+			i = {'<cmd> lua require("dap").step_into()<CR>', 'into'},
+			o = {'<cmd> lua require("dap").step_out()<CR>', 'out'},
+			v = {'<cmd> lua require("dap").step_over()<CR>', 'over'},
 		},
 		t = {'<cmd> lua require("dap").terminate()<CR>', 'terminate'},
 		u = {'<cmd> lua require("dapui").toggle()<CR>', 'ui'},
