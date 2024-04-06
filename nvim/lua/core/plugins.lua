@@ -28,6 +28,16 @@ return require('packer').startup(function()
           require("color-picker")
       end,
   })
+
+  -- +-------+
+  -- | debug |
+  -- +-------+
+  use {
+	  "rcarriga/nvim-dap-ui", 
+	  requires = {
+		  "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"
+	  } 
+  }
   -- +--------------+
   -- | file browser |
   -- +--------------+
