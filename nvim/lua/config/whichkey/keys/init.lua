@@ -119,9 +119,12 @@ wk_mappings = {
 
 		b = {'<cmd> lua require("dap").toggle_breakpoint()<CR>', 'breakpoint'},
 		c = {'<cmd> lua require("dap").continue()<CR>', 'continue'},
+		i = {'<cmd> lua require("dap").step_into()<CR>', 'step_into'},
+		o = {'<cmd> lua require("dap").step_out()<CR>', 'step_out'},
 		r = {'<cmd> lua require("dap").restart()<CR>', 'restart'},
 		t = {'<cmd> lua require("dap").terminate()<CR>', 'terminate'},
 		u = {'<cmd> lua require("dapui").toggle()<CR>', 'ui'},
+		v = {'<cmd> lua require("dap").step_over()<CR>', 'over'},
 	},
 
 	D = {
