@@ -32,12 +32,15 @@ return require('packer').startup(function()
   -- +-------+
   -- | debug |
   -- +-------+
+  use 'mfussenegger/nvim-dap'
   use {
 	  "rcarriga/nvim-dap-ui", 
 	  requires = {
 		  "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"
 	  } 
   }
+  use 'jay-babu/mason-nvim-dap.nvim'
+
   -- +--------------+
   -- | file browser |
   -- +--------------+
