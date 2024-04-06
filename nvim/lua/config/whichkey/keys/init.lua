@@ -118,6 +118,9 @@ wk_mappings = {
 		name = "+debug2",
 
 		b = {'<cmd> lua require("dap").toggle_breakpoint()<CR>', 'breakpoint'},
+		c = {'<cmd> lua require("dap").continue()<CR>', 'continue'},
+		r = {'<cmd> lua require("dap").restart()<CR>', 'restart'},
+		t = {'<cmd> lua require("dap").terminate()<CR>', 'terminate'},
 		u = {'<cmd> lua require("dapui").toggle()<CR>', 'ui'},
 	},
 
