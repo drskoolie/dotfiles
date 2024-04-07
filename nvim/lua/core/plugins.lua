@@ -41,6 +41,8 @@ return require('packer').startup(function()
   }
   use 'jay-babu/mason-nvim-dap.nvim'
 
+  use "neomake/neomake"
+
   -- +--------------+
   -- | file browser |
   -- +--------------+
