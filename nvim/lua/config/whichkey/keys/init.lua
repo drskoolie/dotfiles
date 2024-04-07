@@ -114,8 +114,8 @@ wk_mappings = {
 
 	f = {':Neotree<CR>', 'neotree'},
 
-	d = {
-		name = "+debug2",
+	p = {
+		name = "+dap",
 
 		b = {'<cmd> lua require("dap").toggle_breakpoint()<CR>', 'breakpoint'},
 		B = {'<cmd> lua require("dap").clear_breakpoint()<CR>', 'clear'},
@@ -154,7 +154,7 @@ wk_mappings = {
 		u = {'<cmd> lua require("dapui").toggle()<CR>', 'ui'},
 	},
 
-	D = {
+	d = {
 		name = "+debug",
 		b = {tmux_send('b'), 'break'},
 		c = {tmux_send('c'), 'continue'},
