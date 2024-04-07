@@ -135,6 +135,7 @@ wk_mappings = {
 			f = {"<cmd> lua require('lsp/dap/focus_buffer').focus_buffer('DAP Stacks')<CR>",'frame'},
 			h = {"<cmd> lua require('lsp/dap/focus_buffer').focus_buffer('DAP Hover')<CR>",'hover'},
 			r = {"<cmd> lua require('lsp/dap/focus_buffer').focus_buffer('[dap-repl]')<CR>",'repl'},
+			o = {"<cmd> lua require('lsp/dap/focus_buffer').focus_buffer_file()<CR>",'og'},
 			s = {"<cmd> lua require('lsp/dap/focus_buffer').focus_buffer('DAP Scopes')<CR>",'scopes'},
 			t = {"<cmd> lua require('lsp/dap/focus_buffer').focus_buffer('[dap-terminal]')<CR>",'terminal'},
 			w = {"<cmd> lua require('lsp/dap/focus_buffer').focus_buffer('DAP Watches')<CR>",'watches'},
