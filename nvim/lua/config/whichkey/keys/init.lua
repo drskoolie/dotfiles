@@ -128,6 +128,15 @@ wk_mappings = {
 			r = {'<cmd> lua require("dap").restart_frame()<CR>', 'restart'},
 			u = {'<cmd> lua require("dap").up()<CR>', 'up'},
 		},
+		o = {
+			"+open",
+
+			b = {"<cmd> lua require('lsp/dap/focus_buffer').focus_buffer('DAP Breakpoints')<CR>",'breakpoints'},
+			r = {"<cmd> lua require('lsp/dap/focus_buffer').focus_buffer('[dap-repl]')<CR>",'repl'},
+			s = {"<cmd> lua require('lsp/dap/focus_buffer').focus_buffer('DAP Scopes')<CR>",'scopes'},
+			t = {"<cmd> lua require('lsp/dap/focus_buffer').focus_buffer('[dap-terminal]')<CR>",'terminal'},
+
+		},
 		r = {'<cmd> lua require("dap").restart()<CR>', 'restart'},
 		s = {
 			name = "+step",
