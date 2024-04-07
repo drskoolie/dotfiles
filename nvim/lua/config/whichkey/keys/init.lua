@@ -104,10 +104,11 @@ wk_mappings = {
 	c = {
 		name = "+coding",
 
+		j = {tmux_send('just'), 'just'},
 		l = {tmux_send('lua  %:p'), 'lua'},
 		m = {tmux_send('make'), 'make'},
 		r = {tmux_send('./bin/nand'), 'run'},
-		t = {tmux_send('make tests'), 'tests'},
+		t = {tmux_send('make test'), 'test'},
 	},
 
 	f = {':Neotree<CR>', 'neotree'},
