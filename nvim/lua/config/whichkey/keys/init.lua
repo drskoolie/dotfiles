@@ -104,11 +104,12 @@ wk_mappings = {
 	c = {
 		name = "+coding",
 
-		j = {tmux_send('just'), 'just'},
+		c = {tmux_send('python3 make.py clean'), 'clean'},
 		l = {tmux_send('lua  %:p'), 'lua'},
-		m = {tmux_send('make'), 'make'},
-		r = {tmux_send('./bin/nand'), 'run'},
-		t = {tmux_send('make test'), 'test'},
+		m = {tmux_send('python3 make.py compile'), 'make'},
+		r = {tmux_send('python3 make.py run'), 'run'},
+		t = {tmux_send('python3 make.py test'), 'test'},
+		w = {tmux_send('python3 make.py warning'), 'warning'},
 	},
 
 	f = {':Neotree<CR>', 'neotree'},
