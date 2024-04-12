@@ -152,6 +152,7 @@ wk_mappings = {
 		},
 		t = {'<cmd> lua require("dap").terminate()<CR>', 'terminate'},
 		u = {'<cmd> lua require("dapui").toggle()<CR>', 'ui'},
+		U = {'<cmd> lua require("dapui").open({reset = true})<CR>', 'ui reset'},
 	},
 
 	d = {
