@@ -16,11 +16,5 @@ require("mason-lspconfig").setup {
 }
 
 require("lsp/mason/settings/python")
+require("lsp/mason/settings/typst")
 
-local lspconfig = require('lspconfig')
-
-lspconfig.typst_lsp.setup{
-	settings = {
-		exportPdf = "never" -- Choose onType, onSave or never.
-	}
-}
