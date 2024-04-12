@@ -17,4 +17,4 @@ require("mason-lspconfig").setup {
 
 require("lsp/mason/settings/python")
 require("lsp/mason/settings/typst")
-
+require("lsp/mason/settings/clangd")
