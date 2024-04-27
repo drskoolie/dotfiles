@@ -11,6 +11,7 @@ require('core/vimscript')
 
 -- ==> Config
 require('config/color-picker')
+require('config/cyberdream')
 require('config/gitsigns')
 -- require('config/hop')
 require('config/lualine')
