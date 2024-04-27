@@ -137,11 +137,6 @@ require("lazy").setup({
   -- +--------+
   -- | themes |
   -- +--------+
-  { "catppuccin/nvim", as = "catppuccin" },
-  {
-    'nvim-lualine/lualine.nvim',
-    dependencies = {'kyazdani42/nvim-web-devicons', opt = true}
-  },
 
   -- +------------+
   -- | treesitter |
