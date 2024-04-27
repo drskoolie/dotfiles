@@ -12,7 +12,7 @@ require('core/vimscript')
 -- ==> Config
 require('config/color-picker')
 require('config/gitsigns')
-require('config/hop')
+-- require('config/hop')
 require('config/lualine')
 require('config/nvim-colorizer')
 require('config/nvim-neo-tree')
