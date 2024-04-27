@@ -1,28 +1,30 @@
-local execute = vim.api.nvim_command
-local fn = vim.fn
-
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-if fn.empty(fn.glob(install_path)) > 0 then
-  fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-  vim.cmd 'packadd packer.nvim'
+-- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
 end
+vim.opt.rtp:prepend(lazypath)
 
-return require('packer').startup(function()
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
-
+require("lazy").setup({
   -- +--------+
   -- | needed |
   -- +--------+
-  use "nvim-lua/plenary.nvim"
-  use "nvim-tree/nvim-web-devicons"
-  use "MunifTanjim/nui.nvim"
+  'nvim-lua/plenary.nvim',
+  'nvim-tree/nvim-web-devicons',
+  'MunifTanjim/nui.nvim',
   
   -- +--------+
   -- | colors |
   -- +--------+
-  use 'norcalli/nvim-colorizer.lua'
-  use 'guns/xterm-color-table.vim' -- :XtermColorTable
+  'norcalli/nvim-colorizer.lua',
+  'guns/xterm-color-table.vim', -- :XtermColorTable
   use ({"ziontee113/color-picker.nvim",
       config = function()
           require("color-picker")
@@ -32,14 +34,14 @@ return require('packer').startup(function()
   -- +-------+
   -- | debug |
   -- +-------+
-  use 'mfussenegger/nvim-dap'
+  'mfussenegger/nvim-dap',
   use {
 	  "rcarriga/nvim-dap-ui", 
 	  requires = {
 		  "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"
 	  } 
   }
-  use 'jay-babu/mason-nvim-dap.nvim'
+  'jay-babu/mason-nvim-dap.nvim',
 
   -- +--------------+
   -- | file browser |
@@ -92,19 +94,19 @@ return require('packer').startup(function()
   -- +------+
   -- | gams |
   -- +------+
-  use 'zorab47/vim-gams'
+  'zorab47/vim-gams',
 
   -- +-----+
   -- | git |
   -- +-----+
-  use 'tpope/vim-rhubarb'
-  use 'tpope/vim-fugitive'
-  use 'lewis6991/gitsigns.nvim'
+  'tpope/vim-rhubarb',
+  'tpope/vim-fugitive',
+  'lewis6991/gitsigns.nvim',
 
   -- +-------+
   -- | latex |
   -- +-------+
-  use 'lervag/vimtex'
+  'lervag/vimtex',
 
   -- +-----+
   -- | lsp |
@@ -129,8 +131,8 @@ return require('packer').startup(function()
   -- +-------+
   -- | pulse |
   -- +-------+
-  use "danilamihailov/beacon.nvim"
-  use "inside/vim-search-pulse"
+  'danilamihailov/beacon.nvim',
+  'inside/vim-search-pulse',
 
   -- +--------+
   -- | themes |
@@ -150,20 +152,20 @@ return require('packer').startup(function()
   }
 
   use ('nvim-treesitter/playground')
-  use 'p00f/nvim-ts-rainbow'
+  'p00f/nvim-ts-rainbow',
 
   -- +--------+
   -- | useful |
   -- +--------+
-  use "mbbill/undotree"
-  use "romainl/vim-cool" -- hl-search fix
-  use "tpope/vim-eunuch"
+  'mbbill/undotree',
+  'romainl/vim-cool', -- hl-search fix
+  'tpope/vim-eunuch',
 
   -- +----+
   -- | ui |
   -- +----+
-  use "rcarriga/nvim-notify"
-  use 'psliwka/vim-smoothie'
+  'rcarriga/nvim-notify',
+  'psliwka/vim-smoothie',
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
     requires = { {'nvim-lua/plenary.nvim'} }
@@ -172,6 +174,6 @@ return require('packer').startup(function()
   -- +----------+
   -- | whichkey |
   -- +----------+
-  use 'folke/which-key.nvim'
+  'folke/which-key.nvim',
 
-end)
+})
