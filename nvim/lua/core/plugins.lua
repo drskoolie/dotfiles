@@ -37,7 +37,7 @@ require("lazy").setup({
   'mfussenegger/nvim-dap',
   {
 	  "rcarriga/nvim-dap-ui", 
-	  requires = {
+	  dependencies = {
 		  "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"
 	  } 
   },
@@ -49,7 +49,7 @@ require("lazy").setup({
   {
     "nvim-neo-tree/neo-tree.nvim",
       branch = "v2.x",
-      requires = { 
+      dependencies = { 
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
         "MunifTanjim/nui.nvim",
@@ -122,7 +122,7 @@ require("lazy").setup({
   -- +----------+
   {
       "iamcco/markdown-preview.nvim",
-      run = function() vim.fn["mkdp#util#install"]() end,
+      build = function() vim.fn["mkdp#util#install"]() end,
   },
 
   -- typst
@@ -140,7 +140,7 @@ require("lazy").setup({
   { "catppuccin/nvim", as = "catppuccin" },
   {
     'nvim-lualine/lualine.nvim',
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    dependencies = {'kyazdani42/nvim-web-devicons', opt = true}
   },
 
   -- +------------+
@@ -148,7 +148,7 @@ require("lazy").setup({
   -- +------------+
   {
       'nvim-treesitter/nvim-treesitter',
-      run = ':TSUpdate',
+      build = ':TSUpdate',
   },
 
   'nvim-treesitter/playground',
@@ -168,7 +168,7 @@ require("lazy").setup({
   'psliwka/vim-smoothie',
   {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    dependencies = { {'nvim-lua/plenary.nvim'} }
   },
 
   -- +----------+
