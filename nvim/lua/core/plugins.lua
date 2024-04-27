@@ -25,28 +25,28 @@ require("lazy").setup({
   -- +--------+
   'norcalli/nvim-colorizer.lua',
   'guns/xterm-color-table.vim', -- :XtermColorTable
-  use ({"ziontee113/color-picker.nvim",
+  {"ziontee113/color-picker.nvim",
       config = function()
           require("color-picker")
       end,
-  })
+  },
 
   -- +-------+
   -- | debug |
   -- +-------+
   'mfussenegger/nvim-dap',
-  use {
+  {
 	  "rcarriga/nvim-dap-ui", 
 	  requires = {
 		  "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"
 	  } 
-  }
+  },
   'jay-babu/mason-nvim-dap.nvim',
 
   -- +--------------+
   -- | file browser |
   -- +--------------+
-  use {
+  {
     "nvim-neo-tree/neo-tree.nvim",
       branch = "v2.x",
       requires = { 
@@ -76,20 +76,20 @@ require("lazy").setup({
         end,
 		}
       }
-    }
+    },
 
 
   -- +-----+
   -- | hop |
   -- +-----+
-  use {
+  {
     'smoka7/hop.nvim',
     tag = '*', -- optional but strongly recommended
     config = function()
       -- you can configure Hop the way you like here; see :h hop-config
       require'hop'.setup {}
     end
-  }
+  },
 
   -- +------+
   -- | gams |
@@ -111,22 +111,22 @@ require("lazy").setup({
   -- +-----+
   -- | lsp |
   -- +-----+
-  use {
+  {
 	  'williamboman/mason.nvim',
 	  'williamboman/mason-lspconfig.nvim',
 	  'neovim/nvim-lspconfig',
-  }
+  },
   
   -- +----------+
   -- | markdown |
   -- +----------+
-  use({
+  {
       "iamcco/markdown-preview.nvim",
       run = function() vim.fn["mkdp#util#install"]() end,
-  })
+  },
 
   -- typst
-  use {'kaarmu/typst.vim', ft = {'typst'}}
+  {'kaarmu/typst.vim', ft = {'typst'}},
 
   -- +-------+
   -- | pulse |
@@ -137,21 +137,21 @@ require("lazy").setup({
   -- +--------+
   -- | themes |
   -- +--------+
-  use { "catppuccin/nvim", as = "catppuccin" }
-  use {
+  { "catppuccin/nvim", as = "catppuccin" },
+  {
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
-  }
+  },
 
   -- +------------+
   -- | treesitter |
   -- +------------+
-  use {
+  {
       'nvim-treesitter/nvim-treesitter',
       run = ':TSUpdate',
-  }
+  },
 
-  use ('nvim-treesitter/playground')
+  'nvim-treesitter/playground',
   'p00f/nvim-ts-rainbow',
 
   -- +--------+
@@ -166,10 +166,10 @@ require("lazy").setup({
   -- +----+
   'rcarriga/nvim-notify',
   'psliwka/vim-smoothie',
-  use {
+  {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
     requires = { {'nvim-lua/plenary.nvim'} }
-  }
+  },
 
   -- +----------+
   -- | whichkey |
