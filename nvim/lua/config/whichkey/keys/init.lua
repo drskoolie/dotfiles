@@ -311,15 +311,7 @@ wk_mappings = {
 		name = "+neovim",
 
 
-		p = {
-			name = "+packer",
 
-			c = {':PackerClean<CR>', 'clean'},
-			i = {':PackerInstall<CR>', 'install'},
-			s = {':PackerSync<CR>', 'sync'},
-			u = {':PackerUpdate<CR>', 'update'},
-		},
-		
 		o = {
 			name = "+open",
 
@@ -334,6 +326,7 @@ wk_mappings = {
 		A = {':set nrformats-=alpha<CR>', 'alpha-'},
 		e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
 		l = {':w<CR>:luafile %<CR>',  'lua source'},
+		L = {':Lazy<CR>', 'lazy'},
 		v = {':w<CR>:source %<CR>',  'vim source'},
 	},
 
