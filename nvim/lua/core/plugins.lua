@@ -126,10 +126,7 @@ require("lazy").setup({
       dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
 
-  {
-  "olimorris/onedarkpro.nvim",
-  priority = 1000, -- Ensure it loads first
-  },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
   -- +------------+
   -- | treesitter |
