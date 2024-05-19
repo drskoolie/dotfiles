@@ -1,23 +1,13 @@
 # +------------------+
 # | Change Directory |
 # +------------------+
-map ga cd ~/enkompass/altizations/
 map gb cd ~/github/books/
-map gd cd ~/dotfiles/
-map ge cd ~/enkompass/projects/unfinished/
 map gf cd ~/phd/references/
-map gF cd ~/phd/reports/journals/minimum-life-remaining/figures-example/
 map gh cd ~/
-map gi cd ~/dotfiles/i3/files/
-map gl cd ~/dotfiles/lf/
-map gm cd ~/media/
 map gn cd ~/dotfiles/nvim/
-map go cd /mnt/c/Users/Al\ El-Hag/Onedrive\ -\ BoltonSmith\ Inc/Documents
 map gr cd ~/phd/reports/
-map gR cd ~/phd/reports/journals/minimum-life-remaining/tex/
 map gs cd ~/media/screenshots/
-map gw cd /var/www/dokuwiki/data/gitrepo/wiki/
-map gz cd ~/dotfiles/zsh
+map gw cd /mnt/c/Users/al.elhag/OneDrive - Qualus Corp/Documents/Python/AuReGen
 
 
 # +--------+
