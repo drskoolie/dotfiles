@@ -1,177 +1,164 @@
-local execute = vim.api.nvim_command
-local fn = vim.fn
-
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-if fn.empty(fn.glob(install_path)) > 0 then
-  fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-  vim.cmd 'packadd packer.nvim'
+-- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
 end
+vim.opt.rtp:prepend(lazypath)
 
-return require('packer').startup(function()
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
-
+require("lazy").setup({
   -- +--------+
   -- | needed |
   -- +--------+
-  use "nvim-lua/plenary.nvim"
-  use "nvim-tree/nvim-web-devicons"
-  use "MunifTanjim/nui.nvim"
+  'nvim-lua/plenary.nvim',
+  'nvim-tree/nvim-web-devicons',
+  'MunifTanjim/nui.nvim',
   
   -- +--------+
   -- | colors |
   -- +--------+
-  use 'norcalli/nvim-colorizer.lua'
-  use 'guns/xterm-color-table.vim' -- :XtermColorTable
-  use ({"ziontee113/color-picker.nvim",
+  'norcalli/nvim-colorizer.lua',
+  'guns/xterm-color-table.vim', -- :XtermColorTable
+  {"ziontee113/color-picker.nvim",
       config = function()
           require("color-picker")
       end,
-  })
+  },
 
   -- +-------+
   -- | debug |
   -- +-------+
-  use 'mfussenegger/nvim-dap'
-  use {
+  'mfussenegger/nvim-dap',
+  {
 	  "rcarriga/nvim-dap-ui", 
-	  requires = {
+	  dependencies = {
 		  "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"
 	  } 
-  }
-  use 'jay-babu/mason-nvim-dap.nvim'
+  },
+  'jay-babu/mason-nvim-dap.nvim',
 
   -- +--------------+
   -- | file browser |
   -- +--------------+
-  use {
+  {
     "nvim-neo-tree/neo-tree.nvim",
       branch = "v2.x",
-      requires = { 
+      dependencies = { 
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
         "MunifTanjim/nui.nvim",
-	  {
-        -- only needed if you want to use the commands with "_with_window_picker" suffix
-        's1n7ax/nvim-window-picker',
-        tag = "v1.*",
-        config = function()
-          require'window-picker'.setup({
-            autoselect_one = true,
-            include_current = false,
-            filter_rules = {
-              -- filter using buffer options
-              bo = {
-                -- if the file type is one of following, the window will be ignored
-                filetype = { 'neo-tree', "neo-tree-popup", "notify" },
-
-                -- if the buffer type is one of following, the window will be ignored
-                buftype = { 'terminal', "quickfix" },
-              },
-            },
-            other_win_hl_color = '#e35e4f',
-          })
-        end,
-		}
       }
-    }
+    },
 
 
   -- +-----+
   -- | hop |
   -- +-----+
-  use {
-    'smoka7/hop.nvim',
-    tag = '*', -- optional but strongly recommended
-    config = function()
-      -- you can configure Hop the way you like here; see :h hop-config
-      require'hop'.setup {}
-    end
-  }
+  {
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    ---@type Flash.Config
+    opts = {},
+    -- stylua: ignore
+    keys = {
+      { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+      { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+      { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
+      { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
+      { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
+    },
+  },
 
   -- +------+
   -- | gams |
   -- +------+
-  use 'zorab47/vim-gams'
+  'zorab47/vim-gams',
 
   -- +-----+
   -- | git |
   -- +-----+
-  use 'tpope/vim-rhubarb'
-  use 'tpope/vim-fugitive'
-  use 'lewis6991/gitsigns.nvim'
+  'tpope/vim-rhubarb',
+  'tpope/vim-fugitive',
+  'lewis6991/gitsigns.nvim',
 
   -- +-------+
   -- | latex |
   -- +-------+
-  use 'lervag/vimtex'
+  'lervag/vimtex',
 
   -- +-----+
   -- | lsp |
   -- +-----+
-  use {
+  {
 	  'williamboman/mason.nvim',
 	  'williamboman/mason-lspconfig.nvim',
 	  'neovim/nvim-lspconfig',
-  }
+  },
   
   -- +----------+
   -- | markdown |
   -- +----------+
-  use({
+  {
       "iamcco/markdown-preview.nvim",
-      run = function() vim.fn["mkdp#util#install"]() end,
-  })
+      build = function() vim.fn["mkdp#util#install"]() end,
+  },
 
   -- typst
-  use {'kaarmu/typst.vim', ft = {'typst'}}
+  {'kaarmu/typst.vim', ft = {'typst'}},
 
   -- +-------+
   -- | pulse |
   -- +-------+
-  use "danilamihailov/beacon.nvim"
-  use "inside/vim-search-pulse"
+  'danilamihailov/beacon.nvim',
+  'inside/vim-search-pulse',
 
   -- +--------+
   -- | themes |
   -- +--------+
-  use { "catppuccin/nvim", as = "catppuccin" }
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
-  }
+  {
+      'nvim-lualine/lualine.nvim',
+      dependencies = { 'nvim-tree/nvim-web-devicons' }
+  },
+
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
   -- +------------+
   -- | treesitter |
   -- +------------+
-  use {
+  {
       'nvim-treesitter/nvim-treesitter',
-      run = ':TSUpdate',
-  }
+      build = ':TSUpdate',
+  },
 
-  use ('nvim-treesitter/playground')
-  use 'p00f/nvim-ts-rainbow'
+  'nvim-treesitter/playground',
+  'p00f/nvim-ts-rainbow',
 
   -- +--------+
   -- | useful |
   -- +--------+
-  use "mbbill/undotree"
-  use "romainl/vim-cool" -- hl-search fix
-  use "tpope/vim-eunuch"
+  'mbbill/undotree',
+  'romainl/vim-cool', -- hl-search fix
+  'tpope/vim-eunuch',
 
   -- +----+
   -- | ui |
   -- +----+
-  use "rcarriga/nvim-notify"
-  use 'psliwka/vim-smoothie'
-  use {
+  'rcarriga/nvim-notify',
+  'psliwka/vim-smoothie',
+  {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
-    requires = { {'nvim-lua/plenary.nvim'} }
-  }
+    dependencies = { {'nvim-lua/plenary.nvim'} }
+  },
 
   -- +----------+
   -- | whichkey |
   -- +----------+
-  use 'folke/which-key.nvim'
+  'folke/which-key.nvim',
 
-end)
+})

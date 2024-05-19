@@ -1,106 +1,66 @@
 -- Old Color Scheme
 -- vim.opt.termguicolors = true
 -- vim.cmd[[set t_Co=256]]
--- vim.cmd[[colorscheme PaperColor]]
---
-vim.g.catppuccin_flavour = "macchiato" -- latte, frappe, macchiato, mocha
+-- vim.cmd[[colorscheme habamax]]
+-- vim.cmd [[hi Normal ctermbg=none guibg=none]]
+-- vim.cmd [[hi NormalFloat ctermbg=none guibg=none]]
+-- vim.cmd [[hi NormalNC ctermbg=none guibg=none]]
+-- vim.cmd [[hi SignColumn ctermbg=none guibg=none]]
+-- vim.cmd [[hi EndOfBuffer ctermbg=none guibg=none]]
+-- vim.cmd [[hi QuickFixLine ctermbg=none guibg=none]]
+-- vim.cmd [[hi LineNr ctermbg=none guibg=none]]
+-- vim.cmd [[hi CursorLineNr ctermbg=none guibg=none]]
 
 require("catppuccin").setup({
-	dim_inactive = {
-		enabled = false,
-		shade = "dark",
-		percentage = 0.15,
-	},
-	transparent_background = false,
-	term_colors = false,
-	compile = {
-		enabled = false,
-		path = vim.fn.stdpath "cache" .. "/catppuccin",
-	},
-	styles = {
-		comments = { "italic" },
-		conditionals = { "italic" },
-		loops = {"italic"},
-		functions = {},
-		keywords = {"italic"},
-		strings = {},
-		variables = {},
-		numbers = {},
-		booleans = {},
-		properties = {},
-		types = {},
-		operators = {},
-	},
-	integrations = {
-		treesitter = true,
-		native_lsp = {
-			enabled = true,
-			virtual_text = {
-				errors = { "italic" },
-				hints = { "italic" },
-				warnings = { "italic" },
-				information = { "italic" },
-			},
-			underlines = {
-				errors = { "underline" },
-				hints = { "underline" },
-				warnings = { "underline" },
-				information = { "underline" },
-			},
-		},
-		coc_nvim = false,
-		lsp_trouble = false,
-		cmp = true,
-		lsp_saga = false,
-		gitgutter = false,
-		gitsigns = true,
-		leap = false,
-		telescope = true,
-		nvimtree = {
-			enabled = true,
-			show_root = true,
-			transparent_panel = false,
-		},
-		neotree = {
-			enabled = false,
-			show_root = true,
-			transparent_panel = false,
-		},
-		dap = {
-			enabled = false,
-			enable_ui = false,
-		},
-		which_key = true,
-		indent_blankline = {
-			enabled = true,
-			colored_indent_levels = false,
-		},
-		dashboard = true,
-		neogit = false,
-		vim_sneak = false,
-		fern = false,
-		barbar = false,
-		bufferline = true,
+    flavour = "auto", -- latte, frappe, macchiato, mocha
+    background = { -- :h background
+        light = "latte",
+        dark = "mocha",
+    },
+    transparent_background = true, -- disables setting the background color.
+    show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
+    term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
+    dim_inactive = {
+        enabled = true, -- dims the background color of inactive window
+        shade = "dark",
+        percentage = 0.10, -- percentage of the shade to apply to the inactive window
+    },
+    no_italic = false, -- Force no italic
+    no_bold = false, -- Force no bold
+    no_underline = false, -- Force no underline
+    styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
+        comments = { "italic" }, -- Change the style of comments
+        conditionals = { "italic" },
+        loops = {},
+        functions = {},
+        keywords = {},
+        strings = {},
+        variables = {},
+        numbers = {},
+        booleans = {},
+        properties = {},
+        types = {},
+        operators = {},
+        -- miscs = {}, -- Uncomment to turn off hard-coded styles
+    },
+    color_overrides = {},
+    custom_highlights = {},
+    default_integrations = true,
+    integrations = {
+        cmp = true,
+        gitsigns = true,
+        nvimtree = true,
+        treesitter = true,
 		markdown = true,
-		lightspeed = false,
-		ts_rainbow = false,
-		hop = true,
-		notify = true,
-		telekasten = true,
-		symbols_outline = true,
-		mini = false,
-		aerial = false,
-		vimwiki = true,
-		beacon = true,
-	},
-	color_overrides = {},
-	highlight_overrides = {},
+        mini = {
+            enabled = true,
+            indentscope_color = "",
+        },
+        notify = false,
+		neotree = true,
+        -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+    },
 })
 
-vim.cmd [[colorscheme catppuccin]]
-vim.cmd [[hi Normal ctermbg=none guibg=none]]
-vim.cmd [[hi NormalFloat ctermbg=none guibg=none]]
-vim.cmd [[hi NormalNC ctermbg=none guibg=none]]
-vim.cmd [[hi SignColumn ctermbg=none guibg=none]]
-vim.cmd [[hi EndOfBuffer ctermbg=none guibg=none]]
-vim.cmd [[hi QuickFixLine ctermbg=none guibg=none]]
+-- setup must be called before loading
+vim.cmd.colorscheme "catppuccin"

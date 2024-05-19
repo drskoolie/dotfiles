@@ -244,7 +244,8 @@ wk_mappings = {
         l = {':norm ^"+y$<CR>:TmuxPaste<CR>',          'send line'},
         m = {[[:norm mm<CR>:norm "+ym<CR>:lua tmux_send('\\%paste', 'vim_cmd')<CR>:norm 'm<CR>]],           'matlab'},
 		o = {tmux_send('ipython --no-autoindent'), 'open'},
-		O = {tmux_send('powershell.exe ipython --no-autoindent'), 'open powershell'},
+		O = {tmux_send('powershell.exe -NoExit -Command "& \'C:\\\\Users\\\\al.elhag\\\\venv_auregen_windows\\\\Scripts\\\\Activate.ps1\'; py -m IPython --no-autoindent"'), 'open powershell'},
+		O = {tmux_send('cmd.exe /c "cd /d C:\\Users\\al.elhag\\OneDrive - Qualus Corp\\Documents\\Python\\AuReGen && venv_auregen_windows\\Scripts\\activate.bat && ipython --no-autoindent && cmd"'), 'open cmd'},
         p = {':TmuxPaste<CR>',    'paste'},
 		P = {'"+y:TmuxPaste<CR>', 'visual', mode='v'},
         r = {tmux_send('reset -f'), 'reset'},
@@ -311,15 +312,7 @@ wk_mappings = {
 		name = "+neovim",
 
 
-		p = {
-			name = "+packer",
 
-			c = {':PackerClean<CR>', 'clean'},
-			i = {':PackerInstall<CR>', 'install'},
-			s = {':PackerSync<CR>', 'sync'},
-			u = {':PackerUpdate<CR>', 'update'},
-		},
-		
 		o = {
 			name = "+open",
 
@@ -334,6 +327,7 @@ wk_mappings = {
 		A = {':set nrformats-=alpha<CR>', 'alpha-'},
 		e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
 		l = {':w<CR>:luafile %<CR>',  'lua source'},
+		L = {':Lazy<CR>', 'lazy'},
 		v = {':w<CR>:source %<CR>',  'vim source'},
 	},
 
