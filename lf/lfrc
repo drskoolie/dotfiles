@@ -1,14 +1,11 @@
 # +------------------+
 # | Change Directory |
 # +------------------+
-map gb cd ~/github/books/
-map gf cd ~/phd/references/
+map gd cd ~/dotfiles
 map gh cd ~/
-map gn cd ~/dotfiles/nvim/
 map gr cd ~/phd/reports/
 map gs cd ~/media/screenshots/
-map gw cd /mnt/c/Users/al.elhag/OneDrive - Qualus Corp/Documents/Python/AuReGen
-
+map gw cd "/mnt/c/Users/al.elhag/OneDrive - Qualus Corp/Documents/Python/AuReGen"
 
 # +--------+
 # | Basics |
