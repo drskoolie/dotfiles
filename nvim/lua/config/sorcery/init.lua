@@ -84,3 +84,13 @@ function set_trace_up()
 	vim.cmd('normal! iimport ipdb; ipdb.set_trace(context = 10)')
 	vim.cmd('normal! ^')
 end
+
+function zellij_send(input)
+	move_right = [[:silent !zellij action move-focus right; ]]
+	write_chars = [[zellij action write-chars "]] .. input .. [["; ]]
+	press_enter = [[zellij action write 13; ]]
+	move_left = [[zellij action move-focus left]]
+
+	command = move_right .. write_chars .. press_enter .. move_left
+	vim.cmd(command)
+end
