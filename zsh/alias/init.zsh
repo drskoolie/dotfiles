@@ -1,6 +1,5 @@
 source ~/dotfiles/zsh/alias/applications.zsh
 source ~/dotfiles/zsh/alias/cd.zsh
-source ~/dotfiles/zsh/alias/functions.zsh
 source ~/dotfiles/zsh/alias/general.zsh
 source ~/dotfiles/zsh/alias/jupyter.zsh
 source ~/dotfiles/zsh/alias/python.zsh
