@@ -94,3 +94,12 @@ function zellij_send(input)
 	command = move_right .. write_chars .. press_enter .. move_left
 	vim.cmd(command)
 end
+
+function zellij_send_ascii(input)
+	move_right = [[:silent !zellij action move-focus right; ]]
+	write_ascii = [[zellij action write ]] .. input .. [[ ; ]]
+	move_left = [[zellij action move-focus left]]
+
+	command = move_right .. write_ascii .. move_left
+	vim.cmd(command)
+end
