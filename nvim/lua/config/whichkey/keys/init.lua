@@ -1,94 +1,5 @@
 wk_mappings = {
 
-	[" "] = {
-		name = "+<SPC>",
-
-		a = {
-			name = "+accounting",
-
-			b = {':w|!bean-report % balances<CR>', 'balances'},
-			c = {':w|!bean-check %<CR>', 'check'},
-		},
-
-		b = {
-			name = "+boxes",
-
-			b = {'!boxes -a hcvc -d ', 'boxes', mode='v'},
-			c = {'!boxes -a hcvc -d columns<CR>', 'columns', mode='v'},
-			d = {'!boxes -a hcvc -d dog<CR>', 'dog', mode='v'},
-			g = {'!boxes -a hcvc -d girl<CR>', 'girl', mode='v'},
-			i = {'!boxes -a hcvc -d ian jones<CR>', 'ian jones', mode='v'},
-			m = {'!boxes -a hcvc -d mouse<CR>', 'mouse', mode='v'},
-			n = {'!boxes -a hcvc -d spring<CR>', 'spring', mode='v'},
-			p = {'!boxes -a hlvt -d parchment<CR>', 'parchment', mode='v'},
-			s = {'!boxes -a hcvc -d stone<CR>', 'stone', mode='v'},
-			u = {'!boxes -a hcvc -d unicornsay<CR>', 'unicornsay', mode='v'},
-			v = {'!boxes -a hcvc -d unicornthink<CR>', 'unicornthink', mode='v'},
-			y = {'!boxes -a hcvc -d boy<CR>', 'boy', mode='v'},
-		},
-
-		c = {
-			name = "+colorizer",
-
-			a = {':ColorizerAttachToBuffer<CR>',  'attach'},
-			d = {':ColorizerDetachFromBuffer<CR>',  'detach'},
-			p = {'<cmd>PickColor<CR>', 'picker'},
-			r = {':ColorizerReloadAllBuffers<CR>',  'reload'},
-			t = {':ColorizerToggle<CR>',  'toggle'},
-			x = {':XtermColorTable<CR>',  'xterm'},
-		},
-		 
-		f = {
-			name = "+figlet",
-
-			b = {'!figlet -f big <CR>', 'big', mode='v'},
-			B = {'!figlet -f bubble <CR>', 'bubble', mode='v'},
-			f = {'!figlet <CR>', 'figlet', mode='v'},
-			m = {'!figlet -f mono9 <CR>', 'mono9', mode='v'},
-			M = {'!figlet -f mono12 <CR>', 'mono12', mode='v'},
-			s = {'!figlet -f script <CR>', 'script', mode='v'},
-		},
-
-
-		g = {
-			name = "+gams",
-
-			m = {':w<CR>:silent !gams %:h/main.gms<CR>', 'main'},
-			M = {':w<CR>:!gams %:h/main.gms<CR>', 'main'},
-			o = {':w<CR>:!gams %:p:t:r.gms > %:p:t:r.out<CR>', 'out'},
-			r = {':w<CR>:!gams %:p:t:r.gms<CR>', 'run'},
-			s = {':w<CR>:silent !gams %:p:t:r.gms > %:p:t:r.out<CR>', 'silent'},
-			w = {':w<CR>:vsp %:p:t:r.lst<CR>G:sp %:p:t:r.out<CR>G', 'window'},
-		},
-
-		i = {
-			name = "+insert",
-
-			f  = {'i<C-r>=expand("%:p:t:r")<CR><Esc>', 'file'},
-			n  = {':r!date +"\\%Y-\\%m-\\%d (\\%H:\\%M)"<CR>kJ', 'now'},
-
-		},
-
-		m = {
-			name = "+markdown",
-
-			p = {':MarkdownPreview<CR>', 'preview'},
-			q = {':MarkdownPreviewStop<CR>', 'quit'},
-		},
-
-
-		s = {
-			name = "+spell",
-
-			a = {':set textwidth=110<CR>:set fo=tc<CR>:set spell<CR>', 'all'},
-			A = {':set textwidth=150<CR>:set fo=tc<CR>:set spell<CR>', 'All'},
-			f = {'<ESC>[sz=1<CR>A', 'fix'},
-			F = {'[s<C-o>z=1<CR><C-o>A', 'fix'},
-			n = {':set nospell<CR>', 'nospell'},
-			t = {':set spell!<CR>', 'spell toggle'},
-		},
-	},	
-
 	b = {
 		name = "+buffers",
 
@@ -372,6 +283,95 @@ wk_mappings = {
 		r = {':lua zellij_send_action("zellij action new-pane -d right; ")<CR>', 'right'},
 		y = {":lua zellij_send_ascii(121)<CR>", 'y'},
 	},
+
+	[" "] = {
+		name = "+<SPC>",
+
+		a = {
+			name = "+accounting",
+
+			b = {':w|!bean-report % balances<CR>', 'balances'},
+			c = {':w|!bean-check %<CR>', 'check'},
+		},
+
+		b = {
+			name = "+boxes",
+
+			b = {'!boxes -a hcvc -d ', 'boxes', mode='v'},
+			c = {'!boxes -a hcvc -d columns<CR>', 'columns', mode='v'},
+			d = {'!boxes -a hcvc -d dog<CR>', 'dog', mode='v'},
+			g = {'!boxes -a hcvc -d girl<CR>', 'girl', mode='v'},
+			i = {'!boxes -a hcvc -d ian jones<CR>', 'ian jones', mode='v'},
+			m = {'!boxes -a hcvc -d mouse<CR>', 'mouse', mode='v'},
+			n = {'!boxes -a hcvc -d spring<CR>', 'spring', mode='v'},
+			p = {'!boxes -a hlvt -d parchment<CR>', 'parchment', mode='v'},
+			s = {'!boxes -a hcvc -d stone<CR>', 'stone', mode='v'},
+			u = {'!boxes -a hcvc -d unicornsay<CR>', 'unicornsay', mode='v'},
+			v = {'!boxes -a hcvc -d unicornthink<CR>', 'unicornthink', mode='v'},
+			y = {'!boxes -a hcvc -d boy<CR>', 'boy', mode='v'},
+		},
+
+		c = {
+			name = "+colorizer",
+
+			a = {':ColorizerAttachToBuffer<CR>',  'attach'},
+			d = {':ColorizerDetachFromBuffer<CR>',  'detach'},
+			p = {'<cmd>PickColor<CR>', 'picker'},
+			r = {':ColorizerReloadAllBuffers<CR>',  'reload'},
+			t = {':ColorizerToggle<CR>',  'toggle'},
+			x = {':XtermColorTable<CR>',  'xterm'},
+		},
+		 
+		f = {
+			name = "+figlet",
+
+			b = {'!figlet -f big <CR>', 'big', mode='v'},
+			B = {'!figlet -f bubble <CR>', 'bubble', mode='v'},
+			f = {'!figlet <CR>', 'figlet', mode='v'},
+			m = {'!figlet -f mono9 <CR>', 'mono9', mode='v'},
+			M = {'!figlet -f mono12 <CR>', 'mono12', mode='v'},
+			s = {'!figlet -f script <CR>', 'script', mode='v'},
+		},
+
+
+		g = {
+			name = "+gams",
+
+			m = {':w<CR>:silent !gams %:h/main.gms<CR>', 'main'},
+			M = {':w<CR>:!gams %:h/main.gms<CR>', 'main'},
+			o = {':w<CR>:!gams %:p:t:r.gms > %:p:t:r.out<CR>', 'out'},
+			r = {':w<CR>:!gams %:p:t:r.gms<CR>', 'run'},
+			s = {':w<CR>:silent !gams %:p:t:r.gms > %:p:t:r.out<CR>', 'silent'},
+			w = {':w<CR>:vsp %:p:t:r.lst<CR>G:sp %:p:t:r.out<CR>G', 'window'},
+		},
+
+		i = {
+			name = "+insert",
+
+			f  = {'i<C-r>=expand("%:p:t:r")<CR><Esc>', 'file'},
+			n  = {':r!date +"\\%Y-\\%m-\\%d (\\%H:\\%M)"<CR>kJ', 'now'},
+
+		},
+
+		m = {
+			name = "+markdown",
+
+			p = {':MarkdownPreview<CR>', 'preview'},
+			q = {':MarkdownPreviewStop<CR>', 'quit'},
+		},
+
+
+		s = {
+			name = "+spell",
+
+			a = {':set textwidth=110<CR>:set fo=tc<CR>:set spell<CR>', 'all'},
+			A = {':set textwidth=150<CR>:set fo=tc<CR>:set spell<CR>', 'All'},
+			f = {'<ESC>[sz=1<CR>A', 'fix'},
+			F = {'[s<C-o>z=1<CR><C-o>A', 'fix'},
+			n = {':set nospell<CR>', 'nospell'},
+			t = {':set spell!<CR>', 'spell toggle'},
+		},
+	},	
 
 }
 
