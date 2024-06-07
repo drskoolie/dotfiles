@@ -107,9 +107,3 @@ function zellij_send_ascii(input)
 
 	zellij_send_action(write_ascii)
 end
-
-function zellij_close_pane()
-	close_pane = [[zellij action close-pane; ]]
-
-	zellij_send_action(close_pane)
-end

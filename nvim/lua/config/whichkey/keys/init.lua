@@ -351,7 +351,7 @@ wk_mappings = {
 
 
 	t = {
-		name = "+tmux",
+		name = "+telescope",
 
 		c = {':TmuxSendClear<CR>', 'clear'},
 		C = {tmux_send('C-c'), 'C-c'},
@@ -398,10 +398,9 @@ wk_mappings = {
 		d = {":lua zellij_send_ascii(4)<CR>", 'C-d'},
 		e = {":lua zellij_send_ascii(13)<CR>", '<CR>'},
 		l = {":lua zellij_send_ascii(12)<CR>", 'C-l'},
+		k = {':lua zellij_send_action("zellij action close-pane; ")<CR>', 'kill'},
+		r = {':lua zellij_send_action("zellij action new-pane -d right; ")<CR>', 'right'},
 		y = {":lua zellij_send_ascii(121)<CR>", 'y'},
-		k = {':silent !tmux kill-pane -t 1<CR>', 'kill'},
-		r  = {tmux_open_pane('-dh'),  'right'},
-		L  = {':silent !tmux move-pane -f -s 1 -t 0<CR>',  'right'},
 	},
 
 }
