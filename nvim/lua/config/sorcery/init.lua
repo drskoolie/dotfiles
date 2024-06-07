@@ -1,20 +1,4 @@
-function tmux_send(input, style)
-	style = style or 'string'
-	
-	output = [[:silent !tmux send -t 1 ']] .. input .. [[' Enter<CR>]]
-
-	if (style == 'string')
-	then
-		return output
-	elseif (style == 'vim_cmd')
-	then
-		vim.cmd(string.sub(output, 2, -5))
-	end
-end
-
-function tmux_send_clear()
-	vim.cmd([[silent !tmux send -t 1 C-l]])
-end
+vim.cmd([[set clipboard=unnamedplus]])
 
 function tmux_paste()
 	output0 = [[silent !tmux select-pane -t 1]]
@@ -28,34 +12,6 @@ function tmux_paste()
 	vim.cmd(output3)
 	vim.cmd(output4)
 end
-
-function tmux_open_pane(options)
-	return [[:silent !tmux splitw ]] .. options .. [[<CR>]]
-end
-
-vim.cmd([[set clipboard=unnamedplus]])
-vim.cmd([[com! TmuxPaste lua tmux_paste()]])
-vim.cmd([[com! TmuxSendClear lua tmux_send_clear()]])
-
--- vim.cmd([[com! -nargs=+ TmuxSend lua tmux_send(<q-args>)]])
-
-function tmux_pytest_open()
-	vim.cmd([[silent !tmux new-window -n pytest]])
-end
-
-function tmux_pytest_run()
-	output0 = [[silent !tmux send -t pytest.0 'clear' Enter]]
-	output1 = [[silent !tmux send -t pytest.0 'python3 -m pytest' Enter]]
-	output2 = [[silent !tmux select-window -t pytest]]
-	vim.cmd(output0)
-	vim.cmd(output1)
-	vim.cmd(output2)
-end
-
-vim.cmd([[com! TmuxPytestOpen lua tmux_pytest_open()]])
-vim.cmd([[com! TmuxPytestRun lua tmux_pytest_run()]])
-
-local tmux_kill_pane_last = ':silent !tmux last-pane \\; kill-pane<CR>'
 
 -- block_copy
 
@@ -103,15 +59,54 @@ function set_trace_up()
 	vim.cmd('normal! ^')
 end
 
-function tmux_latex_clear()
-	vim.cmd([[silent !tmux sent -t latex.0 'latexmk -c' Enter]])
+function get_clipboard_content()
+    local clipboard_content = vim.fn.system('xclip -o -sel clipboard')
+    return clipboard_content
 end
 
-function tmux_latex_run()
-	vim.cmd([[silent !tmux new-window -n latex]])
-	vim.cmd([[silent !tmux select-window -n -p]])
-	vim.cmd[[silent !tmux send -t latex.0 'latexmk -pvc' Enter]]
+function zellij_send_action(action)
+	local move_right = [[:silent !zellij action move-focus right; ]]
+	local move_left = [[zellij action move-focus left]]
+
+	local command = move_right .. action .. move_left
+	vim.cmd(command)
 end
 
-vim.cmd([[com! TmuxLatexClear lua tmux_latex_clear()]])
-vim.cmd([[com! TmuxLatexRun lua tmux_latex_run()]])
+function zellij_send_ascii(input)
+	local write_ascii = [[zellij action write ]] .. input .. [[ ; ]]
+
+	zellij_send_action(write_ascii)
+end
+
+function zellij_send_chars(input, enter_flag)
+	enter_flag = enter_flag or true
+	local write_chars = [[zellij action write-chars "]] .. input .. [["; ]]
+	local command = write_chars
+
+	if enter_flag then
+		command = command .. [[zellij action write 13; ]]
+	end
+
+	zellij_send_action(command)
+end
+
+function zellij_paste()
+    clipboard_content = get_clipboard_content()
+    -- Remove trailing newline and escape quotes
+    clipboard_content = clipboard_content:gsub('%s+$', ''):gsub('"', '\\"')
+    -- Split clipboard content into lines
+    lines = {}
+    for line in clipboard_content:gmatch("[^\r\n]+") do
+        table.insert(lines, line)
+    end
+
+    -- Send each line to zellij without pressing enter
+    for i, line in ipairs(lines) do
+        press_enter = (i == #lines)  -- Only press enter after the last line
+        zellij_send_chars(line, press_enter)
+    end
+
+	if #lines > 1 then
+		zellij_send_ascii(13)
+	end
+end
