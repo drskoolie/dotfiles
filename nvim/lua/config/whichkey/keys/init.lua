@@ -398,12 +398,10 @@ wk_mappings = {
 		d = {":lua zellij_send_ascii(4)<CR>", 'C-d'},
 		e = {":lua zellij_send_ascii(13)<CR>", '<CR>'},
 		l = {":lua zellij_send_ascii(12)<CR>", 'C-l'},
+		y = {":lua zellij_send_ascii(121)<CR>", 'y'},
 		k = {':silent !tmux kill-pane -t 1<CR>', 'kill'},
 		r  = {tmux_open_pane('-dh'),  'right'},
 		L  = {':silent !tmux move-pane -f -s 1 -t 0<CR>',  'right'},
-		j  = {tmux_open_pane('-d'),  'down'},
-		J  = {':silent !tmux move-pane -h -s 1 -t 0<CR>',  'down'},
-		y = {tmux_send('y'), 'y'},
 	},
 
 }

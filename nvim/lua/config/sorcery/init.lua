@@ -85,29 +85,31 @@ function set_trace_up()
 	vim.cmd('normal! ^')
 end
 
-function zellij_send(input)
+function zellij_send_action(action)
 	move_right = [[:silent !zellij action move-focus right; ]]
+	move_left = [[zellij action move-focus left]]
+
+	command = move_right .. action .. move_left
+	vim.cmd(command)
+end
+
+function zellij_send_chars(input)
 	write_chars = [[zellij action write-chars "]] .. input .. [["; ]]
 	press_enter = [[zellij action write 13; ]]
-	move_left = [[zellij action move-focus left]]
 
-	command = move_right .. write_chars .. press_enter .. move_left
-	vim.cmd(command)
+	zellij_send_action(write_chars .. press_enter)
 end
+
+-- zellij_send_chars("xclip -o -sel clipboard")
 
 function zellij_send_ascii(input)
-	move_right = [[:silent !zellij action move-focus right; ]]
 	write_ascii = [[zellij action write ]] .. input .. [[ ; ]]
-	move_left = [[zellij action move-focus left]]
 
-	command = move_right .. write_ascii .. move_left
-	vim.cmd(command)
+	zellij_send_action(write_ascii)
 end
 
-function zellij_send_c_l()
-	zellij_send_ascii(12)
+function zellij_close_pane()
+	close_pane = [[zellij action close-pane; ]]
+
+	zellij_send_action(close_pane)
 end
-
--- zellij_send("xclip -o -sel clipboard")
-
-
