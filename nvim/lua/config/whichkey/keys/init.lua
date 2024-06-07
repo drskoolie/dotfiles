@@ -12,6 +12,25 @@ wk_mappings = {
 		t  = {':tabnew<CR>',    'tab new'},
 	},
 
+	d = {
+		name = "+debug",
+		b = {":lua zellij_send_chars('b')<CR>", 'break'},
+		c = {":lua zellij_send_chars('c')<CR>", 'continue'},
+		d = {":lua zellij_send_chars('d')<CR>", 'down'},
+		h = {":lua zellij_send_chars('h')<CR>", 'help'},
+		l = {":lua zellij_send_chars('ll')<CR>", 'longlist'},
+		L = {":lua zellij_send_chars('l')<CR>", 'list'},
+		i = {':lua set_trace()<CR>', 'ipdb'},
+		I = {':lua set_trace_up()<CR>', 'ipdb_up'},
+		n = {":lua zellij_send_chars('n')<CR>", 'next'},
+		q = {":lua zellij_send_chars('q')<CR>", 'quit'},
+		p = {":lua zellij_send_chars('\\\\%debug')<CR>", '%debug'},
+		s = {":lua zellij_send_chars('s')<CR>", 'step'},
+		S = {":lua zellij_send_chars('sticky')<CR>", 'sticky'},
+		u = {":lua zellij_send_chars('u')<CR>", 'up'},
+		w = {":lua zellij_send_chars('w')<CR>", 'where'},
+	},
+
 	f = {':Neotree<CR>', 'neotree'},
 
 	p = {
@@ -53,25 +72,6 @@ wk_mappings = {
 		t = {'<cmd> lua require("dap").terminate()<CR>', 'terminate'},
 		u = {'<cmd> lua require("dapui").toggle()<CR>', 'ui'},
 		U = {'<cmd> lua require("dapui").open({reset = true})<CR>', 'ui reset'},
-	},
-
-	d = {
-		name = "+debug",
-		-- b = {tmux_send('b'), 'break'},
-		-- c = {tmux_send('c'), 'continue'},
-		-- d = {tmux_send('d'), 'down'},
-		-- h = {tmux_send('h'), 'help'},
-		-- i = {':lua set_trace()<CR>', 'ipdb'},
-		-- I = {':lua set_trace_up()<CR>', 'ipdb_up'},
-		-- l = {tmux_send('ll'), 'longlist'},
-		-- L = {tmux_send('l'), 'list'},
-		-- n = {tmux_send('n'), 'next'},
-		-- q = {tmux_send('q'), 'quit'},
-		-- p = {tmux_send('\\%debug'), '%debug'},
-		-- s = {tmux_send('s'), 'step'},
-		-- S = {tmux_send('sticky'), 'sticky'},
-		-- u = {tmux_send('u'), 'up'},
-		-- w = {tmux_send('w'), 'where'},
 	},
 
 	g = {
