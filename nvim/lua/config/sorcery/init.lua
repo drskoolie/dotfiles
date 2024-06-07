@@ -1,20 +1,4 @@
-function tmux_send(input, style)
-	style = style or 'string'
-	
-	output = [[:silent !tmux send -t 1 ']] .. input .. [[' Enter<CR>]]
-
-	if (style == 'string')
-	then
-		return output
-	elseif (style == 'vim_cmd')
-	then
-		vim.cmd(string.sub(output, 2, -5))
-	end
-end
-
-function tmux_send_clear()
-	vim.cmd([[silent !tmux send -t 1 C-l]])
-end
+vim.cmd([[set clipboard=unnamedplus]])
 
 function tmux_paste()
 	output0 = [[silent !tmux select-pane -t 1]]
@@ -28,16 +12,6 @@ function tmux_paste()
 	vim.cmd(output3)
 	vim.cmd(output4)
 end
-
-function tmux_open_pane(options)
-	return [[:silent !tmux splitw ]] .. options .. [[<CR>]]
-end
-
-vim.cmd([[set clipboard=unnamedplus]])
-vim.cmd([[com! TmuxPaste lua tmux_paste()]])
-vim.cmd([[com! TmuxSendClear lua tmux_send_clear()]])
-
-local tmux_kill_pane_last = ':silent !tmux last-pane \\; kill-pane<CR>'
 
 -- block_copy
 
@@ -85,12 +59,23 @@ function set_trace_up()
 	vim.cmd('normal! ^')
 end
 
+function get_clipboard_content()
+    local clipboard_content = vim.fn.system('xclip -o -sel clipboard')
+    return clipboard_content
+end
+
 function zellij_send_action(action)
 	move_right = [[:silent !zellij action move-focus right; ]]
 	move_left = [[zellij action move-focus left]]
 
 	command = move_right .. action .. move_left
 	vim.cmd(command)
+end
+
+function zellij_send_ascii(input)
+	write_ascii = [[zellij action write ]] .. input .. [[ ; ]]
+
+	zellij_send_action(write_ascii)
 end
 
 function zellij_send_chars(input)
@@ -100,10 +85,19 @@ function zellij_send_chars(input)
 	zellij_send_action(write_chars .. press_enter)
 end
 
--- zellij_send_chars("xclip -o -sel clipboard")
+function zellij_paste()
+    local clipboard_content = get_clipboard_content()
 
-function zellij_send_ascii(input)
-	write_ascii = [[zellij action write ]] .. input .. [[ ; ]]
+    -- Split clipboard content into lines
+    local lines = {}
+    for line in clipboard_content:gmatch("[^\r\n]+") do
+        table.insert(lines, line)
+    end
 
-	zellij_send_action(write_ascii)
+    -- Send each line to zellij
+    for _, line in ipairs(lines) do
+        zellij_send_chars(line)
+    end
 end
+
+zellij_paste()
