@@ -150,6 +150,7 @@ wk_mappings = {
 		name = "+ipython",
 
 		d = {tmux_send('dea'), 'dea'},
+		d = {':lua zellij_send_chars("deactivate")<CR>', 'deactivate'},
 		e = {tmux_send('exit'), 'exit'},
 		f = {tmux_send('run %:p'), 'file'},
         l = {':norm ^"+y$<CR>:TmuxPaste<CR>',          'send line'},
