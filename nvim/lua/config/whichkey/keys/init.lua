@@ -149,13 +149,12 @@ wk_mappings = {
 	i = {
 		name = "+ipython",
 
-		d = {tmux_send('dea'), 'dea'},
 		d = {':lua zellij_send_chars("deactivate")<CR>', 'deactivate'},
-		e = {tmux_send('exit'), 'exit'},
-		f = {tmux_send('run %:p'), 'file'},
+		o = {':lua zellij_send_chars("ipython --no-autoindent")<CR>', 'open'},
+		q = {':lua zellij_send_chars("quit")<CR>', 'quit'},
+		f = {':lua zellij_send_chars("run %:p")<CR>', 'file'},
         l = {':norm ^"+y$<CR>:TmuxPaste<CR>',          'send line'},
         m = {[[:norm mm<CR>:norm "+ym<CR>:lua tmux_send('\\%paste', 'vim_cmd')<CR>:norm 'm<CR>]],           'matlab'},
-		o = {tmux_send('ipython --no-autoindent'), 'open'},
 		O = {tmux_send('powershell.exe -NoExit -Command "& \'C:\\\\Users\\\\al.elhag\\\\venv_auregen_windows\\\\Scripts\\\\Activate.ps1\'; py -m IPython --no-autoindent"'), 'open powershell'},
 		O = {tmux_send('cmd.exe /c "cd /d C:\\Users\\al.elhag\\OneDrive - Qualus Corp\\Documents\\Python\\AuReGen && venv_auregen_windows\\Scripts\\activate.bat && ipython --no-autoindent && cmd"'), 'open cmd'},
         p = {':TmuxPaste<CR>',    'paste'},
