@@ -331,7 +331,7 @@ wk_mappings = {
 		v = {':w<CR>:source %<CR>',  'vim source'},
 	},
 
-	s = {
+	t = {
 		name = "+telescope",
 
 		b = {":Telescope builtin<CR>", 'builtin'},
@@ -349,36 +349,6 @@ wk_mappings = {
 		s = {":Telescope search_history<CR>", 'search_history'},
 	},
 
-
-	t = {
-		name = "+telescope",
-
-		c = {':TmuxSendClear<CR>', 'clear'},
-		C = {tmux_send('C-c'), 'C-c'},
-		d = {tmux_send('C-d'), 'C-d'},
-		e = {tmux_send(''), 'enter'},
-		k = {':silent !tmux kill-pane -t 1<CR>', 'kill'},
-		l  = {tmux_open_pane('-dh'),  'right'},
-		L  = {':silent !tmux move-pane -f -s 1 -t 0<CR>',  'right'},
-		j  = {tmux_open_pane('-d'),  'down'},
-		J  = {':silent !tmux move-pane -h -s 1 -t 0<CR>',  'down'},
-		y = {tmux_send('y'), 'y'},
-	},
-
-	x = {
-		name = "+latex",
-
-		c = {':VimtexCompile<CR>', 'compile'},
-		d = {':VimtexDocPackage<CR>', 'docs'},
-		e = {':VimtexErrors<CR>', 'errors'},
-		f =	{':VimtexTocOpen<CR>', 'file manager'},
-		i = {':VimtexInfo<CR>', 'info'},
-		l = {':VimtexClean<CR>', 'clean'},
-		r = {':VimtexReload<CR>', 'reload'},
-		s = {':VimtexStop<CR>', 'stop'},
-		w = {':VimtexCountWords<CR>', 'words'},
-		z = {':VimtexView<CR>', 'zathura'},
-	},
 
 	u = {
 		name = "+undotree",
