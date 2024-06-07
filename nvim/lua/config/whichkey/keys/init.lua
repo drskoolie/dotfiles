@@ -390,6 +390,12 @@ wk_mappings = {
 	},
 
 	q = {':cclose<CR>', 'quit quickfix'},
+	
+	z = {
+		name = "+zellij",
+
+		l = {zellij_send_c_l(), 'C-l'},
+	},
 
 }
 

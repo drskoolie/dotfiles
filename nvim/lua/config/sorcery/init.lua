@@ -103,3 +103,11 @@ function zellij_send_ascii(input)
 	command = move_right .. write_ascii .. move_left
 	vim.cmd(command)
 end
+
+function zellij_send_c_l()
+	zellij_send_ascii(12)
+end
+
+-- zellij_send("xclip -o -sel clipboard")
+
+
