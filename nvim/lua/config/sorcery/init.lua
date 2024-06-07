@@ -65,39 +65,42 @@ function get_clipboard_content()
 end
 
 function zellij_send_action(action)
-	move_right = [[:silent !zellij action move-focus right; ]]
-	move_left = [[zellij action move-focus left]]
+	local move_right = [[:silent !zellij action move-focus right; ]]
+	local move_left = [[zellij action move-focus left]]
 
-	command = move_right .. action .. move_left
+	local command = move_right .. action .. move_left
 	vim.cmd(command)
 end
 
 function zellij_send_ascii(input)
-	write_ascii = [[zellij action write ]] .. input .. [[ ; ]]
+	local write_ascii = [[zellij action write ]] .. input .. [[ ; ]]
 
 	zellij_send_action(write_ascii)
 end
 
-function zellij_send_chars(input)
-	write_chars = [[zellij action write-chars "]] .. input .. [["; ]]
-	press_enter = [[zellij action write 13; ]]
+function zellij_send_chars(input, enter_flag)
+	enter_flag = enter_flag or true
+	local write_chars = [[zellij action write-chars "]] .. input .. [["; ]]
+	local command = write_chars
 
-	zellij_send_action(write_chars .. press_enter)
+	if enter_flag then
+		command = command .. [[zellij action write 13; ]]
+	end
+
+	zellij_send_action(command)
 end
 
 function zellij_paste()
     local clipboard_content = get_clipboard_content()
 
-    -- Split clipboard content into lines
-    local lines = {}
-    for line in clipboard_content:gmatch("[^\r\n]+") do
-        table.insert(lines, line)
-    end
+    -- Remove trailing newline and escape quotes
+    clipboard_content = clipboard_content:gsub('%s+$', ''):gsub('"', '\\"')
 
-    -- Send each line to zellij
-    for _, line in ipairs(lines) do
-        zellij_send_chars(line)
-    end
+	-- Replace newlines with a special sequence to avoid sending enter
+    -- clipboard_content = clipboard_content:gsub('\n', '\\n')
+
+    -- Send the entire clipboard content to zellij
+    zellij_send_chars(clipboard_content)
 end
 
-zellij_paste()
+print("1")
