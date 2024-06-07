@@ -91,16 +91,22 @@ function zellij_send_chars(input, enter_flag)
 end
 
 function zellij_paste()
-    local clipboard_content = get_clipboard_content()
-
+    clipboard_content = get_clipboard_content()
     -- Remove trailing newline and escape quotes
     clipboard_content = clipboard_content:gsub('%s+$', ''):gsub('"', '\\"')
+    -- Split clipboard content into lines
+    lines = {}
+    for line in clipboard_content:gmatch("[^\r\n]+") do
+        table.insert(lines, line)
+    end
 
-	-- Replace newlines with a special sequence to avoid sending enter
-    -- clipboard_content = clipboard_content:gsub('\n', '\\n')
+    -- Send each line to zellij without pressing enter
+    for i, line in ipairs(lines) do
+        press_enter = (i == #lines)  -- Only press enter after the last line
+        zellij_send_chars(line, press_enter)
+    end
 
-    -- Send the entire clipboard content to zellij
-    zellij_send_chars(clipboard_content)
+	if #lines > 1 then
+		zellij_send_ascii(13)
+	end
 end
-
-print("1")
