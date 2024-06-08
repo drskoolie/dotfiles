@@ -212,8 +212,6 @@ wk_mappings = {
 	n = {
 		name = "+neovim",
 
-
-
 		o = {
 			name = "+open",
 
@@ -229,6 +227,7 @@ wk_mappings = {
 		e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
 		l = {':w<CR>:luafile %<CR>',  'lua source'},
 		L = {':Lazy<CR>', 'lazy'},
+		t = {':set spell!<CR>', 'spell toggle'},
 		v = {':w<CR>:source %<CR>',  'vim source'},
 	},
 
@@ -336,31 +335,11 @@ wk_mappings = {
 			w = {':w<CR>:vsp %:p:t:r.lst<CR>G:sp %:p:t:r.out<CR>G', 'window'},
 		},
 
-		i = {
-			name = "+insert",
-
-			f  = {'i<C-r>=expand("%:p:t:r")<CR><Esc>', 'file'},
-			n  = {':r!date +"\\%Y-\\%m-\\%d (\\%H:\\%M)"<CR>kJ', 'now'},
-
-		},
-
 		m = {
 			name = "+markdown",
 
 			p = {':MarkdownPreview<CR>', 'preview'},
 			q = {':MarkdownPreviewStop<CR>', 'quit'},
-		},
-
-
-		s = {
-			name = "+spell",
-
-			a = {':set textwidth=110<CR>:set fo=tc<CR>:set spell<CR>', 'all'},
-			A = {':set textwidth=150<CR>:set fo=tc<CR>:set spell<CR>', 'All'},
-			f = {'<ESC>[sz=1<CR>A', 'fix'},
-			F = {'[s<C-o>z=1<CR><C-o>A', 'fix'},
-			n = {':set nospell<CR>', 'nospell'},
-			t = {':set spell!<CR>', 'spell toggle'},
 		},
 	},	
 
