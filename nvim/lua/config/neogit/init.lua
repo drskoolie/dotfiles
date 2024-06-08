@@ -259,7 +259,7 @@ neogit.setup {
       ["f"] = "FetchPopup",
       ["l"] = "LogPopup",
       ["m"] = "MergePopup",
-      ["p"] = "PullPopup",
+      ["P"] = "PullPopup",
       ["r"] = "RebasePopup",
       ["v"] = "RevertPopup",
       ["w"] = "WorktreePopup",
