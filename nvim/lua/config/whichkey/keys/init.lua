@@ -31,8 +31,6 @@ wk_mappings = {
 		w = {":lua zellij_send_chars('w')<CR>", 'where'},
 	},
 
-	f = {':Neotree<CR>', 'neotree'},
-
 	p = {
 		name = "+dap",
 
@@ -225,9 +223,11 @@ wk_mappings = {
 		a = {':set nrformats+=alpha<CR>', 'alpha+'},
 		A = {':set nrformats-=alpha<CR>', 'alpha-'},
 		e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
-		l = {':w<CR>:luafile %<CR>',  'lua source'},
-		L = {':Lazy<CR>', 'lazy'},
-		t = {':set spell!<CR>', 'spell toggle'},
+		l = {':Lazy<CR>', 'lazy'},
+		L = {':w<CR>:luafile %<CR>',  'lua source'},
+		n = {':Neogit<CR>', 'neogit'},
+		s = {':set spell!<CR>', 'spell toggle'},
+		t = {':Neotree<CR>', 'neotree'},
 		v = {':w<CR>:source %<CR>',  'vim source'},
 	},
 
