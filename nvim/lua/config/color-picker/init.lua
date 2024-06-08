@@ -1,8 +1,5 @@
 local opts = { noremap = true, silent = true }
 
--- vim.keymap.set("n", "your_keymap", "<cmd>ConvertHEXandRGB<cr>", opts)
--- vim.keymap.set("n", "your_keymap", "<cmd>ConvertHEXandHSL<cr>", opts)
-
 require("color-picker").setup({ -- for changing icons & mappings
 	["icons"] = { "ﱢ", "" },
 	["border"] = "rounded", -- none | single | double | rounded | solid | shadow

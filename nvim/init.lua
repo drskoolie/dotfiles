@@ -13,12 +13,12 @@ require('core/vimscript')
 require('config/color-picker')
 require('config/gitsigns')
 require('config/lualine')
+require('config/neogit')
 require('config/nvim-colorizer')
 require('config/nvim-neo-tree')
 require('config/nvim-notify')
 require('config/sorcery')
 require('config/telescope')
-require('config/vimtex')
 
 -- ==> Languages
 require('languages/sqlite')
@@ -32,6 +32,6 @@ require('lsp/treesitter')
 -- ==> DAP (After LSP!)
 require('lsp/dap')
 
--- ==> WhichKey
+-- ==> WhichKey (Last!)
 require('config/whichkey/config')
 require('config/whichkey/keys')

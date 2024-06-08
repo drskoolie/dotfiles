@@ -12,18 +12,24 @@ wk_mappings = {
 		t  = {':tabnew<CR>',    'tab new'},
 	},
 
-	c = {
-		name = "+coding",
-
-		-- c = {tmux_send('python3 make.py clean'), 'clean'},
-		-- l = {tmux_send('lua  %:p'), 'lua'},
-		-- m = {tmux_send('python3 make.py compile'), 'make'},
-		-- r = {tmux_send('python3 make.py run'), 'run'},
-		-- t = {tmux_send('python3 make.py test'), 'test'},
-		-- w = {tmux_send('python3 make.py warning'), 'warning'},
+	d = {
+		name = "+debug",
+		b = {":lua zellij_send_chars('b')<CR>", 'break'},
+		c = {":lua zellij_send_chars('c')<CR>", 'continue'},
+		d = {":lua zellij_send_chars('d')<CR>", 'down'},
+		h = {":lua zellij_send_chars('h')<CR>", 'help'},
+		l = {":lua zellij_send_chars('ll')<CR>", 'longlist'},
+		L = {":lua zellij_send_chars('l')<CR>", 'list'},
+		i = {':lua set_trace()<CR>', 'ipdb'},
+		I = {':lua set_trace_up()<CR>', 'ipdb_up'},
+		n = {":lua zellij_send_chars('n')<CR>", 'next'},
+		q = {":lua zellij_send_chars('q')<CR>", 'quit'},
+		p = {":lua zellij_send_chars('\\\\%debug')<CR>", '%debug'},
+		s = {":lua zellij_send_chars('s')<CR>", 'step'},
+		S = {":lua zellij_send_chars('sticky')<CR>", 'sticky'},
+		u = {":lua zellij_send_chars('u')<CR>", 'up'},
+		w = {":lua zellij_send_chars('w')<CR>", 'where'},
 	},
-
-	f = {':Neotree<CR>', 'neotree'},
 
 	p = {
 		name = "+dap",
@@ -66,84 +72,19 @@ wk_mappings = {
 		U = {'<cmd> lua require("dapui").open({reset = true})<CR>', 'ui reset'},
 	},
 
-	d = {
-		name = "+debug",
-		-- b = {tmux_send('b'), 'break'},
-		-- c = {tmux_send('c'), 'continue'},
-		-- d = {tmux_send('d'), 'down'},
-		-- h = {tmux_send('h'), 'help'},
-		-- i = {':lua set_trace()<CR>', 'ipdb'},
-		-- I = {':lua set_trace_up()<CR>', 'ipdb_up'},
-		-- l = {tmux_send('ll'), 'longlist'},
-		-- L = {tmux_send('l'), 'list'},
-		-- n = {tmux_send('n'), 'next'},
-		-- q = {tmux_send('q'), 'quit'},
-		-- p = {tmux_send('\\%debug'), '%debug'},
-		-- s = {tmux_send('s'), 'step'},
-		-- S = {tmux_send('sticky'), 'sticky'},
-		-- u = {tmux_send('u'), 'up'},
-		-- w = {tmux_send('w'), 'where'},
-	},
-
 	g = {
 		name = "+git",
 
-		b = {':Gitsigns blame_line<CR>', 'blame'},
-		c = {':Git commit -v<CR>', 'commit -v'},
-		C = {':Git commit<CR>', 'commit'},
-		f = {':Git fetch<CR>', 'fetch'},
-		g = {':Ggrep -q -n -I ', 'grep'},
-		l = {
-			name = "+log",
-
-			a = {':Git log --all --decorate --oneline --graph<CR>', 'all'},
-		},
-
-
-		h = {
-			name = "+hunks",
-
-			h = {':Gitsigns preview_hunk<CR>', 'hunk'},
-			n = {':Gitsigns next_hunk<CR>', 'next hunk'},
-			p = {':Gitsigns prev_hunk<CR>', 'prev hunk'},
-			q = {':Gitsigns setqflist<CR>', 'quickfix'},
-		},
-		H = {':GBrowse<CR>', 'github'},
-		m = {':Git merge<CR>', 'merge'},
-		p = {':Git push<CR>', 'push'},
-		P = {':Git! push<CR>', 'push!'},
-		r = {
-			name = "+reset",
-
-			b = {':Gitsigns reset_buffer<CR>', 'buffer'},
-			h = {':Gitsigns reset_hunk<CR>', 'hunk'},
-		},
-		s = {
-			name = "+stage",
-
-			b = {':Gitsigns stage_buffer<CR>', 'buffer'},
-			h = {':Gitsigns stage_hunk<CR>', 'hunk'},
-		},
-		T = {
-			name = "+toggle",
-
-			a = {':Gitsigns toggle_linehl<CR>', 'added'},
-			b = {':Gitsigns toggle_current_line_blame<CR>', 'blame'},
-			d = {':Gitsigns toggle_deleted<CR>', 'deleted'},
-			n = {':Gitsigns toggle_numhl<CR>', 'numbers'},
-			w = {':Gitsigns toggle_word_diff<CR>', 'word_diff'},
-		},
-
-		t = {
-			name = "+telescope",
-			b = {":Telescope git_branches<CR>", 'branches'},
-			c = {":Telescope git_bcommits<CR>", 'bcommits'},
-			C = {":Telescope git_commits<CR>", 'commits'},
-			f = {":Telescope git_files<CR>", 'files'},
-			h = {":Telescope git_stash<CR>", 'stash'},
-			s = {":Telescope git_status<CR>", 'status'},
-		},
-
+		b = {':Gitsigns toggle_current_line_blame<CR>', 'blame'},
+		B = {':Gitsigns blame_line<CR>', 'blame'},
+		d = {':Gitsigns toggle_deleted<CR>', 'deleted'},
+		g = {':Neogit<CR>', 'neogit'},
+		h = {':Gitsigns preview_hunk<CR>', 'hunk'},
+		l = {':Gitsigns toggle_linehl<CR>', 'line'},
+		n = {':Gitsigns next_hunk<CR>', 'next hunk'},
+		p = {':Gitsigns prev_hunk<CR>', 'prev hunk'},
+		r = {':Gitsigns reset_hunk<CR>', 'reset hunk'},
+		q = {':Gitsigns setqflist<CR>', 'quickfix'},
 	},
 
 	i = {
@@ -223,8 +164,6 @@ wk_mappings = {
 	n = {
 		name = "+neovim",
 
-
-
 		o = {
 			name = "+open",
 
@@ -238,8 +177,10 @@ wk_mappings = {
 		a = {':set nrformats+=alpha<CR>', 'alpha+'},
 		A = {':set nrformats-=alpha<CR>', 'alpha-'},
 		e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
-		l = {':w<CR>:luafile %<CR>',  'lua source'},
-		L = {':Lazy<CR>', 'lazy'},
+		l = {':Lazy<CR>', 'lazy'},
+		L = {':w<CR>:luafile %<CR>',  'lua source'},
+		s = {':set spell!<CR>', 'spell toggle'},
+		t = {':Neotree<CR>', 'neotree'},
 		v = {':w<CR>:source %<CR>',  'vim source'},
 	},
 
@@ -271,8 +212,6 @@ wk_mappings = {
 		t = {':UndotreeToggle<CR>', 'toggle'},
 	},
 
-	q = {':cclose<CR>', 'quit quickfix'},
-	
 	z = {
 		name = "+zellij",
 
@@ -324,18 +263,6 @@ wk_mappings = {
 			x = {':XtermColorTable<CR>',  'xterm'},
 		},
 		 
-		f = {
-			name = "+figlet",
-
-			b = {'!figlet -f big <CR>', 'big', mode='v'},
-			B = {'!figlet -f bubble <CR>', 'bubble', mode='v'},
-			f = {'!figlet <CR>', 'figlet', mode='v'},
-			m = {'!figlet -f mono9 <CR>', 'mono9', mode='v'},
-			M = {'!figlet -f mono12 <CR>', 'mono12', mode='v'},
-			s = {'!figlet -f script <CR>', 'script', mode='v'},
-		},
-
-
 		g = {
 			name = "+gams",
 
@@ -347,31 +274,11 @@ wk_mappings = {
 			w = {':w<CR>:vsp %:p:t:r.lst<CR>G:sp %:p:t:r.out<CR>G', 'window'},
 		},
 
-		i = {
-			name = "+insert",
-
-			f  = {'i<C-r>=expand("%:p:t:r")<CR><Esc>', 'file'},
-			n  = {':r!date +"\\%Y-\\%m-\\%d (\\%H:\\%M)"<CR>kJ', 'now'},
-
-		},
-
 		m = {
 			name = "+markdown",
 
 			p = {':MarkdownPreview<CR>', 'preview'},
 			q = {':MarkdownPreviewStop<CR>', 'quit'},
-		},
-
-
-		s = {
-			name = "+spell",
-
-			a = {':set textwidth=110<CR>:set fo=tc<CR>:set spell<CR>', 'all'},
-			A = {':set textwidth=150<CR>:set fo=tc<CR>:set spell<CR>', 'All'},
-			f = {'<ESC>[sz=1<CR>A', 'fix'},
-			F = {'[s<C-o>z=1<CR><C-o>A', 'fix'},
-			n = {':set nospell<CR>', 'nospell'},
-			t = {':set spell!<CR>', 'spell toggle'},
 		},
 	},	
 
