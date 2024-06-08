@@ -19,7 +19,7 @@ neogit.setup {
   },
   -- "ascii"   is the graph the git CLI generates
   -- "unicode" is the graph like https://github.com/rbong/vim-flog
-  graph_style = "ascii",
+  graph_style = "unicode",
   -- Used to generate URL's for branch popup action "pull request".
   git_services = {
     ["github.com"] = "https://github.com/${owner}/${repository}/compare/${branch_name}?expand=1",
@@ -250,7 +250,7 @@ neogit.setup {
       ["A"] = "CherryPickPopup",
       ["D"] = "DiffPopup",
       ["M"] = "RemotePopup",
-      ["P"] = "PushPopup",
+      ["p"] = "PushPopup",
       ["X"] = "ResetPopup",
       ["Z"] = "StashPopup",
       ["b"] = "BranchPopup",
