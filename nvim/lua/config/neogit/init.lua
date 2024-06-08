@@ -257,7 +257,7 @@ neogit.setup {
       ["B"] = "BisectPopup",
       ["c"] = "CommitPopup",
       ["f"] = "FetchPopup",
-	  ["l"] = false,
+	  -- ["l"] = false,
       ["g"] = "LogPopup",
       ["m"] = "MergePopup",
       ["P"] = "PullPopup",
