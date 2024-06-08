@@ -95,7 +95,7 @@ require("lazy").setup({
     "nvim-telescope/telescope.nvim", -- optional
     "ibhagwan/fzf-lua",              -- optional
   },
-  config = true
+  config = false
   },
 
   -- +-------+
