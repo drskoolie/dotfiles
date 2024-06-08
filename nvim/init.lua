@@ -33,6 +33,6 @@ require('lsp/treesitter')
 -- ==> DAP (After LSP!)
 require('lsp/dap')
 
--- ==> WhichKey
+-- ==> WhichKey (Last!)
 require('config/whichkey/config')
 require('config/whichkey/keys')
