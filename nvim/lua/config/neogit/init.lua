@@ -275,7 +275,7 @@ neogit.setup {
       ["2"] = "Depth2",
       ["3"] = "Depth3",
       ["4"] = "Depth4",
-      ["<tab>"] = "Toggle",
+      ["l"] = "Toggle",
       ["x"] = "Discard",
       ["s"] = "Stage",
       ["S"] = "StageUnstaged",
