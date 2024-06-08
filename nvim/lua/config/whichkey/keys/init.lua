@@ -83,6 +83,7 @@ wk_mappings = {
 		l = {':Gitsigns toggle_linehl<CR>', 'line'},
 		n = {':Gitsigns next_hunk<CR>', 'next hunk'},
 		p = {':Gitsigns prev_hunk<CR>', 'prev hunk'},
+		r = {':Gitsigns reset_hunk<CR>', 'reset hunk'},
 		q = {':Gitsigns setqflist<CR>', 'quickfix'},
 	},
 

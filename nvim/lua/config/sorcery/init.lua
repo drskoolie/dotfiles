@@ -1,5 +1,3 @@
-vim.cmd([[set clipboard=unnamedplus]])
-
 function block_copy(pattern)
 	local top = vim.fn.search('^' .. pattern, 'bW')
 
