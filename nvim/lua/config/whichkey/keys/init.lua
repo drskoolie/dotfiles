@@ -76,16 +76,7 @@ wk_mappings = {
 		name = "+git",
 
 		b = {':Gitsigns blame_line<CR>', 'blame'},
-		c = {':Git commit -v<CR>', 'commit -v'},
-		C = {':Git commit<CR>', 'commit'},
-		f = {':Git fetch<CR>', 'fetch'},
-		g = {':Ggrep -q -n -I ', 'grep'},
-		l = {
-			name = "+log",
-
-			a = {':Git log --all --decorate --oneline --graph<CR>', 'all'},
-		},
-
+		l = {':Git log --all --decorate --oneline --graph<CR>', 'log'},
 
 		h = {
 			name = "+hunks",
