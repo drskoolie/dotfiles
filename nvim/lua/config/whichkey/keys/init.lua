@@ -75,30 +75,15 @@ wk_mappings = {
 	g = {
 		name = "+git",
 
-		b = {':Gitsigns blame_line<CR>', 'blame'},
-		h = {
-			name = "+hunks",
-
-			h = {':Gitsigns preview_hunk<CR>', 'hunk'},
-			n = {':Gitsigns next_hunk<CR>', 'next hunk'},
-			p = {':Gitsigns prev_hunk<CR>', 'prev hunk'},
-			q = {':Gitsigns setqflist<CR>', 'quickfix'},
-		},
-		r = {
-			name = "+reset",
-
-			b = {':Gitsigns reset_buffer<CR>', 'buffer'},
-			h = {':Gitsigns reset_hunk<CR>', 'hunk'},
-		},
-		T = {
-			name = "+toggle",
-
-			a = {':Gitsigns toggle_linehl<CR>', 'added'},
-			b = {':Gitsigns toggle_current_line_blame<CR>', 'blame'},
-			d = {':Gitsigns toggle_deleted<CR>', 'deleted'},
-			n = {':Gitsigns toggle_numhl<CR>', 'numbers'},
-			w = {':Gitsigns toggle_word_diff<CR>', 'word_diff'},
-		},
+		b = {':Gitsigns toggle_current_line_blame<CR>', 'blame'},
+		B = {':Gitsigns blame_line<CR>', 'blame'},
+		d = {':Gitsigns toggle_deleted<CR>', 'deleted'},
+		g = {':Neogit<CR>', 'neogit'},
+		h = {':Gitsigns preview_hunk<CR>', 'hunk'},
+		l = {':Gitsigns toggle_linehl<CR>', 'line'},
+		n = {':Gitsigns next_hunk<CR>', 'next hunk'},
+		p = {':Gitsigns prev_hunk<CR>', 'prev hunk'},
+		q = {':Gitsigns setqflist<CR>', 'quickfix'},
 	},
 
 	i = {
@@ -191,7 +176,6 @@ wk_mappings = {
 		a = {':set nrformats+=alpha<CR>', 'alpha+'},
 		A = {':set nrformats-=alpha<CR>', 'alpha-'},
 		e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
-		g = {':Neogit<CR>', 'neogit'},
 		l = {':Lazy<CR>', 'lazy'},
 		L = {':w<CR>:luafile %<CR>',  'lua source'},
 		s = {':set spell!<CR>', 'spell toggle'},
@@ -227,8 +211,6 @@ wk_mappings = {
 		t = {':UndotreeToggle<CR>', 'toggle'},
 	},
 
-	q = {':cclose<CR>', 'quit quickfix'},
-	
 	z = {
 		name = "+zellij",
 
