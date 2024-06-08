@@ -76,8 +76,6 @@ wk_mappings = {
 		name = "+git",
 
 		b = {':Gitsigns blame_line<CR>', 'blame'},
-		l = {':Git log --all --decorate --oneline --graph<CR>', 'log'},
-
 		h = {
 			name = "+hunks",
 
