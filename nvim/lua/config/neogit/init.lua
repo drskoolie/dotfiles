@@ -5,7 +5,7 @@ neogit.setup {
   mappings = {
     -- modify status buffer mappings
     status = {
-      ["P"] = "PullPopup",
+      ["P"] = "Wrong",
       ["p"] = "PushPopup",
     }
   }

@@ -19,7 +19,6 @@ require('config/nvim-neo-tree')
 require('config/nvim-notify')
 require('config/sorcery')
 require('config/telescope')
-require('config/vimtex')
 
 -- ==> Languages
 require('languages/sqlite')
