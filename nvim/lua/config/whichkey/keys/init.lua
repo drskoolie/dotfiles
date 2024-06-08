@@ -86,21 +86,11 @@ wk_mappings = {
 			p = {':Gitsigns prev_hunk<CR>', 'prev hunk'},
 			q = {':Gitsigns setqflist<CR>', 'quickfix'},
 		},
-		H = {':GBrowse<CR>', 'github'},
-		m = {':Git merge<CR>', 'merge'},
-		p = {':Git push<CR>', 'push'},
-		P = {':Git! push<CR>', 'push!'},
 		r = {
 			name = "+reset",
 
 			b = {':Gitsigns reset_buffer<CR>', 'buffer'},
 			h = {':Gitsigns reset_hunk<CR>', 'hunk'},
-		},
-		s = {
-			name = "+stage",
-
-			b = {':Gitsigns stage_buffer<CR>', 'buffer'},
-			h = {':Gitsigns stage_hunk<CR>', 'hunk'},
 		},
 		T = {
 			name = "+toggle",
@@ -111,17 +101,6 @@ wk_mappings = {
 			n = {':Gitsigns toggle_numhl<CR>', 'numbers'},
 			w = {':Gitsigns toggle_word_diff<CR>', 'word_diff'},
 		},
-
-		t = {
-			name = "+telescope",
-			b = {":Telescope git_branches<CR>", 'branches'},
-			c = {":Telescope git_bcommits<CR>", 'bcommits'},
-			C = {":Telescope git_commits<CR>", 'commits'},
-			f = {":Telescope git_files<CR>", 'files'},
-			h = {":Telescope git_stash<CR>", 'stash'},
-			s = {":Telescope git_status<CR>", 'status'},
-		},
-
 	},
 
 	i = {
