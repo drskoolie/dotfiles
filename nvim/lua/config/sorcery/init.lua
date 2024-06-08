@@ -1,20 +1,5 @@
 vim.cmd([[set clipboard=unnamedplus]])
 
-function tmux_paste()
-	output0 = [[silent !tmux select-pane -t 1]]
-	output1 = [[silent !xclip -o -sel clipboard | tmux load-buffer -]]
-	output2 = [[silent !tmux paste-buffer]]
-	output3 = [[silent !tmux send -t 1 Enter]]
-	output4 = [[silent !tmux select-pane -t 0]]
-	vim.cmd(output0)
-	vim.cmd(output1)
-	vim.cmd(output2)
-	vim.cmd(output3)
-	vim.cmd(output4)
-end
-
--- block_copy
-
 function block_copy(pattern)
 	local top = vim.fn.search('^' .. pattern, 'bW')
 
@@ -29,9 +14,6 @@ function block_copy(pattern)
 		vim.cmd('normal! ' .. bottom - 1 .. 'gg')
 	end
 end
-
-vim.api.nvim_set_keymap('o', 'm', [[:<C-u>lua block_copy('##')<CR>]], { noremap = true, silent = true})
-vim.api.nvim_set_keymap('x', 'm', [[:<C-u>lua block_copy('##')<CR>]], { noremap = true, silent = true})
 
 function set_trace()
 	vim.cmd('normal! ^')
