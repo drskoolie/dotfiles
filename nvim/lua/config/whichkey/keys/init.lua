@@ -312,18 +312,6 @@ wk_mappings = {
 			x = {':XtermColorTable<CR>',  'xterm'},
 		},
 		 
-		f = {
-			name = "+figlet",
-
-			b = {'!figlet -f big <CR>', 'big', mode='v'},
-			B = {'!figlet -f bubble <CR>', 'bubble', mode='v'},
-			f = {'!figlet <CR>', 'figlet', mode='v'},
-			m = {'!figlet -f mono9 <CR>', 'mono9', mode='v'},
-			M = {'!figlet -f mono12 <CR>', 'mono12', mode='v'},
-			s = {'!figlet -f script <CR>', 'script', mode='v'},
-		},
-
-
 		g = {
 			name = "+gams",
 
