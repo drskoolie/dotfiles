@@ -3,7 +3,6 @@ wk_mappings = {
 	b = {
 		name = "+buffers",
 
-		s = {":Telescope buffers<CR>", 'buffers'},
 		c = {':cd %:p:h<CR>', 'cd'},
 		m = {':tabm +1<CR>',    'tab mov +1'},
 		M = {':tabm -1<CR>',    'tab mov -1'},
@@ -29,6 +28,18 @@ wk_mappings = {
 		S = {":lua zellij_send_chars('sticky')<CR>", 'sticky'},
 		u = {":lua zellij_send_chars('u')<CR>", 'up'},
 		w = {":lua zellij_send_chars('w')<CR>", 'where'},
+	},
+
+	f = {
+		name = "+fzf",
+
+		b = {':FzfLua blines<CR>', 'blines'},
+		B = {':FzfLua buffers<CR>', 'buffers'},
+		f = {':FzfLua files<CR>', 'files'},
+		g = {':FzfLua grep<CR>', 'grep'},
+		h = {':FzfLua helptags<CR>', 'helptags'},
+		j = {':FzfLua jumps<CR>', 'jumps'},
+		k = {':FzfLua keymaps<CR>', 'keymaps'},
 	},
 
 	p = {
