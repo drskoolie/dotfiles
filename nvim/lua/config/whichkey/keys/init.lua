@@ -132,6 +132,7 @@ wk_mappings = {
 		d = {':lua zellij_send_chars("deactivate")<CR>', 'deactivate'},
 		f = {':lua zellij_send_chars("run %:p")<CR>', 'file'},
 		o = {':lua zellij_send_chars("ipython --no-autoindent")<CR>', 'open'},
+		O = {[[:lua zellij_send_chars('powershell.exe -NoExit -Command "& \'C:\\\\Users\\\\al.elhag\\\\venv_auregen_windows\\\\Scripts\\\\Activate.ps1\'; py -m IPython --no-autoindent"')<CR>]], 'open powershell'},
 		q = {':lua zellij_send_chars("quit")<CR>', 'quit'},
 		r = {':lua zellij_send_chars("reset -f")<CR>', 'reset'},
         l = {':norm ^"+y$<CR>:lua zellij_paste()<CR>', 'send line'},
@@ -142,7 +143,6 @@ wk_mappings = {
 		V = {'^yt=o<ESC>pxa', 'variable'},
 
         -- m = {[[:norm mm<CR>:norm "+ym<CR>:lua tmux_send('\\%paste', 'vim_cmd')<CR>:norm 'm<CR>]],           'matlab'},
-		-- O = {tmux_send('powershell.exe -NoExit -Command "& \'C:\\\\Users\\\\al.elhag\\\\venv_auregen_windows\\\\Scripts\\\\Activate.ps1\'; py -m IPython --no-autoindent"'), 'open powershell'},
 		-- O = {tmux_send('cmd.exe /c "cd /d C:\\Users\\al.elhag\\OneDrive - Qualus Corp\\Documents\\Python\\AuReGen && venv_auregen_windows\\Scripts\\activate.bat && ipython --no-autoindent && cmd"'), 'open cmd'},
 	},
 			
