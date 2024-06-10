@@ -1,4 +1,5 @@
 -- ==> Core 
+require('core/autocmd')
 require('core/highlighted-yank')
 require('core/keymappings')
 require('core/keyword')

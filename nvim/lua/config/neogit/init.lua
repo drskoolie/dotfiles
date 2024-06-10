@@ -246,6 +246,7 @@ neogit.setup {
     },
     -- Setting any of these to `false` will disable the mapping.
     popup = {
+	  ["l"] = false,
       ["?"] = "HelpPopup",
       ["A"] = "CherryPickPopup",
       ["D"] = "DiffPopup",
@@ -257,7 +258,6 @@ neogit.setup {
       ["B"] = "BisectPopup",
       ["c"] = "CommitPopup",
       ["f"] = "FetchPopup",
-	  ["l"] = false,
       ["g"] = "LogPopup",
       ["m"] = "MergePopup",
       ["P"] = "PullPopup",
@@ -276,7 +276,7 @@ neogit.setup {
       ["3"] = "Depth3",
       ["4"] = "Depth4",
       ["l"] = "Toggle",
-      ["<tab>"] = false,
+      -- ["<tab>"] = false,
       ["x"] = "Discard",
       ["s"] = "Stage",
       ["S"] = "StageUnstaged",
