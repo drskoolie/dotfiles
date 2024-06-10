@@ -161,6 +161,7 @@ wk_mappings = {
 			s = {':LspStart <CR>', 'start'},
 		},
 		d = {'<cmd>lua vim.lsp.buf.definition()<CR>', 'definition', silent = true},
+		D = {":Telescope diagnostics<CR>", 'diagnostics'},
 		f = {'<cmd>lua vim.lsp.buf.format()<CR>', 'format'},
 		h = {'<cmd>lua vim.lsp.buf.hover()<CR>', 'hover', silent = true},
 		i = {'<cmd>lua vim.lsp.buf.implementation()<CR>', 'implementation', silent = true},
@@ -168,6 +169,7 @@ wk_mappings = {
 		o = {'<cmd>lua vim.diagnostic.open_float()<CR>', 'open_float', silent = true},
 		p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true},
 		r = {'<cmd>lua vim.lsp.buf.rename()<CR>', 'rename'},
+		s = {":Telescope lsp_document_symbols<CR>", 'document'},
 		t = {'<cmd>lua vim.lsp.buf.type_definition()<CR>', 'type definition', silent = true},
 		v = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
 		R = {'<cmd>lua vim.lsp.buf.references()<CR>', 'references'},
@@ -233,14 +235,6 @@ wk_mappings = {
 		t = {'<cmd> lua require("dap").terminate()<CR>', 'terminate'},
 		u = {'<cmd> lua require("dapui").toggle()<CR>', 'ui'},
 		U = {'<cmd> lua require("dapui").open({reset = true})<CR>', 'ui reset'},
-	},
-
-	t = {
-		name = "+telescope",
-		d = {":Telescope diagnostics<CR>", 'diagnostics'},
-		s = {":Telescope lsp_document_symbols<CR>", 'document'},
-		w = {":Telescope lsp_workspace_symbols<CR>", 'workspace'},
-		W = {":Telescope lsp_dynamic_workspace_symbols<CR>", 'dynamic'},
 	},
 
 	z = {
