@@ -145,29 +145,7 @@ wk_mappings = {
 		o = {'<cmd>lua vim.diagnostic.open_float()<CR>', 'open_float', silent = true},
 		p = {'<cmd>lua vim.diagnostic.goto_prev()<CR>', 'prev', silent = true},
 		r = {'<cmd>lua vim.lsp.buf.rename()<CR>', 'rename'},
-		s = {'<cmd>lua vim.lsp.buf.document_symbol()<CR>', 'symbol'},
-		T = {'<cmd>lua vim.lsp.buf.type_definition()<CR>', 'type definition', silent = true},
-		t = {
-			name = "+telescope",
-			c = {
-				name = "calls",
-				i = {":Telescope lsp_incoming_calls<CR>", 'incoming'},
-				o = {":Telescope lsp_outgoing_calls<CR>", 'outgoing'},
-			},
-			d = {":Telescope lsp_definitions<CR>", 'definitions'},
-			D = {":Telescope diagnostics<CR>", 'diagnostics'},
-			i = {":Telescope lsp_implementations<CR>", 'implementations'},
-			r = {":Telescope lsp_references<CR>", 'references'},
-			t = {":Telescope lsp_type_definitions<CR>", 'type'},
-			s = {
-				name = "symobls",
-
-				d = {":Telescope lsp_document_symbols<CR>", 'document'},
-				w = {":Telescope lsp_workspace_symbols<CR>", 'workspace'},
-				W = {":Telescope lsp_dynamic_workspace_symbols<CR>", 'dynamic'},
-			},
-	    },
-
+		t = {'<cmd>lua vim.lsp.buf.type_definition()<CR>', 'type definition', silent = true},
 		v = {'<cmd>lua vim.lsp.buf.declaration()<CR>', 'declaration', silent = true},
 		R = {'<cmd>lua vim.lsp.buf.references()<CR>', 'references'},
 	},
@@ -197,22 +175,24 @@ wk_mappings = {
 
 	t = {
 		name = "+telescope",
-
-		b = {":Telescope builtin<CR>", 'builtin'},
-		c = {":Telescope commands<CR>", "commands"},
-		f = {
-			name = "+files",
-
-			b = {":Telescope current_buffer_fuzzy_find<CR>", "buffer"},
-			f = {":Telescope find_files<CR>", 'find files'},
-			g = {":Telescope live_grep<CR>", 'live_grep'},
-			t = {":Telescope treesitter<CR>", 'treesitter'},
+		c = {
+			name = "calls",
+			i = {":Telescope lsp_incoming_calls<CR>", 'incoming'},
+			o = {":Telescope lsp_outgoing_calls<CR>", 'outgoing'},
 		},
-		h = {":Telescope command_history<CR>", 'history'},
-		r = {":Telescope resume<CR>", 'resume'},
-		s = {":Telescope search_history<CR>", 'search_history'},
-	},
+		d = {":Telescope lsp_definitions<CR>", 'definitions'},
+		D = {":Telescope diagnostics<CR>", 'diagnostics'},
+		i = {":Telescope lsp_implementations<CR>", 'implementations'},
+		r = {":Telescope lsp_references<CR>", 'references'},
+		t = {":Telescope lsp_type_definitions<CR>", 'type'},
+		s = {
+			name = "symobls",
 
+			d = {":Telescope lsp_document_symbols<CR>", 'document'},
+			w = {":Telescope lsp_workspace_symbols<CR>", 'workspace'},
+			W = {":Telescope lsp_dynamic_workspace_symbols<CR>", 'dynamic'},
+		},
+	},
 
 	u = {
 		name = "+undotree",
