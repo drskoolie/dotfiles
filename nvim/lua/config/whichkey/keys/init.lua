@@ -110,11 +110,12 @@ wk_mappings = {
         p = {':lua zellij_send_chars("\\\\%paste")<CR>', 'paste'},
 		p = {'"+y:lua zellij_paste<CR>', 'visual', mode='v'},
         s = {':lua zellij_send_chars("sop")<CR>', 'sop'},
+		v = {'^yt=:lua zellij_paste()<CR>', 'variable'},
+		V = {'0yt=o<ESC>pxa', 'variable'},
 
         -- m = {[[:norm mm<CR>:norm "+ym<CR>:lua tmux_send('\\%paste', 'vim_cmd')<CR>:norm 'm<CR>]],           'matlab'},
 		-- O = {tmux_send('powershell.exe -NoExit -Command "& \'C:\\\\Users\\\\al.elhag\\\\venv_auregen_windows\\\\Scripts\\\\Activate.ps1\'; py -m IPython --no-autoindent"'), 'open powershell'},
 		-- O = {tmux_send('cmd.exe /c "cd /d C:\\Users\\al.elhag\\OneDrive - Qualus Corp\\Documents\\Python\\AuReGen && venv_auregen_windows\\Scripts\\activate.bat && ipython --no-autoindent && cmd"'), 'open cmd'},
-		v = {'0yt=:TmuxPaste<CR>', 'variable'},
 	},
 			
 	l = {
