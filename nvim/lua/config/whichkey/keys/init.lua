@@ -111,7 +111,7 @@ wk_mappings = {
 		p = {'"+y:lua zellij_paste<CR>', 'visual', mode='v'},
         s = {':lua zellij_send_chars("sop")<CR>', 'sop'},
 		v = {'^yt=:lua zellij_paste()<CR>', 'variable'},
-		V = {'0yt=o<ESC>pxa', 'variable'},
+		V = {'^yt=o<ESC>pxa', 'variable'},
 
         -- m = {[[:norm mm<CR>:norm "+ym<CR>:lua tmux_send('\\%paste', 'vim_cmd')<CR>:norm 'm<CR>]],           'matlab'},
 		-- O = {tmux_send('powershell.exe -NoExit -Command "& \'C:\\\\Users\\\\al.elhag\\\\venv_auregen_windows\\\\Scripts\\\\Activate.ps1\'; py -m IPython --no-autoindent"'), 'open powershell'},
@@ -170,23 +170,11 @@ wk_mappings = {
 
 	t = {
 		name = "+telescope",
-		c = {
-			name = "calls",
-			i = {":Telescope lsp_incoming_calls<CR>", 'incoming'},
-			o = {":Telescope lsp_outgoing_calls<CR>", 'outgoing'},
-		},
-		d = {":Telescope lsp_definitions<CR>", 'definitions'},
-		D = {":Telescope diagnostics<CR>", 'diagnostics'},
+		d = {":Telescope diagnostics<CR>", 'diagnostics'},
 		i = {":Telescope lsp_implementations<CR>", 'implementations'},
-		r = {":Telescope lsp_references<CR>", 'references'},
-		t = {":Telescope lsp_type_definitions<CR>", 'type'},
-		s = {
-			name = "symobls",
-
-			d = {":Telescope lsp_document_symbols<CR>", 'document'},
-			w = {":Telescope lsp_workspace_symbols<CR>", 'workspace'},
-			W = {":Telescope lsp_dynamic_workspace_symbols<CR>", 'dynamic'},
-		},
+		s = {":Telescope lsp_document_symbols<CR>", 'document'},
+		w = {":Telescope lsp_workspace_symbols<CR>", 'workspace'},
+		W = {":Telescope lsp_dynamic_workspace_symbols<CR>", 'dynamic'},
 	},
 
 	u = {
