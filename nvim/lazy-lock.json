@@ -20,7 +20,6 @@
   "nvim-dap-ui": { "branch": "master", "commit": "b7267003ba4dd860350be86f75b9d9ea287cedca" },
   "nvim-lspconfig": { "branch": "master", "commit": "92166b89ab4b3d60f24e58170cac53b7141fd032" },
   "nvim-nio": { "branch": "master", "commit": "632024157d01e8bc48fd7df6a7de8ffe3fdd4f3a" },
-  "nvim-notify": { "branch": "master", "commit": "d333b6f167900f6d9d42a59005d82919830626bf" },
   "nvim-treesitter": { "branch": "master", "commit": "9ebc589329083522f9594f408fc2652090b41139" },
   "nvim-ts-rainbow": { "branch": "master", "commit": "ef95c15a935f97c65a80e48e12fe72d49aacf9b9" },
   "nvim-web-devicons": { "branch": "master", "commit": "c0cfc1738361b5da1cd0a962dd6f774cc444f856" },
@@ -34,7 +33,6 @@
   "vim-eunuch": { "branch": "master", "commit": "8fb3904be27b6b60d086f87c2570085902414069" },
   "vim-gams": { "branch": "master", "commit": "82c7acb3bd3587e42b338a9d2ca11a5f6cea8f12" },
   "vim-search-pulse": { "branch": "master", "commit": "006934330dc9eab47a09eeee4c8a50a9b4c065b8" },
-  "vim-smoothie": { "branch": "master", "commit": "df1e324e9f3395c630c1c523d0555a01d2eb1b7e" },
   "vimtex": { "branch": "master", "commit": "0587a064f675fd85cdfb8a76d6a3ff698af3944b" },
   "which-key.nvim": { "branch": "main", "commit": "0099511294f16b81c696004fa6a403b0ae61f7a0" },
   "xterm-color-table.vim": { "branch": "master", "commit": "8785bb47a38a8bce3f5e452c083907e1a9b32763" }

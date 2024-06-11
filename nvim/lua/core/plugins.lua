@@ -102,12 +102,6 @@ require("lazy").setup({
      build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' 
   },
 
-
-  -- +-------+
-  -- | latex |
-  -- +-------+
-  'lervag/vimtex',
-
   -- +-----+
   -- | lsp |
   -- +-----+
@@ -165,8 +159,7 @@ require("lazy").setup({
   -- +----+
   -- | ui |
   -- +----+
-  'rcarriga/nvim-notify',
-  'psliwka/vim-smoothie',
+  -- 'psliwka/vim-smoothie',
   {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
     dependencies = { {'nvim-lua/plenary.nvim'} }
@@ -176,5 +169,4 @@ require("lazy").setup({
   -- | whichkey |
   -- +----------+
   'folke/which-key.nvim',
-
 })

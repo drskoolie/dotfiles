@@ -191,7 +191,7 @@ wk_mappings = {
 		a = {':set nrformats+=alpha<CR>', 'alpha+'},
 		A = {':set nrformats-=alpha<CR>', 'alpha-'},
 		e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
-		L = {':w<CR>:luafile %<CR>',  'lua source'},
+		l = {':w<CR>:luafile %<CR>',  'lua source'},
 		s = {':set spell!<CR>', 'spell toggle'},
 		v = {':w<CR>:source %<CR>',  'vim source'},
 	},
@@ -247,6 +247,7 @@ wk_mappings = {
 		k = {':lua zellij_send_action("zellij action close-pane; ")<CR>', 'kill'},
         p = {':lua zellij_paste()<CR>','paste'},
 		r = {':lua zellij_send_action("zellij action new-pane -d right; ")<CR>', 'right'},
+		D = {':lua zellij_send_action("zellij action new-pane -d down; ")<CR>', 'down'},
 		y = {":lua zellij_send_ascii(121)<CR>", 'y'},
 	},
 }
