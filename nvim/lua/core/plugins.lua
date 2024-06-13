@@ -154,7 +154,6 @@ require("lazy").setup({
   -- +--------+
   'mbbill/undotree',
   'romainl/vim-cool', -- hl-search fix
-  'tpope/vim-eunuch',
 
   -- +----+
   -- | ui |
