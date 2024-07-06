@@ -12,7 +12,7 @@
 -- vim.cmd [[hi CursorLineNr ctermbg=none guibg=none]]
 
 require("catppuccin").setup({
-    flavour = "auto", -- latte, frappe, macchiato, mocha
+    flavour = "macchiato", -- latte, frappe, macchiato, mocha
     background = { -- :h background
         light = "latte",
         dark = "mocha",
@@ -47,16 +47,10 @@ require("catppuccin").setup({
     custom_highlights = {},
     default_integrations = true,
     integrations = {
-        cmp = true,
         gitsigns = true,
         nvimtree = true,
         treesitter = true,
 		markdown = true,
-        mini = {
-            enabled = true,
-            indentscope_color = "",
-        },
-        notify = false,
 		neotree = true,
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
