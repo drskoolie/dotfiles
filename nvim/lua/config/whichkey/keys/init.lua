@@ -95,6 +95,8 @@ wk_mappings = {
 		p = {":lua zellij_send_chars('\\\\%debug')<CR>", '%debug'},
 		s = {":lua zellij_send_chars('s')<CR>", 'step'},
 		S = {":lua zellij_send_chars('sticky')<CR>", 'sticky'},
+		t = {":lua zellij_send_chars('pytest')<CR>", 'pytest'},
+		T = {":lua zellij_send_chars('pytest --pdb --pdbcls=IPython.terminal.debugger:TerminalPdb')<CR>", 'pytest ipdb'},
 		u = {":lua zellij_send_chars('u')<CR>", 'up'},
 		w = {":lua zellij_send_chars('w')<CR>", 'where'},
 	},
@@ -247,11 +249,11 @@ wk_mappings = {
 		d = {":lua zellij_send_ascii(4)<CR>", 'C-d'},
 		e = {":lua zellij_send_ascii(13)<CR>", '<CR>'},
 		l = {":lua zellij_send_ascii(12)<CR>", 'C-l'},
-		k = {':lua zellij_send_action("zellij action close-pane; ")<CR>', 'kill'},
         p = {':lua zellij_paste()<CR>','paste'},
 		r = {':lua zellij_send_action("zellij action new-pane -d right; ")<CR>', 'right'},
 		D = {':lua zellij_send_action("zellij action new-pane -d down; ")<CR>', 'down'},
 		y = {":lua zellij_send_ascii(121)<CR>", 'y'},
+		x = {':lua zellij_send_action("zellij action close-pane; ")<CR>', 'kill'},
 	},
 }
 
