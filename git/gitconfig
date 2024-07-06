@@ -82,6 +82,7 @@
 	sas = stash show
 
 	sh = show
+	show-change = "!f() { git show $(git log -n ${1-1} --pretty=format:%H -- \"$2\"):\"$2\"; }; f"
 
 	sm = submodule
 	sma = submodule add

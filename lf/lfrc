@@ -5,6 +5,7 @@ map gd cd ~/dotfiles
 map gh cd ~/
 map gr cd ~/phd/reports/
 map gs cd ~/media/screenshots/
+map gp cd "/mnt/c/Users/al.elhag/OneDrive - Qualus Corp/Documents/Projects"
 map gw cd "/mnt/c/Users/al.elhag/OneDrive - Qualus Corp/Documents/Python/AuReGen"
 
 # +--------+

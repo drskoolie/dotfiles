@@ -95,6 +95,8 @@ wk_mappings = {
 		p = {":lua zellij_send_chars('\\\\%debug')<CR>", '%debug'},
 		s = {":lua zellij_send_chars('s')<CR>", 'step'},
 		S = {":lua zellij_send_chars('sticky')<CR>", 'sticky'},
+		t = {":lua zellij_send_chars('pytest')<CR>", 'pytest'},
+		T = {":lua zellij_send_chars('pytest --pdb --pdbcls=IPython.terminal.debugger:TerminalPdb')<CR>", 'pytest ipdb'},
 		u = {":lua zellij_send_chars('u')<CR>", 'up'},
 		w = {":lua zellij_send_chars('w')<CR>", 'where'},
 	},
@@ -105,10 +107,10 @@ wk_mappings = {
 		b = {':FzfLua blines<CR>', 'blines'},
 		B = {':FzfLua buffers<CR>', 'buffers'},
 		f = {':FzfLua files<CR>', 'files'},
-		g = {':FzfLua grep<CR>', 'grep'},
+		g = {':FzfLua git_files<CR>', 'git'},
+		G = {':FzfLua grep<CR>', 'grep'},
 		h = {':FzfLua helptags<CR>', 'helptags'},
-		j = {':FzfLua jumps<CR>', 'jumps'},
-		k = {':FzfLua keymaps<CR>', 'keymaps'},
+		s = {':FzfLua lsp_document_symbols<CR>', 'symbols'},
 	},
 
 	g = {
@@ -123,6 +125,7 @@ wk_mappings = {
 		n = {':Gitsigns next_hunk<CR>', 'next hunk'},
 		p = {':Gitsigns prev_hunk<CR>', 'prev hunk'},
 		r = {':Gitsigns reset_hunk<CR>', 'reset hunk'},
+		R = {':Gitsigns refresh<CR>', 'refresh'},
 		q = {':Gitsigns setqflist<CR>', 'quickfix'},
 	},
 
@@ -130,8 +133,12 @@ wk_mappings = {
 		name = "+ipython",
 
 		d = {':lua zellij_send_chars("deactivate")<CR>', 'deactivate'},
+		e = {':lua zellij_send_chars("exit")<CR>', 'exit'},
 		f = {':lua zellij_send_chars("run %:p")<CR>', 'file'},
+		g = {':lua zellij_send_chars("gradio %:p")<CR>', 'gradio'},
 		o = {':lua zellij_send_chars("ipython --no-autoindent")<CR>', 'open'},
+		-- O = {[[:lua zellij_send_chars('cmd.exe /K \\"cd /d C:\\\\Users\\\\al.elhag\\\\OneDrive - Qualus Corp\\\\Documents\\\\Python\\\\AuReGen && venv_auregen_windows\\\\Scripts\\\\activate.bat && ipython --no-autoindent\\"')]], 'open cmd'},
+		O = {[[:lua zellij_send_chars('powershell.exe -NoExit -Command \\"cd \'C:\\Users\\al.elhag\\OneDrive - Qualus Corp\\Documents\\Python\\AuReGen\'; .\\venv_auregen_windows\\Scripts\\Activate.ps1; py -m IPython --no-autoindent \\"')<CR>]], 'open powershell'},
 		q = {':lua zellij_send_chars("quit")<CR>', 'quit'},
 		r = {':lua zellij_send_chars("reset -f")<CR>', 'reset'},
         l = {':norm ^"+y$<CR>:lua zellij_paste()<CR>', 'send line'},
@@ -142,8 +149,6 @@ wk_mappings = {
 		V = {'^yt=o<ESC>pxa', 'variable'},
 
         -- m = {[[:norm mm<CR>:norm "+ym<CR>:lua tmux_send('\\%paste', 'vim_cmd')<CR>:norm 'm<CR>]],           'matlab'},
-		-- O = {tmux_send('powershell.exe -NoExit -Command "& \'C:\\\\Users\\\\al.elhag\\\\venv_auregen_windows\\\\Scripts\\\\Activate.ps1\'; py -m IPython --no-autoindent"'), 'open powershell'},
-		-- O = {tmux_send('cmd.exe /c "cd /d C:\\Users\\al.elhag\\OneDrive - Qualus Corp\\Documents\\Python\\AuReGen && venv_auregen_windows\\Scripts\\activate.bat && ipython --no-autoindent && cmd"'), 'open cmd'},
 	},
 			
 	l = {
@@ -191,7 +196,7 @@ wk_mappings = {
 		a = {':set nrformats+=alpha<CR>', 'alpha+'},
 		A = {':set nrformats-=alpha<CR>', 'alpha-'},
 		e = {':echo expand(\'%:p:h\')<CR>)', 'echo'},
-		L = {':w<CR>:luafile %<CR>',  'lua source'},
+		l = {':w<CR>:luafile %<CR>',  'lua source'},
 		s = {':set spell!<CR>', 'spell toggle'},
 		v = {':w<CR>:source %<CR>',  'vim source'},
 	},
@@ -244,10 +249,11 @@ wk_mappings = {
 		d = {":lua zellij_send_ascii(4)<CR>", 'C-d'},
 		e = {":lua zellij_send_ascii(13)<CR>", '<CR>'},
 		l = {":lua zellij_send_ascii(12)<CR>", 'C-l'},
-		k = {':lua zellij_send_action("zellij action close-pane; ")<CR>', 'kill'},
         p = {':lua zellij_paste()<CR>','paste'},
 		r = {':lua zellij_send_action("zellij action new-pane -d right; ")<CR>', 'right'},
+		D = {':lua zellij_send_action("zellij action new-pane -d down; ")<CR>', 'down'},
 		y = {":lua zellij_send_ascii(121)<CR>", 'y'},
+		x = {':lua zellij_send_action("zellij action close-pane; ")<CR>', 'kill'},
 	},
 }
 
