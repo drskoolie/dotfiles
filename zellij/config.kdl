@@ -15,13 +15,15 @@ keybinds clear-defaults=true{
         bind "k" "Up" { MoveFocus "Up"; SwitchToMode "Normal"; }
         bind "n" { NewPane; SwitchToMode "Normal"; }
         bind "d" { NewPane "Down"; SwitchToMode "Normal"; }
+        bind "D" { NewPane "Down"; MoveFocus "Up"; SwitchToMode "Normal"; }
         bind "r" { NewPane "Right"; SwitchToMode "Normal"; }
+        bind "R" { NewPane "Right"; MoveFocus "Left"; SwitchToMode "Normal"; }
         bind "x" { CloseFocus; SwitchToMode "Normal"; }
         bind "f" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
         bind "z" { TogglePaneFrames; SwitchToMode "Normal"; }
         bind "w" { ToggleFloatingPanes; SwitchToMode "Normal"; }
         bind "e" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
-        bind "R" { SwitchToMode "RenamePane"; PaneNameInput 0;}
+        bind "m" { SwitchToMode "RenamePane"; PaneNameInput 0;}
         bind "D" { Detach; }
         bind "[" { SwitchToMode "Scroll"; }
         bind "W" {
