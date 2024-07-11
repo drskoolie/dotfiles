@@ -80,15 +80,6 @@ wk_mappings = {
 		t  = {':tabnew<CR>',    'tab new'},
 	},
 
-	c = {
-		name = "+cargo",
-
-		b = {":lua zellij_send_chars('cargo build')<CR>", 'build'},
-		B = {":lua zellij_send_chars('cargo build --release')<CR>", 'build --release'},
-		c = {":lua zellij_send_chars('cargo check')<CR>", 'check'},
-		r = {":lua zellij_send_chars('cargo run')<CR>", 'run'},
-	},
-
 	d = {
 		name = "+debug",
 		b = {":lua zellij_send_chars('b')<CR>", 'break'},
@@ -250,6 +241,31 @@ wk_mappings = {
 		u = {'<cmd> lua require("dapui").toggle()<CR>', 'ui'},
 		U = {'<cmd> lua require("dapui").open({reset = true})<CR>', 'ui reset'},
 	},
+
+	r = {
+		name = "+rust",
+
+		a = {":RustLsp codeAction<CR>", "action"},
+		b = {":lua zellij_send_chars('cargo build')<CR>", 'build'},
+		B = {":lua zellij_send_chars('cargo build --release')<CR>", 'build --release'},
+		c = {":lua zellij_send_chars('cargo check')<CR>", 'check'},
+		d = {":RustLsp moveItem down<CR>", "move down"},
+		e = {":RustLsp expandMacro<CR>", "expand macro"},
+		J = {":RustLsp joinLines<CR>", "join lines"},
+		g = {":RustLsp hover range<CR>", "hover range"},
+
+		o = {
+			"+open",
+
+			c = {":RustLsp openCargo<CR>", "cargo"},
+			d = {":RustLsp openDocs<CR>", "docs"},
+			p = {":RustLsp parentModule<CR>", "parent"},
+		},
+
+		r = {":lua zellij_send_chars('cargo run')<CR>", 'run'},
+		u = {":RustLsp moveItem up<CR>", "move up"},
+	},
+
 
 	z = {
 		name = "+zellij",
