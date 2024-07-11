@@ -80,6 +80,15 @@ wk_mappings = {
 		t  = {':tabnew<CR>',    'tab new'},
 	},
 
+	c = {
+		name = "+cargo",
+
+		b = {":lua zellij_send_chars('cargo build')<CR>", 'build'},
+		B = {":lua zellij_send_chars('cargo build --release')<CR>", 'build --release'},
+		c = {":lua zellij_send_chars('cargo check')<CR>", 'check'},
+		r = {":lua zellij_send_chars('cargo run')<CR>", 'run'},
+	},
+
 	d = {
 		name = "+debug",
 		b = {":lua zellij_send_chars('b')<CR>", 'break'},
