@@ -79,6 +79,15 @@ wk_mappings = {
 		p = {':bp<CR>', 'prev'},
 		t  = {':tabnew<CR>',    'tab new'},
 	},
+	
+	c = {
+		name = "+cargo",
+		b = {":lua zellij_send_chars('cargo build')<CR>", 'build'},
+		B = {":lua zellij_send_chars('cargo build --release')<CR>", 'build --release'},
+		c = {":lua zellij_send_chars('cargo check')<CR>", 'check'},
+		d = {":lua zellij_send_chars('cargo doc --open')<CR>", 'doc'},
+		r = {":lua zellij_send_chars('cargo run')<CR>", 'run'},
+	},
 
 	d = {
 		name = "+debug",
@@ -132,9 +141,10 @@ wk_mappings = {
 	i = {
 		name = "+ipython",
 
+		a = {':lua zellij_send_chars("quit")<CR>:lua zellij_send_chars("ipython --no-autoindent")<CR>:lua zellij_send_ascii(12)<CR>:lua zellij_send_chars("run \'%:p\'")<CR>', 'all'},
 		d = {':lua zellij_send_chars("deactivate")<CR>', 'deactivate'},
 		e = {':lua zellij_send_chars("exit")<CR>', 'exit'},
-		f = {':lua zellij_send_chars("run %:p")<CR>', 'file'},
+		f = {':lua zellij_send_chars("run \'%:p\'")<CR>', 'file'},
 		g = {':lua zellij_send_chars("gradio %:p")<CR>', 'gradio'},
 		o = {':lua zellij_send_chars("ipython --no-autoindent")<CR>', 'open'},
 		-- O = {[[:lua zellij_send_chars('cmd.exe /K \\"cd /d C:\\\\Users\\\\al.elhag\\\\OneDrive - Qualus Corp\\\\Documents\\\\Python\\\\AuReGen && venv_auregen_windows\\\\Scripts\\\\activate.bat && ipython --no-autoindent\\"')]], 'open cmd'},
@@ -246,14 +256,9 @@ wk_mappings = {
 		name = "+rust",
 
 		a = {":RustLsp codeAction<CR>", "action"},
-		b = {":lua zellij_send_chars('cargo build')<CR>", 'build'},
-		B = {":lua zellij_send_chars('cargo build --release')<CR>", 'build --release'},
-		c = {":lua zellij_send_chars('cargo check')<CR>", 'check'},
 		d = {":RustLsp moveItem down<CR>", "move down"},
 		e = {":RustLsp expandMacro<CR>", "expand macro"},
-		J = {":RustLsp joinLines<CR>", "join lines"},
-		g = {":RustLsp hover range<CR>", "hover range"},
-
+		j = {":RustLsp joinLines<CR>", "join lines"},
 		o = {
 			"+open",
 
@@ -261,8 +266,7 @@ wk_mappings = {
 			d = {":RustLsp openDocs<CR>", "docs"},
 			p = {":RustLsp parentModule<CR>", "parent"},
 		},
-
-		r = {":lua zellij_send_chars('cargo run')<CR>", 'run'},
+		r = {":RustLsp hover range<CR>", "hover range"},
 		u = {":RustLsp moveItem up<CR>", "move up"},
 	},
 

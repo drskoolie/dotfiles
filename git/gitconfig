@@ -4,6 +4,7 @@
 	adc = !git add . && git commit
 	adcv = !git add . && git commit -v
 	adi = add -i
+	adp = !git add -N . && git add -p
 
 	br = branch
 	bra = branch --all
