@@ -37,6 +37,8 @@ wk_mappings = {
 			t = {':ColorizerToggle<CR>',  'toggle'},
 			x = {':XtermColorTable<CR>',  'xterm'},
 		},
+
+		d = {':r!date "+\\%Y-\\%m-\\%d \\%H:\\%M:\\%S"<CR>', 'date'},
 		 
 		g = {
 			name = "+gams",
