@@ -160,6 +160,7 @@ require("lazy").setup({
   -- +--------+
   'mbbill/undotree',
   'romainl/vim-cool', -- hl-search fix
+  'terrastruct/d2-vim',
 
   -- +----+
   -- | ui |

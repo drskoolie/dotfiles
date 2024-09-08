@@ -51,6 +51,13 @@ wk_mappings = {
 			w = {':w<CR>:vsp %:p:t:r.lst<CR>G:sp %:p:t:r.out<CR>G', 'window'},
 		},
 
+		h = {
+			name = "+hadith",
+
+			a = {':set arabic!<CR>', 'arabic'},
+			d = {':digraphs<CR>', 'digraphs'},
+		},
+
 		l = {':Lazy<CR>', 'lazy'},
 
 		m = {
