@@ -27,8 +27,8 @@ wk.setup ({
     no_overlap = true,
     -- width = 1,
     -- height = { min = 4, max = 25 },
-    col = 0,
-    row = math.huge,
+    -- col = 0,
+    -- row = math.huge,
     border = "single",
     padding = { 1, 2 }, -- extra window padding [top/bottom, right/left]
     title = true,
@@ -41,7 +41,7 @@ wk.setup ({
     },
   },
   layout = {
-	height = { min = 5, max = 10 },
+	height = { min = 5, max = 20 },
     width = { min = 10, max = 40 }, -- min and max width of the columns
     spacing = 2, -- spacing between columns
 	align = "left",
