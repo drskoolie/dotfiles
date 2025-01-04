@@ -173,5 +173,8 @@ require("lazy").setup({
   -- +----------+
   -- | whichkey |
   -- +----------+
-  'folke/which-key.nvim',
+  {
+	  "folke/which-key.nvim",
+	  event = "VeryLazy",
+  },
 })

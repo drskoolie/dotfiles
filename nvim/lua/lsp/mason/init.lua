@@ -5,8 +5,8 @@ require("mason-lspconfig").setup {
 	ensure_installed = {
 		"clangd",
 		"pyright",
-		"ruff_lsp",
 		"svelte",
+		-- "ruff_lsp",
 		-- "rust_analyzer",
 	},
 }
