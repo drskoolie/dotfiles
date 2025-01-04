@@ -25,14 +25,14 @@ wk.setup ({
   win = {
     -- don't allow the popup to overlap with the cursor
     no_overlap = true,
-    -- width = 1,
+    -- width = 3,
     -- height = { min = 4, max = 25 },
-    -- col = 0,
-    -- row = math.huge,
-    border = "single",
+    col = 0, -- spacing of columns in the overall box
+    row = math.huge, -- spacing of rows in the overall box
+    -- border = "single",
     padding = { 1, 2 }, -- extra window padding [top/bottom, right/left]
-    title = true,
-    title_pos = "center",
+    title = false,
+    -- title_pos = "center",
     zindex = 1000,
     -- Additional vim.wo and vim.bo options
     bo = {},
@@ -41,17 +41,17 @@ wk.setup ({
     },
   },
   layout = {
-	height = { min = 5, max = 20 },
-    width = { min = 10, max = 40 }, -- min and max width of the columns
+	height = { min = 10, max = 20 },
+    width = { min = 5, max = 40 }, -- min and max width of the columns
     spacing = 2, -- spacing between columns
-	align = "left",
+	align = "column",
   },
   keys = {
     scroll_down = "<c-d>", -- binding to scroll down inside the popup
     scroll_up = "<c-u>", -- binding to scroll up inside the popup
   },
-  show_help = true, -- show a help message in the command line for using WhichKey
-  show_keys = true, -- show the currently pressed key and its label as a message in the command line
+  -- show_help = true, -- show a help message in the command line for using WhichKey
+  -- show_keys = true, -- show the currently pressed key and its label as a message in the command line
   -- disable WhichKey for certain buf types and file types.
   disable = {
     ft = {},

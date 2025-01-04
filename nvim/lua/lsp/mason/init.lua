@@ -6,13 +6,20 @@ require("mason-lspconfig").setup {
 		"clangd",
 		"pyright",
 		"svelte",
-		-- "ruff_lsp",
-		-- "rust_analyzer",
+		"ruff",
 	},
 }
 
+local lspconfig = require('lspconfig')
+
+local python_root_pattern = lspconfig.util.root_pattern(".git", "setup.py", "pyproject.toml", ".ruff-lsp.toml", ".")
+
+lspconfig.ruff.setup{
+	cmd = {"ruff-lsp"},
+	root_dir = python_root_pattern,
+}
 require("lsp/mason/settings/clangd")
--- require("lsp/mason/settings/python")
 require("lsp/mason/settings/svelte")
+-- require("lsp/mason/settings/python")
 -- require("lsp/mason/settings/rust_analyzer")
 -- require("lsp/mason/settings/typst")
