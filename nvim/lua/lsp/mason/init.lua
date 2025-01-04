@@ -12,7 +12,7 @@ require("mason-lspconfig").setup {
 }
 
 require("lsp/mason/settings/clangd")
-require("lsp/mason/settings/python")
+-- require("lsp/mason/settings/python")
 require("lsp/mason/settings/svelte")
 -- require("lsp/mason/settings/rust_analyzer")
 -- require("lsp/mason/settings/typst")
