@@ -3,6 +3,7 @@ wk.setup ({
   delay = function(ctx)
 	  return 0
   end,
+  -- preset = "helix",
   plugins = {
     marks = true, -- shows a list of your marks on ' and `
     registers = true, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
@@ -25,11 +26,11 @@ wk.setup ({
   win = {
     -- don't allow the popup to overlap with the cursor
     no_overlap = true,
-    -- width = 3,
-    -- height = { min = 4, max = 25 },
+    width = 60,
+    height = { min = 4, max = 25 },
     col = 0, -- spacing of columns in the overall box
-    row = math.huge, -- spacing of rows in the overall box
-    -- border = "single",
+    -- row = math.huge, -- spacing of rows in the overall box
+    -- border = "double",
     padding = { 1, 2 }, -- extra window padding [top/bottom, right/left]
     title = false,
     -- title_pos = "center",
@@ -37,14 +38,14 @@ wk.setup ({
     -- Additional vim.wo and vim.bo options
     bo = {},
     wo = {
-      winblend = 10, -- value between 0-100 0 for fully opaque and 100 for fully transparent
+      winblend = 5, -- value between 0-100 0 for fully opaque and 100 for fully transparent
     },
   },
   layout = {
 	height = { min = 10, max = 20 },
     width = { min = 5, max = 40 }, -- min and max width of the columns
     spacing = 2, -- spacing between columns
-	align = "column",
+	align = "center",
   },
   keys = {
     scroll_down = "<c-d>", -- binding to scroll down inside the popup
@@ -59,3 +60,4 @@ wk.setup ({
   },
   debug = false, -- enable wk.log in the current directory
 })
+
