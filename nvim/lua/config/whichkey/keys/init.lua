@@ -91,7 +91,6 @@ wk.add(
     { "<leader>id", ':lua zellij_send_chars("deactivate")<CR>', desc = "deactivate" },
     { "<leader>ie", ':lua zellij_send_chars("exit")<CR>', desc = "exit" },
     { "<leader>if", ":lua zellij_send_chars(\"run '%:p'\")<CR>", desc = "file" },
-    { "<leader>ig", ':lua zellij_send_chars("gradio %:p")<CR>', desc = "gradio" },
     { "<leader>il", ':norm ^"+y$<CR>:lua zellij_paste()<CR>', desc = "send line" },
     { "<leader>io", ':lua zellij_send_chars("ipython --no-autoindent")<CR>', desc = "open" },
     { "<leader>iq", ':lua zellij_send_chars("quit")<CR>', desc = "quit" },
