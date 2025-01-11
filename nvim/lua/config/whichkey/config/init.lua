@@ -26,7 +26,7 @@ wk.setup ({
   win = {
     -- don't allow the popup to overlap with the cursor
     no_overlap = true,
-    width = 60,
+    width = 80,
     height = { min = 4, max = 25 },
     col = 0, -- spacing of columns in the overall box
     -- row = math.huge, -- spacing of rows in the overall box

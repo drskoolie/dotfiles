@@ -11,6 +11,7 @@ require('core/spelling')
 require('core/vimscript')
 
 -- ==> Config
+require('config/code-companion')
 require('config/color-picker')
 require('config/gitsigns')
 require('config/lualine')

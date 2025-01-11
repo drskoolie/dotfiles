@@ -19,6 +19,18 @@ require("lazy").setup({
   'nvim-lua/plenary.nvim',
   'nvim-tree/nvim-web-devicons',
   'MunifTanjim/nui.nvim',
+
+  -- code companion
+  {
+    "olimorris/codecompanion.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = true
+  },
+
+  { "MeanderingProgrammer/render-markdown.nvim", ft = { "markdown", "codecompanion" } },
   
   -- +--------+
   -- | colors |
@@ -164,7 +176,7 @@ require("lazy").setup({
   -- +----+
   -- | ui |
   -- +----+
-  -- 'psliwka/vim-smoothie',
+  'psliwka/vim-smoothie',
   {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
     dependencies = { {'nvim-lua/plenary.nvim'} }
