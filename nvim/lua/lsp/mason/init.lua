@@ -10,16 +10,18 @@ require("mason-lspconfig").setup {
 	},
 }
 
-local lspconfig = require('lspconfig')
+-- local lspconfig = require('lspconfig')
+-- 
+-- local python_root_pattern = lspconfig.util.root_pattern(".git", "setup.py", "pyproject.toml", ".ruff-lsp.toml", ".")
+-- 
+-- lspconfig.ruff.setup{
+-- 	cmd = {"ruff-lsp"},
+-- 	root_dir = python_root_pattern,
+-- }
 
-local python_root_pattern = lspconfig.util.root_pattern(".git", "setup.py", "pyproject.toml", ".ruff-lsp.toml", ".")
-
-lspconfig.ruff.setup{
-	cmd = {"ruff-lsp"},
-	root_dir = python_root_pattern,
-}
 require("lsp/mason/settings/clangd")
 require("lsp/mason/settings/svelte")
+require("lsp/mason/settings/ruff")
 -- require("lsp/mason/settings/python")
 -- require("lsp/mason/settings/rust_analyzer")
 -- require("lsp/mason/settings/typst")
