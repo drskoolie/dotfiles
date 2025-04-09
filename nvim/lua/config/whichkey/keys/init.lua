@@ -16,6 +16,7 @@ wk.add(
     { "<leader>acr", ":ColorizerReloadAllBuffers<CR>", desc = "reload" },
     { "<leader>act", ":ColorizerToggle<CR>", desc = "toggle" },
     { "<leader>acx", ":XtermColorTable<CR>", desc = "xterm" },
+	{ "<leader>ad", ':r!date +"\\%F \\%T"<CR>i*<ESC>A*<ESC>j0', desc = "date"},
     { "<leader>ag", group = "gams" },
     { "<leader>agM", ":w<CR>:!gams %:h/main.gms<CR>", desc = "main" },
     { "<leader>agm", ":w<CR>:silent !gams %:h/main.gms<CR>", desc = "main" },

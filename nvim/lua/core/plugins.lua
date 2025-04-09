@@ -30,8 +30,6 @@ require("lazy").setup({
     config = true
   },
 
-  { "MeanderingProgrammer/render-markdown.nvim", ft = { "markdown", "codecompanion" } },
-  
   -- +--------+
   -- | colors |
   -- +--------+
