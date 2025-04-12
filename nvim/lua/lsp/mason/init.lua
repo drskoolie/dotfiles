@@ -7,6 +7,7 @@ require("mason-lspconfig").setup {
 		"pyright",
 		"svelte",
 		"ruff",
+		"tinymist",
 	},
 }
 
@@ -22,6 +23,6 @@ require("mason-lspconfig").setup {
 require("lsp/mason/settings/clangd")
 require("lsp/mason/settings/svelte")
 require("lsp/mason/settings/ruff")
+require("lsp/mason/settings/typst")
 -- require("lsp/mason/settings/python")
 -- require("lsp/mason/settings/rust_analyzer")
--- require("lsp/mason/settings/typst")
