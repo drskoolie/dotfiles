@@ -29,6 +29,10 @@ require("lazy").setup({
     },
     config = true
   },
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
   -- +--------+
   -- | colors |
   -- +--------+

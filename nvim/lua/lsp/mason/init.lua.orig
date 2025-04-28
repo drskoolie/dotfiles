@@ -14,6 +14,10 @@ require("mason-lspconfig").setup {
 require("lsp/mason/settings/clangd")
 require("lsp/mason/settings/svelte")
 require("lsp/mason/settings/ruff")
+<<<<<<< Updated upstream
 require("lsp/mason/settings/typst")
+-- require("lsp/mason/settings/python")
+=======
 require("lsp/mason/settings/python")
+>>>>>>> Stashed changes
 -- require("lsp/mason/settings/rust_analyzer")
