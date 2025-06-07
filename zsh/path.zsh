@@ -6,3 +6,4 @@ export PATH="$PATH:/data/data/com.termux/files/home/.local/bin"
 
 export PATH=~/.npm-global/bin:$PATH
 
+export PATH=$PATH:/usr/local/go/bin
