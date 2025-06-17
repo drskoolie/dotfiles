@@ -29,7 +29,6 @@ keybinds clear-defaults=true{
         bind "w" {
             LaunchOrFocusPlugin "session-manager" {
                 floating true
-                move_to_focused_tab true
             };
             SwitchToMode "Normal"
         }
@@ -66,7 +65,6 @@ keybinds clear-defaults=true{
         bind "w" {
             LaunchOrFocusPlugin "session-manager" {
                 floating true
-                move_to_focused_tab true
             };
             SwitchToMode "Normal"
         }
