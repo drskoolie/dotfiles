@@ -97,8 +97,6 @@ wk.add(
     { "<leader>iq", ':lua zellij_send_chars("quit")<CR>', desc = "quit" },
     { "<leader>ir", ':lua zellij_send_chars("reset -f")<CR>', desc = "reset" },
     { "<leader>is", ':lua zellij_send_chars("sop")<CR>', desc = "sop" },
-    { "<leader>it", ':lua zellij_send_chars("pytest")<CR>', desc = "pytest" },
-    { "<leader>iT", ':lua zellij_send_chars("pytest --pdb --pdbcls=IPython.terminal.debugger:TerminalPdb")<CR>', desc = "pytest" },
     { "<leader>iv", "^yt=:lua zellij_paste()<CR>", desc = "variable" },
     { "<leader>l", group = "lsp" },
     { "<leader>lD", ":Telescope diagnostics<CR>", desc = "diagnostics" },
