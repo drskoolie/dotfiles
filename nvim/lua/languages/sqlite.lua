@@ -1,130 +1,130 @@
 vim.cmd([[ 
  augroup sqlite
      autocmd!
-	 au BufNewFile,BufRead *.sql iab abort ABORT
-	 au BufNewFile,BufRead *.sql iab action ACTION
-	 au BufNewFile,BufRead *.sql iab add ADD
-	 au BufNewFile,BufRead *.sql iab after AFTER
-	 au BufNewFile,BufRead *.sql iab all ALL
-	 au BufNewFile,BufRead *.sql iab alter ALTER
-	 au BufNewFile,BufRead *.sql iab analyze ANALYZE
-	 au BufNewFile,BufRead *.sql iab and AND
-	 au BufNewFile,BufRead *.sql iab as AS
-	 au BufNewFile,BufRead *.sql iab asc ASC
-	 au BufNewFile,BufRead *.sql iab attach ATTACH
-	 au BufNewFile,BufRead *.sql iab autoincrement AUTOINCREMENT
-	 au BufNewFile,BufRead *.sql iab before BEFORE
-	 au BufNewFile,BufRead *.sql iab begin BEGIN
-	 au BufNewFile,BufRead *.sql iab between BETWEEN
-	 au BufNewFile,BufRead *.sql iab by BY
-	 au BufNewFile,BufRead *.sql iab cascade CASCADE
-	 au BufNewFile,BufRead *.sql iab case CASE
-	 au BufNewFile,BufRead *.sql iab cast CAST
-	 au BufNewFile,BufRead *.sql iab check CHECK
-	 au BufNewFile,BufRead *.sql iab collate COLLATE
-	 au BufNewFile,BufRead *.sql iab column COLUMN
-	 au BufNewFile,BufRead *.sql iab commit COMMIT
-	 au BufNewFile,BufRead *.sql iab conflict CONFLICT
-	 au BufNewFile,BufRead *.sql iab constraint CONSTRAINT
-	 au BufNewFile,BufRead *.sql iab create CREATE
-	 au BufNewFile,BufRead *.sql iab cross CROSS
-	 au BufNewFile,BufRead *.sql iab database DATABASE
-	 au BufNewFile,BufRead *.sql iab decimal DECIMAL
-	 au BufNewFile,BufRead *.sql iab default DEFAULT
-	 au BufNewFile,BufRead *.sql iab deferrable DEFERRABLE
-	 au BufNewFile,BufRead *.sql iab deferred DEFERRED
-	 au BufNewFile,BufRead *.sql iab delete DELETE
-	 au BufNewFile,BufRead *.sql iab desc DESC
-	 au BufNewFile,BufRead *.sql iab detach DETACH
-	 au BufNewFile,BufRead *.sql iab distinct DISTINCT
-	 au BufNewFile,BufRead *.sql iab drop DROP
-	 au BufNewFile,BufRead *.sql iab each EACH
-	 au BufNewFile,BufRead *.sql iab else ELSE
-	 au BufNewFile,BufRead *.sql iab end END
-	 au BufNewFile,BufRead *.sql iab escape ESCAPE
-	 au BufNewFile,BufRead *.sql iab except EXCEPT
-	 au BufNewFile,BufRead *.sql iab exclusive EXCLUSIVE
-	 au BufNewFile,BufRead *.sql iab exists EXISTS
-	 au BufNewFile,BufRead *.sql iab explain EXPLAIN
-	 au BufNewFile,BufRead *.sql iab fail FAIL
-	 au BufNewFile,BufRead *.sql iab for FOR
-	 au BufNewFile,BufRead *.sql iab foreign FOREIGN
-	 au BufNewFile,BufRead *.sql iab from FROM
-	 au BufNewFile,BufRead *.sql iab full FULL
-	 au BufNewFile,BufRead *.sql iab glob GLOB
-	 au BufNewFile,BufRead *.sql iab group GROUP
-	 au BufNewFile,BufRead *.sql iab having HAVING
-	 au BufNewFile,BufRead *.sql iab if IF
-	 au BufNewFile,BufRead *.sql iab ignore IGNORE
-	 au BufNewFile,BufRead *.sql iab immediate IMMEDIATE
-	 au BufNewFile,BufRead *.sql iab in IN
-	 au BufNewFile,BufRead *.sql iab index INDEX
-	 au BufNewFile,BufRead *.sql iab indexed INDEXED
-	 au BufNewFile,BufRead *.sql iab initially INITIALLY
-	 au BufNewFile,BufRead *.sql iab inner INNER
-	 au BufNewFile,BufRead *.sql iab insert INSERT
-	 au BufNewFile,BufRead *.sql iab instead INSTEAD
-	 au BufNewFile,BufRead *.sql iab intersect INTERSECT
-	 au BufNewFile,BufRead *.sql iab into INTO
-	 au BufNewFile,BufRead *.sql iab integer INTEGER
-	 au BufNewFile,BufRead *.sql iab is IS
-	 au BufNewFile,BufRead *.sql iab isnull ISNULL
-	 au BufNewFile,BufRead *.sql iab join JOIN
-	 au BufNewFile,BufRead *.sql iab key KEY
-	 au BufNewFile,BufRead *.sql iab left LEFT
-	 au BufNewFile,BufRead *.sql iab like LIKE
-	 au BufNewFile,BufRead *.sql iab limit LIMIT
-	 au BufNewFile,BufRead *.sql iab match MATCH
-	 au BufNewFile,BufRead *.sql iab natural NATURAL
-	 au BufNewFile,BufRead *.sql iab no NO
-	 au BufNewFile,BufRead *.sql iab not NOT
-	 au BufNewFile,BufRead *.sql iab notnull NOTNULL
-	 au BufNewFile,BufRead *.sql iab null NULL
-	 au BufNewFile,BufRead *.sql iab of OF
-	 au BufNewFile,BufRead *.sql iab offset OFFSET
-	 au BufNewFile,BufRead *.sql iab on ON
-	 au BufNewFile,BufRead *.sql iab or OR
-	 au BufNewFile,BufRead *.sql iab order ORDER
-	 au BufNewFile,BufRead *.sql iab outer OUTER
-	 au BufNewFile,BufRead *.sql iab plan PLAN
-	 au BufNewFile,BufRead *.sql iab pragma PRAGMA
-	 au BufNewFile,BufRead *.sql iab primary PRIMARY
-	 au BufNewFile,BufRead *.sql iab query QUERY
-	 au BufNewFile,BufRead *.sql iab raise RAISE
-	 au BufNewFile,BufRead *.sql iab recursive RECURSIVE
-	 au BufNewFile,BufRead *.sql iab references REFERENCES
-	 au BufNewFile,BufRead *.sql iab regexp REGEXP
-	 au BufNewFile,BufRead *.sql iab reindex REINDEX
-	 au BufNewFile,BufRead *.sql iab release RELEASE
-	 au BufNewFile,BufRead *.sql iab rename RENAME
-	 au BufNewFile,BufRead *.sql iab replace REPLACE
-	 au BufNewFile,BufRead *.sql iab restrict RESTRICT
-	 au BufNewFile,BufRead *.sql iab right RIGHT
-	 au BufNewFile,BufRead *.sql iab rollback ROLLBACK
-	 au BufNewFile,BufRead *.sql iab row ROW
-	 au BufNewFile,BufRead *.sql iab savepoint SAVEPOINT
-	 au BufNewFile,BufRead *.sql iab select SELECT
-	 au BufNewFile,BufRead *.sql iab set SET
-	 au BufNewFile,BufRead *.sql iab table TABLE
-	 au BufNewFile,BufRead *.sql iab temp TEMP
-	 au BufNewFile,BufRead *.sql iab temporary TEMPORARY
-	 au BufNewFile,BufRead *.sql iab text TEXT
-	 au BufNewFile,BufRead *.sql iab then THEN
-	 au BufNewFile,BufRead *.sql iab to TO
-	 au BufNewFile,BufRead *.sql iab transaction TRANSACTION
-	 au BufNewFile,BufRead *.sql iab trigger TRIGGER
-	 au BufNewFile,BufRead *.sql iab union UNION
-	 au BufNewFile,BufRead *.sql iab unique UNIQUE
-	 au BufNewFile,BufRead *.sql iab update UPDATE
-	 au BufNewFile,BufRead *.sql iab using USING
-	 au BufNewFile,BufRead *.sql iab vacuum VACUUM
-	 au BufNewFile,BufRead *.sql iab values VALUES
-	 au BufNewFile,BufRead *.sql iab view VIEW
-	 au BufNewFile,BufRead *.sql iab virtual VIRTUAL
-	 au BufNewFile,BufRead *.sql iab when WHEN
-	 au BufNewFile,BufRead *.sql iab where WHERE
-	 au BufNewFile,BufRead *.sql iab with WITH
-	 au BufNewFile,BufRead *.sql iab without WITHOUT
+	 au FileType sql iab <buffer> abort ABORT
+	 au FileType sql iab <buffer> action ACTION
+	 au FileType sql iab <buffer> add ADD
+	 au FileType sql iab <buffer> after AFTER
+	 au FileType sql iab <buffer> all ALL
+	 au FileType sql iab <buffer> alter ALTER
+	 au FileType sql iab <buffer> analyze ANALYZE
+	 au FileType sql iab <buffer> and AND
+	 au FileType sql iab <buffer> as AS
+	 au FileType sql iab <buffer> asc ASC
+	 au FileType sql iab <buffer> attach ATTACH
+	 au FileType sql iab <buffer> autoincrement AUTOINCREMENT
+	 au FileType sql iab <buffer> before BEFORE
+	 au FileType sql iab <buffer> begin BEGIN
+	 au FileType sql iab <buffer> between BETWEEN
+	 au FileType sql iab <buffer> by BY
+	 au FileType sql iab <buffer> cascade CASCADE
+	 au FileType sql iab <buffer> case CASE
+	 au FileType sql iab <buffer> cast CAST
+	 au FileType sql iab <buffer> check CHECK
+	 au FileType sql iab <buffer> collate COLLATE
+	 au FileType sql iab <buffer> column COLUMN
+	 au FileType sql iab <buffer> commit COMMIT
+	 au FileType sql iab <buffer> conflict CONFLICT
+	 au FileType sql iab <buffer> constraint CONSTRAINT
+	 au FileType sql iab <buffer> create CREATE
+	 au FileType sql iab <buffer> cross CROSS
+	 au FileType sql iab <buffer> database DATABASE
+	 au FileType sql iab <buffer> decimal DECIMAL
+	 au FileType sql iab <buffer> default DEFAULT
+	 au FileType sql iab <buffer> deferrable DEFERRABLE
+	 au FileType sql iab <buffer> deferred DEFERRED
+	 au FileType sql iab <buffer> delete DELETE
+	 au FileType sql iab <buffer> desc DESC
+	 au FileType sql iab <buffer> detach DETACH
+	 au FileType sql iab <buffer> distinct DISTINCT
+	 au FileType sql iab <buffer> drop DROP
+	 au FileType sql iab <buffer> each EACH
+	 au FileType sql iab <buffer> else ELSE
+	 au FileType sql iab <buffer> end END
+	 au FileType sql iab <buffer> escape ESCAPE
+	 au FileType sql iab <buffer> except EXCEPT
+	 au FileType sql iab <buffer> exclusive EXCLUSIVE
+	 au FileType sql iab <buffer> exists EXISTS
+	 au FileType sql iab <buffer> explain EXPLAIN
+	 au FileType sql iab <buffer> fail FAIL
+	 au FileType sql iab <buffer> for FOR
+	 au FileType sql iab <buffer> foreign FOREIGN
+	 au FileType sql iab <buffer> from FROM
+	 au FileType sql iab <buffer> full FULL
+	 au FileType sql iab <buffer> glob GLOB
+	 au FileType sql iab <buffer> group GROUP
+	 au FileType sql iab <buffer> having HAVING
+	 au FileType sql iab <buffer> if IF
+	 au FileType sql iab <buffer> ignore IGNORE
+	 au FileType sql iab <buffer> immediate IMMEDIATE
+	 au FileType sql iab <buffer> in IN
+	 au FileType sql iab <buffer> index INDEX
+	 au FileType sql iab <buffer> indexed INDEXED
+	 au FileType sql iab <buffer> initially INITIALLY
+	 au FileType sql iab <buffer> inner INNER
+	 au FileType sql iab <buffer> insert INSERT
+	 au FileType sql iab <buffer> instead INSTEAD
+	 au FileType sql iab <buffer> intersect INTERSECT
+	 au FileType sql iab <buffer> into INTO
+	 au FileType sql iab <buffer> integer INTEGER
+	 au FileType sql iab <buffer> is IS
+	 au FileType sql iab <buffer> isnull ISNULL
+	 au FileType sql iab <buffer> join JOIN
+	 au FileType sql iab <buffer> key KEY
+	 au FileType sql iab <buffer> left LEFT
+	 au FileType sql iab <buffer> like LIKE
+	 au FileType sql iab <buffer> limit LIMIT
+	 au FileType sql iab <buffer> match MATCH
+	 au FileType sql iab <buffer> natural NATURAL
+	 au FileType sql iab <buffer> no NO
+	 au FileType sql iab <buffer> not NOT
+	 au FileType sql iab <buffer> notnull NOTNULL
+	 au FileType sql iab <buffer> null NULL
+	 au FileType sql iab <buffer> of OF
+	 au FileType sql iab <buffer> offset OFFSET
+	 au FileType sql iab <buffer> on ON
+	 au FileType sql iab <buffer> or OR
+	 au FileType sql iab <buffer> order ORDER
+	 au FileType sql iab <buffer> outer OUTER
+	 au FileType sql iab <buffer> plan PLAN
+	 au FileType sql iab <buffer> pragma PRAGMA
+	 au FileType sql iab <buffer> primary PRIMARY
+	 au FileType sql iab <buffer> query QUERY
+	 au FileType sql iab <buffer> raise RAISE
+	 au FileType sql iab <buffer> recursive RECURSIVE
+	 au FileType sql iab <buffer> references REFERENCES
+	 au FileType sql iab <buffer> regexp REGEXP
+	 au FileType sql iab <buffer> reindex REINDEX
+	 au FileType sql iab <buffer> release RELEASE
+	 au FileType sql iab <buffer> rename RENAME
+	 au FileType sql iab <buffer> replace REPLACE
+	 au FileType sql iab <buffer> restrict RESTRICT
+	 au FileType sql iab <buffer> right RIGHT
+	 au FileType sql iab <buffer> rollback ROLLBACK
+	 au FileType sql iab <buffer> row ROW
+	 au FileType sql iab <buffer> savepoint SAVEPOINT
+	 au FileType sql iab <buffer> select SELECT
+	 au FileType sql iab <buffer> set SET
+	 au FileType sql iab <buffer> table TABLE
+	 au FileType sql iab <buffer> temp TEMP
+	 au FileType sql iab <buffer> temporary TEMPORARY
+	 au FileType sql iab <buffer> text TEXT
+	 au FileType sql iab <buffer> then THEN
+	 au FileType sql iab <buffer> to TO
+	 au FileType sql iab <buffer> transaction TRANSACTION
+	 au FileType sql iab <buffer> trigger TRIGGER
+	 au FileType sql iab <buffer> union UNION
+	 au FileType sql iab <buffer> unique UNIQUE
+	 au FileType sql iab <buffer> update UPDATE
+	 au FileType sql iab <buffer> using USING
+	 au FileType sql iab <buffer> vacuum VACUUM
+	 au FileType sql iab <buffer> values VALUES
+	 au FileType sql iab <buffer> view VIEW
+	 au FileType sql iab <buffer> virtual VIRTUAL
+	 au FileType sql iab <buffer> when WHEN
+	 au FileType sql iab <buffer> where WHERE
+	 au FileType sql iab <buffer> with WITH
+	 au FileType sql iab <buffer> without WITHOUT
  augroup END
 ]])
 
