@@ -56,7 +56,7 @@ wk.add(
     { "<leader>di", ":lua set_trace()<CR>", desc = "ipdb" },
     { "<leader>dn", ":lua zellij_send_chars('n')<CR>", desc = "next" },
     { "<leader>dp", ":lua zellij_send_chars('\\\\%debug')<CR>", desc = "%debug" },
-    { "<leader>dq", ":lua zellij_send_chars('q')<CR>", desc = "quit" },
+    { "<leader>dq", ":lua zellij_send_chars('quit')<CR>", desc = "quit" },
     { "<leader>ds", ":lua zellij_send_chars('s')<CR>", desc = "step" },
     { "<leader>du", ":lua zellij_send_chars('u')<CR>", desc = "up" },
     { "<leader>f", group = "fzf" },
