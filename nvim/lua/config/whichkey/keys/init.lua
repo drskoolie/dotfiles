@@ -125,9 +125,9 @@ wk.add(
     { "<leader>p", group = "pytest" },
     { "<leader>pm", ":lua zellij_send_chars('mypy backend/')<CR>", desc = "mypy" },
     { "<leader>pp", ":lua zellij_send_chars('pytest')<CR>", desc = "pytest" },
-    { "<leader>ps", ":lua zellij_send_chars('pytest -s')<CR>", desc = "pytest -s" },
+    { "<leader>ps", ":lua zellij_send_chars('pytest -s')<CR>", desc = "pytest -s" }, -- Disables output capturing
     { "<leader>pi", ":lua zellij_send_chars('pytest --pdb --pdbcls=IPython.terminal.debugger:TerminalPdb')<CR>", desc = "pytest ipdb" },
-    { "<leader>px", ":lua zellij_send_chars('pytest -x')<CR>", desc = "pytest -x" },
+    { "<leader>px", ":lua zellij_send_chars('pytest -x')<CR>", desc = "pytest -x" }, -- Exit on first failure
     { "<leader>r", group = "rust" },
     { "<leader>ra", ":RustLsp codeAction<CR>", desc = "action" },
     { "<leader>rb", ":lua zellij_send_chars('cargo build')<CR>", desc = "build" },
