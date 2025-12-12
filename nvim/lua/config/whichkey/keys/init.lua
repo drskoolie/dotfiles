@@ -122,13 +122,6 @@ wk.add(
     { "<leader>now", ":tabnew<CR>:e ~/.config/nvim/lua/config/whichkey/keys/init.lua<CR>", desc = "whichkey" },
     { "<leader>ns", ":set spell!<CR>", desc = "spell toggle" },
     { "<leader>nv", ":w<CR>:source %<CR>", desc = "vim source" },
-    { "<leader>p", group = "pytest" },
-    { "<leader>pi", ":lua zellij_send_chars('pytest --pdb --pdbcls=IPython.terminal.debugger:TerminalPdb')<CR>", desc = "pytest ipdb" },
-    { "<leader>pm", ":lua zellij_send_chars('mypy afphd/')<CR>", desc = "mypy" },
-    { "<leader>pp", ":lua zellij_send_chars('pytest')<CR>", desc = "pytest" },
-    { "<leader>pr", ":lua zellij_send_chars('ruff check .')<CR>", desc = "ruff" },
-    { "<leader>ps", ":lua zellij_send_chars('pytest -s')<CR>", desc = "pytest -s" }, -- Disables output capturing
-    { "<leader>px", ":lua zellij_send_chars('pytest -x')<CR>", desc = "pytest -x" }, -- Exit on first failure
     { "<leader>r", group = "rust" },
     { "<leader>ra", ":RustLsp codeAction<CR>", desc = "action" },
     { "<leader>rb", ":lua zellij_send_chars('cargo build')<CR>", desc = "build" },
@@ -153,6 +146,14 @@ wk.add(
     { "<leader>tr", ':lua zellij_send_action("zellij action new-pane -d right; ")<CR>', desc = "right" },
     { "<leader>tx", ':lua zellij_send_action("zellij action close-pane; ")<CR>', desc = "kill" },
     { "<leader>ty", ":lua zellij_send_ascii(121)<CR>", desc = "y" },
+    { "<leader>u", group = "+uv" },
+    { "<leader>ua", ":lua zellij_send_chars(\"quit\")<CR>:lua zellij_send_chars(\"uv run ipython --no-autoindent\")<CR>:lua zellij_send_ascii(12)<CR>:lua zellij_send_chars(\"run '%:p'\")<CR>", desc = "ipython all" },
+    { "<leader>ui", ":lua zellij_send_chars('uv run pytest --pdb --pdbcls=IPython.terminal.debugger:TerminalPdb')<CR>", desc = "pytest ipdb" },
+    { "<leader>um", ":lua zellij_send_chars('uv run mypy .')<CR>", desc = "mypy" }, 
+    { "<leader>up", ":lua zellij_send_chars('uv run pytest')<CR>", desc = "pytest" },
+    { "<leader>ur", ":lua zellij_send_chars('uv run ruff check .')<CR>", desc = "ruff" },
+    { "<leader>us", ":lua zellij_send_chars('uv run pytest -s')<CR>", desc = "pytest -s" }, -- Disables output capturing
+    { "<leader>ux", ":lua zellij_send_chars('uv run pytest -x')<CR>", desc = "pytest -x" }, -- Exit on first failure
     {
       mode = { "v" },
       { "<leader>abb", "!boxes -a hcvc -d ", desc = "boxes" },
