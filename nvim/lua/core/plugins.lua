@@ -116,9 +116,6 @@ require("lazy").setup({
       build = function() vim.fn["mkdp#util#install"]() end,
   },
 
-  -- typst
-  {'kaarmu/typst.vim', ft = {'typst'}},
-
   -- +-------+
   -- | pulse |
   -- +-------+

@@ -23,6 +23,9 @@ require('config/telescope')
 -- ==> LSP
 require('lsp/base')
 
+-- ==> Mason AFTER LSP
+require('lsp/mason')
+
 -- ==> WhichKey (Last!)
 require('config/whichkey/config')
 require('config/whichkey/keys')
