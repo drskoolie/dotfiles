@@ -16,7 +16,7 @@ require('config/lualine')
 require('config/neogit')
 require('config/nvim-colorizer')
 require('config/nvim-neo-tree')
-require('config/nvim-notify')
+require('config/nvim-treesitter')
 require('config/sorcery')
 require('config/telescope')
 
