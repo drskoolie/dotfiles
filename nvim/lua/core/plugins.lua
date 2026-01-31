@@ -157,12 +157,40 @@ require("lazy").setup({
   -- | treesitter |
   -- +------------+
   {
-      'nvim-treesitter/nvim-treesitter',
-      build = ':TSUpdate',
+	  "nvim-treesitter/nvim-treesitter",
+	  build = ":TSUpdate",
+	  event = { "BufReadPost", "BufNewFile" },
+	  config = function()
+		require("nvim-treesitter.configs").setup({
+		  ensure_installed = {
+			"bash",
+			"beancount",
+			"c",
+			"cpp",
+			"css",
+			"html",
+			"json",
+			"lua",
+			"make",
+			"regex",
+			"rust",
+			"python",
+			"vim",
+		  },
+
+		  sync_install = false,
+		  auto_install = true,
+
+		  highlight = {
+			enable = true,
+			disable = {},
+			additional_vim_regex_highlighting = false,
+		  },
+		})
+	  end,
   },
 
-  'nvim-treesitter/playground',
-  'p00f/nvim-ts-rainbow',
+  'HiPhish/rainbow-delimiters.nvim',
 
   -- +--------+
   -- | useful |

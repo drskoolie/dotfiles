@@ -29,7 +29,6 @@ require('languages/markdown')
 -- ==> LSP
 require('lsp/base')
 require('lsp/mason')
-require('lsp/treesitter')
 
 -- ==> DAP (After LSP!)
 require('lsp/dap')
