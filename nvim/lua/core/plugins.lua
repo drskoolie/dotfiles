@@ -33,24 +33,6 @@ require("lazy").setup({
   -- | colors |
   -- +--------+
   'norcalli/nvim-colorizer.lua',
-  'guns/xterm-color-table.vim', -- :XtermColorTable
-  {"ziontee113/color-picker.nvim",
-      config = function()
-          require("color-picker")
-      end,
-  },
-
-  -- +-------+
-  -- | debug |
-  -- +-------+
-  'mfussenegger/nvim-dap',
-  {
-	  "rcarriga/nvim-dap-ui", 
-	  dependencies = {
-		  "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"
-	  } 
-  },
-  'jay-babu/mason-nvim-dap.nvim',
 
   -- +--------------+
   -- | file browser |
@@ -159,35 +141,7 @@ require("lazy").setup({
   {
 	  "nvim-treesitter/nvim-treesitter",
 	  build = ":TSUpdate",
-	  event = { "BufReadPost", "BufNewFile" },
-	  config = function()
-		require("nvim-treesitter.configs").setup({
-		  ensure_installed = {
-			"bash",
-			"beancount",
-			"c",
-			"cpp",
-			"css",
-			"html",
-			"json",
-			"lua",
-			"make",
-			"regex",
-			"rust",
-			"python",
-			"vim",
-		  },
-
-		  sync_install = false,
-		  auto_install = true,
-
-		  highlight = {
-			enable = true,
-			disable = {},
-			additional_vim_regex_highlighting = false,
-		  },
-		})
-	  end,
+	  lazy = false,
   },
 
   'HiPhish/rainbow-delimiters.nvim',
