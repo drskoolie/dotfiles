@@ -82,6 +82,7 @@ wk.add(
     { "<leader>if", ":lua zellij_send_chars(\"run '%:p'\")<CR>", desc = "file" },
     { "<leader>il", ':norm ^"+y$<CR>:lua zellij_paste()<CR>', desc = "send line" },
     { "<leader>io", ':lua zellij_send_chars("ipython --no-autoindent")<CR>', desc = "open" },
+    { "<leader>ip", ':lua zellij_paste()<CR>', desc = "send paste" },
     { "<leader>iq", ':lua zellij_send_chars("quit")<CR>', desc = "quit" },
     { "<leader>ir", ':lua zellij_send_chars("reset -f")<CR>', desc = "reset" },
     { "<leader>is", ':lua zellij_send_chars("sop")<CR>', desc = "sop" },
