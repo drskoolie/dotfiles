@@ -36,6 +36,8 @@ return {
   },
   settings = {
     python = {
+	  venvPath = ".",
+	  venv = ".venv",
       analysis = {
                 autoSearchPaths = true,
                 diagnosticMode = "openFilesOnly",
@@ -70,7 +72,6 @@ return {
                     reportUnusedVariable = "none",
                     -- Add other diagnostics you want to override here
                 },
-                -- Additional settings if needed
       },
     },
   },
