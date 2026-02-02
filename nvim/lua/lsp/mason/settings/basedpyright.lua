@@ -39,6 +39,39 @@ return {
       analysis = {
         autoSearchPaths = true,
         diagnosticMode = 'openFilesOnly',
+		useLibraryCodeForTypes = true,
+		typeCheckingMode = "off",
+		autoImportCompletions = false,
+		diagnosticSeverityOverrides = {
+			reportGeneralTypeIssues = "none",
+			reportMissingImports = "none",
+			reportMissingModuleSource = "none",
+			reportMissingTypeStubs = "none",
+			reportOptionalMemberAccess = "none",
+			reportOptionalSubscript = "none",
+			reportOptionalCall = "none",
+			reportOptionalIterable = "none",
+			reportOptionalContextManager = "none",
+			reportOptionalOperand = "none",
+			reportUntypedBaseClass = "none",
+			reportUntypedClassDecorator = "none",
+			reportUntypedFunctionDecorator = "none",
+			reportMissingParamType = "none",
+			reportMissingReturnType = "none",
+			reportMissingTypeArgument = "none",
+			reportUnnecessaryIsInstance = "none",
+			reportUnnecessaryCast = "none",
+			reportAssertAlwaysTrue = "none",
+			reportSelfClsParameterName = "none",
+			reportImplicitStringConcatenation = "none",
+			reportUnusedImport = "none",
+			reportUnusedClass = "none",
+			reportUnusedFunction = "none",
+			reportUnusedVariable = "none",
+			reportUnannotatedClassAttribute = "none",
+                    -- Add other diagnostics you want to override here
+			},
+
         -- https://docs.basedpyright.com/latest/configuration/language-server-settings/
         -- Explicitly setting `basedpyright.analysis.useLibraryCodeForTypes` is **discouraged** by the official docs.
         -- Because it will override per-project configurations like `pyproject.toml`.
@@ -69,3 +102,5 @@ return {
     })
   end,
 }
+
+
