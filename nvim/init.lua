@@ -11,28 +11,20 @@ require('core/spelling')
 require('core/vimscript')
 
 -- ==> Config
-require('config/code-companion')
-require('config/color-picker')
 require('config/gitsigns')
 require('config/lualine')
 require('config/neogit')
 require('config/nvim-colorizer')
 require('config/nvim-neo-tree')
-require('config/nvim-notify')
+require('config/nvim-treesitter')
 require('config/sorcery')
 require('config/telescope')
 
--- ==> Languages
-require('languages/sqlite')
-require('languages/markdown')
-
 -- ==> LSP
 require('lsp/base')
-require('lsp/mason')
-require('lsp/treesitter')
 
--- ==> DAP (After LSP!)
-require('lsp/dap')
+-- ==> Mason AFTER LSP
+require('lsp/mason')
 
 -- ==> WhichKey (Last!)
 require('config/whichkey/config')

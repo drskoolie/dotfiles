@@ -33,24 +33,6 @@ require("lazy").setup({
   -- | colors |
   -- +--------+
   'norcalli/nvim-colorizer.lua',
-  'guns/xterm-color-table.vim', -- :XtermColorTable
-  {"ziontee113/color-picker.nvim",
-      config = function()
-          require("color-picker")
-      end,
-  },
-
-  -- +-------+
-  -- | debug |
-  -- +-------+
-  'mfussenegger/nvim-dap',
-  {
-	  "rcarriga/nvim-dap-ui", 
-	  dependencies = {
-		  "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"
-	  } 
-  },
-  'jay-babu/mason-nvim-dap.nvim',
 
   -- +--------------+
   -- | file browser |
@@ -134,9 +116,6 @@ require("lazy").setup({
       build = function() vim.fn["mkdp#util#install"]() end,
   },
 
-  -- typst
-  {'kaarmu/typst.vim', ft = {'typst'}},
-
   -- +-------+
   -- | pulse |
   -- +-------+
@@ -157,12 +136,20 @@ require("lazy").setup({
   -- | treesitter |
   -- +------------+
   {
-      'nvim-treesitter/nvim-treesitter',
-      build = ':TSUpdate',
+	  "nvim-treesitter/nvim-treesitter",
+	  build = ":TSUpdate",
+	  lazy = false,
   },
 
-  'nvim-treesitter/playground',
-  'p00f/nvim-ts-rainbow',
+  'HiPhish/rainbow-delimiters.nvim',
+	
+  {
+	  'chomosuke/typst-preview.nvim',
+	  lazy = false, -- or ft = 'typst'
+	  version = '1.*',
+	  opts = {}, -- lazy.nvim will implicitly calls `setup {}`
+  },
+
 
   -- +--------+
   -- | useful |
