@@ -1,19 +1,26 @@
-require'nvim-treesitter'.setup {
-  -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
-  install_dir = vim.fn.stdpath('data') .. '/site'
-}
+-- nvim-treesitter config
+local configs = require("nvim-treesitter.configs")
 
-require'nvim-treesitter'.install { 
-			"bash",
-			"beancount",
-			"c",
-			"cpp",
-			"css",
-			"html",
-			"json",
-			"lua",
-			"regex",
-			"rust",
-			"python",
-			"vim",
-}
+configs.setup({
+  -- This is the normal way: declare what you want installed
+  ensure_installed = {
+    "bash",
+    "beancount",
+    "c",
+    "cpp",
+    "css",
+    "html",
+    "json",
+    "lua",
+    "regex",
+    "rust",
+    "python",
+    "vim",
+  },
+
+  -- Automatically install missing parsers when entering buffer
+  auto_install = true,
+
+  highlight = { enable = true },
+  indent = { enable = true },
+})
