@@ -28,4 +28,5 @@ vim.lsp.config("basedpyright", bp)
 -- vim.lsp.config("tinymist", tm)
 
 -- Enable them
-vim.lsp.enable({ "basedpyright"})
+vim.lsp.enable({"basedpyright"})
+-- vim.lsp.enable({"tinymist"})
