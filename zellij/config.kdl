@@ -10,8 +10,6 @@ keybinds clear-defaults=true {
         bind "left" { MoveFocus "left"; SwitchToMode "normal"; }
         bind "down" { MoveFocus "down"; SwitchToMode "normal"; }
         bind "up" { MoveFocus "up"; SwitchToMode "normal"; }
-        bind "right" { MoveFocus "right"; SwitchToMode "normal"; }
-        bind "D" { Detach; }
         bind "R" { NewPane "right"; MoveFocus "left"; SwitchToMode "normal"; }
         bind "W" { ToggleFloatingPanes; SwitchToMode "normal"; }
         bind "[" { SwitchToMode "scroll"; }
@@ -30,10 +28,10 @@ keybinds clear-defaults=true {
         bind "z" { TogglePaneFrames; SwitchToMode "normal"; }
     }
     tab {
-        bind "left" { Resize "Increase left"; }
         bind "down" { Resize "Increase down"; }
         bind "up" { Resize "Increase up"; }
-        bind "right" { Resize "Increase right"; }
+        bind "left" { MoveTab "Left"; }
+        bind "right" { MoveTab "Right"; }
         bind "1" { GoToTab 1; SwitchToMode "normal"; }
         bind "2" { GoToTab 2; SwitchToMode "normal"; }
         bind "3" { GoToTab 3; SwitchToMode "normal"; }
@@ -57,11 +55,9 @@ keybinds clear-defaults=true {
         bind "l" { Resize "Increase right"; }
         bind "n" { NewTab; SwitchToMode "normal"; }
         bind "r" { SwitchToMode "renametab"; TabNameInput 0; }
-        bind "s" { ToggleActiveSyncTab; SwitchToMode "normal"; }
         bind "t" { GoToNextTab; }
         bind "Ctrl t" { SwitchToMode "normal"; }
         bind "x" { CloseTab; SwitchToMode "normal"; }
-        bind "tab" { ToggleTab; }
     }
     scroll {
         bind "/" { SwitchToMode "entersearch"; SearchInput 0; }
