@@ -34,11 +34,6 @@ wk.add(
     { "<leader>auh", ":UndotreeHide<CR>", desc = "hide" },
     { "<leader>aus", ":UndotreeShow<CR>", desc = "show" },
     { "<leader>aut", ":UndotreeToggle<CR>", desc = "toggle" },
-    { "<leader>ay", group = "typst" },
-    { "<leader>ayc", ":TypstPreviewFollowCursor<CR>", desc = "cursor" },
-    { "<leader>ayp", ":TypstPreview<CR>", desc = "preview" },
-    { "<leader>ays", ":TypstPreviewStop<CR>", desc = "stop" },
-    { "<leader>ayy", ":TypstPreviewSync<CR>", desc = "sync" },
     { "<leader>b", group = "buffers" },
     { "<leader>bM", ":tabm -1<CR>", desc = "tab mov -1" },
     { "<leader>bc", ":cd %:p:h<CR>", desc = "cd" },
@@ -162,21 +157,8 @@ wk.add(
     { "<leader>ur", ":lua zellij_send_chars('uv run ruff check .')<CR>", desc = "ruff" },
     { "<leader>us", ":lua zellij_send_chars('uv run pytest -s')<CR>", desc = "pytest -s" }, -- Disables output capturing
     { "<leader>ux", ":lua zellij_send_chars('uv run pytest -x')<CR>", desc = "pytest -x" }, -- Exit on first failure
-    {
-      mode = { "v" },
-      { "<leader>abb", "!boxes -a hcvc -d ", desc = "boxes" },
-      { "<leader>abc", "!boxes -a hcvc -d columns<CR>", desc = "columns" },
-      { "<leader>abd", "!boxes -a hcvc -d dog<CR>", desc = "dog" },
-      { "<leader>abg", "!boxes -a hcvc -d girl<CR>", desc = "girl" },
-      { "<leader>abi", "!boxes -a hcvc -d ian jones<CR>", desc = "ian jones" },
-      { "<leader>abm", "!boxes -a hcvc -d mouse<CR>", desc = "mouse" },
-      { "<leader>abn", "!boxes -a hcvc -d spring<CR>", desc = "spring" },
-      { "<leader>abp", "!boxes -a hlvt -d parchment<CR>", desc = "parchment" },
-      { "<leader>abs", "!boxes -a hcvc -d stone<CR>", desc = "stone" },
-      { "<leader>abu", "!boxes -a hcvc -d unicornsay<CR>", desc = "unicornsay" },
-      { "<leader>abv", "!boxes -a hcvc -d unicornthink<CR>", desc = "unicornthink" },
-      { "<leader>aby", "!boxes -a hcvc -d boy<CR>", desc = "boy" },
-      { "<leader>ip", '"+y:lua zellij_paste<CR>', desc = "visual" },
-    },
+    { "<leader>y", group = "typst" },
+    { "<leader>yc", ":TypstPreviewFollowCursor<CR>", desc = "cursor" },
+    { "<leader>yp", ":TypstPreview<CR>", desc = "preview" },
   }
   )
