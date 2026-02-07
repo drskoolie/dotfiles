@@ -20,13 +20,13 @@ require("mason-lspconfig").setup {
 
 local bp = require("lsp/mason/settings/basedpyright")
 -- local cd = require("lsp/mason/settings/clangd")
--- local tm = require("lsp/mason/settings/typst")
+local tm = require("lsp/mason/settings/tinymist")
 
 -- Register them as enabled configurations
 vim.lsp.config("basedpyright", bp)
 -- vim.lsp.config("clangd", cd)
--- vim.lsp.config("tinymist", tm)
+vim.lsp.config("tinymist", tm)
 
 -- Enable them
 vim.lsp.enable({"basedpyright"})
--- vim.lsp.enable({"tinymist"})
+vim.lsp.enable({"tinymist"})
