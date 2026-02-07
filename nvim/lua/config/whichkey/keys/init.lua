@@ -74,7 +74,6 @@ wk.add(
     { "<leader>gq", ":Gitsigns setqflist<CR>", desc = "quickfix" },
     { "<leader>gr", ":Gitsigns reset_hunk<CR>", desc = "reset hunk" },
     { "<leader>i", group = "ipython" },
-    { "<leader>iO", ":lua zellij_send_chars('powershell.exe -NoExit -Command \\\\\"cd \\'C:\\\\Users\\\\al.elhag\\\\OneDrive - Qualus Corp\\\\Documents\\\\Python\\\\AuReGen\\'; .\\\\venv_auregen_windows\\\\Scripts\\\\Activate.ps1; py -m IPython --no-autoindent \\\\\"')<CR>", desc = "open powershell" },
     { "<leader>iV", "^yt=o<ESC>pxa", desc = "variable" },
     { "<leader>ia", ":lua zellij_send_chars(\"quit\")<CR>:lua zellij_send_chars(\"ipython --no-autoindent\")<CR>:lua zellij_send_ascii(12)<CR>:lua zellij_send_chars(\"run '%:p'\")<CR>", desc = "all" },
     { "<leader>id", ':lua zellij_send_chars("deactivate")<CR>', desc = "deactivate" },
@@ -158,7 +157,7 @@ wk.add(
     { "<leader>us", ":lua zellij_send_chars('uv run pytest -s')<CR>", desc = "pytest -s" }, -- Disables output capturing
     { "<leader>ux", ":lua zellij_send_chars('uv run pytest -x')<CR>", desc = "pytest -x" }, -- Exit on first failure
     { "<leader>y", group = "typst" },
-    { "<leader>yc", ":TypstPreviewFollowCursor<CR>", desc = "cursor" },
+    { "<leader>yc", ":lua require('config/typst-helper').set_check()<CR>", desc = "check" },
     { "<leader>yp", ":TypstPreview<CR>", desc = "preview" },
   }
   )

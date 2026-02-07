@@ -19,6 +19,7 @@ require('config/nvim-neo-tree')
 require('config/nvim-treesitter')
 require('config/sorcery')
 require('config/telescope')
+require('config/typst-helper')
 
 -- ==> LSP
 require('lsp/base')
