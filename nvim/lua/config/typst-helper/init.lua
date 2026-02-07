@@ -14,7 +14,6 @@ function M.set_check()
   -- Ask user what to replace with
   local repl = vim.fn.input("Replace with: ")
   if repl == "" then
-    vim.cmd("normal! `a")
     return
   end
 
@@ -51,5 +50,23 @@ function M.make_check()
 	vim.api.nvim_win_set_cursor(0, { row + 1, 0})
 
 end
+
+function M.go_to_next_check()
+  -- Search backward for literal: " "
+  vim.fn.search([["."]], "W")
+
+  local current_row, current_col = unpack(vim.api.nvim_win_get_cursor(0))
+  vim.api.nvim_win_set_cursor(0, {current_row + 1, 2})
+end
+
+function M.go_to_prev_check()
+  -- Search backward for literal: " "
+  vim.fn.search([["."]], "bW")
+  vim.fn.search([["."]], "bW")
+
+  local current_row, current_col = unpack(vim.api.nvim_win_get_cursor(0))
+  vim.api.nvim_win_set_cursor(0, {current_row + 1, 2})
+end
+
 
 return M

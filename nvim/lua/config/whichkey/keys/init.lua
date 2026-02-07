@@ -159,6 +159,8 @@ wk.add(
     { "<leader>y", group = "typst" },
     { "<leader>ys", ":lua require('config/typst-helper').set_check()<CR>", desc = "set_check" },
     { "<leader>ym", ":lua require('config/typst-helper').make_check()<CR>", desc = "make_check" },
-    { "<leader>yp", ":TypstPreview<CR>", desc = "preview" },
+    { "<leader>yn", ":lua require('config/typst-helper').go_to_next_check()<CR>", desc = "next_check" },
+    { "<leader>yp", ":lua require('config/typst-helper').go_to_prev_check()<CR>", desc = "prev_check" },
+    { "<leader>yt", ":TypstPreview<CR>", desc = "preview" },
   }
   )
