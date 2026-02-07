@@ -37,4 +37,19 @@ function M.set_check()
   vim.api.nvim_win_set_cursor(0, {current_row, current_col})
 end
 
+function M.make_check()
+	local bufnr = 0
+	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+
+	local snippet = {
+		'#check(flag: " ", level: 1)[',
+		'  ',
+		']',
+	}
+	vim.api.nvim_buf_set_lines(bufnr, row - 1, row -1, false, snippet)
+
+	vim.api.nvim_win_set_cursor(0, { row + 1, 0})
+
+end
+
 return M

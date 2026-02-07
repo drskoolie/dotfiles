@@ -157,7 +157,8 @@ wk.add(
     { "<leader>us", ":lua zellij_send_chars('uv run pytest -s')<CR>", desc = "pytest -s" }, -- Disables output capturing
     { "<leader>ux", ":lua zellij_send_chars('uv run pytest -x')<CR>", desc = "pytest -x" }, -- Exit on first failure
     { "<leader>y", group = "typst" },
-    { "<leader>yc", ":lua require('config/typst-helper').set_check()<CR>", desc = "check" },
+    { "<leader>ys", ":lua require('config/typst-helper').set_check()<CR>", desc = "set_check" },
+    { "<leader>ym", ":lua require('config/typst-helper').make_check()<CR>", desc = "make_check" },
     { "<leader>yp", ":TypstPreview<CR>", desc = "preview" },
   }
   )
