@@ -157,9 +157,11 @@ wk.add(
     { "<leader>us", ":lua zellij_send_chars('uv run pytest -s')<CR>", desc = "pytest -s" }, -- Disables output capturing
     { "<leader>ux", ":lua zellij_send_chars('uv run pytest -x')<CR>", desc = "pytest -x" }, -- Exit on first failure
     { "<leader>y", group = "typst" },
+
     { "<leader>ys", ":lua require('config/typst-helper').set_check()<CR>", desc = "set_check" },
     { "<leader>ym", ":lua require('config/typst-helper').make_check()<CR>", desc = "make_check" },
     { "<leader>yn", ":lua require('config/typst-helper').go_to_next_check()<CR>", desc = "next_check" },
+    { "<leader>yN", ":lua require('config/typst-helper').go_to_next_check_empty()<CR>", desc = "next_check_empty" },
     { "<leader>yp", ":lua require('config/typst-helper').go_to_prev_check()<CR>", desc = "prev_check" },
     { "<leader>yt", ":TypstPreview<CR>", desc = "preview" },
 
@@ -167,5 +169,6 @@ wk.add(
     { "<leader>yd", ":lua require('config/typst-helper').set_check_input('~')<CR>", desc = "set_check_~" },
     { "<leader>yq", ":lua require('config/typst-helper').set_check_input('?')<CR>", desc = "set_check_?" },
     { "<leader>yx", ":lua require('config/typst-helper').set_check_input('x')<CR>:lua require('config/typst-helper').go_to_next_check()<CR>", desc = "set_check_x" },
+    { "<leader>yX", ":lua require('config/typst-helper').set_check_input_doing()<CR>:lua require('config/typst-helper').go_to_next_check()<CR>", desc = "set_check_~" },
   }
   )
