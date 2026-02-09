@@ -132,7 +132,7 @@
  	whitespace = red reverse
 [core]
 	editor = nvim
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = delta
 [init]
 	defaultBranch = main
 [merge]
@@ -143,7 +143,7 @@
 	email = a.elhag01@gmail.com
 	name = Al-Baraa El-Hag
 [interactive]
-	diffFilter = diff-so-fancy --patch
+	diffFilter = delta
 [safe]
 	directory = /var/www/dokuwiki/data
 [column]
