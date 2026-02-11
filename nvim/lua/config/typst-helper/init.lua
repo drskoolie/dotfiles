@@ -63,10 +63,10 @@ function M.set_check_input_doing()
 	-- Saves the current position
   local current_row, current_col = unpack(vim.api.nvim_win_get_cursor(0))
 
-  repl = "x"
+  local repl = "x"
 
   -- Search backward for literal: " "
-  vim.fn.search([["~"]], "bW")
+  vim.fn.search([["\~"]], "bW")
 
   local bufnr = 0
   local row = vim.api.nvim_win_get_cursor(0)[1] - 1
@@ -75,13 +75,14 @@ function M.set_check_input_doing()
   local line = vim.api.nvim_buf_get_lines(bufnr, row, row + 1, false)[1]
   
   -- Replace pattern "." (any character) with my_variable
-  line = line:gsub([["~"]], [["]] .. repl .. [["]], 1)
+  line = line:gsub([["."]], [["]] .. repl .. [["]], 1)
   
   -- Set the updated line
   vim.api.nvim_buf_set_lines(bufnr, row, row + 1, false, {line})
 
   -- Goes to the perveous position
   vim.api.nvim_win_set_cursor(0, {current_row, current_col})
+
 end
 
 

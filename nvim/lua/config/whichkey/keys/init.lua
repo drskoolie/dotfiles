@@ -167,8 +167,8 @@ wk.add(
 
     { "<leader>yb", ":lua require('config/typst-helper').set_check_input(' ')<CR>", desc = "set_check_ " },
     { "<leader>yd", ":lua require('config/typst-helper').set_check_input('~')<CR>", desc = "set_check_~" },
+    { "<leader>yD", ":lua require('config/typst-helper').set_check_input_doing()<CR>", desc = "set_check_~x" },
     { "<leader>yq", ":lua require('config/typst-helper').set_check_input('?')<CR>", desc = "set_check_?" },
     { "<leader>yx", ":lua require('config/typst-helper').set_check_input('x')<CR>:lua require('config/typst-helper').go_to_next_check()<CR>", desc = "set_check_x" },
-    { "<leader>yX", ":lua require('config/typst-helper').set_check_input_doing()<CR>:lua require('config/typst-helper').go_to_next_check()<CR>", desc = "set_check_~" },
   }
   )
