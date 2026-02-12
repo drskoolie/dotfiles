@@ -157,18 +157,39 @@ wk.add(
     { "<leader>us", ":lua zellij_send_chars('uv run pytest -s')<CR>", desc = "pytest -s" }, -- Disables output capturing
     { "<leader>ux", ":lua zellij_send_chars('uv run pytest -x')<CR>", desc = "pytest -x" }, -- Exit on first failure
     { "<leader>y", group = "typst" },
-
     { "<leader>ys", ":lua require('config/typst-helper').set_check()<CR>", desc = "set_check" },
     { "<leader>ym", ":lua require('config/typst-helper').make_check()<CR>", desc = "make_check" },
     { "<leader>yn", ":lua require('config/typst-helper').go_to_next_check()<CR>", desc = "next_check" },
     { "<leader>yN", ":lua require('config/typst-helper').go_to_next_check_empty()<CR>", desc = "next_check_empty" },
     { "<leader>yp", ":lua require('config/typst-helper').go_to_prev_check()<CR>", desc = "prev_check" },
     { "<leader>yt", ":TypstPreview<CR>", desc = "preview" },
-
     { "<leader>yb", ":lua require('config/typst-helper').set_check_input(' ')<CR>", desc = "set_check_ " },
     { "<leader>yd", ":lua require('config/typst-helper').set_check_input('~')<CR>", desc = "set_check_~" },
     { "<leader>yD", ":lua require('config/typst-helper').set_check_input_doing()<CR>", desc = "set_check_~x" },
     { "<leader>yq", ":lua require('config/typst-helper').set_check_input('?')<CR>", desc = "set_check_?" },
     { "<leader>yx", ":lua require('config/typst-helper').set_check_input('x')<CR>:lua require('config/typst-helper').go_to_next_check()<CR>", desc = "set_check_x" },
+    { "<leader>w", group = "+uvw" },
+    { "<leader>wa", 
+		  function()
+			zellij_send_chars("quit")
+			zellij_send_chars("uvw run ipython --no-autoindent")
+			zellij_send_ascii(12)
+		  end,
+		desc = "ipython all" },
+	{ "<leader>wt", 
+		function ()
+			local win = vim.fn.system({ "wslpath", "-m", vim.fn.expand("%:p") })
+			win = win:gsub("\r?\n$", "")          -- remove trailing newline
+			win = win:gsub("\\", "\\\\")          -- escape backslashes (safety)
+			win = win:gsub('"', '\\"')            -- escape quotes (safety)
+
+			zellij_send_chars('run \\"' .. win .. '\\"')
+		end,
+		desc = "test" },
+    { "<leader>wi", ":lua zellij_send_chars('uvw run pytest --pdb --pdbcls=IPython.terminal.debugger:TerminalPdb')<CR>", desc = "pytest ipdb" },
+    { "<leader>wm", ":lua zellij_send_chars('uvw run mypy .')<CR>", desc = "mypy" }, 
+    { "<leader>wp", ":lua zellij_send_chars('uvw run pytest')<CR>", desc = "pytest" },
+    { "<leader>ws", ":lua zellij_send_chars('uvw run pytest -s')<CR>", desc = "pytest -s" }, -- Disables output capturing
+    { "<leader>wx", ":lua zellij_send_chars('uvw run pytest -x')<CR>", desc = "pytest -x" }, -- Exit on first failure
   }
   )
