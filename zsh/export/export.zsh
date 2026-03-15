@@ -1,6 +1,3 @@
-# Colored Man Page
-# export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
-
 # Show hidden files in fzf
 export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files'
 
@@ -24,13 +21,8 @@ export LESS=-r
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANWIDTH=999
 
-
 # Adding to the path (~/bin)
 export PATH=$PATH:$HOME/bin
 
 # Npm
 export PATH=~/.npm_global/bin:$PATH
-
-# Adding Gams
-export PATH=/opt/gams/gams42.1_linux_x64_64_sfx/:$PATH
-export PATH=/opt/gams/gams42.2_linux_x64_64_sfx/:$PATH
