@@ -175,8 +175,8 @@ wk.add(
 			zellij_send_chars("uvw run ipython --no-autoindent")
 			zellij_send_ascii(12)
 		  end,
-		desc = "ipython all" },
-	{ "<leader>wt", 
+		desc = "ipython restart" },
+	{ "<leader>wr", 
 		function ()
 			local win = vim.fn.system({ "wslpath", "-m", vim.fn.expand("%:p") })
 			win = win:gsub("\r?\n$", "")          -- remove trailing newline
@@ -185,7 +185,7 @@ wk.add(
 
 			zellij_send_chars('run \\"' .. win .. '\\"')
 		end,
-		desc = "test" },
+		desc = "run" },
     { "<leader>wi", ":lua zellij_send_chars('uvw run pytest --pdb --pdbcls=IPython.terminal.debugger:TerminalPdb')<CR>", desc = "pytest ipdb" },
     { "<leader>wm", ":lua zellij_send_chars('uvw run mypy .')<CR>", desc = "mypy" }, 
     { "<leader>wp", ":lua zellij_send_chars('uvw run pytest')<CR>", desc = "pytest" },
