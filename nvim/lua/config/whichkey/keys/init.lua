@@ -11,7 +11,7 @@ wk.add(
     { "<leader>aa", group = "accounting" },
     { "<leader>aab", ":w|!bean-report % balances<CR>", desc = "balances" },
     { "<leader>aac", ":w|!bean-check %<CR>", desc = "check" },
-    { "<leader>ab", group = "boxes" },
+    { "<leader>ad", ":w<CR>:!dot -Tsvg test.dot -o tree.svg<CR>", desc = "dot" },
     { "<leader>ac", group = "colorizer" },
     { "<leader>aca", ":ColorizerAttachToBuffer<CR>", desc = "attach" },
     { "<leader>acd", ":ColorizerDetachFromBuffer<CR>", desc = "detach" },

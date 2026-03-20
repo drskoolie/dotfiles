@@ -10,6 +10,9 @@ require('core/settings')
 require('core/spelling')
 require('core/vimscript')
 
+-- ==> Arabic
+require('abbrv/arabic')
+
 -- ==> Config
 require('config/gitsigns')
 require('config/lualine')
