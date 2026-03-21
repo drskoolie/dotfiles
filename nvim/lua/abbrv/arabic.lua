@@ -18,6 +18,8 @@ iabbrev ;;d ḍ
 iabbrev ;;D Ḍ
 iabbrev ;;s ṣ
 iabbrev ;;S Ṣ
+iabbrev ;;&s š
+iabbrev ;;&S Š
 iabbrev ;;t ṭ
 iabbrev ;;T Ṭ
 iabbrev ;;&t ṯ
